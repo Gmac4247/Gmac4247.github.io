@@ -1,0 +1,7 @@
+User-agent:Googlebot
+Allow:/
+
+User-agent:Bingbot
+Allow:/
+
+Sitemap: https://https://basic-geometey.pages.dev/sitemap.xml
