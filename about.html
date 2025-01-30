@@ -105,8 +105,7 @@
 "accessibilityFeature": "dyslexicFriendly",
 "accessibilityHazard" :"none" ,
 "accessibilitySummary" : "View videos, figures and equations with explanation." ,
-"accountablePerson" :
-{"@type" : "Person" ,
+"accountablePerson" : {"@type" : "Person" ,
 "address": {
     "@type": "PostalAddress",
     "addressLocality": "Szentendre",
@@ -188,44 +187,14 @@
 "keywords":"Core Geometric Systems, Accurate Geometric Calculations, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Quantum Computing Applications, Scientific Research Applications",
 "locationCreated":
 {
-"@type":
-"administrativeArea",
+"@type": "administrativeArea",
 "name" :"Szentendre, Hungary"},
 "mainEntity" : 
-{"@type": ["MathSolver", "LearningResource"],
+{"@type": "LearningResource",
  "name" : "Exact Geometry",
  "inLanguage":"en-us",
 "url": "https://gmac4247.github.io/", 
-"usageInfo":"Learn about historical and exact geometric concepts.",
- "potentialAction": [
-{
-     "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": 
-     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
-     "image": "areaOfACircle.jpg",
-     "eduQuestionType": "equationSolving",
-     "name": "Area of a circle"
-   },
-{
-     "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
-     "image": "circumference.jpg",
-     "eduQuestionType": "equationSolving",
-     "name": "Circumference of a circle"
-   },
-{
-     "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation/360*(3.2^(1/2)*radius)^3", 
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a sphere"
-   }
-]
+"usageInfo":"Learn about historical and exact geometric concepts."
 },
 "offers": {
 "@type": "Offer",
