@@ -190,11 +190,40 @@
 "@type": "administrativeArea",
 "name" :"Szentendre, Hungary"},
 "mainEntity" : 
-{"@type": "LearningResource",
+{"@type": ["MathSolver", "LearningResource"],
  "name" : "Exact Geometry",
  "inLanguage":"en-us",
-"url": "https://gmac4247.github.io/", 
-"usageInfo":"Learn about historical and exact geometric concepts."
+"url": "https://gmac4247.github.io/about", 
+"usageInfo":"Learn about historical and exact geometric concepts.",
+ "potentialAction": [
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": 
+     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
+     "image": "areaOfACircle.jpg",
+     "eduQuestionType": "equationSolving",
+     "name": "Area of a circle"
+   },
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
+     "image": "circumference.jpg",
+     "eduQuestionType": "equationSolving",
+     "name": "Circumference of a circle"
+   },
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation/360*(3.2^(1/2)*radius)^3", 
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a sphere"
+   }
+]
 },
 "offers": {
 "@type": "Offer",
