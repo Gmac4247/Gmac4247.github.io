@@ -173,7 +173,7 @@
 },
 "dateCreated" :"2024-08-31",
 "datePublished":"2024-08-31",
-"dateModified" :"2025-01-30",
+"dateModified" :"2025-01-31",
 "description" :"History and detailed disapproval of the mathematical constant π; definition and derivation of the properties of shapes from the area of a circle.",
 "disambiguatingDescription": "Exact formulas. No pi.",	
 	"image":[
@@ -190,9 +190,38 @@
 "@type": "administrativeArea",
 "name" :"Szentendre, Hungary"},
 "mainEntity" : 
-{"@type": "LearningResource",
+{"@type": ["MathSolver", "LearningResource"],
  "name" : "Exact Geometry",
  "inLanguage":"en-us",
+ "potentialAction": [
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": 
+     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
+     "image": "areaOfACircle.jpg",
+     "eduQuestionType": "equationSolving",
+     "name": "Area of a circle"
+   },
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
+     "image": "circumference.jpg",
+     "eduQuestionType": "equationSolving",
+     "name": "Circumference of a circle"
+   },
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation/360*(3.2^(1/2)*radius)^3", 
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a sphere"
+   }
+],
 "url": "https://gmac4247.github.io/", 
 "usageInfo":"Learn about historical and exact geometric concepts.",
 },
