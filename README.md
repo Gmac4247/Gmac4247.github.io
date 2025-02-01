@@ -1,2 +1,2 @@
 # Gmac4247.github.io
-Basic Geometry in dyslexic-friendly format 
+Dyslexic-friendly copy of basic-geometry.github.io
