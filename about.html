@@ -8,7 +8,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="https://basic-geometry.pages.dev/about">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
 <link href="https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap" rel="stylesheet">
 <meta name="msapplication-TileColor" content="#000000">
@@ -178,15 +177,15 @@
 },
 "dateCreated" :"2024-08-31",
 "datePublished":"2024-08-31",
-"dateModified" :"2025-03-12",
+"dateModified" :"2025-04-29",
 "description" :"History and detailed disapproval of the mathematical constant π; definition and derivation of the properties of shapes from the area of a circle.",
 "disambiguatingDescription": "Exact formulas. No pi.",	
-	"image":[
+"headline" : "Disapproval of the mathematical constant π",
+"image":[
 	"equityFigure.jpg",
 	"recycle.png",
 	"sphereSurface.jpeg"
 	],
-"headline" : "Disapproval of the mathematical constant π",
 "inLanguage":"en-us",
 "isFamilyFriendly":"true",
 "keywords":"Core Geometric Systems, Accurate Geometric Calculations, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Quantum Computing Applications, Scientific Research Applications",
@@ -243,6 +242,26 @@
        "name": "Formula",
        "value": "angleOfRotation/360*(3.2^(1/2)*radius)^3"
   }
+   },
+
+ {
+     "@type": "SolveMathAction",
+     "target": "https://gmac4247.github.io/",
+     "mathExpression-input": "The bottom radius and the height of the cone",
+     "mathExpression-output": "The volume of the cone", 
+     "image": [
+       "coneAndSphereMarkup.jpeg",
+       "sphereAndConeMarkup.jpeg",
+       "octantSphereQuarterCone.jpeg",
+       "coneAndSphereComparison.png"
+       ],
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a cone",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)"
+  }
    }
 ],
 "url": "https://gmac4247.github.io/about/", 
@@ -256,7 +275,6 @@
       "price": "3,200,000,000.",
       "availability": "https://schema.org/InStock"
     },
-"sameAs" : "https://basic-geometry.pages.dev/about",
 "schemaVersion" : "https://schema.org/docs/releases.html#v28.1.",
 "sdDatePublished" :"2024-08-31",
 "sdPublisher" :
@@ -313,10 +331,45 @@
 		</div>
 </div>
 <div>
-  <h1 style="font-size:160%;margin:7px;">How Accurate Are The Conventional Geometry Formulas?</h1>
+  <h1 style="font-size:160%;margin:7px;">Introducing the Core Geometric System ™</h1>
 <br>
 <br>
- <p style="margin:12px;">Historically, Euclidean geometry has provided a framework for understanding and describing the physical world. It is based on axioms and postulates, leading to well-defined formulas for the calculation of areas and volumes of shapes such as circles and spheres.
+<p style="margin:12px;">Key Points
+<br>
+<br>
+- Comparative Geometry: Using geometric relationships to derive areas and volumes.
+- Scaling and Proportions: Applying proportional relationships for accurate calculations.
+- Algebraic Manipulation: Simplifying equations to ensure coherence and precision.
+- Exact instead of Approximate Values: Recognizing the use of simpler constants for practicality while maintaining exact values for accuracy.
+<br>
+<br>
+1. Area of a Circle:
+   - Compared to a square, using geometric properties and the Pythagorean theorem.
+   - Formula:  A = 3.2r² 
+<br>
+<br>
+2. Circumference of a Circle:
+   - Derived from the area by subtracting a smaller theoretical circle.
+   - Formula:  C = 6.4r 
+<br>
+<br>
+3. Volume of a Sphere:
+   - Compared to a cube, using the area of the sphere's cross-section.
+   - Formula:  V = (√(3.2)r)³ 
+<br>
+<br>
+4. Volume of a Cone:
+   - Compared to an octant sphere and a quarter cylinder.
+   - Formula:  V = 3.2r²height/√8 
+</p>
+<br>
+<br>
+</div>
+<div>
+  <h2 style="font-size:160%;margin:7px;">How Accurate Are The Conventional Geometry Formulas?</h2>
+<br>
+<br>
+<p style="margin:12px;">Historically, Euclidean geometry has provided a framework for understanding and describing the physical world. It is based on axioms and postulates, leading to well-defined formulas for the calculation of areas and volumes of shapes such as circles and spheres.
 <br>
 <br>
 The concept of setting the square and the cube as the basis of the area and the volume calculation is well established and straightforward. Regardless of the shape of the measured object, the unit of measurement of the area is square units and the volume can be expressed in cubic units. 
@@ -348,26 +401,63 @@ That is where the pi/delta=3.14 notation might originate from.
 This method has several limitations. He tried to increase the accuracy by increasing the number of sides of the polygons. This approach cannot produce an accurate result. 
 <br>
 <br>
+Where the perimeter-based estimation went wrong: -aside of that it's just an estimate instead of an exact calculation- 
+<br>
+<br>
+The in- and circumscribed polygons method seems logical, but there's a catch. It's based on the assumption that the circle maximizes the area with a given circumference. That assumption is false. It's obviously true in the case of an isoperimetric triangle and a square, but it becomes less and less obvious with the increase of the number of the polygon's sides. Until eventually it is not even true. 
+<br>
+<br>
+Imagine a side of a polygon with a number of sides approaching infinity. 
+<br>
+<br>
+The angles between the side and the diagonals approach a right angle. They never reach a right angle as the diagonals converge towards the center.  If we relate the arc of a corresponding slice of an isoperimetric circle, the length of the arc equals the side in question. So the chord related to the arc is shorter than the side. If we want to place the arc with the chord so that it touches both diagonals, it has to be within the polygon. With the curvature of the arc becoming decreasingly distinctive, it doesn't bulge beyond the side. Eventually it will not even touch the side. Hence the polygon with the same number of sides, which circumscribed the circle is smaller, so its perimeter is shorter than the circle. 
+<br>
+<br>
+The perimeter of the circumscribed polygon that was believed to be an overestimate of the circumference was practically an underestimate of it. 
+<br>
+<br>
+Hence the value of the π lies between two underestimates.
+<br>
+<br>
 The same coefficient was used to calculate the ratio between the squared radius and the area of a circle.
+<br>
+<br>
 Despite these early advances, a precise, universally accepted value of this constant remained elusive for centuries. 
 <br>
 <br>
 With its value believed to be an infinite fraction, it seemed necessary to denote it by a sign in the equations.
+<br>
+<br>
 It was not until the 18th century that the symbol π, popularized by the mathematicians of the time, gained widespread acceptance.
 <br>
 <br>
 Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on a theoretical polygon with an infinite number of sides. 
+<br>
+<br>
 All of the comparison methods mentioned above have one thing in common. They are estimating the perimeters of polygons and do not account for the curved shape of the circle.
 <br>
 <br>
-By focusing on area relationships and direct comparisons between shapes, the following method emphasizes a more intuitive and potentially more fundamental understanding of geometric concepts.<br>
+Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246, or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<br>
+<br>
+Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
+<br>
+<br>
+The π is a fundamental constant in the geometry of idealized circles and plays a crucial role in many mathematical theories. 
+<br>
+<br>
+My work, however, suggests that when we move from these idealizations to the measurement of real objects, a slightly different constant, 3.2 emerges as more relevant for accurately describing their properties. 
+<br>
+<br>
+By focusing on area relationships and direct comparisons between shapes, the following method emphasizes a more intuitive and potentially more fundamental understanding of geometric concepts.
+<br>
 </p>
 </div>
 <br>
 <br>
 <br>
 <div>
-<h2 style="font-size:160%;margin:7px;">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h2>
+<h3 style="font-size:160%;margin:7px;">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h3>
 <br>
 <br>
 <p style="margin:12px;">The circle is cut to four quadrants, each placed with their origin on the vertices of a square.
@@ -820,7 +910,7 @@ When the arcs of the quadrant circles intersect at the quarter of the centerline
 <br>
 <br>
 <div>
-<h3 style="font-size:160%;margin:7px;">The circumference of a circle is derived algebraically from its area by subtracting a theoretical circle with a ray shorter than the ray of the actual circle by the theoretical width of the circumference.</h3>
+<h4 style="font-size:160%;margin:7px;">The circumference of a circle is derived algebraically from its area by subtracting a theoretical circle with a ray shorter than the ray of the actual circle by the theoretical width of the circumference.</h4>
 <br>
 <div class="imgbox">
     <img class="center-fit" src="circumference.jpg" alt="Circle" id="circumference">
@@ -1123,12 +1213,28 @@ In calculus terms:
 <br>
 <br>
 <div>
-<h4 style="font-size:160%;margin:7px;">The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation.</h4>
+<h5 style="font-size:160%;margin:7px;">The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation.</h5>
 <br>
 <div>
  <iframe width="420" height="315" src="https://youtube.com/embed/7uxyLfh2B38">
  </iframe>
 </div>
+<br>
+<p style="margin:12px;">You'll find the formula "V = 4 / 3 × π × r³" widely used for the volume of a sphere, and it's a cornerstone of theoretical geometry. 
+However, my work focuses on the actual volume of physical spheres as determined through direct measurement. 
+My experiments have consistently indicated a different relationship, expressed by the formula V = (√(3.2)r)³, which provides a more accurate result when dealing with real, physical entities. 
+This formula isn't based on abstract geometric ideals alone but on tangible experiments where I've measured the volume of real spheres. 
+These measurements have shown a systematic difference compared to the theoretical predictions based on the "V = 4 / 3 × π × r³” formula, suggesting that the way we mathematically describe volume might need to be reconsidered when applied to physical objects. 
+If you're trying to calculate the volume of a physical ball or sphere for a practical purpose – whether it's for a science experiment, engineering, or any other real-world application – my empirically derived formula offers a result that aligns more closely with what you would measure in the lab.
+<br>
+<br>
+The "V = 4 / 3 × π × r³” formula was estimated using the exhaustion method. That is a very rough approximation and can produce under- and overestimates. 
+V = (√(3.2)r)³ lies between the two.
+<br>
+<br>
+"V = 4 / 3 × π × r³” is an underestimate. 
+</p>
+<br>
 <br>
 <p style="margin:12px;">Just as the volume of a cube equals the square root of its cross section cubed - <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
@@ -1177,7 +1283,339 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 <br>
 <br>
 <div>
-<h5 style="font-size:160%;margin:7px;">Disapproval of the mathematical constant π</h5>
+<h6 style="font-size:160%;margin:7px;">Volume of a cone</h6>
+<br>
+<br>
+<p style="margin:12px;">The commonly used formula for the volume of a cone was likely estimated based on two observations. 
+<br>
+<br>
+One is that the mid-height cross section of a cone is a third of a circumscribed cylinder. 
+While that is true, it doesn't necessarily mean that this ratio can be generalized for the overall volume. 
+<br>
+<br>
+The other one is the idea of the cube dissection. 
+The standard method for proving the pyramid volume formula (V=base×height/3) often involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
+<br>
+<br>
+Standard Method:
+<br>
+<br>
+Take a cube with side length ( s ).
+<br>
+<br>
+Volume of the cube: V = s³.
+<br>
+<br>
+Imagine dividing the cube into three square pyramids, each with:
+<br>
+<br>
+-Base: One face of the cube, so base area = s².
+<br>
+<br>
+-Height: The edge of the cube, ( s ), since the apex of each pyramid is the cube’s vertex opposite the base, depending on the dissection. 
+<br>
+<br>
+A common dissection:
+Choose one vertex of the cube as the apex.
+<br>
+<br>
+Form three pyramids, each with this apex and a base on one of the three faces adjacent to that vertex.
+<br>
+<br>
+Each pyramid has base area s², and height ( s ) (the distance from the apex to the base plane). 
+<br>
+<br>
+Volume of each pyramid: V(pyramid)=1/3⋅s²⋅s=1/3s³.
+<br>
+<br>
+Since there are three pyramids, their total volume is:
+3⋅1/3⋅s³=s³.
+<br>
+<br>
+This equals the cube’s volume, suggesting the 1/3 factor is correct.
+<br>
+<br>
+The Vertex Problem is a critical flaw in this dissection when applied to a real, physical cube:
+<br>
+<br>
+Vertex Assignment: 
+<br>
+<br>
+When you cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex “belongs”:
+If the vertex is part of the base of one pyramid, it can’t simultaneously be the apex of another pyramid.
+<br>
+<br>
+If you assign the vertex as the apex of one pyramid, the base of the other pyramid (which excludes that vertex) becomes smaller, because the vertex is now “taken” by the apex role, reducing the effective base area.
+<br>
+<br>
+Alternatively, if the vertex is part of the base, the height of the other pyramid (measured to that base plane) becomes shorter, because the apex can’t extend fully to the opposite face. 
+<br>
+<br>
+Consequence: 
+<br>
+<br>
+The volume of each pyramid is exactly a third of the cube, but with either a smaller base or height that doesn't match the base×height/3 - in this particular case the s²×s/3 - formula.
+<br>
+<br>
+Their bases or heights are slightly adjusted due to the vertex assignment, undermining the proof’s simplicity.
+<br>
+<br>
+</p>
+<br>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="coneAndSphereMarkup.jpeg" alt="Cone-and-sphere" id="cone">
+</div>
+<br>
+<p style="margin:12px;">The volume of a cone can be calculated by algebraically comparing the volume of a quarter cone with equal radius and height to an octant sphere with equal radius, through a quarter cylinder.
+</p>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="Sphere-and-vertical-frustum-cone">
+</div>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>V</mi>
+<mi>octant sphere</mi>
+</msub>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>3</mn>
+</msup>
+<mo>=</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The base of the two shapes is a quarter circle.
+</p>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="coneAndSphereComparison.png" alt="Sphere-and-cone-projection">
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="sphereAndConeMarkup.jpeg" alt="Sphere-and-cone">
+</div>
+<br>
+<p style="margin:12px;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>A</mi>
+<mi>base</mi>
+</msub>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+The slant height of the quarter cone is <math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+</math>
+.
+<br>
+The volume of a quarter cylinder with the same base, and height equal to the slant height of the cone would be 
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+</math>
+. 
+<br>
+<br>
+The slant shape comes with a triangular vertical cross section. 
+<br>
+The area of a cone's vertical cross section is the half of a cylinder's with equal base and height. 
+<br>
+<br>
+The intermediate of the areas of the horizontal cross section slices of a cone is the half of a cylinder’s.
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>V</mi>
+<mi>quarter cone</mi>
+</msub>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mi>Height</mi>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>V</mi>
+<mi>cone</mi>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mi>H</mi>
+</mrow>
+<msqrt>
+<mn>8</mn>
+</msqrt>
+</mfrac>
+</mrow>
+</math>
+</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div>
+<h7 style="font-size:160%;margin:7px;">Disapproval of the mathematical constant π</h7>
 <p style="margin:12px;">Using the same model, in which we were able to find a direct relationship between the radius of the circle and the side length of the square by ensuring that the overlaps equal the unfilled space, 
 and the radius of the circle equals <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
