@@ -198,23 +198,14 @@
  "name" : "Core Geometric System",
  "inLanguage":"en-us",
  "potentialAction": [
+	
 {
      "@type": "SolveMathAction",
 	"name": "Area of a circle",
 "description": "Calculates the exact area of a circle using a refined approach that replaces traditional π-based approximations. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
      "target": "https://basic-geometry.github.io/",
-     "mathExpression-input": 
-	{
-	"@type": "mathExpression",
-	"name": "The radius of the circle",
-       "value": "r=5 A=?"
-  },
-     "mathExpression-output": 
-	{
-	"@type": "mathExpression",
-       "name": "The area of the circle",
-       "value": "angle of rotation / 360 * 3.2 * Math.pow(radius, 2)"
-  },
+     "mathExpression-input": "r=5 A=?",
+     "mathExpression-output": "angle of rotation / 360 * 3.2 * Math.pow(radius, 2)",
      "image": "areaOfACircle.jpg",
      "eduQuestionType": "Area calculation"
         },
@@ -224,18 +215,8 @@
 "name": "Circumference of a circle",
      "description": "Calculates the exact circumference of a circle using a refined approach that replaces traditional π-based approximations. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
 	"target": "https://gmac4247.github.io/about/",
-     "mathExpression-input": 
-	{
-	"@type": "mathExpression",
-	"name": "The radius of the circle",
-       "value": "r=5 C=?"
-  }, 
-     "mathExpression-output": 
-	{
-	"@type": "mathExpression",
-       "name": "The circumference of the circle",
-       "value": "angle of rotation / 360 * 6.4 * radius"
-  },
+     "mathExpression-input": "r=5 C=?", 
+     "mathExpression-output": "angle of rotation / 360 * 6.4 * radius",
      "image": "circumference.jpg",
      "eduQuestionType": "Length calculation"
 },
@@ -245,18 +226,8 @@
 	"name": "Volume of a sphere",
 	 "description": "Calculates the exact volume of a sphere by directly comparing it to a cube. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
      "target": "https://gmac4247.github.io/about/",
-     "mathExpression-input": 
-	{
-       "@type": "mathExpression",
-	"name": "The radius of the sphere",
-       "value": "r=3 V=?"
-  },
-     "mathExpression-output": 
-	{
-       "@type": "mathExpression",
-       "name": "The volume of the sphere",
-       "value": "angle of rotation / 360 * Math.pow((Math.sqrt(3.2) * radius), 3)"
-  }, 
+     "mathExpression-input": "r=3 V=?",
+     "mathExpression-output": "angle of rotation / 360 * Math.pow((Math.sqrt(3.2) * radius), 3)", 
      "image": "sphereAndCubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
    },
@@ -266,20 +237,8 @@
      "target": "https://gmac4247.github.io/",
      "name": "Calculating the volume of a cone",
 	 "description": "Calculates the exact volume of a cone by comparing the volume of a quarter cone to an octant of a sphere with an equal radius. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
-   
-	"mathExpression-input": 
-	{
-       "@type": "mathExpression",
-       "name": "The bottom radius and the height of the cone",
-       "value": "r=5 H=3 V=?"
-  },
-     "mathExpression-output": 
-	{
-       "@type": "mathExpression",
-       "name": "The volume of the cone",
-       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)"
-  },
-	 
+	"mathExpression-input": "r=5 H=3 V=?",
+     "mathExpression-output": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)",
      "image": [
        "coneAndSphereMarkup.jpeg",
        "sphereAndConeMarkup.jpeg",
@@ -288,7 +247,7 @@
        ],
      "eduQuestionType": "Volume calculation"
   }
-
+	
 ],
 "url": "https://gmac4247.github.io/about/", 
 "usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles. Learn exact formulas for circles (A = 3.2r^2, C = 6.4r), spheres (V = (√(3.2)r)^3), cones, and more, with applications in engineering, computer graphics, and scientific research."
