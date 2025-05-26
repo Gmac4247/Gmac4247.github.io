@@ -206,16 +206,17 @@
      "mathExpression-input": 
 	{
 	"@type": "mathExpression",
-       "value": "r=5 A=?",
+	"name": "The radius of the circle",
+       "value": "r=5 A=?"
   },
      "mathExpression-output": 
 	{
 	"@type": "mathExpression",
        "name": "The area of the circle",
-       "value": "angle of rotation / 360 * 3.2 * radius^2"
+       "value": "angle of rotation / 360 * 3.2 * Math.pow(radius, 2)"
   },
      "image": "areaOfACircle.jpg",
-     "eduQuestionType": "Area calculation",
+     "eduQuestionType": "Area calculation"
         },
 
 {
@@ -226,7 +227,8 @@
      "mathExpression-input": 
 	{
 	"@type": "mathExpression",
-       "value": "r=5 C=?",
+	"name": "The radius of the circle",
+       "value": "r=5 C=?"
   }, 
      "mathExpression-output": 
 	{
@@ -235,7 +237,7 @@
        "value": "angle of rotation / 360 * 6.4 * radius"
   },
      "image": "circumference.jpg",
-     "eduQuestionType": "Length calculation",
+     "eduQuestionType": "Length calculation"
 },
 
 {
@@ -246,53 +248,47 @@
      "mathExpression-input": 
 	{
        "@type": "mathExpression",
+	"name": "The radius of the sphere",
        "value": "r=3 V=?"
   },
      "mathExpression-output": 
 	{
        "@type": "mathExpression",
        "name": "The volume of the sphere",
-       "value": "angleOfRotation/360*(3.2^(1/2)*radius)^3"
+       "value": "angle of rotation / 360 * Math.pow((Math.sqrt(3.2) * radius), 3)"
   }, 
      "image": "sphereAndCubeMarkup.jpeg",
-     "eduQuestionType": "Volume calculation",
- "additionalProperty": [
-    {
-      "@type": "HowToStep",
-      "name": "Define Cube Comparison",
-      "text": "The volume of a sphere is defined by comparing it to a cube, as that's the base of volume calculation."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Comparison Method",
-      "text": "Just as the volume of a cube equals the square root of its cross sectional area cubed - V=((Area)^(1/2))^3 -, the volume of a sphere equals the square root of its cross sectional area cubed. 
-The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross section.
-V=((3.2)^(1/2)r)^3"
-    }
-  ]
+     "eduQuestionType": "Volume calculation"
    },
 
  {
      "@type": "SolveMathAction",
      "target": "https://gmac4247.github.io/",
-     "mathExpression-input": "The bottom radius and the height of the cone",
-     "mathExpression-output": "The volume of the cone", 
+     "name": "Calculating the volume of a cone",
+	 "description": "Calculates the exact volume of a cone by comparing the volume of a quarter cone to an octant of a sphere with an equal radius. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
+   
+	"mathExpression-input": 
+	{
+       "@type": "mathExpression",
+       "name": "The bottom radius and the height of the cone",
+       "value": "r=5 H=3 V=?"
+  },
+     "mathExpression-output": 
+	{
+       "@type": "mathExpression",
+       "name": "The volume of the cone",
+       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)"
+  },
+	 
      "image": [
        "coneAndSphereMarkup.jpeg",
        "sphereAndConeMarkup.jpeg",
        "octantSphereQuarterCone.jpeg",
        "coneAndSphereComparison.png"
        ],
-     "eduQuestionType": "Volume calculation",
-     "name": "Calculating the volume of a cone",
-       "additionalProperty": {
-       "@type": "PropertyValue",
-       "name": "Formula",
-       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)"
-  },
- "description": "Calculates the exact volume of a cone by comparing the volume of a quarter cone to an octant of a sphere with an equal radius. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
-  "
-   }
+     "eduQuestionType": "Volume calculation"
+  }
+
 ],
 "url": "https://gmac4247.github.io/about/", 
 "usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles. Learn exact formulas for circles (A = 3.2r^2, C = 6.4r), spheres (V = (√(3.2)r)^3), cones, and more, with applications in engineering, computer graphics, and scientific research."
