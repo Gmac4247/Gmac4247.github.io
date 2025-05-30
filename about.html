@@ -177,12 +177,13 @@
 },
 "dateCreated" :"2024-08-31",
 "datePublished":"2024-08-31",
-"dateModified" :"2025-05-28",
+"dateModified" :"2025-05-29",
 "description" : "About the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline" : "Introducing the Core Geometric System ™",
 "image":[
 	"equityFigure.jpg",
+	"cubeDissection.png",
 	"recycle.png",
 	"sphereSurface.jpeg"
 	],
@@ -1315,23 +1316,27 @@ While that is true, it doesn't necessarily mean that this ratio can be generaliz
 The other one is the idea of the cube dissection. 
 The standard method for proving the pyramid volume formula (V=base×height/3) often involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
 <br>
-<br>
-Standard Method:
-<br>
-<br>
-Take a cube with side length ( s ).
+<div class="imgbox">
+    <img class="center-fit" src="cubeDissection.png" alt="Cube-dissection" id="dissection">
+</div>
 <br>
 <br>
-Volume of the cube: V = s³.
+Standard Cube Dissection Method:
+<br>
+<br>
+Take a cube with an edge length of ( e ).
+<br>
+<br>
+Volume of the cube: V = e³.
 <br>
 <br>
 Imagine dividing the cube into three square pyramids, each with:
 <br>
 <br>
--Base: One face of the cube, so base area = s².
+- Base: One face of the cube, so base area = e².
 <br>
 <br>
--Height: The edge of the cube, ( s ), since the apex of each pyramid is the cube’s vertex opposite the base, depending on the dissection. 
+- Height: The edge of the cube, ( e ), since the apex of each pyramid is the cube’s vertex opposite the base, depending on the dissection. 
 <br>
 <br>
 A common dissection:
@@ -1343,14 +1348,13 @@ Choose one vertex of the cube as the apex.
 Form three pyramids, each with this apex and a base on one of the three faces adjacent to that vertex.
 <br>
 <br>
-Each pyramid has base area s², and height ( s ) (the distance from the apex to the base plane). 
+Each pyramid has base area e², and height ( e ) (the distance from the apex to the base plane). 
 <br>
 <br>
-Volume of each pyramid: V(pyramid)=1/3⋅s²⋅s=1/3s³.
+Volume of each pyramid: V(pyramid) = 1 / 3 ⋅ e² ⋅ e = e³ / 3.
 <br>
 <br>
-Since there are three pyramids, their total volume is:
-3⋅1/3⋅s³=s³.
+Since there are three pyramids, their total volume is: 3 ⋅ e³ / 3 = e³.
 <br>
 <br>
 This equals the cube’s volume, suggesting the 1/3 factor is correct.
@@ -1362,26 +1366,50 @@ The Vertex Problem is a critical flaw in this dissection when applied to a real,
 Vertex Assignment: 
 <br>
 <br>
-When you cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex “belongs”:
-If the vertex is part of the base of one pyramid, it can’t simultaneously be the apex of another pyramid.
+When we cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex “belongs”:
 <br>
 <br>
-If you assign the vertex as the apex of one pyramid, the base of the other pyramid (which excludes that vertex) becomes smaller, because the vertex is now “taken” by the apex role, reducing the effective base area.
+The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total.
+<br>
+<br>
+If we dissect the cube, we designate each vertex to be a part of either the base of a pyramid, or the apex of another. It cannot be both at the same time.
+<br>
+<br>
+If we assign the vertex as the apex of one pyramid, the base of the other pyramid (which excludes that vertex) becomes smaller, because the vertex is now “taken” by the apex role, reducing the effective base area.
 <br>
 <br>
 Alternatively, if the vertex is part of the base, the height of the other pyramid (measured to that base plane) becomes shorter, because the apex can’t extend fully to the opposite face. 
 <br>
 <br>
+If the vertex is part of the base of one pyramid, it can’t simultaneously be the apex of another one.
+<br>
+<br>
 Consequence: 
 <br>
 <br>
-The volume of each pyramid is exactly a third of the cube, but with either a smaller base or height that doesn't match the base×height/3 - in this particular case the s²×s/3 - formula.
+The volume of each pyramid is exactly a third of the cube, but with either a smaller base or height that doesn't match the base × height / 3 - in this particular case the e² × e / 3 - formula.
 <br>
 <br>
 Their bases or heights are slightly adjusted due to the vertex assignment, undermining the proof’s simplicity.
 <br>
 <br>
+<br>
+If the solid pyramids'
+<br>
+<br>
+- base is e²,
+<br>
+<br>
+and their 
+<br>
+<br>
+- height is e,
+<br>
+<br>
+then the volume of each pyramid has to be larger than base × height / 3, because 3 such pyramids can't form a cube with the same edge length, because their vertices and faces can't occupy the same space simultaneously.
 </p>
+<br>
+<br>
 <p style="margin:12px;">The volume of a cone can be calculated by algebraically comparing the volume of a quarter cone with equal radius and height to an octant sphere with equal radius, through a quarter cylinder.
 </p>
 <br>
