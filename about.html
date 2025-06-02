@@ -411,7 +411,9 @@ That is where the pi divided by delta = 3.14 notation might originate from.
 This method has several limitations. He tried to increase the accuracy by increasing the number of sides of the polygons. This approach cannot produce an accurate result. 
 <br>
 <br>
-Where the perimeter-based estimation went wrong: -aside of that it's just an estimate instead of an exact calculation- 
+Where the perimeter-based estimation went wrong: 
+<br>
+- aside of that it's just an approximation instead of an exact calculation - 
 <br>
 <br>
 The in- and circumscribed polygons method seems logical, but there's a catch. It's based on the assumption that the circle maximizes the area with a given circumference. That assumption is false. It's obviously true in the case of an isoperimetric triangle and a square, but it becomes less and less obvious with the increase of the number of the polygon's sides. Until eventually it is not even true. 
@@ -863,47 +865,14 @@ When the arcs of the quadrant circles intersect at the quarters of the centerlin
 </math>
 <br>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
- <mrow>
- <mi>r</mi>
- <mo>=</mo>
- <msqrt>
-<mn>5</mn>
-</msqrt>
-<mo>×</mo>
-<mfrac>
-<mi>side</mi>
-<mn>4</mn>
-</mfrac>
-</mrow>
-</math>
+radius = √5 × quarter of the side
 </p>
 <br>
 <br>
 <p style="margin:12px;">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
 <br>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mi>A</mi>
-<mo>=</mo>
-<mfrac>
-<mn>16</mn>
-<mn>5</mn>
-</mfrac>
-<mo>×</mo>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-<mo>=</mo>
-<mn>3.2</mn>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-</mrow>
-</math>
+Area = 16/5 × radius square = 3.2 × radius square
 </p>
 <br>
 <br>
@@ -1246,8 +1215,8 @@ The 4/3 × π × radius cube formula was estimated using the exhaustion method. 
 The 4/3 × π × radius cube formula is an underestimate. 
 </p>
 <br>
-<p style="margin:12px;">Just as the volume of a cube equals the ( square root of ( its cross sectional area ) ) cubed - 
-<br>
+<p style="margin:12px;">Just as the volume of a cube equals the ( square root of ( its cross sectional area ) ) cubed 
+<br> - 
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mi>V</mi>
@@ -1271,34 +1240,16 @@ The 4/3 × π × radius cube formula is an underestimate.
 </mrow>
 </mrow>
 </math> 
+-, 
 <br>
--, the volume of a sphere equals the ( square root of ( its cross sectional area ) ) cubed.
+the volume of a sphere equals the ( square root of ( its cross sectional area ) ) cubed.
 <br>
 <br>
 The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section.
+<br>
+<br>
+The volume of a sphere equals (√(3.2) × radius) cube .
 </p>
-<br>
-<br>
-<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
- <mi>V</mi>
-<mo>=</mo>
-<mrow>
-<msup>
-<mrow>
-<mo>(</mo>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mo>×</mo>
-<mi>r</mi>
-<mo>)</mo>
-</mrow>
-<mn>3</mn>
-</msup>
-</mrow>
-</mrow>
-</math>
 </div>
 <br>
 <br>
@@ -1482,7 +1433,7 @@ The Vertex Problem is a critical flaw in this dissection when applied to a real,
 Vertex Assignment: 
 <br>
 <br>
-When we cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex “belongs”:
+When we cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex belongs:
 <br>
 <br>
 The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total.
@@ -1515,13 +1466,13 @@ and their
 - height is e,
 <br>
 <br>
-then the volume of each pyramid has to be larger than base × height / 3, because 3 such pyramids can't form a cube with the same edge length, because their vertices and faces can't occupy the same space simultaneously.
+then the volume of each pyramid has to be larger than 1/3 × base × height, because 3 such pyramids can't form a cube with the same edge length, because their vertices and faces can't occupy the same space simultaneously.
 <br>
 <br>
 The vertices are the most obvious examples, but the same is true for the edges, the diagonals and the inner faces. 
 <br>
 <br>
-Applied correctly, the cube dissection proves that the volume of a cone or a pyramid has to be larger than base × height divided by 3.
+Applied correctly, the cube dissection proves that the volume of a cone or a pyramid has to be larger than 1/3 × base × height.
 </p>
 </div>
 <br>
@@ -1774,29 +1725,12 @@ The intermediate of the areas of the horizontal cross section slices of a cone i
 </math>
 <br>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
-<msub>
-<mi>V</mi>
-<mi>cone</mi>
-</msub>
-<mo>=</mo>
-<mfrac>
-<mrow>
-<mn>3.2</mn>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-<mo>×</mo>
-<mi>H</mi>
-</mrow>
-<msqrt>
-<mn>8</mn>
-</msqrt>
-</mfrac>
-</mrow>
-</math>
+The volume of a cone equals 3.2 radius square × height divided by √8.
+<br>
+<br>
+The volume of a pyramid can be calculated with the same coefficient. 
+<br>
+The volume of a pyramid is base × height divided by √8.
 </p>
 </div>
 </div>
