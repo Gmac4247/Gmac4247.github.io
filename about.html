@@ -69,7 +69,16 @@
 	    body {
             font-family: 'OpenDyslexic', sans-serif;
 	    }
-
+.rounded-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+	}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="description" content="About the best-established and most accurate framework to calculate area and volume.">
@@ -105,7 +114,7 @@
   "name": "About Basic Geometry Formulas",
   "alternateName": "About page",
   "accessMode" : "textOnVisual" ,
-"accessibilityFeature" :"dyslexicFriendly" ,
+"accessibilityFeature" :"dyslexic friendly format, extended explanation, enhanced ML and LLM compatibility, translation support" ,
 "accessibilityHazard" :"none" ,
 "accessibilitySummary" : "View videos, figures and equations with explanation." ,
 "accountablePerson" : {"@type" : "Person" ,
@@ -198,8 +207,8 @@
  "name" : "Core Geometric System ™",
 "description":"The best-established, empirically grounded, rigorously proven and most accurate framework.",
  "disambiguatingDescription": "Exact formulas over the traditional approximations. More accurate for real-world applications.",
-"keywords":"Exact Formulas, Area of a Circle, Circumference of a Circle, Volume of a Sphere, Volume of a Cone", 
  "inLanguage":"en-us",
+"keywords":"Exact Formulas, Area of a Circle, Circumference of a Circle, Volume of a Sphere, Volume of a Cone", 
  "potentialAction": [
 	
 {
@@ -267,7 +276,6 @@
       "price": "3,200,000,000.",
       "availability": "https://schema.org/InStock"
     },
-"relatedLink": "https://basic-geometry.pages.dev/about",
 "schemaVersion" : "https://schema.org/docs/releases.html#v28.1.",
 "sdDatePublished" :"2024-08-31",
 "sdPublisher" :
@@ -287,7 +295,13 @@
 },
 "subjectOf": 
 [
- {
+{
+"@type": "aboutPage",
+"name":"About basic geometry formulas",
+"usageInfo ": "Simplified version ",
+"url":"https://basic-geometry.pages.dev/about"
+},
+{
 "@type": "VideoObject",
 "description": "Geometry puzzle",
 "duration": "PT0M38S",
@@ -372,9 +386,7 @@
 </div>
 <br>
 <br>
-<div>
-<a style="margin:12px;" href="https://basic-geometry.pages.dev/about/">[Switch to simplified view]</a>
-</div>
+<a style="margin:12px;" class="rounded-button" href="https://basic-geometry.pages.dev/about/">Switch to simplified view</a>
 <br>
 <br>
 <br>
@@ -1919,9 +1931,11 @@ The best practice is writing it as it is.
  <br>
  <br>
 </div>
-<a style="margin:12px;" href="privacy-policy">Contact</a>
+<a style="margin:12px;" class="rounded-button" href="privacy-policy">Contact</a>
 </div>
-<br><br>
+<br>
+<br>
+<br>
 <footer>
 <p style="margin:12px;">® All rights reserved</p>
 <br>
