@@ -34,7 +34,7 @@
   <div id="spherePanel" class="calc-panel">
     <label>Radius: <input type="number" id="r" step="any" /></label>
     <button onclick="sphere()">Calculate</button>
-    <p id="circle"></p>
+    <p id="sphere"></p>
   </div>
 
   <!-- Panel: Cone -->
@@ -93,11 +93,6 @@
       const r = parseFloat(document.getElementById("r").value);
       const h = parseFloat(document.getElementById("h").value);
       const volume = 3.2 * r ** 2 * h / Math.sqrt(8);
-
-      if ([r, h].some(v => isNaN(v) || v <= 0)) {
-        document.getElementById("cone").textContent = "Invalid input.";
-        return;
-      }
       
       document.getElementById("cone").textContent =
   
