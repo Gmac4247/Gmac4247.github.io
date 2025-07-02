@@ -84,15 +84,15 @@
 
       document.getElementById("sphere").textContent =
   
-      `Volume ≈ ${volume.toFixed(5)} units²`;
+      `Volume ≈ ${volume.toFixed(5)} units³`;
 
       }
 
     // Volume of a cone 
     function cone() {
-      const r = parseFloat(document.getElementById("rc").value);
+      const r = parseFloat(document.getElementById("r").value);
       const h = parseFloat(document.getElementById("h").value);
-      const volume = 3.2 * r ** 2 * height / Math.sqrt(8);
+      const volume = 3.2 * r ** 2 * h / Math.sqrt(8);
 
       if ([r, h].some(v => isNaN(v) || v <= 0)) {
         document.getElementById("cone").textContent = "Invalid input.";
@@ -101,7 +101,7 @@
       
       document.getElementById("cone").textContent =
   
-      `Volume ≈ ${volume.toFixed(5)} units²`;
+      `Volume ≈ ${volume.toFixed(5)} units³`;
 
     }
     
