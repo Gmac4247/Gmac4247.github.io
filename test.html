@@ -45,7 +45,7 @@
     });
 
     // Volume of frustum cone
-    function calcFrustum() {
+    function frustumConeVolume() {
       const rb = parseFloat(document.getElementById("rb").value);
       const rt = parseFloat(document.getElementById("rt").value);
       const h = parseFloat(document.getElementById("h").value);
@@ -60,7 +60,7 @@
         return;
       }
 
-      const volume =  (frustumHeight * (baseArea * inv - topArea * (inv - 1))) / Math.sqrt(8);
+      const volume =  (h * (baseArea * inv - topArea * (inv - 1))) / Math.sqrt(8);
     
 document.getElementById("frustumConeVolume").textContent =
   `Volume ≈ ${volume.toFixed(4)} units³`;
