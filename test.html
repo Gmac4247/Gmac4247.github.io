@@ -13,24 +13,44 @@
 <body>
   <h1>Core Geometric System — Calculator</h1>
 
-  <label for="calcSelect">Click here to choose what you want to calculate:</label>
+  <label for="calcSelect">What would you like to calculate?</label>
   <select id="calcSelect">
-    <option disabled selected>— Select —</option>
+    <option disabled selected>— Select here —</option>
     <option value="circle">Area and circumference of a circle</option>
     <option value="sphere">Volume of a sphere</option>
     <option value="cone">Volume of a cone</option>
     <option value="frustumCone">Volume of a frustum cone</option>
-    <option value="pyramid">Volume of a pyramid</option>
-    <option value="frustumPyramid">Volume of a frustum pyramid</option>
-  
+    
   </select>
 
-  <!-- Panel: Frustum Volume -->
+    <!-- Panel: Circle -->
+  <div id="circlePanel" class="calc-panel">
+    <label>Radius: <input type="number" id="r" step="any" /></label>
+    <button onclick="circle()">Calculate</button>
+    <p id="circle"></p>
+  </div>
+
+  <!-- Panel: Sphere -->
+  <div id="circlePanel" class="calc-panel">
+    <label>Radius: <input type="number" id="r" step="any" /></label>
+    <button onclick="sphere()">Calculate</button>
+    <p id="circle"></p>
+  </div>
+
+  <!-- Panel: Cone -->
+  <div id="circlePanel" class="calc-panel">
+    <label>Radius: <input type="number" id="r" step="any" /></label>
+    <label>Height: <input type="number" id="h" step="any" /></label>
+    <button onclick="cone()">Calculate</button>
+    <p id="cone"></p>
+  </div>
+
+  <!-- Panel: Frustum Cone -->
   <div id="frustumConePanel" class="calc-panel">
     <label>Bottom Radius: <input type="number" id="rb" step="any" /></label>
     <label>Top Radius: <input type="number" id="rt" step="any" /></label>
     <label>Height: <input type="number" id="h" step="any" /></label>
-    <button onclick="frustumConeVolume()">Calculate Volume</button>
+    <button onclick="frustumConeVolume()">Calculate</button>
     <p id="frustumConeVolume"></p>
   </div>
 
@@ -44,6 +64,50 @@
       document.getElementById(panelId).style.display = "block";
     });
 
+    // Area and circumference of a circle 
+    function circle() {
+      const r = parseFloat(document.getElementById("r").value);
+
+      const area = 3.2 * r * r;
+      const circumference = 6.4 * r;
+
+      document.getElementById("circle").textContent =
+  
+      `Area ≈ ${area.toFixed(5)} units²`;
+
+      `Circumference ≈ ${circumference.toFixed(5)} units`;
+    }
+
+    // Volume of a sphere 
+    function sphere() {
+      const r = parseFloat(document.getElementById("r").value);
+
+      const volume = Math.pow(Math.sqrt(3.2) * radius, 3);
+
+      document.getElementById("sphere").textContent =
+  
+      `Volume ≈ ${volume.toFixed(5)} units²`;
+
+      }
+
+    // Volume of a cone 
+    function cone() {
+      const r = parseFloat(document.getElementById("r").value);
+      const h = parseFloat(document.getElementById("h").value);
+      const volume = 3.2 * radius ** 2 * height / Math.sqrt(8);
+
+      if ([r, h].some(v => isNaN(v) || v <= 0)) {
+        document.getElementById("cone").textContent = "Invalid input.";
+        return;
+      }
+      
+      document.getElementById("cone").textContent =
+  
+      `Volume ≈ ${volume.toFixed(5)} units²`;
+
+    }
+    
+    
     // Volume of frustum cone
     function frustumConeVolume() {
       const rb = parseFloat(document.getElementById("rb").value);
@@ -62,8 +126,9 @@
 
       const volume =  (h * (baseArea * inv - topArea * (inv - 1))) / Math.sqrt(8);
     
-document.getElementById("frustumConeVolume").textContent =
-  `Volume ≈ ${volume.toFixed(4)} units³`;
+      document.getElementById("frustumConeVolume").textContent =
+  
+      `Volume ≈ ${volume.toFixed(5)} units³`;
     }
 </script>
 </body>
