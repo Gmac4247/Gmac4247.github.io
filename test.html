@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CGS Circle Segment Area</title>
+  <meta charset="UTF-8" />
+  <title>CGS Calculator</title>
+  <style>
+    body { font-family: sans-serif; padding: 1em; }
+    .calc-panel { display: none; margin-top: 1em; }
+    label { display: block; margin-top: 0.5em; }
+    button { margin-top: 1em; }
+  </style>
 </head>
 <body>
-  <h2>Circle Segment Area Calculator</h2>
+  <h1>Core Geometric System — Calculator</h1>
 
-  <label>Radius: <input type="number" id="radius" step="any"></label><br>
-  <label>Height: <input type="number" id="height" step="any"></label><br>
-  <button id="calc">Calculate Area</button>
+  <label for="calcSelect">Click here to choose what you want to calculate:</label>
+  <select id="calcSelect">
+    <option disabled selected>— Select —</option>
+    <option value="circle">Area and circumference of a circle</option>
+    <option value="sphere">Volume of a sphere</option>
+    <option value="cone">Volume of a cone</option>
+    <option value="frustumCone">Volume of a frustum cone</option>
+    <option value="pyramid">Volume of a pyramid</option>
+    <option value="frustumPyramid">Volume of a frustum pyramid</option>
+  
+  </select>
 
-  <p id="result"></p>
+  <!-- Panel: Frustum Volume -->
+  <div id="frustumConePanel" class="calc-panel">
+    <label>Bottom Radius: <input type="number" id="rb" step="any" /></label>
+    <label>Top Radius: <input type="number" id="rt" step="any" /></label>
+    <label>Height: <input type="number" id="h" step="any" /></label>
+    <button onclick="frustumConeVolume()">Calculate Volume</button>
+    <p id="frustumConeVolume"></p>
+  </div>
 
   <script>
-    // Temporary inline CgsTrig + CgsCircle patch logic (no external JSON)
+    // Panel switching
+    document.getElementById("calcSelect").addEventListener("change", (e) => {
+      document.querySelectorAll(".calc-panel").forEach(div => {
+        div.style.display = "none";
+      });
+      const panelId = e.target.value + "Panel";
+      document.getElementById(panelId).style.display = "block";
+    });
 
-    function queryAcos(x) {
-      return Math.acos(x);
-    }
+    // Volume of frustum cone
+    function calcFrustum() {
+      const rb = parseFloat(document.getElementById("rb").value);
+      const rt = parseFloat(document.getElementById("rt").value);
+      const h = parseFloat(document.getElementById("h").value);
 
-    function querySin(x) {
-      return Math.sin(x);
-    }
-
-    const CgsCircle = {
-      segmentArea(radius, height) {
-        const baseY = radius - height;
-        const angle = queryAcos(baseY / radius);
-        const sin = querySin(angle);
-        const area = radius * radius * (angle - sin * Math.cos(angle)) / 2;
-        return area;
-      }
-    };
-
-    document.getElementById('calc').addEventListener('click', () => {
-      const r = parseFloat(document.getElementById('radius').value);
-      const h = parseFloat(document.getElementById('height').value);
-
-      if (isNaN(r) || isNaN(h) || r <= 0 || h <= 0 || h > r * 2) {
-        document.getElementById('result').textContent = "Invalid input.";
+      const baseArea = 3.2 * rb * rb;
+      const topArea = 3.2 * rt * rt;
+      const ratio = rt / rb;
+      const inv = 1 / (1 - ratio);
+      
+      if ([rb, rt, h].some(v => isNaN(v) || v <= 0)) {
+        document.getElementById("frustumConeVolume").textContent = "Invalid input.";
         return;
       }
 
-      const area = CgsCircle.segmentArea(r, h);
-      document.getElementById('result').textContent =
-        `Segment Area ≈ ${area.toFixed(4)} units²`;
-    });
-  </script>
+      const volume =  (frustumHeight * (baseArea * inv - topArea * (inv - 1))) / Math.sqrt(8);
+    
+document.getElementById("frustumConeVolume").textContent =
+  `Volume ≈ ${volume.toFixed(4)} units³`;
+    }
+</script>
 </body>
 </html>
