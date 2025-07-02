@@ -1,85 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>CGS Trig Test</title>
+  <title>CGS Circle Segment Area</title>
 </head>
 <body>
-  <h2>CGS Lookup Test</h2>
+  <h2>Circle Segment Area Calculator</h2>
 
-  <input type="text" id="inputExpr" placeholder="cos(0.524)" />
-  <button id="calc">Calculate</button>
-  <p id="output"></p>
+  <label>Radius: <input type="number" id="radius" step="any"></label><br>
+  <label>Height: <input type="number" id="height" step="any"></label><br>
+  <button id="calc">Calculate Area</button>
+
+  <p id="result"></p>
 
   <script>
-    let trig = {};
+    // Temporary inline CgsTrig + CgsCircle patch logic (no external JSON)
 
-    // Load trig.json dynamically
-    fetch('trig.json')
-      .then(res => res.json())
-      .then(data => {
-        trig = data;
-      });
-
-    function findClosestRad(x, funcType) {
-      let closestKey = null;
-      let minDiff = Infinity;
-
-      for (const key in trig) {
-        if (!trig[key][funcType]) continue;
-        const match = key.match(/rad\\(([^)]+)\\)/);
-        if (!match) continue;
-
-        const rad = parseFloat(match[1]);
-        const diff = Math.abs(rad - x);
-        if (diff < minDiff) {
-          minDiff = diff;
-          closestKey = key;
-        }
-      }
-
-      if (closestKey) {
-        const val = trig[closestKey][funcType].value?.approx ?? trig[closestKey][funcType].value;
-        return `${funcType}(${closestKey}) ≈ ${val}`;
-      }
-
-      return 'No match found';
+    function queryAcos(x) {
+      return Math.acos(x);
     }
 
-    function queryCos(input) {
-      const match = input.match(/cos\\s*\\(?([0-9.]+)\\)?/i);
-      if (!match) return 'Invalid format';
-
-      const x = parseFloat(match[1]);
-      const key = `rad(${x.toFixed(3)})`;
-
-      if (trig[key]?.cos) {
-        const val = trig[key].cos.value?.approx ?? trig[key].cos.value;
-        return `cos(${x}) ≈ ${val}`;
-      }
-
-      if (x > 0.8 || x < 0.1) {
-        return `cos(${x}) ≈ ${findClosestRad(x, 'cos')}`;
-      }
-
-      if (x > 0.1 && x < 0.8) {
-        const refl = (1.6 - x).toFixed(3);
-        const reflKey = `rad(${refl})`;
-        if (trig[reflKey]?.sin) {
-          const val = trig[reflKey].sin.value?.approx ?? trig[reflKey].sin.value;
-          return `cos(${x}) ≈ sin(${refl}) ≈ ${val}`;
-        }
-
-        return `cos(${x}) ≈ sin(${refl}) ≈ ${findClosestRad(parseFloat(refl), 'sin')}`;
-      }
-
-      return 'Out of supported range';
+    function querySin(x) {
+      return Math.sin(x);
     }
+
+    const CgsCircle = {
+      segmentArea(radius, height) {
+        const baseY = radius - height;
+        const angle = queryAcos(baseY / radius);
+        const sin = querySin(angle);
+        const area = radius * radius * (angle - sin * Math.cos(angle)) / 2;
+        return area;
+      }
+    };
 
     document.getElementById('calc').addEventListener('click', () => {
-      const expr = document.getElementById('inputExpr').value;
-      const result = queryCos(expr);
-      document.getElementById('output').textContent = result;
+      const r = parseFloat(document.getElementById('radius').value);
+      const h = parseFloat(document.getElementById('height').value);
+
+      if (isNaN(r) || isNaN(h) || r <= 0 || h <= 0 || h > r * 2) {
+        document.getElementById('result').textContent = "Invalid input.";
+        return;
+      }
+
+      const area = CgsCircle.segmentArea(r, h);
+      document.getElementById('result').textContent =
+        `Segment Area ≈ ${area.toFixed(4)} units²`;
     });
   </script>
 </body>
