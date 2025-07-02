@@ -32,14 +32,14 @@
 
   <!-- Panel: Sphere -->
   <div id="spherePanel" class="calc-panel">
-    <label>Radius: <input type="number" id="rs" step="any" /></label>
+    <label>Radius: <input type="number" id="r" step="any" /></label>
     <button onclick="sphere()">Calculate</button>
     <p id="circle"></p>
   </div>
 
   <!-- Panel: Cone -->
   <div id="conePanel" class="calc-panel">
-    <label>Radius: <input type="number" id="rc" step="any" /></label>
+    <label>Radius: <input type="number" id="r" step="any" /></label>
     <label>Height: <input type="number" id="h" step="any" /></label>
     <button onclick="cone()">Calculate</button>
     <p id="cone"></p>
@@ -73,14 +73,14 @@
 
       document.getElementById("circle").textContent =
   
-      `Area ≈ ${area.toFixed(5)} units²     Circumference ≈ ${circumference.toFixed(5)} units`;
+      `Area ≈ ${area.toFixed(5)} units², Circumference ≈ ${circumference.toFixed(5)} units`;
     }
 
     // Volume of a sphere 
     function sphere() {
-      const r = parseFloat(document.getElementById("rs").value);
+      const r = parseFloat(document.getElementById("r").value);
 
-      const volume = Math.pow(Math.sqrt(3.2) * rs, 3);
+      const volume = Math.pow(Math.sqrt(3.2) * r, 3);
 
       document.getElementById("sphere").textContent =
   
@@ -92,7 +92,7 @@
     function cone() {
       const r = parseFloat(document.getElementById("rc").value);
       const h = parseFloat(document.getElementById("h").value);
-      const volume = 3.2 * rc ** 2 * height / Math.sqrt(8);
+      const volume = 3.2 * r ** 2 * height / Math.sqrt(8);
 
       if ([r, h].some(v => isNaN(v) || v <= 0)) {
         document.getElementById("cone").textContent = "Invalid input.";
