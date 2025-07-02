@@ -73,16 +73,14 @@
 
       document.getElementById("circle").textContent =
   
-      `Area ≈ ${area.toFixed(5)} units²`;
-
-      `Circumference ≈ ${circumference.toFixed(5)} units`;
+      `Area ≈ ${area.toFixed(5)} units², Circumference ≈ ${circumference.toFixed(5)} units`;
     }
 
     // Volume of a sphere 
     function sphere() {
       const r = parseFloat(document.getElementById("r").value);
 
-      const volume = Math.pow(Math.sqrt(3.2) * radius, 3);
+      const volume = (Math.sqrt(3.2) * radius) * (Math.sqrt(3.2) * radius) * (Math.sqrt(3.2) * radius);
 
       document.getElementById("sphere").textContent =
   
@@ -94,7 +92,7 @@
     function cone() {
       const r = parseFloat(document.getElementById("r").value);
       const h = parseFloat(document.getElementById("h").value);
-      const volume = 3.2 * radius ** 2 * height / Math.sqrt(8);
+      const volume = 3.2 * radius * radius * height / Math.sqrt(8);
 
       if ([r, h].some(v => isNaN(v) || v <= 0)) {
         document.getElementById("cone").textContent = "Invalid input.";
