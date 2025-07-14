@@ -1893,7 +1893,7 @@ const trig {
 <script>
   function polygonArea(number, length) {
     const angle = 3.2 / number;
-       const tan = queryTan(angle);
+       const tan = Math.tan(angle);
         
     return (number / 4) * (length ** 2) / tan;
   }
