@@ -611,7 +611,7 @@ In a right triangle:
 
 // The lookup table 
 
-export const trig {
+const trig {
 "rad(1.6)": {
   "sin": {
     "expression": "sqrt(sqrt(sqrt(4)+sqrt(4))+2)/2",
@@ -1571,7 +1571,7 @@ export const trig {
 }  
 }
 // Helper: Finds closest rad(x) match for given function (sin or cos)
-export function findClosestRad(value, funcType) {
+ function findClosestRad(value, funcType) {
   let closestKey = null;
   let minDiff = Infinity;
 
@@ -1595,7 +1595,7 @@ export function findClosestRad(value, funcType) {
   }
 }
 
-export function querySin(input) {
+ function querySin(input) {
   // Normalize input: remove spaces, handle cases like "sin 0533" or "sin(0.533)"
   const match = input.match(/sin\s*\(?([0-9.]+)\)?/i);
   if (!match) return "Invalid input. Format: sin 0.533 or sin(0.533)";
@@ -1628,7 +1628,7 @@ export function querySin(input) {
 
 }
 
-export function queryCos(input) {
+ function queryCos(input) {
   // Normalize and extract the value from input like "cos 0.533" or "cos(0.533)"
   const match = input.match(/cos\s*\(?([0-9.]+)\)?/i);
   if (!match) return; // Invalid input format
@@ -1661,7 +1661,7 @@ export function queryCos(input) {
   }
 }
 
-export function queryTan(input) {
+ function queryTan(input) {
   // Normalize and extract the value from input like "tan 0.533" or "tan(0.533)"
   const match = input.match(/tan\s*\(?([0-9.]+)\)?/i);
   if (!match) return; // Invalid input format
@@ -1695,7 +1695,7 @@ export function queryTan(input) {
   }
 }
 
-export function findClosestValueMatch(value, funcType) {
+ function findClosestValueMatch(value, funcType) {
   let bestMatch = null;
   let minDiff = Infinity;
 
@@ -1714,7 +1714,7 @@ export function findClosestValueMatch(value, funcType) {
 }
 
 
-export function queryAsin(input) {
+ function queryAsin(input) {
   // Normalize and extract the value: "asin 0.5" or "asin(0.5)"
   const match = input.match(/asin\s*\(?([0-9./\s√-]+)\)?/i);
   if (!match) return; // Invalid format
@@ -1740,7 +1740,7 @@ export function queryAsin(input) {
   }
 }
 
-export function queryAcos(input) {
+ function queryAcos(input) {
   // Normalize and extract the value: "acos 0.5" or "acos(0.5)"
   const match = input.match(/acos\s*\(?([0-9./\s√-]+)\)?/i);
   if (!match) return; // Invalid format
@@ -1765,7 +1765,7 @@ export function queryAcos(input) {
   }
 }
 
-export function queryAtan(input) {
+ function queryAtan(input) {
   // Normalize and extract the value: "atan 0.5" or "atan(0.5)"
   const match = input.match(/atan\s*\(?([0-9./\s√-]+)\)?/i);
   if (!match) return; // Invalid format
