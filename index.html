@@ -706,7 +706,7 @@ In a right triangle:
 <script>
   function polygonArea(number, length) {
     const angle = 3.2 / number;
-       const tan = Trig.queryTan(angle));
+       const tan = queryTan(angle));
         
     return (number / 4) * (length ** 2) / tan;
   }
@@ -2122,7 +2122,7 @@ export function queryAsin(input) {
   }
       }
 
-function queryAcos(input) {
+export function queryAcos(input) {
   // Normalize and extract the value: "acos 0.5" or "acos(0.5)"
   const match = input.match(/acos\s*\(?([0-9./\s√-]+)\)?/i);
   if (!match) return; // Invalid format
@@ -2171,7 +2171,7 @@ export function queryAtan(input) {
 
 // The lookup table 
 
-const trig {
+export const trig {
 "rad(1.6)": {
   "sin": {
     "expression": "sqrt(sqrt(sqrt(4)+sqrt(4))+2)/2",
