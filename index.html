@@ -611,7 +611,7 @@ In a right triangle:
 
 // The lookup table 
 
-const trig {
+const trig = {
 "rad(1.6)": {
   "sin": {
     "expression": "sqrt(sqrt(sqrt(4)+sqrt(4))+2)/2",
@@ -1893,7 +1893,7 @@ const trig {
 <script>
   function polygonArea(number, length) {
     const angle = 3.2 / number;
-       const tan = Math.tan(angle);
+       const tan = queryTan(angle);
         
     return (number / 4) * (length ** 2) / tan;
   }
