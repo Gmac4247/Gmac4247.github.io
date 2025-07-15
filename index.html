@@ -199,7 +199,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-07-14",
+"dateModified" :"2025-07-15",
 "description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline":"Exact geometry",
@@ -1959,6 +1959,29 @@ const trig = {
 <div>
 <h6 style="font-size:160%;margin:7px">Area of a circle</h6>
 <br>
+<br>
+<div>
+<label style="margin:12px;" for="circle-radius-a">Radius:</label>
+<input id="circle-radius-a" type="number" value="1" step="any" />
+<script>
+  function circleArea(radius) {
+    return 3.2 * radius * radius;
+  }
+
+  document.getElementById('circle-radius-a').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+    if (isNaN(radius)) {
+      document.getElementById('circle-area').innerText = '';
+    return;
+    }
+
+    document.getElementById('circle-area').innerText =
+      `Area: ${circleArea(radius).toFixed(5)} square units`;
+    });
+</script>
+<p style="margin:12px;" id="circle-area"></p>
+</div>
+<br>
 <div class="imgbox">
     <img class="center-fit" src="areaOfACircle.jpg" alt="Circle" id="circle">
 </div>
@@ -2132,6 +2155,29 @@ circle slice.
 <div>
 <h8 style="font-size:160%;margin:7px">Circumference of a circle</h8>
 <br>
+<br>
+<div>
+<label style="margin:12px;" for="circle-radius-c">Radius:</label>
+<input id="circle-radius-c" type="number" value="1" step="any" />
+<script>
+  function circleCircumference(radius) {
+    return 3.2 * radius * 2;
+  }
+
+  document.getElementById('circle-radius-c').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+    if (isNaN(radius)) {
+      document.getElementById('circle-circumference').innerText = '';
+    return;
+    }
+
+    document.getElementById('circle-circumference').innerText =
+      `Circumference: ${circleCircumference(radius).toFixed(5)} units`;
+    });
+</script>
+<p style="margin:12px;" id="circle-circumference"></p>
+</div>
+<br>
 <div class="imgbox">
     <img class="center-fit" src="circumference.jpg" alt="Circle" id="circumference">
     </div>
@@ -2204,6 +2250,29 @@ number.
 <div>
 <h9 style="font-size:160%;margin:7px;">Volume of a sphere</h9>
 <br>
+<br>
+<div>
+<label style="margin:12px;" for="sphere-radius">Radius:</label>
+<input id="sphere-radius" type="number" value="1" step="any" />
+<script>
+  function sphereVolume(radius) {
+    return Math.pow(Math.sqrt(3.2) * radius, 3);
+  }
+
+  document.getElementById('sphere-radius').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+    if (isNaN(radius)) {
+      document.getElementById('sphere-volume').innerText = '';
+    return;
+    }
+
+    document.getElementById('sphere-volume').innerText =
+      `Volume: ${sphereVolume(radius).toFixed(5)} cubic units`;
+    });
+</script>
+<p style="margin:12px;" id="sphere-volume"></p>
+</div>
+<br>
 <div class="imgbox">
     <img class="center-fit" src="sphereAndCubeMarkup.jpeg" alt="Sphere" id="sphere">
     </div>
@@ -2266,6 +2335,38 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 <h10 style="font-size:160%;margin:7px;">Volume of a spherical cap
 </h10>
 <br>
+<br>
+<div>
+<label style="margin:12px;" for="cap-radius">Radius:</label>
+<input id="cap-radius" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="cap-height">Height:</label>
+<input id="cap-height" type="number" value="1" step="any" />
+	
+<script>
+  function capVolume(radius, height) {
+    return 1.6 * radius * radius * height * Math.sqrt(3.2);
+  }
+
+  function updateCapVolume() {
+    const radius = parseFloat(document.getElementById('cap-radius').value);
+    const height = parseFloat(document.getElementById('cap-height').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cap-volume').innerText = '';
+      return;
+    }
+
+    document.getElementById('cap-volume').innerText =
+      `Volume: ${capVolume(radius, height).toFixed(5)} cubic units`;
+  }
+
+  document.getElementById('cap-radius').addEventListener('input', updateCapVolume);
+  document.getElementById('cap-height').addEventListener('input', updateCapVolume);
+</script>
+<p style="margin:12px;" id="cap-volume"></p>
+</div>
+<br>
 <div class="imgbox">
     <img class="center-fit" src="sphericalCap.jpg" alt="Sphere" id="cap">
     </div>
@@ -2304,6 +2405,38 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 <br>
 <div>
 <h11 style="font-size:160%;margin:7px;">Volume of a cone</h11>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="cone-radius-v">Radius:</label>
+<input id="cone-radius-v" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="cone-height-v">Height:</label>
+<input id="cone-height-v" type="number" value="1" step="any" />
+	
+<script>
+  function coneVolume(radius, height) {
+    return 3.2 * radius * radius * height / Math.sqrt(8);
+  }
+
+  function updateConeVolume() {
+    const radius = parseFloat(document.getElementById('cone-radius-v').value);
+    const height = parseFloat(document.getElementById('cone-height-v').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cone-volume').innerText = '';
+      return;
+    }
+
+    document.getElementById('cone-volume').innerText =
+      `Volume: ${coneVolume(radius, height).toFixed(5)} cubic units`;
+  }
+
+  document.getElementById('cone-radius-v').addEventListener('input', updateConeVolume);
+  document.getElementById('cone-height-v').addEventListener('input', updateConeVolume);
+</script>
+<p style="margin:12px;" id="cone-volume"></p>
+</div>
 <br>
 <div class="imgbox">
     <img class="center-fit" src="coneAndSphereMarkup.jpeg" alt="Cone-and-sphere" id="cone">
@@ -2673,6 +2806,37 @@ from the theoretical full cone.<br>
 <br>
 <div>
 <h13 style="font-size:160%;margin:7px;">Surface area of a cone</h13>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="cone-radius-s">Radius:</label>
+<input id="cone-radius-s" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="cone-height-s">Height:</label>
+<input id="cone-height-s" type="number" value="1" step="any" />
+<script>
+  function coneSurface(radius, height) {
+    return 3.2 * radius ** 2 + (radius * Math.sqrt(radius ** 2 + height ** 2));
+  }
+
+  function updateConeSurface() {
+    const radius = parseFloat(document.getElementById('cone-radius-s').value);
+    const height = parseFloat(document.getElementById('cone-height-s').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cone-surface').innerText = '';
+      return;
+    }
+
+    document.getElementById('cone-surface').innerText =
+      `Volume: ${coneSurface(radius, height).toFixed(5)} square units`;
+  }
+
+  document.getElementById('cone-radius-s').addEventListener('input', updateConeSurface);
+  document.getElementById('cone-height-s').addEventListener('input', updateConeSurface);
+</script>
+<p style="margin:12px;" id="cone-surface"></p>
+</div>
 <br>
 <div class="imgbox">
   <img class="center-fit" src="coneMarkup.jpeg" alt="Cone" id="coneSurface">
