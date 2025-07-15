@@ -1587,14 +1587,15 @@ const trig = {
       minDiff = diff;
       closestKey = key;
     }
-  }
+  
 
   if (closestKey) {
     const approxVal = trig[closestKey][funcType].value?.approx ?? trig[closestKey][funcType].value;
     return `${funcType}(${closestKey}) ≈ ${approxVal}`;
   }
 }
-
+}
+	
  function querySin(input) {
   // Normalize input: remove spaces, handle cases like "sin 0533" or "sin(0.533)"
   const match = input.match(/sin\s*\(?([0-9.]+)\)?/i);
