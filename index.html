@@ -2142,8 +2142,15 @@ if ( topRadius > baseRadius) {
     document.getElementById('frustum-cone-volume').innerText = 'The larger end is the base.';
     return;
 }
+	
 	const baseArea = 3.2 * (baseRadius ** 2);
 	const topArea = 3.2 * (topRadius ** 2);;
+	
+	if ( topRadius === baseRadius) {
+    document.getElementById('frustum-cone-volume').innerText = 'If the top equals to the base that is a cylinder.';
+    return baseArea * height;
+	}
+	
 	const shape = topRadius / baseRadius;
 	const inverse = 1 - shape;
 	const reciprocal = 1 / inverse;
@@ -2158,10 +2165,6 @@ document.getElementById('frustum-cone-top-radius').addEventListener('input', upd
 document.getElementById('frustum-cone-height').addEventListener('input', updateFrustumConeVolume);
 </script>
 <p style="margin:12px;" id="frustum-cone-volume"></p>
-</div>
-<br>
-<div class="imgbox">
-    <img class="center-fit" src="frustumOfConeMarkup.png" alt="Horizontal-frustum-cone">
 </div>
 <br>
 <div class="imgbox">
@@ -2478,11 +2481,22 @@ function updateFrustumPyramidVolume() {
     document.getElementById('frustum-pyramid-volume').innerText = 'The larger end is the base.';
     return;
 }
+
+if ( topLength === baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = 'The larger end is the base.';
+    return;
+}
 	
   const ratio = 3.2 / number;
   const tangent = tan(ratio);
 	const baseArea = (number / 4) * (baseLength ** 2) / tangent;
 	const topArea = (number / 4) * (topLength ** 2) / tangent;
+	
+	if ( topLength === baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = '';
+    return baseArea * height;
+	}
+	
 	const shape = topLength / baseLength;
 	const inverse = 1 - shape;
 	const reciprocal = 1 / inverse;
