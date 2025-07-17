@@ -9,7 +9,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="https://basic-geometry.pages.dev/about">
 <link href="https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap" rel="stylesheet">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#000000">
@@ -118,7 +117,7 @@
   },
   "alternateName": "Exact Geometry",
 "accessMode" : "mathOnVisual" ,
-"accessibilityFeature" :"dyslexicFriendly" ,
+"accessibilityFeature" :"dyslexicFriendly, machine-readable, online calculator" ,
 "accessibilityHazard" :"none" ,
 "accessibilitySummary" : "View videos, figures and equations with explanation" ,
 "accountablePerson" : {
@@ -199,7 +198,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-07-16",
+"dateModified" :"2025-07-17",
 "description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline":"Exact geometry",
@@ -387,7 +386,6 @@
 "url": "https://gmac4247.github.io/", 
 "usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles. Learn exact formulas for circles (A = 3.2r^2, C = 6.4r), spheres (V = (√(3.2)r)^3), cones, and more, with applications in engineering, computer graphics, and scientific research."
 },
-"sameAs" : "https://basic-geometry.pages.dev/",
 "schemaVersion" : "https://schema.org/docs/releases.html#v28.1.",
 "sdDatePublished" :"2021-03-29",
 "sdPublisher" : {
@@ -1061,6 +1059,53 @@ function Atan(x) {
  <p style="margin:12px;">Area of a triangle:
 <br>
 <br>
+<div>
+<label style="margin:12px;" for="side1">Side 1:</label>
+<input id="side1" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="side2">Side 2:</label>
+<input id="side2" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="side3">Side 3:</label>
+<input id="side3" type="number" value="1" step="any" />
+	
+<script>
+  function triangleArea(product) {
+  return Math.sqrt(product);
+}
+
+function updateTriangleArea() {
+  const side1 = parseFloat(document.getElementById('side1').value);
+  const side2 = parseFloat(document.getElementById('side2').value);
+  const side3 = parseFloat(document.getElementById('side3').value);
+
+  if (isNaN(side1) || isNaN(side2) || isNaN(side3)) {
+    document.getElementById('triangle-area').innerText = '';
+    return;
+  }
+
+  // Triangle validity check
+  if (side1 + side2 <= side3 || side2 + side3 <= side1 || side3 + side1 <= side2) {
+    document.getElementById('triangle-area').innerText = 'Invalid triangle';
+    return;
+  }
+
+  const s = (side1 + side2 + side3) / 2;
+  const product = s * (s - side1) * (s - side2) * (s - side3);
+  const area = triangleArea(product);
+
+  document.getElementById('triangle-area').innerText =
+    `Area: ${area.toFixed(5)} square units`;
+}
+
+  document.getElementById('side1').addEventListener('input', updateTriangleArea);
+  document.getElementById('side2').addEventListener('input', updateTriangleArea);
+  document.getElementById('side3').addEventListener('input', updateTriangleArea);
+</script>
+<p style="margin:12px;" id="triangle-area"></p>
+</div>
+<br>
+<br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>A</mi>
@@ -1149,6 +1194,43 @@ function Atan(x) {
 <br>
 <div>
 <h5 style="font-size:160%;margin:7px;">Area of a regular polygon</h5>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="side-number">Number of sides:</label>
+<input id="side-number" type="number" value="5" step="1" />
+<br>
+<label style="margin:12px;" for="side-length">Side length:</label>
+<input id="side-length" type="number" value="1" step="any" />
+	
+<script>
+  function polygonArea(length, number, tangent) {
+    return number / 4  * length ** 2 / tangent;
+  }
+
+function updatePolygonArea() {
+  const length = parseFloat(document.getElementById('side-length').value);
+  const number = parseFloat(document.getElementById('side-number').value);
+
+  if (isNaN(length) || isNaN(number)) {
+    document.getElementById('polygon-area').innerText = '';
+    return;
+  }
+
+  const ratio = 3.2 / number;
+  const tangent = parseFloat(tan(ratio));
+  
+  const area = polygonArea(length, number, tangent);
+
+  document.getElementById('polygon-area').innerText =
+    `Area: ${area.toFixed(5)} square units`;
+}
+
+  document.getElementById('side-length').addEventListener('input', updatePolygonArea);
+  document.getElementById('side-number').addEventListener('input', updatePolygonArea);
+</script>
+<p style="margin:12px;" id="polygon-area"></p>
+</div>
 <br>
 <div class="imgbox">
     <img class="center-fit" src="pentagon.png" alt="Pentagon" id="pentagon">
@@ -2000,6 +2082,55 @@ The intermediate of the areas of the horizontal cross section slices of a cone i
 <div>
 <h12 style="font-size:160%;margin:7px;">Volume of a frustum cone</h12>
 <br>
+<br>
+<div>
+<label style="margin:12px;" for="frustum-cone-base-radius">Base radius:</label>
+<input id="frustum-cone-base-radius" type="number" value="2" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-cone-top-radius">Top radius:</label>
+<input id="frustum-cone-top-radius" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-cone-height">Height:</label>
+<input id="frustum-cone-height" type="number" value="1" step="any" />
+
+<script>
+  function frustumConeVolume(baseArea, topArea, reciprocal, height) {
+  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
+}
+
+function updateFrustumConeVolume() {
+
+	const baseRadius = parseFloat(document.getElementById('frustum-cone-base-radius').value);
+	const topRadius = parseFloat(document.getElementById('frustum-cone-top-radius').value);
+	const height = parseFloat(document.getElementById('frustum-cone-height').value);
+
+  if (isNaN(baseRadius) || isNaN(topRadius) || isNaN(height)) {
+    document.getElementById('frustum-cone-volume').innerText = '';
+    return;
+  }
+
+	const baseArea = 3.2 * (baseRadius ** 2);
+	const topArea = 3.2 * (topRadius ** 2);;
+	const shape = topRadius / baseRadius;
+	const inverse = 1 - shape;
+	const reciprocal = 1 / inverse;
+	const volume = frustumConeVolume(baseArea, topArea, reciprocal, height);
+
+  document.getElementById('frustum-cone-volume').innerText =
+    `Volume: ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('frustum-cone-base-radius').addEventListener('input', updateFrustumConeVolume);
+document.getElementById('frustum-cone-top-radius').addEventListener('input', updateFrustumConeVolume);
+document.getElementById('frustum-cone-height').addEventListener('input', updateFrustumConeVolume);
+</script>
+<p style="margin:12px;" id="frustum-cone-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="frustumOfConeMarkup.png" alt="Horizontal-frustum-cone">
+</div>
+<br>
 <div class="imgbox">
     <img class="center-fit" src="frustumOfConeMarkup.png" alt="Horizontal-frustum-cone">
     </div>
@@ -2191,6 +2322,49 @@ from the theoretical full cone.<br>
 <div>
 <h14 style="font-size:160%;margin:7px">Volume of a pyramid</h14>
 <br>
+<br>
+<div>
+<label style="margin:12px;" for="pyramid-side-number">Number of sides:</label>
+<input id="pyramid-side-number" type="number" value="4" step="1" />
+<br>
+<label style="margin:12px;" for="pyramid-base-edge-length">Base edge length:</label>
+<input id="pyramid-base-edge-length" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="pyramid-height">Height:</label>
+<input id="pyramid-height" type="number" value="1" step="any" />
+
+<script>
+  function pyramidVolume(area, height) {
+  return area * height / Math.sqrt(8);
+}
+
+function updatePyramidVolume() {
+  const number = parseFloat(document.getElementById('pyramid-side-number').value);
+  const length = parseFloat(document.getElementById('pyramid-base-edge-length').value);
+  const height = parseFloat(document.getElementById('pyramid-height').value);
+
+  if (isNaN(number) || isNaN(length) || isNaN(height)) {
+    document.getElementById('pyramid-volume').innerText = '';
+    return;
+  }
+
+  const ratio = 3.2 / number;
+  const tangent = tan(ratio);
+
+  const area = (number / 4) * (length ** 2) / tangent;
+  const volume = pyramidVolume(area, height);
+
+  document.getElementById('pyramid-volume').innerText =
+    `Volume: ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('pyramid-side-number').addEventListener('input', updatePyramidVolume);
+document.getElementById('pyramid-base-edge-length').addEventListener('input', updatePyramidVolume);
+document.getElementById('pyramid-height').addEventListener('input', updatePyramidVolume);
+</script>
+<p style="margin:12px;" id="pyramid-volume"></p>
+</div>
+<br>
 <div class="imgbox">
   <img class="center-fit" src="conePyramidVolumeMarkup.jpeg" alt="Pyramids" id="pyramid">
   </div>
@@ -2229,7 +2403,59 @@ with the same coefficient as the volume of a cone:<br>
 <br>
 <br>
 <div>
-<h15 style="font-size:160%;margin:7px;">Volume of a horizontal frustum pyramid</h15>
+<h15 style="font-size:160%;margin:7px;">Volume of a horizontal square frustum pyramid</h15>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="frustum-pyramid-side-number">Number of sides:</label>
+<input id="frustum-pyramid-side-number" type="number" value="4" step="1" />
+<br>
+<label style="margin:12px;" for="frustum-pyramid-base-edge-length">Base edge length:</label>
+<input id="frustum-pyramid-base-edge-length" type="number" value="2" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-pyramid-top-edge-length">Top edge length:</label>
+<input id="frustum-pyramid-top-edge-length" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-pyramid-height">Height:</label>
+<input id="frustum-pyramid-height" type="number" value="1" step="any" />
+
+<script>
+  function frustumPyramidVolume(baseArea, topArea, reciprocal, height) {
+  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
+}
+
+function updateFrustumPyramidVolume() {
+
+	const number = parseFloat(document.getElementById('frustum-pyramid-side-number').value);
+	const baseLength = parseFloat(document.getElementById('frustum-pyramid-base-edge-length').value);
+	const topLength = parseFloat(document.getElementById('frustum-pyramid-top-edge-length').value);
+	const height = parseFloat(document.getElementById('frustum-pyramid-height').value);
+
+  if (isNaN(number) || isNaN(baseLength) || isNaN(topLength) || isNaN(height)) {
+    document.getElementById('frustum-pyramid-volume').innerText = '';
+    return;
+  }
+
+  const ratio = 3.2 / number;
+  const tangent = tan(ratio);
+	const baseArea = (number / 4) * (baseLength ** 2) / tangent;
+	const topArea = (number / 4) * (topLength ** 2) / tangent;
+	const shape = topLength / baseLength;
+	const inverse = 1 - shape;
+	const reciprocal = 1 / inverse;
+	const volume = frustumPyramidVolume(baseArea, topArea, reciprocal, height);
+
+  document.getElementById('frustum-pyramid-volume').innerText =
+    `Volume: ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('frustum-pyramid-side-number').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-base-edge-length').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-top-edge-length').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-height').addEventListener('input', updateFrustumPyramidVolume);
+</script>
+<p style="margin:12px;" id="frustum-pyramid-volume"></p>
+</div>
 <br>
 <div class="imgbox">
     <img class="center-fit" src="frustumOfPyramidMarkup.png" alt="Horizontal-frustum-pyramid">
@@ -2370,6 +2596,30 @@ from the theoretical full pyramid.<br>
 <br>
 <div>
 <h16 style="font-size:160%;margin:7px">Volume of a tetrahedron</h16>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="tetrahedron-edge">Edge:</label>
+<input id="tetrahedron-edge" type="number" value="1" step="any" />
+
+<script>
+  function tetrahedronVolume(edge) {
+    return Math.pow(edge, 3) / 8;
+  }
+
+  document.getElementById('tetrahedron-edge').addEventListener('input', function () {
+    const edge = parseFloat(this.value);
+    if (isNaN(edge)) {
+      document.getElementById('tetrahedron-volume').innerText = '';
+    return;
+    }
+
+    document.getElementById('tetrahedron-volume').innerText =
+      `Volume: ${tetrahedronVolume(edge).toFixed(5)} cubic units`;
+    });
+</script>
+<p style="margin:12px;" id="tetrahedron-volume"></p>
+</div>
 <br>
 <div class="imgbox">
   <img class="center-fit" src="tetrahedronMarkup.jpeg" alt="Tetrahedron" id="tetrahedron">
