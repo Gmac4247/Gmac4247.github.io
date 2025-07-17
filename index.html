@@ -1084,9 +1084,9 @@ function updateTriangleArea() {
     return;
   }
 
-  // Triangle validity check
+    // Triangle validity check
   if (side1 + side2 <= side3 || side2 + side3 <= side1 || side3 + side1 <= side2) {
-    document.getElementById('triangle-area').innerText = 'Invalid triangle';
+    document.getElementById('triangle-area').innerText = 'The sum of the length of the two shorter sides of a triangle is larger than the thrid one.';
     return;
   }
 
@@ -1217,6 +1217,12 @@ function updatePolygonArea() {
     return;
   }
 
+// Polygon validity check
+  if (number < 3) {
+    document.getElementById('polygon-area').innerText = 'It takes at least three sides to form a polygon.';
+    return;
+  }
+	
   const ratio = 3.2 / number;
   const tangent = parseFloat(tan(ratio));
   
@@ -1454,12 +1460,24 @@ function updateSegmentArea() {
   const length = parseFloat(document.getElementById('segment-length').value);
   const height = parseFloat(document.getElementById('segment-height').value);
 
-  if (isNaN(length) || isNaN(height)) {
+  if (isNaN(length) || isNaN(height) || height === 0) {
     document.getElementById('segment-area').innerText = '';
     return;
   }
 
   const ratio = 2 * height / length;
+
+  // Segment validity check
+	
+  if ( ratio === 1) {
+    document.getElementById('segment-area').innerText = 'If it is twice as long as high that is a semi-circle.';
+    return;
+}
+  if ( ratio > 1) {
+    document.getElementById('segment-area').innerText = 'A circle-segment is less than half as high as long.';
+    return;
+}
+	
   const angle = parseFloat(2 * Atan(ratio));
   const sine = parseFloat(sin(angle));
   const radius = parseFloat((length / 2 / sine).toFixed(5));
@@ -1746,9 +1764,20 @@ The edge length of the cube, which has the same volume as the sphere, equals the
       return;
     }
 
+// Cap validity check
+
+  if ( height === radius) {
+    document.getElementById('cap-volume').innerText = 'If the radius equals the height that is a hemisphere.';
+    return;
+}
+	  
+  if ( height > radius) {
+    document.getElementById('cap-volume').innerText = 'The height of a spherical cap is shorter than its radius.';
+    return;
+}
     document.getElementById('cap-volume').innerText =
       `Volume: ${capVolume(radius, height).toFixed(5)} cubic units`;
-  }
+}
 
   document.getElementById('cap-radius').addEventListener('input', updateCapVolume);
   document.getElementById('cap-height').addEventListener('input', updateCapVolume);
@@ -2104,11 +2133,15 @@ function updateFrustumConeVolume() {
 	const topRadius = parseFloat(document.getElementById('frustum-cone-top-radius').value);
 	const height = parseFloat(document.getElementById('frustum-cone-height').value);
 
-  if (isNaN(baseRadius) || isNaN(topRadius) || isNaN(height)) {
+  if (isNaN(baseRadius) || isNaN(topRadius) || isNaN(height) || baseRadius === 0 || topRadius === 0) {
     document.getElementById('frustum-cone-volume').innerText = '';
     return;
   }
 
+if ( topRadius > baseRadius) {
+    document.getElementById('frustum-cone-volume').innerText = 'The larger end is the base.';
+    return;
+}
 	const baseArea = 3.2 * (baseRadius ** 2);
 	const topArea = 3.2 * (topRadius ** 2);;
 	const shape = topRadius / baseRadius;
@@ -2431,11 +2464,21 @@ function updateFrustumPyramidVolume() {
 	const topLength = parseFloat(document.getElementById('frustum-pyramid-top-edge-length').value);
 	const height = parseFloat(document.getElementById('frustum-pyramid-height').value);
 
-  if (isNaN(number) || isNaN(baseLength) || isNaN(topLength) || isNaN(height)) {
+  if (isNaN(number) || isNaN(baseLength) || isNaN(topLength) || isNaN(height) || baseLength === 0 || topLength === 0) {
     document.getElementById('frustum-pyramid-volume').innerText = '';
     return;
-  }
+}
 
+  if ( number < 3) {
+    document.getElementById('frustum-pyramid-volume').innerText = 'It takes at least three sides to form a pyramid.';
+    return;
+}
+
+  if ( topLength > baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = 'The larger end is the base.';
+    return;
+}
+	
   const ratio = 3.2 / number;
   const tangent = tan(ratio);
 	const baseArea = (number / 4) * (baseLength ** 2) / tangent;
