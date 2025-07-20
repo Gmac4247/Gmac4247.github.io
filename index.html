@@ -198,7 +198,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-07-18",
+"dateModified" :"2025-07-20",
 "description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline":"Exact geometry",
@@ -1480,6 +1480,12 @@ function updateSegmentArea() {
 
   const area = segmentArea(length, height, angle, radius);
 
+  if ( ratio === 1) {
+    document.getElementById('segment-area').innerText =
+    `Area of semi-circle: ${area.toFixed(5)} square units`;
+	return;
+  }
+	
   document.getElementById('segment-area').innerText =
     `Area: ${area.toFixed(5)} square units`;
 }
@@ -1668,7 +1674,7 @@ number.
       document.getElementById('sphere-volume').innerText = '';
     return;
     }
-
+ 
     document.getElementById('sphere-volume').innerText =
       `Volume: ${sphereVolume(radius).toFixed(5)} cubic units`;
     });
@@ -1766,6 +1772,13 @@ The edge length of the cube, which has the same volume as the sphere, equals the
     document.getElementById('cap-volume').innerText = 'The height of a spherical cap is shorter than its radius.';
     return;
 }
+
+if ( height === radius) {
+    document.getElementById('cap-volume').innerText =
+      `Volume of hemisphere: ${capVolume(radius, height).toFixed(5)} cubic units`;
+    return;
+}
+	  
     document.getElementById('cap-volume').innerText =
       `Volume: ${capVolume(radius, height).toFixed(5)} cubic units`;
 }
@@ -2130,7 +2143,7 @@ function updateFrustumConeVolume() {
   }
 
 if ( topRadius > baseRadius) {
-    document.getElementById('frustum-cone-volume').innerText = 'The larger end is the base.';
+    document.getElementById('frustum-cone-volume').innerText = 'Let the larger end be the base.';
     return;
 }
 	
@@ -2470,28 +2483,28 @@ function updateFrustumPyramidVolume() {
     return;
 }
 
-  if ( topLength > baseLength) {
-    document.getElementById('frustum-pyramid-volume').innerText = 'The larger end is the base.';
+if ( topLength > baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = 'Let the larger end be the base.';
     return;
 }
-
+	
   const ratio = 3.2 / number;
   const tangent = tan(ratio);
 	const baseArea = (number / 4) * (baseLength ** 2) / tangent;
 	const topArea = (number / 4) * (topLength ** 2) / tangent;
 	const solidVolume = baseArea * height;
-	
-	if ( topLength === baseLength) {
-    document.getElementById('frustum-pyramid-volume').innerText = 
-	`Volume of solid: ${solidVolume.toFixed(5)} cubic units`;
-    return;
-	}
-	
 	const shape = topLength / baseLength;
 	const inverse = 1 - shape;
 	const reciprocal = 1 / inverse;
 	const volume = frustumPyramidVolume(baseArea, topArea, reciprocal, height);
 
+
+if ( topLength === baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = 
+	`Volume of solid: ${solidVolume.toFixed(5)} cubic units`;
+    return;
+	}
+	
   document.getElementById('frustum-pyramid-volume').innerText =
     `Volume: ${volume.toFixed(5)} cubic units`;
 	  }
