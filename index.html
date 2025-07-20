@@ -1225,7 +1225,6 @@ function updatePolygonArea() {
 	
   const ratio = 3.2 / number;
   const tangent = parseFloat(tan(ratio));
-  
   const area = polygonArea(length, number, tangent);
 
   document.getElementById('polygon-area').innerText =
@@ -1326,6 +1325,7 @@ function updatePolygonArea() {
 
   document.getElementById('circle-radius-a').addEventListener('input', function () {
     const radius = parseFloat(this.value);
+	  
     if (isNaN(radius)) {
       document.getElementById('circle-area').innerText = '';
     return;
@@ -1477,7 +1477,6 @@ function updateSegmentArea() {
   const angle = parseFloat(2 * Atan(ratio));
   const sine = parseFloat(sin(angle));
   const radius = parseFloat((length / 2 / sine).toFixed(5));
-
   const area = segmentArea(length, height, angle, radius);
 
   if ( ratio === 1) {
@@ -1670,6 +1669,7 @@ number.
 
   document.getElementById('sphere-radius').addEventListener('input', function () {
     const radius = parseFloat(this.value);
+	  
     if (isNaN(radius)) {
       document.getElementById('sphere-volume').innerText = '';
     return;
@@ -2381,18 +2381,17 @@ from the theoretical full cone.<br>
 
 function updatePyramidVolume() {
   const number = parseFloat(document.getElementById('pyramid-side-number').value);
-  const length = parseFloat(document.getElementById('pyramid-base-edge-length').value);
+  const baseEdge = parseFloat(document.getElementById('pyramid-base-edge-length').value);
   const height = parseFloat(document.getElementById('pyramid-height').value);
 
-  if (isNaN(number) || isNaN(length) || isNaN(height)) {
+  if (isNaN(number) || isNaN(baseEdge) || isNaN(height)) {
     document.getElementById('pyramid-volume').innerText = '';
     return;
   }
 
   const ratio = 3.2 / number;
   const tangent = tan(ratio);
-
-  const baseArea = (number / 4) * (length ** 2) / tangent;
+  const baseArea = (number / 4) * (baseEdge ** 2) / tangent;
   const volume = pyramidVolume(baseArea, height);
 
   document.getElementById('pyramid-volume').innerText =
