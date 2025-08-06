@@ -253,9 +253,11 @@
      "description": "The exact area of a circle based on direct comparison with a square.",
      "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://gmac4247.github.io/",
-     "mathExpression-input": "required name=r=5_h=2_A=?",
-     "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
-      "image": "areaOfACircle.jpg",
+     "mathExpression-input": "required name=r=5_A=?",
+     "mathExpression-output": "3.2 * Math.pow(radius, 2)",
+     "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
+	"keywords": "radius, area",
+	  "image": "areaOfACircle.jpg",
      "eduQuestionType": "Area calculation"
         },
      
@@ -265,11 +267,9 @@
 "description": "The exact area of a circle segment by subtracting a triangle from a circle slice.",
    "disambiguatingDescription": "Equivalent to the conventional method, but relies on trigonometric functions.",
 	"target": "https://gmac4247.github.io/",
-     "mathExpression-input": "required name=r=5_A=?",
-     "mathExpression-output": "angle of rotation / 360 * 3.2 * Math.pow(radius, 2)",
-     "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
-	"keywords": "radius, area",
-	"image": "circleSegment.jpg",
+     "mathExpression-input": "required name=r=5_h=2_A=?",
+     "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
+     "image": "circleSegment.jpg",
      "eduQuestionType": "Area calculation"
    },
 
@@ -280,7 +280,7 @@
 "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://gmac4247.github.io/",
      "mathExpression-input": "required name=r=5_C=?", 
-     "mathExpression-output": "angle of rotation / 360 * 6.4 * radius",
+     "mathExpression-output": "6.4 * radius",
      "image": "circumference.jpg",
      "eduQuestionType": "Length calculation"
 },
@@ -292,7 +292,7 @@
     "disambiguatingDescription": "More accurate than the traditional exhaustion method based formula which is a very rough underestimate.",
 "target": "https://gmac4247.github.io/",
      "mathExpression-input": "required name=r=3_V=?",
-     "mathExpression-output": "angle of rotation / 360 * Math.pow((Math.sqrt(3.2) * radius), 3)", 
+     "mathExpression-output": "Math.pow((Math.sqrt(3.2) * radius), 3)", 
      "abstract": "A sphere is a 3 dimensional solid shape. Its measurable property is its diameter. Its radius is half of the diameter. Its projection is a circle. Related shapes are circle, cylinder, cube and cone.",
 	"keywords": "radius, volume",
 	"image": "sphereAndCubeMarkup.jpeg",
@@ -318,7 +318,7 @@
 	"disambiguatingDescription": "Instead of the inaccurate base×height/3 approximation, direct shape relationships ensure greater accuracy in real-world measurements.",
 	"target": "https://gmac4247.github.io/",
 	"mathExpression-input": "required name=r=5_H=3_V=?",
-     "mathExpression-output": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)",
+     "mathExpression-output": "3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)",
      "abstract": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
 	"keywords": "radius, height, volume",
 	"image": [
@@ -373,7 +373,7 @@
 
 {
      "@type": "SolveMathAction",
-        "name": "Volume of a frustum pyramid",
+        "name": "Volume of a square frustum pyramid",
     "description": "The exact volume of a frustum pyramid based on its top and bottom base area and height",
      "disambiguatingDescription": "The formula subtracts the missing tip from a theoretical full pyramid. Universally applicable",
 	"target": "https://gmac4247.github.io/",
