@@ -483,7 +483,7 @@ The concept of setting the square and the cube as the basis of the area and the 
 A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width × length.
 <br>
 <br>
-A square is a type of rectangle with equal width and length
+A square is a type of rectangle with equal width and length.
 </p>
 </div>
 <br>
@@ -519,6 +519,8 @@ A cube is a type of cuboid with equal width, length and height.
 <br>
 </p>
 </div>
+<br>
+<br>
 <div>
 <h4 style="font-size:160%;margin:7px;">Volume of a cube</h4>
 <br>
@@ -1311,10 +1313,10 @@ function updateTriangleArea() {
 <br>
 <div>
 <p style="margin:12px;">Other shapes are more challenging. The ratios are in the shapes; one just has to write them down algebraically.
-<br>
-<br>
 </p>
 </div>
+<br>
+<br>
 <div>
 <h6 style="font-size:160%;margin:7px;">Area of a regular polygon</h6>
 <br>
@@ -1512,7 +1514,7 @@ By focusing on area relationships and direct comparisons between shapes, the fol
 </p>
 </div>
 <div>
-<h7 style="font-size:160%;margin:7px">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h7>
+<h7 style="font-size:160%;margin:7px">Area of a circle</h7>
 <br>
 <br>
 <div>
@@ -1543,6 +1545,9 @@ By focusing on area relationships and direct comparisons between shapes, the fol
 </div>
 <br>
 <p style="margin:12px;" >
+The area of a circle is defined by comparing it to a square since that is the base of area calculation.
+<br>
+<br>
 The circle is cut to four quadrants, each placed with their origin on the vertices of a square.
 <br>
 <br>
@@ -1891,8 +1896,6 @@ When the arcs of the quadrant circles intersect at the quarter of the centerline
 </p>
 <br>
 <br>
-<br>
-<br>
 <p style="margin:12px;">
 The ratio between the ray of the circle and the side of the square can be calculated by using the Pythagorean theorem.
 <br>
@@ -1982,8 +1985,13 @@ The radius equals √5 × quarter of the side.
 </math>
 <br>
 <br>
-The area of the circle equals 16/5 × ( square value of the radius ) equals 
-<br> 3.2 × ( square value of the radius ).
+The area of the circle equals 16 / 5 × ( square value of the radius ) 
+<br>
+<br>
+equals 
+<br>
+<br>
+3.2 × ( square value of the radius ).
 </p>
 </div>
 <br>
@@ -1991,7 +1999,7 @@ The area of the circle equals 16/5 × ( square value of the radius ) equals
 <br>
 <br>
 <div>
-    <h8 style="font-size:160%;margin:7px">Area of a circle segment</h7>
+    <h8 style="font-size:160%;margin:7px">Area of a circle segment</h8>
 <br>
 <br>
 <div>
@@ -2149,9 +2157,16 @@ circle slice.
 from its area algebraically.
 <br>
 <br>
-The x represents the width of the circumference, 
-which is just theoretical, hence a very small 
-number.
+The x represents the width of the circumference, which is just theoretical, hence a very small number.
+<br>
+<br>
+The difference between the shape of the straightened circumference and a quadrilateral is negligible.
+<br>
+<br>
+The length of the two shorter sides of the quadrilateral is x.
+<br>
+<br>
+The length of the two longer sides is the area of the resulting ring divided by x.
 <br>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2183,31 +2198,279 @@ number.
 </mrow>
 <mi>x</mi>
 </mfrac>
-<mo>=</mo>
-<mn>6.4</mn>
-<mi>r</mi>
-<mo>-</mo>
-<mn>3.2</mn>
-<mi>x</mi>
 </mrow>
 </math>
 </p>
 <br>
-<p style="margin:12px;"> As x is close to 0,
 <br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
-<mi>C</mi>
-<mo>=</mo>
-<mn>6.4</mn>
-<mi>r</mi>
+<p style="margin:12px;">Expand the term
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+<msup>
+ <mrow>
+    <mo>(</mo>
+    <mi>r</mi>
+    <mo>-</mo>
+    <mi>x</mi>
+    <mo>)</mo>
 </mrow>
+      <mn>2</mn>
+    </msup>
+  </mrow>
+</math>
+    :
+<br>
+<br>
+<math  xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+<msup>
+<mrow>
+      <mo>(</mo>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mi>x</mi>
+      <mo>)</mo>
+	</mrow>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <mn>2</mn>
+      <mi>r</mi>
+      <mi>x</mi>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Substitute this back into the original expression:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <mo>(</mo>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>2</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>+</mo>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Distribute the 3.2 inside the parentheses:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Simplify the numerator:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Factor out x from the numerator:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mi>x</mi>
+          <mo>(</mo>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <mi>x</mi>
+          <mo>)</mo>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Cancel out the x in the numerator and denominator:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mn>6.4</mn>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mn>3.2</mn>
+      <mi>x</mi>
+  </mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">
+As x is close to 0,
+<br>
+<br>
+C = 6.4 × radius.
+</p>
+<br>
+<br>
+<p style="margin:12px;">
+In calculus terms:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+        <mi>C</mi>
+    <mo>=</mo>
+        <munder>
+      <mo>lim</mo>
+      <mrow>
+        <mi>x</mi>
+        <mo>→</mo>
+        <mn>0</mn>
+      </mrow>
+    </munder>
+        <mfrac>
+            <mrow>
+        <mn>3.2</mn> 
+        <mo>(</mo> 
+        <msup>
+          <mi>r</mi>
+          <mn>2</mn> 
+        </msup>
+        <mo>-</mo> 
+        <msup>
+          <mrow>
+            <mo>(</mo> 
+            <mi>r</mi>
+            <mo>-</mo>
+            <mi>x</mi>
+            <mo>)</mo>
+          </mrow>
+          <mn>2</mn>
+        </msup>
+        <mo>)</mo>
+      </mrow>
+      <mi>x</mi>
+    </mfrac>
+    <mo>=</mo>
+    <mn>6.4</mn>
+    <mi>r</mi>
+  </mrow>
 </math>
 </p>
 </div>
 <br>
 <br>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The " V = 4/3 × π × ( cubic value of the radius ) "  formula is widely used for the volume of a sphere, and it's a cornerstone of theoretical geometry. 
+<br>
+<br>
+However, my work focuses on the actual volume of physical spheres as determined through direct measurement. 
+<br>
+<br>
+My experiments have consistently indicated a different relationship, expressed by the formula V = " cubic value of ( √( 3.2 ) × radius ) ", which provides a more accurate result when dealing with real, physical entities. 
+<br>
+This formula isn't based on abstract geometric ideals alone but on tangible experiments where I've measured the volume of real spheres. 
+<br>
+These measurements have shown a systematic difference compared to the theoretical predictions based on the conventional formula, suggesting that the way we mathematically describe the volume of a sphere might need to be reconsidered when applied to physical objects. 
+<br>
+If you're trying to calculate the volume of a physical ball or sphere for a practical purpose – whether it's for a science experiment, engineering, or any other real-world application – my empirically derived formula offers a result that aligns more closely with what you would measure in the lab.
+<br>
+<br>
+The " 4/3 × π × ( cubic value of the radius ) " formula was estimated using the exhaustion method. That is a very rough approximation and can produce under- and overestimates. 
+<br>
+<br>
+The result of the " cubic value of ( √( 3.2 ) × radius ) " formula is between the two.
+<br>
+<br>
+The " 4/3 × π × ( cubic value of the radius ) " formula is an underestimate. 
+</p>
+</div>
 <br>
 <br>
 <div>
@@ -2289,6 +2552,9 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 </msup>
 </mrow>
 </math>
+<br>
+<br>
+The volume of a sphere equals " cubic value of ( √( 3.2 ) × radius ) ".
 </p>
 </div>
 <br>
@@ -2380,7 +2646,241 @@ if ( height === radius) {
 <br>
 <br>
 <div>
-<h11 style="font-size:160%;margin:7px;">Volume of a cone</h11>
+<p style="margin:12px;">The commonly used formula for the volume of a cone - 1/3 × base × height - was likely estimated based on two observations. 
+<br>
+<br>
+One is that the area of the mid-height cross section of a regular cone - of which's apex can be connected to the midpoint of the base with a perpendicular line - is exactly a quarter of a circumscribed solid's with the same base and height. 
+<br>
+That makes the ratio between the mid-height cross-sectional area of the cone, and the difference between the mid-height cross-sectional areas of the circumscribed solid and the cone 
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mn>1</mn>
+<mo>-</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>-</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">1 : 3 . 
+</p>
+<br>
+<br>
+<p style="margin:12px;">That is a logical consequence of its equilateral triangular cross-section.
+<br>
+<br>
+The same is true for regular pyramids. 
+<br>
+<br>
+Can this ratio can be generalized for the overall volume of any cone and pyramid? 
+<br>
+<br>
+No. Because it's not true in case of most other shapes.
+</p>
+<br>
+<br>
+<p style="margin:12px;">The other idea is the cube dissection. 
+<br>
+A common method aiming to prove the pyramid volume formula ( V = 1/3 × base × height ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
+</p>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="cubeDissection.png" alt="Cube-dissection" id="dissection">
+</div>
+<br>
+<br>
+<p style="margin:12px;">Standard Cube Dissection Method:
+<br>
+<br>
+Take a cube with an edge length of ( e ).
+<br>
+<br>
+Volume of the cube: V = the cubic value of e.
+<br>
+<br>
+Imagine dividing the cube into three square pyramids, each with:
+<br>
+<br>
+- Base: One face of the cube, so the base area is the square value of e .
+<br>
+<br>
+- Height: The edge of the cube, ( e ), since the apex of each pyramid is the cube’s vertex opposite the base, depending on the dissection. 
+<br>
+<br>
+A common dissection:
+<br>
+<br>
+Choose one vertex of the cube as the apex.
+<br>
+<br>
+Form three pyramids, each with this apex and a base on one of the three faces adjacent to that vertex.
+<br>
+<br>
+Each pyramid has a base area of the square value of e, and height ( e ) (the distance from the apex to the base plane). 
+<br>
+<br>
+Volume of each pyramid: V(pyramid) = ( square value of e ) × e, divided by 3 = the cubic value of e divided by 3.
+<br>
+<br>
+Since there are three pyramids, their total volume is: 3 × ( ( cubic value of e ) divided by 3 ) = the cubic value of e.
+<br>
+<br>
+This equals the cube’s volume, suggesting the one third factor is correct.
+<br>
+<br>
+The Vertex Problem is a critical flaw in this dissection when applied to a real, physical cube:
+<br>
+<br>
+Vertex Assignment: 
+<br>
+<br>
+When we cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex belongs:
+<br>
+<br>
+The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total.
+<br>
+<br>
+Each vertex is a point that can't be split into 3 points. The other way around, 3 points can't be merged into 1 without distortion. 
+<br>
+If we dissect the cube, we need to designate each shared vertex to be a part of either one pyramid, or another. 
+<br>
+<br>
+Consequence: 
+<br>
+<br>
+The volume of each pyramid is exactly a third of the cube, but with a base smaller than the square value of e, and height shorter than e.
+<br>
+<br>
+Their bases and heights are slightly adjusted due to the vertex assignment, undermining the proof’s simplicity.
+<br>
+<br>
+<br>
+If the solid pyramids'
+<br>
+<br>
+- base is the square value of e,
+<br>
+<br>
+and their 
+<br>
+<br>
+- height is e,
+<br>
+<br>
+then the volume of each pyramid has to be larger than 1/3 × base × height, because 3 such pyramids can't form a cube with the same edge length, because their vertices and faces can't occupy the same space simultaneously.
+<br>
+<br>
+The vertices are the most obvious examples, but the same is true for the edges, the diagonals and the inner faces. 
+<br>
+<br>
+Applied correctly, the cube dissection proves that the volume of a cone or a pyramid has to be larger than 1/3 × base × height.
+</p>
+<br>
+<br>
+<p style="margin:12px;">Claiming to prove the V = 1/3 × base × height formula via integral calculus is fraudulent. 
+<br>
+<br>
+The fact that the vertices of the 3 pyramids can't be merged into a single point without distortion proves that the so-called "calculus-based proofs" of the conventional formula are invalid. 
+<br>
+Also it's not just about the vertices, but the edges and the inner faces, too.
+<br>
+<br>
+There are several different integral calculus methods, each based on different algebraic calculations. 
+<br>
+<br>
+If something can be expressed simply algebraically, we don't complicate it by involving integral calculations. 
+<br>
+<br>
+We apply integral when something can't be expressed simply algebraically.
+<br>
+<br>
+My formulas describe the properties of these basic geometric shapes exactly, simply algebraically, without approximation or distortion. 
+<br>
+They can't be contradicted based on undisclosed "integral-based proofs" that lack any description of the involved numbers and operations.
+</p>
+</div>
+<br>
+<br>
+<div>
+<h12 style="font-size:160%;margin:7px;">Volume of a cone</h12>
 <br>
 <br>
 <div>
