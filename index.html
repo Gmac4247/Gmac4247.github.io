@@ -228,7 +228,7 @@
 "target": "https://gmac4247.github.io",
      "mathExpression-input": "required name=a=5_A=?",
   "mathExpression-output": "area=Math.pow(side, 2)",
-  "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special case of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
+  "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special type of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
   "keywords": "side, length, area",
     "image": "square.png",
      "eduQuestionType": "Area calculation"
@@ -469,7 +469,6 @@
 <br>
 <br>
 <br>
-<br>
 </div>
 <div>
   <h2 style="font-size:160%;margin:7px;">How Accurate Are The Conventional Geometry Formulas?</h2>
@@ -481,8 +480,14 @@
 The concept of setting the square and the cube as the basis of the area and the volume calculation is well established and straightforward. Regardless of the shape of the measured object, the unit of measurement of the area is square units and the volume can be expressed in cubic units. 
 <br>
 <br>
+A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width × length.
+<br>
+<br>
+A square is a type of rectangle with equal width and length
 </p>
 </div>
+<br>
+<br>
 <div>
 <h3 style="font-size:160%;margin:7px;">Area of a square</h3>
 <br>
@@ -506,6 +511,15 @@ The concept of setting the square and the cube as the basis of the area and the 
 <br>
 <br>
 <div>
+<p style="margin:12px;">A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. The volume of a cuboid is a simple multiplication of the edges, width × length × height. The cubic root of the product of the edges is the edge length of the theoretical cube that has the same volume as the cuboid. 
+<br>
+<br>
+A cube is a type of cuboid with equal width, length and height.
+<br>
+<br>
+</p>
+</div>
+<div>
 <h4 style="font-size:160%;margin:7px;">Volume of a cube</h4>
 <br>
 <div class="imgbox">
@@ -527,14 +541,6 @@ The concept of setting the square and the cube as the basis of the area and the 
 <br>
 <br>
 <br>
-<div>
-<p style="margin:12px;">The volume of a cuboid is a simple multiplication of the edges. The cubic root of the product of the edges is the edge length of the theoretical cube that has the same volume as the cuboid. 
-<br>
-<br>
-<br>
-<br>
-</p>
-</div>
 <div>
 <h5 style="font-size:160%;margin:7px">Trigonometry</h5>
 <br>
@@ -1168,6 +1174,7 @@ function Atan(x) {
 <br>
 <br>
 The area of a triangle can also be calculated by the length of its sides.
+</p>
 <br>
 <br>
 <div>
@@ -1217,7 +1224,7 @@ function updateTriangleArea() {
 </div>
 <br>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>A</mi>
 <mo>=</mo>
@@ -1268,7 +1275,7 @@ function updateTriangleArea() {
 <br>
 <br>
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" > <mrow>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" > <mrow>
  <mi>S</mi>
       <mo>=</mo>
 <mi>Semi perimeter</mi>
@@ -1296,7 +1303,6 @@ function updateTriangleArea() {
 </mfrac>
 </mrow>
 </math>
- </p>
 </div>
 </div>
 <br>
@@ -1540,9 +1546,354 @@ By focusing on area relationships and direct comparisons between shapes, the fol
 The circle is cut to four quadrants, each placed with their origin on the vertices of a square.
 <br>
 <br>
+In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square. 
+<br>
+<br>
+The arcs of the quadrants of a circumscribed circle would meet at the center of the square.
+<br>
+<br>
 When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, the uncovered area in the middle equals exactly the sum of the overlapping areas respectively. 
+</p>
 <br>
 <br>
+<div class="imgbox">
+    <img class="center-fit" src="equityFigure.jpg" alt="Figure" id="figure">
+    </div>
+<br>
+<br>
+<p style="margin:12px;">Quarter of the uncovered area in the middle:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mrow>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>+</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+</mrow>
+</math>
+</p>
+<br>
+<p style="margin:12px;">The area of an overlapping section:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">The equation is calculable using a calculator, or it can be simplified algebraically.
+</p>
+<br>
+<br>
+<p style="margin:12px;">Simplifying the original equation:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>+</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+</mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Substituting 90°/360° for 1/4:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mfrac>
+<mn>90</mn>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+</mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+</p>
+<br>
+<br>
+<p style="margin:12px;">Which is equivalent to:
+<br>
+<br>
+1 = 1
+</p>
+<br>
+<br>
+<br>
+<br>
+<p style="margin:12px;">
 The ratio between the ray of the circle and the side of the square can be calculated by using the Pythagorean theorem.
 <br>
 <br>
@@ -1600,6 +1951,9 @@ The ratio between the ray of the circle and the side of the square can be calcul
 </mfrac>
 </mrow>
 </math>
+<br>
+<br>
+The radius equals √5 × quarter of the side.
 </p>
 <br>
 <p style="margin:12px;"> The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
@@ -1626,6 +1980,10 @@ The ratio between the ray of the circle and the side of the square can be calcul
 </msup>
 </mrow>
 </math>
+<br>
+<br>
+The area of the circle equals 16/5 × ( square value of the radius ) equals 
+<br> 3.2 × ( square value of the radius ).
 </p>
 </div>
 <br>
@@ -1633,7 +1991,7 @@ The ratio between the ray of the circle and the side of the square can be calcul
 <br>
 <br>
 <div>
-    <h7 style="font-size:160%;margin:7px">Area of a circle segment</h7>
+    <h8 style="font-size:160%;margin:7px">Area of a circle segment</h7>
 <br>
 <br>
 <div>
@@ -1758,7 +2116,7 @@ circle slice.
 <br>
 <br>
 <div>
-<h8 style="font-size:160%;margin:7px">Circumference of a circle</h8>
+<h9 style="font-size:160%;margin:7px">Circumference of a circle</h9>
 <br>
 <br>
 <div>
@@ -1853,7 +2211,7 @@ number.
 <br>
 <br>
 <div>
-<h9 style="font-size:160%;margin:7px;">Volume of a sphere</h9>
+<h10 style="font-size:160%;margin:7px;">Volume of a sphere</h10>
 <br>
 <br>
 <div>
@@ -1938,8 +2296,7 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 <br>
 <br>
 <div>
-<h10 style="font-size:160%;margin:7px;">Volume of a spherical cap
-</h10>
+<h11 style="font-size:160%;margin:7px;">Volume of a spherical cap</h11>
 <br>
 <br>
 <div>
