@@ -233,9 +233,9 @@
        "name": "Area of a square",
 	"description": "The basis of area calculation",
 "target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=a=5_A=?",
-  "mathExpression-output": "area=Math.pow(side, 2)",
-  "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special type of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
+ "mathExpression-input": "required square_side=5_Area=?",
+  "mathExpression-output": "area = side * side = side^2",
+   "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special type of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
   "keywords": "side, length, area",
     "image": "square.png",
      "eduQuestionType": "Area calculation"
@@ -246,9 +246,9 @@
        "name": "Volume of a cube",
        "description": "The basis of volume calculation",
      "target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=a=5_V=?",
-     "mathExpression-output": "Math.pow(edge, 3)",    
-       "abstract": "A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. Its volume is width * length * height. Its projections are rectangle, rectangle and rectangle. Related shapes are regular polygon based block, square, cube and rectangle. A cube is a special case of a cuboid. Its measurable property is its edge length. Its projections are square, square and square. Related shapes are sphere, square and cuboid.",
+          "mathExpression-input": "required cube_edge=5_Volume=?",
+     "mathExpression-output": "volume = edge * edge * edge = edge^3",  
+        "abstract": "A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. Its volume is width * length * height. Its projections are rectangle, rectangle and rectangle. Related shapes are regular polygon based block, square, cube and rectangle. A cube is a special case of a cuboid. Its measurable property is its edge length. Its projections are square, square and square. Related shapes are sphere, square and cuboid.",
   "keywords": "edge, length, volume",
      "image": "cubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
@@ -260,9 +260,9 @@
      "description": "The exact area of a circle based on direct comparison with a square.",
      "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=r=5_A=?",
-     "mathExpression-output": "3.2 * Math.pow(radius, 2)",
-     "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
+"mathExpression-input": "required circle_radius=5_Area=?",
+     "mathExpression-output": "3.2 * radius^2",
+  "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
 	"keywords": "radius, area",
 	  "image": "areaOfACircle.jpg",
      "eduQuestionType": "Area calculation"
@@ -274,9 +274,9 @@
 "description": "The exact area of a circle segment by subtracting a triangle from a circle slice.",
    "disambiguatingDescription": "Equivalent to the conventional method, but relies on trigonometric functions.",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=r=5_h=2_A=?",
-     "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
-     "image": "circleSegment.jpg",
+     "mathExpression-input": "required segment_radius=5_height=2_Area=?",
+     "mathExpression-output": "Acos((radius-segmentHeight) / radius) * radius^2 - sin(Acos((radius-segmentHeight)/radius)) * (radius-segmentHeight) * radius", 
+    image": "circleSegment.jpg",
      "eduQuestionType": "Area calculation"
    },
 
@@ -286,7 +286,7 @@
      "description": "Algebraic derivation of the exact circumference of a circle from its area",
 "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=r=5_C=?", 
+"mathExpression-input": "required circle_radius=5_Circumference=?", 
      "mathExpression-output": "6.4 * radius",
      "image": "circumference.jpg",
      "eduQuestionType": "Length calculation"
@@ -298,9 +298,9 @@
 	 "description": "The exact volume of a sphere by directly comparing it to a cube.",
     "disambiguatingDescription": "More accurate than the traditional 4 × π × r³ / 3 formula.",
 "target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=r=3_V=?",
-     "mathExpression-output": "Math.pow((Math.sqrt(3.2) * radius), 3)", 
-     "abstract": "A sphere is a 3 dimensional solid shape. Its measurable property is its diameter. Its radius is half of the diameter. Its projection is a circle. Related shapes are circle, cylinder, cube and cone.",
+    "mathExpression-input": "required cone_radius=5_height=3_Volume=?",
+     "mathExpression-output": "3.2 * radius^2 * height / sqrt(8)",
+    "abstract": "A sphere is a 3 dimensional solid shape. Its measurable property is its diameter. Its radius is half of the diameter. Its projection is a circle. Related shapes are circle, cylinder, cube and cone.",
 	"keywords": "radius, volume",
 	"image": "sphereAndCubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
@@ -312,9 +312,9 @@
         "description": "The volume of a spherical cap based on the radius and the height of the cap.",
      "disambiguatingDescription": "More accurate than the conventional formula ",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=r=5_h=3_V=?",
-     "mathExpression-output": "1.6 * Math.pow(r, 2) * Math.sqrt(3.2) * h", 
-     "image": "sphericalCap.jpg",
+     "mathExpression-input": "required cap_radius=5_height=3_Volume=?",
+     "mathExpression-output": "1.6 * radius^2 * sqrt(3.2) * height", 
+    "image": "sphericalCap.jpg",
      "eduQuestionType": "Volume calculation"
   },
        
@@ -324,9 +324,9 @@
 	 "description": "The exact volume of a cone by comparing the volume of a quarter cone to an octant sphere with an equal radius.",
 	"disambiguatingDescription": "Direct shape relationships ensure greater accuracy in real-world measurements then the base × height / 3 approximation.",
 	"target": "https://gmac4247.github.io",
-    "mathExpression-input": "required name=r=5_H=3_V=?",
-     "mathExpression-output": "3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)",
-     "abstract": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
+        "mathExpression-input": "required cone_radius=5_height=3_Volume=?",
+     "mathExpression-output": "3.2 * radius^2 * height / sqrt(8)",
+      "abstract": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
 	"keywords": "radius, height, volume",
 	"image": [
        "coneAndSphereMarkup.jpeg",
@@ -343,9 +343,9 @@
        "description": "The exact volume of a frustum cone based on its top and bottom diameter and height by subtracting the missing tip from a theoretical full cone.",
      "disambiguatingDescription": "Not the translation of the simplified formula of the frustum pyramid.",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=d1=5_d2=2_h=3_V=?",
-     "mathExpression-output": "frustumHeight * (4 / 5 * Math.pow(bottomDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * Math.pow(topDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter) - 1)) / Math.sqrt(8)",
-     "image": "frustumOfConeMarkup.png",
+     "mathExpression-input": "required bottomDiameter=5_topDiameter=2_frustumHeight=3_Volume=?",
+     "mathExpression-output": "frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / sqrt(8)",
+       "image": "frustumOfConeMarkup.png",
      "eduQuestionType": "Volume calculation"
    },
 
@@ -355,9 +355,9 @@
        "description": "The exact surface area of a cone based on its radius and height.",
      "disambiguatingDescription": "Based on the real height.",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=r=5_H=3_A=?",
-     "mathExpression-output": "3.2 * (Math.pow(radius, 2) + (Math.pow(radius, 2) + Math.pow(height, 2)) * (radius / Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2))))", 
-     "image": "coneMarkup.jpeg",
+"mathExpression-input": "required cone_radius=5_height=3_Area=?",
+     "mathExpression-output": "3.2 * radius * (radius + sqrt(radius^2 +height^2))", 
+         "image": "coneMarkup.jpeg",
      "eduQuestionType": "Area calculation"
    },
 
@@ -367,9 +367,9 @@
      "description": "The exact volume of a pyramid based on its bottom area and height using the base × height / √8 coefficient of the volume of a cone",
      "disambiguatingDescription": "Direct shape relationships ensure greater accuracy in real-world measurements then the base × height / 3 approximation.",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=A=5_H=3_V=?",
-     "mathExpression-output": "baseArea * height / Math.sqrt(8)", 
-     "abstract": "A regular pyramid is a 3 dimensional solid shape. Its measurable properties are its number and length of the sides of its base and its height. Its projections are polygon and triangle. Related shapes are regular polygon, regular polygon based block, tetrahedron, cone and triangle.",
+          "mathExpression-input": "required pyramid_baseArea=5_height=3_Volume=?",
+     "mathExpression-output": "baseArea * height / sqrt(8)", 
+      "abstract": "A regular pyramid is a 3 dimensional solid shape. Its measurable properties are its number and length of the sides of its base and its height. Its projections are polygon and triangle. Related shapes are regular polygon, regular polygon based block, tetrahedron, cone and triangle.",
 	"keywords": "base, height, volume",
 	"image": [
        "conePyramidVolumeMarkup.jpeg",
@@ -380,13 +380,13 @@
 
 {
      "@type": "SolveMathAction",
-        "name": "Volume of a frustum pyramid",
-    "description": "The exact volume of a frustum pyramid based on its top and bottom base area and height",
+        "name": "Volume of a square frustum pyramid",
+    "description": "The exact volume of a square frustum pyramid based on its top and bottom base area and height",
      "disambiguatingDescription": "The formula subtracts the missing tip from a theoretical full pyramid. Universally applicable",
 	"target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=a=5_b=3_H=2_V=?",
-       "mathExpression-output": "frustumHeight * (Math.pow(bottomEdge, 2) * (1 / (1 - topEdge / bottomEdge)) - Math.pow(topEdge, 2) * (1 / (1 - topEdge / bottomEdge) - 1)) / Math.sqrt(8)",
-     "image": "frustumOfPyramidMarkup.png",
+"mathExpression-input": "required bottomEdge=5_topEdge=3_frustumHeight=2_Volume=?",
+       "mathExpression-output": "frustumHeight * (bottomEdge^2 * (1 / (1 - topEdge / bottomEdge)) - topEdge^2 * (1 / (1 - topEdge / bottomEdge) - 1)) / sqrt(8)",
+  "image": "frustumOfPyramidMarkup.png",
      "eduQuestionType": "Volume calculation"
    },
 
@@ -396,9 +396,9 @@
        "description": "The exact volume of a tetrahedron based on its edge length using the exact base × height / √8 coefficient of the volume of a cone",
      "disambiguatingDescription": "Direct shape relationships ensure greater accuracy in real-world measurements then the base × height / 3 approximation.",
 "target": "https://gmac4247.github.io",
-     "mathExpression-input": "required name=a=5_V=?",
-     "mathExpression-output": "Math.pow(edge, 3) / 8", 
-     "abstract": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
+     "mathExpression-input": "required edge=5_Volume=?",
+     "mathExpression-output": "edge^3 / 8", 
+   "abstract": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
 	"keywords": "edge, length, volume",
 	"image": "tetrahedronMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
@@ -485,12 +485,6 @@
 <br>
 <br>
 The concept of setting the square and the cube as the basis of the area and the volume calculation is well established and straightforward. Regardless of the shape of the measured object, the unit of measurement of the area is square units and the volume can be expressed in cubic units. 
-<br>
-<br>
-A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width × length.
-<br>
-<br>
-A square is a type of rectangle with equal width and length.
 </p>
 </div>
 <br>
@@ -502,7 +496,15 @@ A square is a type of rectangle with equal width and length.
     <img class="center-fit" src="square.png" alt="Square" id="square">
     </div>
 <br>
-    <math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<br>
+A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width × length.
+<br>
+<p style="margin:12px;">
+A square is a type of rectangle with equal width and length.
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
  <mi>A</mi>
       <mo>=</mo>
@@ -518,22 +520,18 @@ A square is a type of rectangle with equal width and length.
 <br>
 <br>
 <div>
-<p style="margin:12px;">A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. The volume of a cuboid is a simple multiplication of the edges, width × length × height. The cubic root of the product of the edges is the edge length of the theoretical cube that has the same volume as the cuboid. 
-<br>
-<br>
-A cube is a type of cuboid with equal width, length and height.
-<br>
-<br>
-</p>
-</div>
-<br>
-<br>
-<div>
 <h4 style="font-size:160%;margin:7px;">Volume of a cube</h4>
 <br>
 <div class="imgbox">
     <img class="center-fit" src="cubeMarkup.jpeg" alt="Cube" id="cube">
     </div>
+<br>
+<p style="margin:12px;">A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. The volume of a cuboid is a simple multiplication of the edges, width × length × height. The cubic root of the product of the edges is the edge length of the theoretical cube that has the same volume as the cuboid. 
+<br>
+<br>
+A cube is a type of cuboid with equal width, length and height.
+</p>
+<br>
 <br>
  <math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
@@ -1319,12 +1317,6 @@ function updateTriangleArea() {
 <br>
 <br>
 <div>
-<p style="margin:12px;">Other shapes are more challenging. The ratios are in the shapes; one just has to write them down algebraically.
-</p>
-</div>
-<br>
-<br>
-<div>
 <h6 style="font-size:160%;margin:7px;">Area of a regular polygon</h6>
 <br>
 <br>
@@ -1444,6 +1436,477 @@ function updatePolygonArea() {
 <br>
 <br>
 <div>
+<h7 style="font-size:160%;margin:7px">Area of a circle</h7>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="circle-radius-a">Radius:</label>
+<input id="circle-radius-a" type="number" value="1" step="any" />
+<script>
+  function circleArea(radius) {
+    return 3.2 * radius * radius;
+  }
+
+  document.getElementById('circle-radius-a').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+	  
+    if (isNaN(radius)) {
+      document.getElementById('circle-area').innerText = '';
+    return;
+    }
+
+    document.getElementById('circle-area').innerText =
+      `Area: ${circleArea(radius).toFixed(5)} square units`;
+    });
+</script>
+<p style="margin:12px;" id="circle-area"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="areaOfACircle.jpg" alt="Circle" id="circle">
+</div>
+<br>
+<p style="margin:12px;" >
+The area of a circle is defined by comparing it to a square since that is the base of area calculation.
+<br>
+<br>
+The circle is cut to four quadrants, each placed with their origin on the vertices of a square.
+<br>
+<br>
+In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square. 
+<br>
+<br>
+The arcs of the quadrants of a circumscribed circle would meet at the center of the square.
+<br>
+<br>
+When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, the uncovered area in the middle equals exactly the sum of the overlapping areas respectively. 
+</p>
+<br>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="equityFigure.jpg" alt="Figure" id="figure">
+    </div>
+<br>
+<br>
+<p style="margin:12px;">Quarter of the uncovered area in the middle:
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mrow>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>+</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<p style="margin:12px;">The area of an overlapping section:
+</p>
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The equation is calculable using a calculator, or it can be simplified algebraically.
+</p>
+<br>
+<br>
+<p style="margin:12px;">Simplifying the original equation:
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>+</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Substituting 90°/360° for 1/4:
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mfrac>
+<mn>90</mn>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Which is equivalent to:
+<br>
+<br>
+1 = 1
+</p>
+<br>
+<br>
+<p style="margin:12px;">
+The ratio between the ray of the circle and the side of the square can be calculated by using the Pythagorean theorem.
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<msup>
+ <mi>r</mi>
+ <mn>2</mn>
+</msup>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+   <mi>side</mi>
+   <mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+ </msup>
+ <mo>+</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+ <mi>side</mi>
+ <mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+ <mrow>
+ <mi>r</mi>
+ <mo>=</mo>
+ <msqrt>
+<mn>5</mn>
+</msqrt>
+<mo>×</mo>
+<mfrac>
+<mi>side</mi>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;"> The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>A</mi>
+<mo>=</mo>
+<mfrac>
+<mn>16</mn>
+<mn>5</mn>
+</mfrac>
+<mo>×</mo>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+<br>
+<br>
+<div>
 <p style="margin:12px;">The constant relationship between a circle's circumference and its diameter has captivated mathematicians for millennia. 
 While its approximate value of 3.14, commonly denoted by the Greek letter π, is widely recognized today, the historical development of this concept is less understood.
 Ancient civilizations grappled with this geometric challenge, employing various methods to approximate this ratio. 
@@ -1514,480 +1977,8 @@ My work, however, suggests that when we move from these idealizations to the mea
 <br>
 <br>
 By focusing on area relationships and direct comparisons between shapes, the following method emphasizes a more intuitive and potentially more fundamental understanding of geometric concepts.
-<br>
-<br>
-<br>
-<br>
 </p>
 </div>
-<div>
-<h7 style="font-size:160%;margin:7px">Area of a circle</h7>
-<br>
-<br>
-<div>
-<label style="margin:12px;" for="circle-radius-a">Radius:</label>
-<input id="circle-radius-a" type="number" value="1" step="any" />
-<script>
-  function circleArea(radius) {
-    return 3.2 * radius * radius;
-  }
-
-  document.getElementById('circle-radius-a').addEventListener('input', function () {
-    const radius = parseFloat(this.value);
-	  
-    if (isNaN(radius)) {
-      document.getElementById('circle-area').innerText = '';
-    return;
-    }
-
-    document.getElementById('circle-area').innerText =
-      `Area: ${circleArea(radius).toFixed(5)} square units`;
-    });
-</script>
-<p style="margin:12px;" id="circle-area"></p>
-</div>
-<br>
-<div class="imgbox">
-    <img class="center-fit" src="areaOfACircle.jpg" alt="Circle" id="circle">
-</div>
-<br>
-<p style="margin:12px;" >
-The area of a circle is defined by comparing it to a square since that is the base of area calculation.
-<br>
-<br>
-The circle is cut to four quadrants, each placed with their origin on the vertices of a square.
-<br>
-<br>
-In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square. 
-<br>
-<br>
-The arcs of the quadrants of a circumscribed circle would meet at the center of the square.
-<br>
-<br>
-When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, the uncovered area in the middle equals exactly the sum of the overlapping areas respectively. 
-</p>
-<br>
-<br>
-<div class="imgbox">
-    <img class="center-fit" src="equityFigure.jpg" alt="Figure" id="figure">
-    </div>
-<br>
-<br>
-<p style="margin:12px;">Quarter of the uncovered area in the middle:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
- <mfrac>
-<mrow>
-<mn>3.2</mn>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-</mrow>
-<mn>4</mn>
-</mfrac>
-<mo>-</mo>
-<mo>(</mo>
-<mn>3.2</mn>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<mn>90</mn>
-<mo>-</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-<mo>+</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<mfrac>
-<mrow>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mi>r</mi>
-</mrow>
-<mn>4</mn>
-</mfrac>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mi>r</mi>
-</mrow>
-<mn>2</mn>
-</mfrac>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
-<mo>=</mo>
-</mrow>
-</math>
-</p>
-<br>
-<p style="margin:12px;">The area of an overlapping section:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
-<mn>2</mn>
-<mo>×</mo>
-<mo>(</mo>
-<mn>3.2</mn>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-<mo>-</mo>
-<mfrac>
-<mrow>
-<mfrac>
-<mrow>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mi>r</mi>
-</mrow>
-<mn>4</mn>
-</mfrac>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mi>r</mi>
-</mrow>
-<mn>2</mn>
-</mfrac>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
-</math>
-</p>
-<br>
-<br>
-<p style="margin:12px;">The equation is calculable using a calculator, or it can be simplified algebraically.
-</p>
-<br>
-<br>
-<p style="margin:12px;">Simplifying the original equation:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
- <mfrac>
-<mn>1</mn>
-<mn>4</mn>
-</mfrac>
-<mo>-</mo>
-<mo>(</mo>
-<mfrac>
-<mrow>
-<mn>90</mn>
-<mo>-</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-<mo>+</mo>
-<mfrac>
-<mn>1</mn>
-<mn>8</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
-<mo>=</mo>
-<mrow>
-<mn>2</mn>
-<mo>×</mo>
-<mo>(</mo>
-<mfrac>
-<mrow>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-<mo>-</mo>
-<mfrac>
-<mrow>
-<mo>(</mo>
-<mfrac>
-<mn>1</mn>
-<mn>8</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
-</math>
-</p>
-<br>
-<br>
-<p style="margin:12px;">Simplifying further:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
- <mfrac>
-<mn>1</mn>
-<mn>4</mn>
-</mfrac>
-<mo>-</mo>
-<mo>(</mo>
-<mfrac>
-<mrow>
-<mn>90</mn>
-<mo>-</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-<mo>)</mo>
-<mo>=</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-</mrow>
-</math>
-</p>
-<br>
-<br>
-<p style="margin:12px;">Substituting 90°/360° for 1/4:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
-<mfrac>
-<mn>90</mn>
-<mn>360</mn>
-</mfrac>
-<mo>-</mo>
-<mo>(</mo>
-<mfrac>
-<mrow>
-<mn>90</mn>
-<mo>-</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-<mo>)</mo>
-<mo>=</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mfrac>
-<mrow>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-<mn>360</mn>
-</mfrac>
-</mrow>
-</math>
-</p>
-<br>
-<br>
-<p style="margin:12px;">Simplifying further:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-<mo>=</mo>
-<mi>Atan</mi>
-  <mo>(</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-<mo>)</mo>
-</mrow>
-</math>
-</p>
-<br>
-<br>
-<p style="margin:12px;">Which is equivalent to:
-<br>
-<br>
-1 = 1
-</p>
-<br>
-<br>
-<p style="margin:12px;">
-The ratio between the ray of the circle and the side of the square can be calculated by using the Pythagorean theorem.
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<msup>
- <mi>r</mi>
- <mn>2</mn>
-</msup>
-<mo>=</mo>
-<msup>
-<mrow>
-<mo>(</mo>
-<mfrac>
-   <mi>side</mi>
-   <mn>4</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
-<mn>2</mn>
- </msup>
- <mo>+</mo>
-<msup>
-<mrow>
-<mo>(</mo>
-<mn>2</mn>
-<mo>×</mo>
-<mrow>
-<mo>(</mo>
-<mfrac>
- <mi>side</mi>
- <mn>4</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
-<mo>)</mo>
-</mrow>
-<mn>2</mn>
-</msup>
-</mrow>
-</math>
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
- <mrow>
- <mi>r</mi>
- <mo>=</mo>
- <msqrt>
-<mn>5</mn>
-</msqrt>
-<mo>×</mo>
-<mfrac>
-<mi>side</mi>
-<mn>4</mn>
-</mfrac>
-</mrow>
-</math>
-</p>
-<br>
-<p style="margin:12px;"> The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mi>A</mi>
-<mo>=</mo>
-<mfrac>
-<mn>16</mn>
-<mn>5</mn>
-</mfrac>
-<mo>×</mo>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-<mo>=</mo>
-<mn>3.2</mn>
-<msup>
-<mi>r</mi>
-<mn>2</mn>
-</msup>
-</mrow>
-</math>
-</p>
 </div>
 <br>
 <br>
