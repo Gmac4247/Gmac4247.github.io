@@ -336,13 +336,16 @@ The Greek Archimedes’ method for estimating the π is often celebrated as a fo
 But that method contains critical flaws.
 <br>
 <br>
-Archimedes approximated the circle using inscribed and circumscribed polygons, establishing lower and upper bounds. He began with a hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. His upper bound was a 96-gon, chosen under the assumption that more sides mean closer resemblance to a circle.
+Archimedes approximated the circle using inscribed and circumscribed polygons. He began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. He then increased the number of sides to 96, observing how the difference between the two polygonal perimeters — one inside the circle, one outside — became smaller. 
 <br>
 <br>
-Why did he believe that?
+This narrowing gap was key. Archimedes likely believed that as the number of sides increased, the perimeters of the inscribed and circumscribed polygons would converge toward the true circumference of the circle. If plotted on a graph, the difference between these two values would approach zero — and the midpoint between them would approximate the circle’s perimeter.
 <br>
 <br>
-This belief is often traced to the isoperimetric theory, which states that a circle maximizes area for a given perimeter. That idea likely emerged from observing simple polygons: the triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
+He assumed that more sides mean closer resemblance to a circle.
+<br>
+<br>
+This belief is often cited as the isoperimetric theory, which states that a circle maximizes area for a given perimeter. That idea likely emerged from observing simple polygons: the triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
 <br>
 <br>
 But this assumption ignores a crucial geometric reality: as the number of sides increases, the internal angles of the polygon approach 180°, which is far from the curvature of a circle. In contrast, polygons with internal angles in the range of ~150°–160°, such as the 13- to 16-gon, preserve a meaningful bend that better reflects circularity.
@@ -357,7 +360,7 @@ Hence his final value of 3.14... lies between two underestimates. The method its
 - Misapplied isoperimetric logic beyond its valid range
 <br>
 <br>
-- Possible trigonometric inaccuracies in calculating the 96-gon
+- Possible trigonometric inaccuracies in calculating the properties of the 96-gon
 <br>
 <br>
 - Rounding errors of infinite fractions, multiplied 96 times
