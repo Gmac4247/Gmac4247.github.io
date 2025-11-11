@@ -190,7 +190,7 @@
 },
 "dateCreated": "2024-08-31",
 "datePublished": "2024-08-31",
-"dateModified": "2025-11-10",
+"dateModified": "2025-11-11",
 "description": "About the context of the Core Geometric System ™, the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline": "Introducing the Core Geometric System ™",
@@ -330,32 +330,40 @@ Historical records suggest that ancient Babylonians initially calculated it as 3
 <p style="margin:12px;"><b>Archimedes and the Polygonal Trap</b>
 <br>
 <br>
-The Greek Archimedes’ method for estimating the π is often celebrated as a triumph of geometric reasoning. 
+The Greek Archimedes’ method for estimating the π is often celebrated as a foundational triumph of geometric reasoning.
 <br>
 <br>
-He began with a circle bounded by an inscribed and a circumscribed hexagon—figures whose properties can be described with exactness. From there, he increased the number of sides to 96, using trigonometry to approximate the perimeter.
-The polygons can be divided into triangles. The ratio between the legs of the triangles and their hypotenuses can be measured linearly.
+But that method contains critical flaws.
 <br>
 <br>
-But this method rests on a flawed assumption: that a circle maximizes area for a given perimeter. This is not universally true, and it introduces a logical error into the foundation of the approximation. Moreover, calculating the properties of a 96-gon involves rounding infinite fractions—errors that are multiplied 96 times, amplifying the imprecision.
+Archimedes approximated the circle using inscribed and circumscribed polygons, establishing lower and upper bounds. He began with a hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. His upper bound was a 96-gon, chosen under the assumption that more sides mean closer resemblance to a circle.
 <br>
 <br>
-Calling the inscribed hexagon a “lower bound” is already questionable. Calling the 96-gon an “upper bound” is even more so. 
-</p>
-<br>
-<details>
-  <summary><strong style="margin:12px;">The theoretical upper bound would be a polygon with the number of sides approaching infinity...</strong></summary>
-  <p style="margin:12px;">In that case the angles between the side and the diagonals approach a right angle. They never reach a right angle as the diagonals converge towards the center. 
+Why did he believe that?
 <br>
 <br>
-If we relate the arc of a corresponding slice of an isoperimetric circle, the length of the arc equals the side in question. So the chord related to the arc is shorter than the side. If we want to place the arc with the chord so that it touches both diagonals, it has to be within the polygon. With the curvature of the arc becoming decreasingly distinctive, it doesn't bulge beyond the side. Eventually it will not even touch the side. 
+This belief is often traced to the isoperimetric theory, which states that a circle maximizes area for a given perimeter. That idea likely emerged from observing simple polygons: the triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
 <br>
 <br>
-Hence the polygon with the same number of sides, which circumscribed the circle is smaller, so its perimeter is shorter than the circle.
-</p>
-</details>
+But this assumption ignores a crucial geometric reality: as the number of sides increases, the internal angles of the polygon approach 180°, which is far from the curvature of a circle. In contrast, polygons with internal angles in the range of ~150°–160°, such as the 13- to 16-gon, preserve a meaningful bend that better reflects circularity. Now that we know the true coefficient is 3.2, this angular range becomes a key indicator of curvature alignment.
 <br>
-<p style="margin:12px;">The perimeter of the circumscribed polygon that was believed to be an overestimate of the circumference was practically an underestimate of it. 
+<br>
+Archimedes pushed his method far beyond this curve-aligned threshold — and the result was a recursive underestimate. His final value, 3.14…, is smaller than 3.2, not because the circle is smaller, but because the method itself introduced compounding errors. These include:
+<br>
+<br>
+- Misapplied isoperimetric logic beyond its valid range
+<br>
+<br>
+- Possible trigonometric inaccuracies in calculating the 96-gon
+<br>
+<br>
+- Rounding errors of infinite fractions, multiplied 96 times
+<br>
+<br>
+What we’re left with is not a proof, but a layered approximation — one that has shaped centuries of geometry, but now deserves a closer, more rational reexamination.
+<br>
+<br>
+The perimeter of the circumscribed polygon that was believed to be an overestimate of the circumference was practically an underestimate of it. 
 <br>
 <br>
 Hence the value of the π lies between two underestimates. What we’re left with is not a proof, but a layered approximation.
