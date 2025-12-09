@@ -364,11 +364,16 @@
 <br>
 <br>
 <div itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="operations">
+<h3 itemprop="name" style="margin:12px">Basic Operations</h3>
 <meta itemprop="url" content="https://gmac4247.github.io">
-<meta itemprop="name" content="Basic Operations">
 <meta itemprop="inLanguage" content="en">
-<meta itemprop="learningResourceType" content="MathSolver">
-<meta itemprop="usageInfo" content="For home and professional use">
+<meta itemprop="name" content="Basic Operations">
+<meta itemprop="keywords" content="Basic Algebraic Operations, Addition, Subtraction, Multiplication, Division">
+<meta itemprop="educationalLevel" content="basic">
+<meta itemprop="typicalAgeRange" content="3-9">
+<meta itemprop="usageInfo" content="Algebra begins here">
+<br>
+<br>
 <section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="addition">
 <h4 itemprop="eduQuestionType" style="margin:12px">+ Addition</h4>
 <br>
@@ -465,7 +470,7 @@ but (2 flowers) × (3 flowers) = 6 square flowers.</p>
 <p itemprop="about" style="margin:12px">The opposite of multiplication</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">6 / 3 = ?</p>
+<p itemprop="mathExpression" style="margin:12px">6 / 3 = ?</p>
 <div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
 	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
 </div>
@@ -523,20 +528,32 @@ That could be written in decimal form only with an infinite number of numerals.
 </p>
 <br>
 <br>
-<div id=operations_with_fractions>
-<h3 style="margin:12px">Operations with Fractions</h3>
+<div itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id=operations_with_fractions>
+<h3 itemprop="name" style="margin:12px">Operations with Fractions</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="Adding fractions, subtracting fractions, multiplying fractions, dividing fractions">
+<meta itemprop="educationalLevel" content="medium">
+<meta itemprop="typicalAgeRange" content="9-12">
+<meta itemprop="usageInfo" content="This is required for basic geometry">
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="adding_fractions" itemref="addition">
-<h4 itemprop="name" style="margin:12px">➕ Adding Fractions</h4>
+<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction id="adding_fractions" itemref="addition">
+<h4 itemprop="name" style="margin:12px">Adding Fractions</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">Adding the counters if the denominators are the same.</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example:
-</p>
+<p itemprop="mathExpression" style="margin:12px">1 / 4 + 3 / 4 = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="4 / 4 = 1">
+</div>
 <br>
+<div itemprop="description">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mfrac><mn>1</mn><mn>4</mn></mfrac>
@@ -553,21 +570,28 @@ That could be written in decimal form only with an infinite number of numerals.
     <mn>1</mn>
   </mrow>
 </math>
+</div>
 </section>
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="subtracting_fractions" itemref="subtraction">
-<h4 itemprop="name" style="margin:12px">➖ Subtracting Fractions</h4>
+<section itemscope itemtype="http://schema.org/SolveMathAction" id="subtracting_fractions" itemref="subtraction">
+<h4 itemprop="name" style="margin:12px">Subtracting Fractions</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">Subtracting the counters if the denominators are the same.</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example:
-</p>
+<p itemprop="mathExpression" style="margin:12px">5 / 3 - 2 / 3 = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="3 / 3 = 1">
+</div>
 <br>
-	<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<div itemprop="description">
+<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mfrac><mn>5</mn><mn>3</mn></mfrac>
     <mo>-</mo>
@@ -583,20 +607,27 @@ That could be written in decimal form only with an infinite number of numerals.
     <mn>1</mn>
   </mrow>
 	</math>
+</div>
 </section>
 <br>
 <br>		
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="multiplying_fractions" itemref="multiplication">
-<h4 itemprop="name" style="margin:12px">✖️ Multiplying Fractions</h4>
+<section itemscope itemtype="http://schema.org/SolveMathAction" id="multiplying_fractions" itemref="multiplication">
+<h4 itemprop="name" style="margin:12px">Multiplying Fractions</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">Multiplying counter by counter and denominator by denominator.
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example:
-</p>
+<p itemprop="mathExpression" style="margin:12px">2 / 3 × 4 / 5 = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="8 / 15">
+</div>
 <br>
+<div itemprop="description">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mfrac><mn>2</mn><mn>3</mn></mfrac>
@@ -611,20 +642,27 @@ That could be written in decimal form only with an infinite number of numerals.
     <mfrac><mn>8</mn><mn>15</mn></mfrac>
   </mrow>
 </math>
+</div>
 </section>
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="dividing_fractions" itemref="division">
-<h4 itemprop="name" style="margin:12px">➗ Dividing Fractions</h4>
+<section itemscope itemtype="http://schema.org/SolveMathAction" id="dividing_fractions" itemref="division">
+<h4 itemprop="name" style="margin:12px">Dividing Fractions</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">Dividing by a fraction equals multiplying by its reciprocal.</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example:
-</p>
+<p itemprop="description" style="margin:12px">(5 / 4) / (3 / 2) = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="(5 / 4) × (2 / 3) = 10 / 12 = 5 / 6">
+</div>
 <br>
+<div itemprop="description">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mfrac><mn>5</mn><mn>4</mn></mfrac>
@@ -647,6 +685,7 @@ That could be written in decimal form only with an infinite number of numerals.
     <mfrac><mn>5</mn><mn>6</mn></mfrac>
   </mrow>
 </math>
+</div>
 </section>
 </div>
 <br>
@@ -695,11 +734,18 @@ The result of raising to a fraction is a root.
 <br>
 <br>
 <section id="geometry">
-<h3 style="margin:7px">The 2nd and the 3rd Powers manifesting in Geometry</h3>
+<h3 itemprop="name" style="margin:7px">The 2nd and the 3rd Powers manifesting in Geometry</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="name" content="Basic Operations">
+<meta itemprop="keywords" content="Basic Algebraic Operations, Addition, Subtraction, Multiplication, Division">
+<meta itemprop="educationalLevel" content="basic">
+<meta itemprop="typicalAgeRange" content="3-9">
+<meta itemprop="usageInfo" content="Geometry begins here">
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="square">
+<section itemscope itemtype="http://schema.org/SolveMathAction" id="square">
 <h3 itemprop="name" style="margin:7px">Area of a Square</h3>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
@@ -712,9 +758,15 @@ The result of raising to a fraction is a root.
 <br>
 <p itemprop="description" style="margin:12px">A square is a rectangle with equal width and length.
 <br>
-The area of a rectangle is the product of its width and length.
+The area of a rectangle is the product of its width and length.</p>
 <br>
-If the width of the rectangle is equal to its length, its area is the square value of its side length.</p>
+<p itemprop="eduQuestionType" style="margin:12px">square area = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="(5 / 4) × (2 / 3) = 10 / 12 = 5 / 6">
+	</div>
 <br>
 <div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
@@ -740,7 +792,7 @@ If the width of the rectangle is equal to its length, its area is the square val
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="cube">
+<section itemscope itemtype="http://schema.org/SolveMathAction" id="cube">
 <h3 itemprop="name" style="margin:7px">Volume of a Cube</h3>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
@@ -755,10 +807,16 @@ If those are equal, that is a cube.</p>
 <br>
 <p itemprop="description" style="margin:12px">The volume of a cuboid is the product of width, length and height. 
 <br>
-If its edges are equal, its volume equals the cubic value of its edge length.</p>
+<p itemprop="eduQuestionType" style="margin:12px">cube volume = ?</p>
 <br>
 <p itemprop="abstract" style="margin:12px">That is a direct extrapolation from the area of the square, establishing the basis for volumetric relationships."
 </p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="(5 / 4) × (2 / 3) = 10 / 12 = 5 / 6">
+</div>
 <br>
 <div itemprop="mathExpression">
 <math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
