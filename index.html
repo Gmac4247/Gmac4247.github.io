@@ -342,7 +342,7 @@
 </details>
 </section>
 <br>
-<section itemscope itemtype="http://schema.org/LearningResource" id="equation">
+<section itemscope itemtype="https://schema.org/LearningResource" id="equation">
 <details>
 <summary><h3 itemprop="name" style="margin:7px">2. Equations</h3></summary>
 <br>
@@ -363,21 +363,13 @@
 <br>
 <br>
 <br>
-<div id="operations">
-<section itemscope itemtype="http://schema.org/MathSolver" id="addition">
+<div itemscope itemtype="http://schema.org/MathSolver" id="operations">
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="name" content="Basic Geometry Math Solver">
 <meta itemprop="inLanguage" content="en">
 <meta itemprop="usageInfo" content="For home and professional use">
+<section itemscope itemtype="http://schema.org/SolveMathAction"id="addition">
 <h4 itemprop="eduQuestionType" style="margin:12px">Addition</h4>
-<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
-<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
-	<meta itemprop="urlTemplate" content="https://basic-geometry.github.io/solver?q={math_expression_string}">
-    </div>
-    
-    <div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
-      <meta itemprop="eduSolution" content="2">
-	</div>
 <br>
 <br>
 <p itemprop="mathExpression" style="margin:12px">1 + 1 = ?</p
@@ -392,7 +384,13 @@
 <br>
 15 + 21 = 36
 </p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
 </div>
+    
+    <div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="2">
+	</div>
 </section>
 <br>
 <br>
