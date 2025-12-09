@@ -348,7 +348,7 @@
 <br>
 <br>
 <section id="equation_symbol">
-<h4 itemprop="about" style="margin:12px">= The Equation Symbol</h4>
+<h4 itemprop="about" style="margin:12px">= Equation</h4>
 <br>
 <br>
 <p itemprop="description" style="margin:12px">The numbers or expressions of one side equal in value to the other side.
@@ -365,12 +365,12 @@
 <br>
 <div itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="operations">
 <meta itemprop="url" content="https://gmac4247.github.io">
-<meta itemprop="name" content="Basic Math Solver">
+<meta itemprop="name" content="Basic Operations">
 <meta itemprop="inLanguage" content="en">
+<meta itemprop="learningResourceType" content="MathSolver">
 <meta itemprop="usageInfo" content="For home and professional use">
-<section id="addition">
-<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
-<h4 itemprop="eduQuestionType" style="margin:12px">➕ Addition</h4>
+<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="addition">
+<h4 itemprop="eduQuestionType" style="margin:12px">+ Addition</h4>
 <br>
 <br>
 <p itemprop="mathExpression" style="margin:12px">1 + 1 = ?</p>
@@ -380,6 +380,8 @@
 <div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
       <meta itemprop="eduSolution" content="2">
 </div>
+<br>
+<br>
 <p itemprop="description" style="margin:12px">🌻+🌻=🌻🌻</p>
 </p>
 <br>
@@ -389,25 +391,27 @@
 <br>
 15 + 21 = 36
 </p>
-</div>
 </section>
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="subtraction" itemref="addition">
-<h4 itemprop="name" style="margin:12px">➖ Subtraction</h4>
+<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="subtraction" itemref="addition">
+<h4 itemprop="eduQuestionType" style="margin:12px">- Subtraction</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">The opposite of addition</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example #1: 
+<p itemprop="mathExpression" style="margin:12px">2 - 1 = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="1">
+</div>
 <br>
 <br>
-2 - 1 = 1
-<br>
-<br>
-🌻🌻-🌻=🌻
+<p itemprop="description" style="margin:12px">🌻🌻-🌻=🌻
 </p>
 <br>
 <br>
@@ -420,20 +424,23 @@
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="multiplication" itemref="addition">
-<h4 itemprop="name" style="margin:12px">✖️ Multiplication</h4>
+<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="multiplication" itemref="addition">
+<h4 itemprop="eduQuestionType" style="margin:12px">× Multiplication *</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">An advanced form of addition</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example #1: 
+<p itemprop="mathExpression" style="margin:12px">2 × 3 = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="6">
+</div>
 <br>
 <br>
-2 × 3 = 6
-<br>
-<br>
-🌻🌻🌻+🌻🌻🌻=🌻🌻+🌻🌻+🌻🌻=🌻🌻🌻🌻🌻🌻</p>
+<p itemprop="description" style="margin:12px">🌻🌻🌻+🌻🌻🌻=🌻🌻+🌻🌻+🌻🌻=🌻🌻🌻🌻🌻🌻</p>
 <br>
 <br>
 <p itemprop="usageInfo" style="margin:12px">Important notice: 2×🌻🌻🌻=🌻🌻🌻🌻🌻🌻 ,
@@ -451,20 +458,23 @@ but (2 flowers) × (3 flowers) = 6 square flowers.</p>
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" id="division" itemref="multiplication">
-<h4 itemprop="name" style="margin:12px">➗ Division</h4>
+<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="division" itemref="multiplication">
+<h4 itemprop="eduQuestionType" style="margin:12px">÷ Division /</h4>
 <br>
 <br>
 <p itemprop="about" style="margin:12px">The opposite of multiplication</p>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Example #1: 
+<p itemprop="description" style="margin:12px">6 / 3 = ?</p>
+<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="2">
+</div>
 <br>
 <br>
-6 / 3 = 2
-<br>
-<br>
-🌻🌻🌻🌻🌻🌻/🌻🌻🌻 = 2</p>
+<p itemprop="description" style="margin:12px">🌻🌻🌻🌻🌻🌻/🌻🌻🌻 = 2</p>
 <br>
 <br>
 <p itemprop="usageInfo" style="margin:12px">Important notice: 🌻🌻🌻🌻🌻🌻 over 3 equals 🌻🌻 .
