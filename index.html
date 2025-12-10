@@ -832,7 +832,7 @@ The result of raising to a fraction is a root.
 </div>
 </div>
 <br>
-<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="square.png" alt="A square is a 2 dimensional plane shape with 2 perpendicular pairs of parallel straight sides. Area = side × side = side²">
 </figure>
 <br>
@@ -887,7 +887,7 @@ The area of a rectangle is the product of its width and length.</p>
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="cubeMarkup.jpeg" alt="A cube is a 3 dimensional solid shape with 3 equal perpendicular pairs of parallel straight edges. V = edge × edge × edge = edge³">
     </figure>
 <br>
@@ -1767,7 +1767,7 @@ function Atan(x) {
 </div>
 <br>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="pentagon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
 </figure>
 <br>
@@ -1951,12 +1951,18 @@ function updatePolygonArea() {
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="areaOfACircle.jpg" alt="The circle is cut into four quadrants, each placed with their origin on the vertices of a square. The arcs of the quadrants of the circle that equals in area to the square intersect at the quarters on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. r = side × √5 / 4 Area = 3.2r²">
 </figure>
 <br>
 <p itemprop="description" style="margin:12px">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</p>
-<p itemprop="abstract" style="margin:12px">The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
+<section>
+<details>
+  <summary><h4 itemprop="usageInfo" style="margin:12px"><strong>The direct area comparison ensures exactness.</strong></h4></summary>
+<p itemprop="disambiguatingDescription" style="margin:12px"><strong>Archimedes' area formula A = pi × r² is not a direct result of calculus. It’s reverse-engineered by multiplying the approximate circumference formula C = 2pi × r by half the radius—treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
+<br>
+</details>
+</section><p itemprop="abstract" style="margin:12px">The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
 <br>
 <br>
 In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square, leaving some of the square uncovered. 
@@ -2084,7 +2090,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
   <summary><h4 style="margin:12px">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.
 </h4></summary>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemprop="description" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="equityFigure.jpg" alt="Circle area = 3.2r²">
     </figure>
 <br>
@@ -2499,13 +2505,6 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 <br>
 </details>
 </section>
-<section>
-<details>
-  <summary><h4 itemprop="usageInfo" style="margin:12px"><strong>The direct area comparison ensures exactness.</strong></h4></summary>
-<p itemprop="disambiguatingDescription" style="margin:12px"><strong>Archimedes' area formula A = pi × r² is not a direct result of calculus. It’s reverse-engineered by multiplying the approximate circumference formula C = 2pi × r by half the radius—treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
-<br>
-</details>
-</section>
 <p itemprop="description" style="margin:12px">
 The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
 </p>
@@ -2582,7 +2581,7 @@ The area of both the square and the sum of the quadrants equals 16 right triangl
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circumference.jpg" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii. Circumference = 6.4r">
     </figure>
 <br>
@@ -2900,9 +2899,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <br>
-<section itemprop="disambiguatingDescription" id="pi">
+<section id="pi">
 <details>
-  <summary><h4 style="margin:7px">While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood.</h4></summary>
+  <summary><h4 itemprop="disambiguatingDescription" style="margin:7px">While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood.</h4></summary>
 <p style="margin:12px">
 For centuries, the circle has been a symbol of mathematical elegance—and the pi its most iconic constant. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
 <br>
@@ -2931,8 +2930,8 @@ Some think 'Standard Geometry' means accepting the pi. But the pi is actually an
 <details>
 <summary style="margin:12px">He approximated the circumference using inscribed and circumscribed polygons. But that method itself introduced compounding errors.
 </summary>
-<p style="margin:12px">
-He began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. By bisecting the angles (splitting them in half), he turned the hexagons into a 12-gons, then 24-gons, all the way to 96-sided shapes. This allowed him to calculate the perimeter of these shapes using only straight lines and Pythagoras' theorem. 
+<p itemprop="disambiguatingDescription" style="margin:12px">
+Archimedes began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. By bisecting the angles (splitting them in half), he turned the hexagons into a 12-gons, then 24-gons, all the way to 96-sided shapes. This allowed him to calculate the perimeter of these shapes using only straight lines and Pythagoras' theorem. 
 <br>
 <br>
 However, this method relies on a massive assumption: That a polygon with enough sides approaches a circle.
@@ -2971,7 +2970,7 @@ The traditional method of polygon approximation fails not due to rounding errors
 The polygon method attempts to define the perfect circle using imperfect, flawed limits. This destroys the basic geometric ordering that the method is based on, proving it is unsuitable for determining the true circumference to diameter ratio of a circle.
 </p>
 <details>
-  <summary><h4 style="margin:12px">
+  <summary><h4 itemprop="disambiguatingDescription" style="margin:12px">
 What we’re left with is not a proof, but a flawed approximation — one that has shaped centuries of geometry, but now deserves a closer, more rational reexamination.
 </h4></summary>
 <p style="margin:12px">
@@ -3012,7 +3011,7 @@ This equidistance constraint allows us to calculate perimeters for polygons of v
 <h4 style="margin:12px">The Symbol Pi: A Linguistic Shortcut</h4>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">The symbol pi was introduced because the estimate ratio—approximately 3.14159…—is an infinite fraction. Since we can’t write all its digits, we needed a symbol. But this symbol has taken on a life of its own.
+<p itemprop="disambiguatingDescription" style="margin:12px">The symbol pi was introduced because the estimate ratio—approximately 3.14159…—is an infinite fraction. Since we can’t write all its digits, we needed a symbol. But this symbol has taken on a life of its own.
 <br>
 <br>
 Technically, the circumference is a perimeter. So the ratio ( P / d ) ( perimeter over diameter ) became pi / delta in Greek. With ( d = 1 ), we get ( pi / 1 = pi ). 
@@ -3029,7 +3028,7 @@ It was not until the 18th century that the symbol pi, popularized by the mathema
 <h4 style="margin:12px">∫ Calculus: Summary, Not Source</h4>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides. 
+<p itemprop="disambiguatingDescription" style="margin:12px">Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides. 
 <br>
 <br>
 All of the above mentioned approximation methods have two things in common: 
@@ -3063,7 +3062,7 @@ Modern calculus summarizes these approximations with elegant notation, such as:
   </mrow>
 </math>
 <br>
-<p style="margin:12px">
+<p itemprop="disambiguatingDescription" style="margin:12px">
 <strong>But this is not a magical formula—it’s a symbolic summary of prior assumptions.</strong>
 <br>
 <br>
@@ -3110,7 +3109,7 @@ It can be exact with exact limits and certain operations, but if those are given
   </mrow>
 </math>
 <br>
-<p style="margin:12px">This equation has no logical ties to the area nor the circumference of a circle.
+<p itemprop="disambiguatingDescription" style="margin:12px">This equation has no logical ties to the area nor the circumference of a circle.
 <br>
 <br>
 The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these properties.
@@ -3118,11 +3117,11 @@ The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these pr
 </section>
 <br>
 <br>
-<section itemprop="usageInfo" id="solution">
+<section id="solution">
 <h4 style="margin:12px">A Rational Alternative: 3.2</h4>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<p itemprop="usageInfo"  style="margin:12px">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
 <br>
 <br>
 Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
@@ -3152,7 +3151,7 @@ These are two aspects of that.
 <br>
 <br>
 <section id="warning">
-<h4 itemprop="name" style="margin:12px">The Cognitive Risk of flawed geometric Axioms.</h4>
+<h4 itemprop="usageInfo" style="margin:12px">The Cognitive Risk of flawed geometric Axioms.</h4>
 <br>
 <br>
 <p style="margin:12px">The central concern arises from the potential cognitive harm caused by teaching the approximate, irrational constant π as an absolute truth in foundational geometry.
@@ -3213,7 +3212,7 @@ The final conclusion is that adopting a consistent, rational constant like 3.2 o
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
     </figure>
 <br>
@@ -3350,7 +3349,8 @@ const ratio = 2 * height / length;
 <div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
       <meta itemprop="eduSolution" content="10.3554">
 </div>
-</div><br>
+</div>
+<br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="coneMarkup.jpeg" alt="The surface area of a cone is calculated as a circle slice with a radius equal to the slant height. Area = 3.2r × ( r + √( r² + H² )">
   </figure>
@@ -3446,8 +3446,9 @@ const ratio = 2 * height / length;
 <div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
       <meta itemprop="eduSolution" content="5.724">
 </div>
-</div><br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+</div>
+<br>
+<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphereAndCubeMarkup.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
     </figure>
 <br>
@@ -3556,9 +3557,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <p style="margin:6px">The image is an illustration.</p>
 </div>
 <br>
-<br>
 <p itemprop="disambiguatingDescription" style="margin:6px">The conventional formula for the surface area of a sphere was allegedly developed from the " volume = 4/3×pi×radius³ " formula.</p>
-<br>
 <br>
 <p itemprop="description" style="margin:6px"><strong>
 The formula for the real surface area of a sphere is available for 3.2 billion USD.
@@ -3571,10 +3570,27 @@ The formula for the real surface area of a sphere is available for 3.2 billion U
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="sphere" id="cap">
-<h3 itemprop="name" style="margin:7px">Volume of a Spherical Cap</h3>
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="spherical_cap" itemref="sphere">
+<h3 itemprop="name" style="margin:12px">Volume of a Spherical Cap</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="spherical cap volume">
+<meta itemprop="disambiguatingDescription" content="Based on the real volume of a sphere - V = (√(3.2)r)³ - instead of the traditional approximation, and derives the cap volume through a different method.">
+<meta itemprop="educationalLevel" content="medium">
+<meta itemprop="typicalAgeRange" content="12-18">
+<meta itemprop="usageInfo" content="Based on cap radius and height">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="spherical cap radius=2 height=1 volume=?">
+<meta itemprop="eduQuestionType" content="Spherical Cap Volume Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="11.44867">
+</div>
+</div>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphericalCap.jpg" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
     </figure>
     <br>
@@ -3656,10 +3672,25 @@ if ( height === radius) {
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="sphere" id="cone">
-<h3 itemprop="name" style="margin:7px">Volume of a Cone</h3>
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="cone" itemref="sphere">
+<h3 itemprop="name" style="margin:12px">Volume of a Cone</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="cone volume">
+<meta itemprop="educationalLevel" content="advanced">
+<meta itemprop="typicalAgeRange" content="12-18">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="cone radius=1 height=2 volume=?">
+<meta itemprop="eduQuestionType" content="Sphere Volume Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="2.26274">
+</div>
+</div>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="coneAndSphereMarkup.jpeg" alt="Cone volume from sphere = base × height / √8">
 </figure>
 <br>
@@ -3667,11 +3698,11 @@ if ( height === radius) {
 </strong>
 </p>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.">
 </figure>
 <br>
-<div itemprop="description">
+<div itemprop="abstract">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msub>
@@ -3736,18 +3767,18 @@ if ( height === radius) {
 </div>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">The base of the two shapes is a quadrant circle.
+<p itemprop="abstract" style="margin:12px">The base of the two shapes is a quadrant circle.
 </p>
 <br>
-<figure class="imgbox">
+<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="coneAndSphereComparison.png" alt="The base of the two shapes is a quadrant circle.">
 </figure>
 <br>
-<figure class="imgbox">
+<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphereAndConeMarkup.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder. Volume = base × height / √8">
 </figure>
 <br>
-<div itemprop="description">
+<div itemprop="abstract">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msub>
@@ -3800,12 +3831,12 @@ if ( height === radius) {
 </div>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">The slant height of the quadrant cone is √2 × radius.
+<p itemprop="abstract" style="margin:12px">The slant height of the quadrant cone is √2 × radius.
 <br>
 <br>
 The volume of a quadrant cylinder with the same base, and height equal to the slant height of the cone is a simple multiplication.</p>
 <br>
-<div itemprop="description">
+<div itemprop="abstract">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msup>
@@ -3834,7 +3865,7 @@ The volume of a quadrant cylinder with the same base, and height equal to the sl
 </div>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">The slant form has a triangular vertical cross-section. 
+<p itemprop="abstract" style="margin:12px">The slant form has a triangular vertical cross-section. 
 <br>
 The area of a cone's vertical middle cross-section is the half of a cylinder's with equal base and height. 
 <br>
@@ -3909,44 +3940,15 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <br>
-<div id="cone_volume_calculator">
-<label style="margin:12px" for="cone-radius-v">Radius:</label>
-<input id="cone-radius-v" type="number" value="1" step="any">
-<br>
-<label style="margin:12px" for="cone-height-v">Height:</label>
-<input id="cone-height-v" type="number" value="1" step="any">
-	
-<script>
-  function coneVolume(radius, height) {
-    return 3.2 * radius * radius * height / Math.sqrt(8);
-  }
-
-  function updateConeVolume() {
-    const radius = parseFloat(document.getElementById('cone-radius-v').value);
-    const height = parseFloat(document.getElementById('cone-height-v').value);
-
-    if (isNaN(radius) || isNaN(height)) {
-      document.getElementById('cone-volume').innerText = '';
-      return;
-    }
-
-    document.getElementById('cone-volume').innerText =
-      `Volume: ${coneVolume(radius, height).toFixed(5)} cubic units`;
-  }
-
-  document.getElementById('cone-radius-v').addEventListener('input', updateConeVolume);
-  document.getElementById('cone-height-v').addEventListener('input', updateConeVolume);
-</script>
-<p style="margin:12px" id="cone-volume"></p>
-</div>
-<br>
-<br>
-<section itemprop="disambiguatingDescription">
+<section>
 <details>
   <summary>
-	<h4 style="margin:7px">
-The volume of a cone or pyramid is conventionally approximated as base × height / 3.</h4></summary>
-<p style="margin:12px">The conventional approximation was likely estimated based on two observations. 
+	<h4 itemprop="usageInfo" style="margin:7px">While base × height / 3 is a reasonable approximation, the exact ratio is 1 / √8.</h4></summary>
+<br>
+<p style="margin:12px">The volume of a cone or pyramid is conventionally approximated as base × height / 3. 
+<br>
+<br>
+That was likely estimated based on two observations. 
 <br>
 <br>
 <section>
@@ -4056,11 +4058,11 @@ No. Because it's not true in case of most other shapes.
 <section id="cube-dissection">
 <h3 style="margin:12px">The other idea is the cube dissection.</h3>
 <br>
-<figure class="imgbox">
+<figure class="imgbox" itemprop="image" itemprop="disambiguatingDescription" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="cubeDissection.jpeg" alt="Cube dissection">
 </figure>
 <br>
-<p style="margin:12px">A common method aiming to prove the pyramid volume formula ( V = base × height / 3 ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
+<p itemprop="disambiguatingDescription" style="margin:12px">A common method aiming to prove the pyramid volume formula ( V = base × height / 3 ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
 <br>
 <br>
 Take a cube with an edge length of ( e ).
@@ -4144,10 +4146,7 @@ then the volume of each pyramid has to be larger than 1 / 3 × base × height, b
 The vertices are the most obvious examples, but the same is true for the edges, the diagonals and the inner faces. 
 <br>
 <br>
-<strong>The fact that the vertices of a real physical cube can't be split without duplicating and the vertices of the pyramids can't be merged into a single point without distortion proves that the conventional zero-dimensional point approach fails to accurately describe the physical reality.
-<br>
-<br>
-While 1 / 3 is a reasonable approximation, the exact ratio is 1 / √8.</strong>
+<strong>The fact that the vertices of a real physical cube can't be split without duplicating and the vertices of the pyramids can't be merged into a single point without distortion proves that the conventional zero-dimensional point approach fails to accurately describe the physical reality.</strong>
 <br>
 <br>
 The so-called "calculus-based proofs" of the conventional formula are invalid. 
@@ -4155,6 +4154,38 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.
 </section>
 </details>
 </section>
+<br>
+<br>
+<div id="cone_volume_calculator">
+<label style="margin:12px" for="cone-radius-v">Radius:</label>
+<input id="cone-radius-v" type="number" value="1" step="any">
+<br>
+<label style="margin:12px" for="cone-height-v">Height:</label>
+<input id="cone-height-v" type="number" value="1" step="any">
+	
+<script>
+  function coneVolume(radius, height) {
+    return 3.2 * radius * radius * height / Math.sqrt(8);
+  }
+
+  function updateConeVolume() {
+    const radius = parseFloat(document.getElementById('cone-radius-v').value);
+    const height = parseFloat(document.getElementById('cone-height-v').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cone-volume').innerText = '';
+      return;
+    }
+
+    document.getElementById('cone-volume').innerText =
+      `Volume: ${coneVolume(radius, height).toFixed(5)} cubic units`;
+  }
+
+  document.getElementById('cone-radius-v').addEventListener('input', updateConeVolume);
+  document.getElementById('cone-height-v').addEventListener('input', updateConeVolume);
+</script>
+<p style="margin:12px" id="cone-volume"></p>
+</div>
 </section>
 <br>
 <br>
