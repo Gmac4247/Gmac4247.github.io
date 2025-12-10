@@ -363,7 +363,7 @@
 <br>
 <br>
 <br>
-<div id="operations">
+<section id="operations">
 <h3 itemprop="name" style="margin:12px">Basic Operations</h3>
 <br>
 <br>
@@ -379,7 +379,8 @@
 <br>
 <div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
 	<meta itemprop="mathExpression" content="1 + 1 = ?">
-<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="eduQuestionType" content="addition">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
 	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
 </div>
 <div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
@@ -388,13 +389,15 @@
 </div>
 <br>
 <br>
-<p itemprop="abstract" style="margin:12px">
-Example #1: 
+<p itemprop="description" style="margin:12px">
+Example #1:
 <br>
 <br>
 1 + 1 = 2
+</p>
 <br>
 <br>	
+<p itemprop="abstract" style="margin:12px">
 🌻+🌻=🌻🌻
 </p>
 <br>
@@ -433,16 +436,21 @@ Example #2:
 <br>
 <br>
 <br>
-<p itemprop="abstract" style="margin:12px">Example #1: 
+<p itemprop="description" style="margin:12px">
+Example #1: 
 <br>
 <br>
-36 - 21 = 15
+2 - 1 = 1
+</p>
 <br>
 <br>	
-🌻🌻-🌻=🌻</p>
+<p itemprop="abstract" style="margin:12px">
+🌻🌻-🌻=🌻
+</p>
 <br>
 <br>
-<p style="margin:12px">Example #2: 
+<p style="margin:12px">
+Example #2: 
 <br>
 <br>
 36 - 21 = 15
@@ -471,6 +479,13 @@ Example #2:
       <meta itemprop="eduSolution" content="6">
 </div>
 </div>
+<br>
+<br>
+<p itemprop="description" style="margin:12px">Example #1: 
+<br>
+<br>
+2 × 3 = 6
+</p>
 <br>
 <br>
 <p itemprop="abstract" style="margin:12px">🌻🌻🌻+🌻🌻🌻=🌻🌻+🌻🌻+🌻🌻=🌻🌻🌻🌻🌻🌻</p>
@@ -513,6 +528,13 @@ but (2 flowers) × (3 flowers) = 6 square flowers.</p>
 </div>
 <br>
 <br>
+<p itemprop="description" style="margin:12px">Example #1: 
+<br>
+<br>
+6 / 3 = 2
+</p>
+<br>
+<br>
 <p itemprop="abstract" style="margin:12px">🌻🌻🌻🌻🌻🌻/🌻🌻🌻 = 2</p>
 <br>
 <br>
@@ -521,7 +543,7 @@ but (2 flowers) × (3 flowers) = 6 square flowers.</p>
 <br>
 <br>
 </section>
-</div>
+</section>
 </details>
 </section>
 <br>
@@ -558,7 +580,7 @@ That cannot be written in a decimal form with a finite number of numerals.
 </p>
 <br>
 <br>
-<div id=operations_with_fractions>
+<section id=operations_with_fractions>
 <h3 style="margin:12px">Operations with Fractions</h3>
 <br>
 <br>
@@ -746,7 +768,7 @@ Dividing by a fraction means multiplying by the reciprocal of that fraction.</p>
 </math>
 </div>
 </section>
-</div>
+</section>
 <br>
 <br>
 <br>
@@ -797,7 +819,7 @@ The result of raising to a fraction is a root.
 <br>
 <br>
 <br>
-<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="subtracting_fractions" itemref="subtraction">
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="square" itemref="subtraction">
 <h4 itemprop="name" style="margin:12px">Area of a Square</h4>
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
@@ -814,8 +836,6 @@ The result of raising to a fraction is a root.
       <meta itemprop="eduSolution" content="4">
 </div>
 </div>
-<br>
-<br>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="square.png" alt="A square is a 2 dimensional plane shape with 2 perpendicular pairs of parallel straight sides. Area = side × side = side²">
@@ -853,7 +873,7 @@ The area of a rectangle is the product of its width and length.</p>
 <br>
 <br>
 <br>
-<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="subtracting_fractions" itemref="subtraction">
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="cube" itemref="subtraction">
 <h4 itemprop="name" style="margin:12px">Volume of a Cube</h4>
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
@@ -871,12 +891,11 @@ The area of a rectangle is the product of its width and length.</p>
 </div>
 </div>
 <br>
-<br><br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="cubeMarkup.jpeg" alt="A cube is a 3 dimensional solid shape with 3 equal perpendicular pairs of parallel straight edges. V = edge × edge × edge = edge³">
     </figure>
 <br>
-<p itemprop="about" style="margin:12px">The cube extends the square into three dimensions. This is the basis of volume calculation.</p>
+<p itemprop="usageInfo" style="margin:12px">The cube extends the square into three dimensions. This is the basis of volume calculation.</p>
 <br>
 <p itemprop="abstract" style="margin:12px">A cuboid is a 3 dimensional solid shape with 3 perpendicular pairs of parallel straight edges. 
 <br>
@@ -884,14 +903,9 @@ If those are equal, that is a cube.</p>
 <br>
 <p itemprop="description" style="margin:12px">The volume of a cuboid is the product of width, length and height. 
 <br>
-<div itemprop="eduQuestionType" style="margin:12px">cube volume = ?</div>
 <br>
-<p itemprop="abstract" style="margin:12px">That is a direct extrapolation from the area of the square, establishing the basis for volumetric relationships."
+That is a direct extrapolation from the area of the square, establishing the basis for volumetric relationships."
 </p>
-<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
-	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
-</div>
-<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
 <br>
 <div itemprop="abstract">
 <math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
@@ -915,8 +929,6 @@ If those are equal, that is a cube.</p>
 	</mrow>
     </math>
 </div>
-</div>
-</section>
 </section>
 </section>
 </details>
