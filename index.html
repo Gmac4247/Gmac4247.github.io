@@ -832,7 +832,7 @@ The result of raising to a fraction is a root.
 </div>
 </div>
 <br>
-<figure itemprop="image" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="square.png" alt="A square is a 2 dimensional plane shape with 2 perpendicular pairs of parallel straight sides. Area = side × side = side²">
 </figure>
 <br>
@@ -887,7 +887,7 @@ The area of a rectangle is the product of its width and length.</p>
 </div>
 </div>
 <br>
-<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="cubeMarkup.jpeg" alt="A cube is a 3 dimensional solid shape with 3 equal perpendicular pairs of parallel straight edges. V = edge × edge × edge = edge³">
     </figure>
 <br>
@@ -1120,7 +1120,7 @@ function updateTriangleArea() {
 <section itemscope itemtype="http://schema.org/LearningResource" id="trigonometry" itemref="division">
 <h3 itemprop="about" style="margin:7px">Trigonometry</h3>
 <br>
-<figure class="imgbox"  itemscope itemtype="http://schema.org/ImageObject">
+<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="trigonometry.png" alt="Trigonometric identities in a right triangle">
     </figure>
 <br>
@@ -1767,7 +1767,7 @@ function Atan(x) {
 </div>
 <br>
 <br>
-<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="pentagon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
 </figure>
 <br>
@@ -1951,7 +1951,7 @@ function updatePolygonArea() {
 </div>
 </div>
 <br>
-<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="areaOfACircle.jpg" alt="The circle is cut into four quadrants, each placed with their origin on the vertices of a square. The arcs of the quadrants of the circle that equals in area to the square intersect at the quarters on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. r = side × √5 / 4 Area = 3.2r²">
 </figure>
 <br>
@@ -2090,7 +2090,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
   <summary><h4 style="margin:12px">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.
 </h4></summary>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="description" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="equityFigure.jpg" alt="Circle area = 3.2r²">
     </figure>
 <br>
@@ -2581,14 +2581,299 @@ The area of both the square and the sum of the quadrants equals 16 right triangl
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circumference.jpg" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii. Circumference = 6.4r">
     </figure>
 <br>
-<p itemprop="abstract" style="margin:12px">The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.
+<section id="pi">
+<details>
+  <summary><h4 itemprop="abstract" style="margin:7px">The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</h4></summary>
+<p itemprop="disambiguatingDescription" style="margin:12px">
+For centuries, the circle has been a symbol of mathematical elegance—and the pi its most iconic constant. While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood. Some think 'Standard Geometry' means accepting the pi. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
 <br>
 <br>
-The x represents the theoretical width of the circumference, which is a very small number.
+The constant relationship between a circle's circumference and its diameter has captivated mathematicians for millennia.
+Ancient civilizations grappled with this geometric challenge, employing various methods to approximate this ratio. They deserve credit for their mathematical ingenuity. But the fact that these methods were developed thousands of years ago should not shield them from scrutiny.
+<br>
+<br>
+The verse of 1. Kings 7:23 in the Holy Bible suggests that some estimated it as 3. 
+<br>
+<br>
+Historical records suggest that ancient Babylonians initially calculated it as 3, later they used 3.125; Egyptians estimated it as ( 16 / 9 )² ~ 3.16.
+</p>
+<br>
+<br>
+<section id="Archimedes">
+<h4 style="margin:12px">Archimedes and the Illusion of Limits</h4>
+<br>
+<br>
+<p style="margin:12px">The Greek Archimedes’ method for estimating the pi is often celebrated as a foundational triumph of geometric reasoning.
+</p>
+<section id="polygon-approximation">
+<details>
+<summary itemprop="disambiguatingDescription" style="margin:12px">Archimedes approximated the circumference using inscribed and circumscribed polygons. The pi is actually an approximation derived from limits. But that method itself introduced compounding errors.
+</summary>
+<p itemprop="disambiguatingDescription" style="margin:12px">Archimedes began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. By bisecting the angles (splitting them in half), he turned the hexagons into a 12-gons, then 24-gons, all the way to 96-sided shapes. This allowed him to calculate the perimeter of these shapes using only straight lines and Pythagoras' theorem. 
+<br>
+<br>
+However, this method relies on a massive assumption: That a polygon with enough sides approaches a circle.
+<br>
+<br>
+Observing how the difference between the two polygonal perimeters — one inside the circle, one outside — became smaller, Archimedes likely believed that as the number of sides increased, the difference between the perimeters of the inscribed and circumscribed polygons would converge toward zero, approaching the circumference of the circle.
+<br>
+<br>
+While that is true for the length, that assumption ignores a crucial geometric reality: as the number of sides increases the internal angles flatten toward 180°, — it is 180° - 360° / 96 = 176.25° in the case of a 96-gon — nearing a straight line rather than a curve, and the polygon no longer reflects the circle’s curvature. 
+<br>
+<br>
+In contrast, polygons with internal angles in the range between 150° and 160°, such as the 13- to 16-gon, preserve a meaningful bend that better reflects circularity. 
+<br>
+<br>
+A line segment, no matter how short, is fundamentally different from a curve. Conventional math ignores this qualitative difference, assuming that 'close enough' is the same as 'equal'.
+<br>
+They assume that more sides mean closer resemblance to a circle, hence the circle encloses the maximum possible area for a given perimeter (isoperimetric theorem). 
+<br>
+This seems obvious when comparing a triangle or a square to a circle. An isoperimetric triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
+<br>
+<br>
+This is where Archimedes' logic snaps.
+<br>
+<br>
+The definition of an inscribed polygon is that both its perimeter and area are smaller than the circle. The properties of a circumscribed polygon are larger.
+<br>
+<br>
+When the circle’s area and circumference is calculated with the constant 3.2, it becomes clear that the area of an isoperimetric 14‑gon is actually larger than the circle’s. A flat angle encloses the area differently than the curve. This flips the script: the polygon can enclose more area even with the same perimeter. As the number of sides increases the effect is stronger, so the isoperimetric polygon behaves like a circumscribed figure despite having equal perimeter. This overlooked disproportion shows that polygons do not approach the circle in every sense — above 13 sides, the comparison underestimates the circle.
+<br>
+<br>
+Archimedes pushed his method far beyond this curve-aligned threshold — and the result was a recursive underestimate. 
+<br>
+<br>
+The traditional method of polygon approximation fails not due to rounding errors, but due to a fundamental divergence of shape that invalidates its own geometric ordering.
+<br>
+The polygon method attempts to define the perfect circle using imperfect, flawed limits. This destroys the basic geometric ordering that the method is based on, proving it is unsuitable for determining the true circumference to diameter ratio of a circle.
+</p>
+<details>
+  <summary><h4 itemprop="disambiguatingDescription" style="margin:12px">
+What we’re left with is not a proof, but a flawed approximation — one that has shaped centuries of geometry, but now deserves a closer, more rational reexamination.
+</h4></summary>
+<p style="margin:12px">
+To analyze it further, my equal distance polygon method upgrades the classical approach by replacing inherited assumptions with geometric conditions — and aligns the approximation process with the true nature of the circle.
+<br>
+<br>
+Another overlooked aspect of the traditional method is the assumption that as the perimeters of the polygons approach the circumference with the increase of the number of sides, the ratio of the gaps between the arc and the vertices of the circumscribed polygon, and the sides of the inscribed polygon converge toward 1:1.
+<br>
+<br>
+Analyzing the gaps of an isoperimetric equilateral triangle reveals that the ratio between the gaps flips compared to the in- and circumscribed triangles.
+<br>
+While the number of sides is only 3, the perimeter is equal to the circumference, yet the ratio flipped.
+<br>
+<br>
+Rather than treating inscribed and circumscribed polygons separately and relying on assumptions about how their perimeter gaps behave as the number of sides increases, we introduce a creative and grounded condition: equal distance between the polygon’s sides, vertices, and the circle’s arc.
+<br>
+We begin with a strong geometric foundation: the area of a circle is exactly 3.2r². This gives us reason to suspect that the true circumference is 6.4r, not 2πr. To test this, we reframe the polygon approximation method.
+<br>
+This equidistance constraint allows us to calculate perimeters for polygons of various side counts (triangle, square, hexagon, 14-gon, 96-gon), each tuned to balance deviation symmetrically. The results show that:
+<br>
+<br>
+- Perimeters are not proportional to the number of sides.
+<br>
+<br>
+- The 14-gon already approximates the circle remarkably well.
+<br>
+<br>
+- The 96-gon converges precisely to a circumference of 6.4, confirming the area-based ratio.
+</p>
+</details>
+<br>
+</details>
+</section>
+</section>
+<br>
+<br>
+<section id="symbol">
+<h4 style="margin:12px">The Symbol Pi: A Linguistic Shortcut</h4>
+<br>
+<br>
+<p itemprop="disambiguatingDescription" style="margin:12px">The symbol pi was introduced because the estimate ratio—approximately 3.14159…—is an infinite fraction. Since we can’t write all its digits, we needed a symbol. But this symbol has taken on a life of its own.
+<br>
+<br>
+Technically, the circumference is a perimeter. So the ratio ( P / d ) ( perimeter over diameter ) became pi / delta in Greek. With ( d = 1 ), we get ( pi / 1 = pi ). 
+<br>
+<strong>But this is not necessarily the ratio itself—it’s the notation of that ratio.</strong> That distinction matters. There was a ratio between circumference and diameter long before the Greeks studied it. We must not let their symbolic shortcut overwrite a more fundamental geometric truth.
+<br>
+<br>
+It was not until the 18th century that the symbol pi, popularized by the mathematicians of the time, gained widespread acceptance. 
+</p>
+</section>
+<br>
+<br>
+<section id="calculus">
+<h4 style="margin:12px">∫ Calculus: Summary, Not Source</h4>
+<br>
+<br>
+<p itemprop="disambiguatingDescription" style="margin:12px">Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides. 
+<br>
+<br>
+All of the above mentioned approximation methods have two things in common: 
+<br>
+<br>
+- They assume that the circle maximizes the area with a given perimeter, and
+<br>
+<br>
+- they estimate the perimeters of polygons and do not account for the curved shape of the circle.
+<br>
+<br>
+Modern calculus summarizes these approximations with elegant notation, such as:
+</p>
+<br>
+<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>C</mi>
+    <mo>=</mo>
+    <msubsup>
+      <mo>&#x222B;</mo> <!-- Integral symbol -->
+      <mn>0</mn>
+      <mrow>
+        <mn>2</mn>
+        <mi>pi</mi> 
+		</mrow>
+    </msubsup>
+    <mi>r</mi>
+    <mo>&#x2062;</mo> <!-- Invisible times -->
+    <mi>d</mi>
+    <mi>&#x03B8;</mi> <!-- theta -->
+  </mrow>
+</math>
+<br>
+<p itemprop="disambiguatingDescription" style="margin:12px">
+<strong>But this is not a magical formula—it’s a symbolic summary of prior assumptions.</strong>
+<br>
+<br>
+There are at least a dozen different calculus methods in use, but each and every one of those are solved through basic operations. Each notation should correspond to a real, logical property of the circle. Yet upon inspection, inconsistencies emerge. The formula doesn’t derive the circumference from first principles; it assumes it. 
+<br>
+<br>
+The classical polygon-based approach to approximate a circle’s circumference relies on inscribed and circumscribed polygons, calculated using trigonometric functions aligned to π. But this alignment is problematic if π itself is the quantity under investigation.
+<br>
+<br>
+Calculus may be a useful mathematical tool, but calling it exact is a bold statement. 
+<br>
+<br>
+It can be exact with exact limits and certain operations, but if those are given then they can be calculated directly without calculus.
+</p>
+</section>
+<br>
+<br>
+<section id="phi">
+<h4 style="margin:12px">φ The Golden Ratio</h4>
+<br>
+<br>
+<p style="margin:12px">Some relate the numeric value of 3.14… to the so-called “golden ratio” of ( √5 + 1 ) / 2.
+</p>
+<br>
+<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mfrac>
+      <mn>4</mn>
+      <msqrt>
+        <mfrac>
+          <mrow>
+            <msqrt>
+              <mn>5</mn>
+            </msqrt>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+          <mn>2</mn>
+        </mfrac>
+      </msqrt>
+    </mfrac>
+    <mo>&#x2248;</mo> <!-- Approximately equal to -->
+    <mn>3.1446</mn>
+  </mrow>
+</math>
+<br>
+<p itemprop="disambiguatingDescription" style="margin:12px">This equation has no logical ties to the area nor the circumference of a circle.
+<br>
+<br>
+The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these properties.
+</p>
+</section>
+<br>
+<br>
+<section id="solution">
+<h4 style="margin:12px">A Rational Alternative: 3.2</h4>
+<br>
+<br>
+<p itemprop="usageInfo"  style="margin:12px">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<br>
+<br>
+Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
+<br>
+<br>
+The pi has served its symbolic purpose. But in geometry, clarity matters more than tradition. 
+<br>
+The pi is a fundamental constant in the geometry of idealized circles and plays a crucial role in many mathematical theories. 
+<br>
+<br>
+However, using geometric construction and algebraic simplification we find that when we move from these idealizations to the measurement of real objects, a slightly different constant, 3.2 emerges as more relevant for accurately describing their properties. 
+<br>
+By focusing on area relationships and direct comparisons between shapes, these methods emphasize a more intuitive and potentially more fundamental understanding of geometric concepts.
+<br>
+These values are exact, rational, and logically derived. They can be verified numerically, but more importantly, they can be proven algebraically—without relying on infinite fractions, symbolic shortcuts, or flawed assumptions.
+<br>
+<br>
+<strong>Since the true ratio is exactly 3.2, and that is a rational number, then we can—and should—write it as it is. Let the π remain in the history books. Geometry deserves better.
+<br>
+<br>
+That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.
+</strong>
+<br>
+<br>
+These are two aspects of that.
+</p>
+<br>
+<br>
+<section id="warning">
+<h4 style="margin:12px">The Cognitive Risk of flawed geometric Axioms.</h4>
+<br>
+<br>
+<p itemprop="usageInfo" style="margin:12px">The central concern arises from the potential cognitive harm caused by teaching the approximate, irrational constant π as an absolute truth in foundational geometry.
+<br>
+<br>
+<br>
+<b>1. The Flawed Foundation</b>
+<br>
+<br>
+The Problematic Axiom: The conventional geometric curriculum requires students to accept that the constant for circle area (A = pi × r²) is both exact and unreachable/irrational, because it is derived from the error-prone polygon approximation method (Archimedes).
+<br>
+<br>
+The Proposed Solution (CGS): The Core Geometric System™ (CGS) provides a logically self-consistent alternative where the area constant is the rational number 3.2 (A = 3.2r²), derived from an algebraically proven Area Balance Axiom with the square.
+<br>
+<br>
+<br>
+<b>2. The Cognitive and Pedagogical Impact</b>
+<br>
+<br>
+The warning is that teaching the inconsistency of the pi as a fundamental truth may negatively affect a student's cognitive development:
+<br>
+<br>
+Creates Cognitive Dissonance: It forces the brain's pattern-recognition systems to accept a conflict: an "absolute" constant that is fundamentally imperfect and inconsistent with the true basis of area (the square).
+<br>
+<br>
+Hinders Logical Consistency: It teaches students that in mathematics, the search for perfect, elegant logical consistency can be abandoned in favor of memorizing an approximate rule.
+<br>
+<br>
+Inhibits Whole-Brain Synchronization: It potentially creates a disconnect between the brain's visual/spatial centers (which recognize the geometric imperfection) and its analytical centers (which are forced to accept the numerical approximation), leading to poor integration of geometric understanding.
+<br>
+<br>
+The final conclusion is that adopting a consistent, rational constant like 3.2 offers a path to a more coherent and structurally sound foundation for geometric thought, thereby avoiding the introduction of this fundamental logical flaw into developing minds.
+</p>
+</section>
+</section>
+</details>
+</section>	
+<br>	
+<br>	
+<p itemprop="abstract" style="margin:12px">The x represents the theoretical width of the circumference, which is a very small number.
 <br>
 <br>
 The difference between the shape of the straightened circumference and a quadrilateral is negligible.
@@ -2897,298 +3182,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </script>
 <p style="margin:12px" id="circle-circumference"></p>
 </div>
-<br>
-<br>
-<section id="pi">
-<details>
-  <summary><h4 itemprop="disambiguatingDescription" style="margin:7px">While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood.</h4></summary>
-<p style="margin:12px">
-For centuries, the circle has been a symbol of mathematical elegance—and the pi its most iconic constant. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
-<br>
-<br>
-The constant relationship between a circle's circumference and its diameter has captivated mathematicians for millennia.
-Ancient civilizations grappled with this geometric challenge, employing various methods to approximate this ratio. They deserve credit for their mathematical ingenuity. But the fact that these methods were developed thousands of years ago should not shield them from scrutiny.
-<br>
-<br>
-The verse of 1. Kings 7:23 in the Holy Bible suggests that some estimated it as 3. 
-<br>
-<br>
-Historical records suggest that ancient Babylonians initially calculated it as 3, later they used 3.125; Egyptians estimated it as ( 16 / 9 )² ~ 3.16.
-<br>
-<br>
-Some think 'Standard Geometry' means accepting the pi. But the pi is actually an approximation derived from limits (getting closer and closer forever).
-</p>
-<br>
-<br>
-<section id="Archimedes">
-<h4 style="margin:12px">Archimedes and the Illusion of Limits</h4>
-<br>
-<br>
-<p style="margin:12px">The Greek Archimedes’ method for estimating the pi is often celebrated as a foundational triumph of geometric reasoning.
-</p>
-<section id="polygon-approximation">
-<details>
-<summary style="margin:12px">He approximated the circumference using inscribed and circumscribed polygons. But that method itself introduced compounding errors.
-</summary>
-<p itemprop="disambiguatingDescription" style="margin:12px">
-Archimedes began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. By bisecting the angles (splitting them in half), he turned the hexagons into a 12-gons, then 24-gons, all the way to 96-sided shapes. This allowed him to calculate the perimeter of these shapes using only straight lines and Pythagoras' theorem. 
-<br>
-<br>
-However, this method relies on a massive assumption: That a polygon with enough sides approaches a circle.
-<br>
-<br>
-Observing how the difference between the two polygonal perimeters — one inside the circle, one outside — became smaller, Archimedes likely believed that as the number of sides increased, the difference between the perimeters of the inscribed and circumscribed polygons would converge toward zero, approaching the circumference of the circle.
-<br>
-<br>
-While that is true for the length, that assumption ignores a crucial geometric reality: as the number of sides increases the internal angles flatten toward 180°, — it is 180° - 360° / 96 = 176.25° in the case of a 96-gon — nearing a straight line rather than a curve, and the polygon no longer reflects the circle’s curvature. 
-<br>
-<br>
-In contrast, polygons with internal angles in the range between 150° and 160°, such as the 13- to 16-gon, preserve a meaningful bend that better reflects circularity. 
-<br>
-<br>
-A line segment, no matter how short, is fundamentally different from a curve. Conventional math ignores this qualitative difference, assuming that 'close enough' is the same as 'equal'.
-<br>
-They assume that more sides mean closer resemblance to a circle, hence the circle encloses the maximum possible area for a given perimeter (isoperimetric theorem). 
-<br>
-This seems obvious when comparing a triangle or a square to a circle. An isoperimetric triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
-<br>
-<br>
-This is where Archimedes' logic snaps.
-<br>
-<br>
-The definition of an inscribed polygon is that both its perimeter and area are smaller than the circle. The properties of a circumscribed polygon are larger.
-<br>
-<br>
-When the circle’s area and circumference is calculated with the constant 3.2, it becomes clear that the area of an isoperimetric 14‑gon is actually larger than the circle’s. A flat angle encloses the area differently than the curve. This flips the script: the polygon can enclose more area even with the same perimeter. As the number of sides increases the effect is stronger, so the isoperimetric polygon behaves like a circumscribed figure despite having equal perimeter. This overlooked disproportion shows that polygons do not approach the circle in every sense — above 13 sides, the comparison underestimates the circle.
-<br>
-<br>
-Archimedes pushed his method far beyond this curve-aligned threshold — and the result was a recursive underestimate. 
-<br>
-<br>
-The traditional method of polygon approximation fails not due to rounding errors, but due to a fundamental divergence of shape that invalidates its own geometric ordering.
-<br>
-The polygon method attempts to define the perfect circle using imperfect, flawed limits. This destroys the basic geometric ordering that the method is based on, proving it is unsuitable for determining the true circumference to diameter ratio of a circle.
-</p>
-<details>
-  <summary><h4 itemprop="disambiguatingDescription" style="margin:12px">
-What we’re left with is not a proof, but a flawed approximation — one that has shaped centuries of geometry, but now deserves a closer, more rational reexamination.
-</h4></summary>
-<p style="margin:12px">
-To analyze it further, my equal distance polygon method upgrades the classical approach by replacing inherited assumptions with geometric conditions — and aligns the approximation process with the true nature of the circle.
-<br>
-<br>
-Another overlooked aspect of the traditional method is the assumption that as the perimeters of the polygons approach the circumference with the increase of the number of sides, the ratio of the gaps between the arc and the vertices of the circumscribed polygon, and the sides of the inscribed polygon converge toward 1:1.
-<br>
-<br>
-Analyzing the gaps of an isoperimetric equilateral triangle reveals that the ratio between the gaps flips compared to the in- and circumscribed triangles.
-<br>
-While the number of sides is only 3, the perimeter is equal to the circumference, yet the ratio flipped.
-<br>
-<br>
-Rather than treating inscribed and circumscribed polygons separately and relying on assumptions about how their perimeter gaps behave as the number of sides increases, we introduce a creative and grounded condition: equal distance between the polygon’s sides, vertices, and the circle’s arc.
-<br>
-We begin with a strong geometric foundation: the area of a circle is exactly 3.2r². This gives us reason to suspect that the true circumference is 6.4r, not 2πr. To test this, we reframe the polygon approximation method.
-<br>
-This equidistance constraint allows us to calculate perimeters for polygons of various side counts (triangle, square, hexagon, 14-gon, 96-gon), each tuned to balance deviation symmetrically. The results show that:
-<br>
-<br>
-- Perimeters are not proportional to the number of sides.
-<br>
-<br>
-- The 14-gon already approximates the circle remarkably well.
-<br>
-<br>
-- The 96-gon converges precisely to a circumference of 6.4, confirming the area-based ratio.
-</p>
-</details>
-<br>
-</details>
-</section>
-</section>
-<br>
-<br>
-<section id="symbol">
-<h4 style="margin:12px">The Symbol Pi: A Linguistic Shortcut</h4>
-<br>
-<br>
-<p itemprop="disambiguatingDescription" style="margin:12px">The symbol pi was introduced because the estimate ratio—approximately 3.14159…—is an infinite fraction. Since we can’t write all its digits, we needed a symbol. But this symbol has taken on a life of its own.
-<br>
-<br>
-Technically, the circumference is a perimeter. So the ratio ( P / d ) ( perimeter over diameter ) became pi / delta in Greek. With ( d = 1 ), we get ( pi / 1 = pi ). 
-<br>
-<strong>But this is not necessarily the ratio itself—it’s the notation of that ratio.</strong> That distinction matters. There was a ratio between circumference and diameter long before the Greeks studied it. We must not let their symbolic shortcut overwrite a more fundamental geometric truth.
-<br>
-<br>
-It was not until the 18th century that the symbol pi, popularized by the mathematicians of the time, gained widespread acceptance. 
-</p>
-</section>
-<br>
-<br>
-<section id="calculus">
-<h4 style="margin:12px">∫ Calculus: Summary, Not Source</h4>
-<br>
-<br>
-<p itemprop="disambiguatingDescription" style="margin:12px">Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides. 
-<br>
-<br>
-All of the above mentioned approximation methods have two things in common: 
-<br>
-<br>
-- They assume that the circle maximizes the area with a given perimeter, and
-<br>
-<br>
-- they estimate the perimeters of polygons and do not account for the curved shape of the circle.
-<br>
-<br>
-Modern calculus summarizes these approximations with elegant notation, such as:
-</p>
-<br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mrow>
-    <mi>C</mi>
-    <mo>=</mo>
-    <msubsup>
-      <mo>&#x222B;</mo> <!-- Integral symbol -->
-      <mn>0</mn>
-      <mrow>
-        <mn>2</mn>
-        <mi>pi</mi> 
-      </mrow>
-    </msubsup>
-    <mi>r</mi>
-    <mo>&#x2062;</mo> <!-- Invisible times -->
-    <mi>d</mi>
-    <mi>&#x03B8;</mi> <!-- theta -->
-  </mrow>
-</math>
-<br>
-<p itemprop="disambiguatingDescription" style="margin:12px">
-<strong>But this is not a magical formula—it’s a symbolic summary of prior assumptions.</strong>
-<br>
-<br>
-There are at least a dozen different calculus methods in use, but each and every one of those are solved through basic operations. Each notation should correspond to a real, logical property of the circle. Yet upon inspection, inconsistencies emerge. The formula doesn’t derive the circumference from first principles; it assumes it. 
-<br>
-<br>
-The classical polygon-based approach to approximate a circle’s circumference relies on inscribed and circumscribed polygons, calculated using trigonometric functions aligned to π. But this alignment is problematic if π itself is the quantity under investigation.
-<br>
-<br>
-Calculus may be a useful mathematical tool, but calling it exact is a bold statement. 
-<br>
-<br>
-It can be exact with exact limits and certain operations, but if those are given then they can be calculated directly without calculus.
-</p>
-</section>
-<br>
-<br>
-<section id="phi">
-<h4 style="margin:12px">φ The Golden Ratio</h4>
-<br>
-<br>
-<p style="margin:12px">Some relate the numeric value of 3.14… to the so-called “golden ratio” of ( √5 + 1 ) / 2.
-</p>
-<br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mrow>
-    <mfrac>
-      <mn>4</mn>
-      <msqrt>
-        <mfrac>
-          <mrow>
-            <msqrt>
-              <mn>5</mn>
-            </msqrt>
-            <mo>+</mo>
-            <mn>1</mn>
-          </mrow>
-          <mn>2</mn>
-        </mfrac>
-      </msqrt>
-    </mfrac>
-    <mo>&#x2248;</mo> <!-- Approximately equal to -->
-    <mn>3.1446</mn>
-  </mrow>
-</math>
-<br>
-<p itemprop="disambiguatingDescription" style="margin:12px">This equation has no logical ties to the area nor the circumference of a circle.
-<br>
-<br>
-The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these properties.
-</p>
-</section>
-<br>
-<br>
-<section id="solution">
-<h4 style="margin:12px">A Rational Alternative: 3.2</h4>
-<br>
-<br>
-<p itemprop="usageInfo"  style="margin:12px">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
-<br>
-<br>
-Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
-<br>
-<br>
-The pi has served its symbolic purpose. But in geometry, clarity matters more than tradition. 
-<br>
-The pi is a fundamental constant in the geometry of idealized circles and plays a crucial role in many mathematical theories. 
-<br>
-<br>
-However, using geometric construction and algebraic simplification we find that when we move from these idealizations to the measurement of real objects, a slightly different constant, 3.2 emerges as more relevant for accurately describing their properties. 
-<br>
-By focusing on area relationships and direct comparisons between shapes, these methods emphasize a more intuitive and potentially more fundamental understanding of geometric concepts.
-<br>
-These values are exact, rational, and logically derived. They can be verified numerically, but more importantly, they can be proven algebraically—without relying on infinite fractions, symbolic shortcuts, or flawed assumptions.
-<br>
-<br>
-<strong>Since the true ratio is exactly 3.2, and that is a rational number, then we can—and should—write it as it is. Let the π remain in the history books. Geometry deserves better.
-<br>
-<br>
-That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.
-</strong>
-<br>
-<br>
-These are two aspects of that.
-</p>
-<br>
-<br>
-<section id="warning">
-<h4 itemprop="usageInfo" style="margin:12px">The Cognitive Risk of flawed geometric Axioms.</h4>
-<br>
-<br>
-<p style="margin:12px">The central concern arises from the potential cognitive harm caused by teaching the approximate, irrational constant π as an absolute truth in foundational geometry.
-<br>
-<br>
-<br>
-<b>1. The Flawed Foundation</b>
-<br>
-<br>
-The Problematic Axiom: The conventional geometric curriculum requires students to accept that the constant for circle area (A = pi × r²) is both exact and unreachable/irrational, because it is derived from the error-prone polygon approximation method (Archimedes).
-<br>
-<br>
-The Proposed Solution (CGS): The Core Geometric System™ (CGS) provides a logically self-consistent alternative where the area constant is the rational number 3.2 (A = 3.2r²), derived from an algebraically proven Area Balance Axiom with the square.
-<br>
-<br>
-<br>
-<b>2. The Cognitive and Pedagogical Impact</b>
-<br>
-<br>
-The warning is that teaching the inconsistency of the pi as a fundamental truth may negatively affect a student's cognitive development:
-<br>
-<br>
-Creates Cognitive Dissonance: It forces the brain's pattern-recognition systems to accept a conflict: an "absolute" constant that is fundamentally imperfect and inconsistent with the true basis of area (the square).
-<br>
-<br>
-Hinders Logical Consistency: It teaches students that in mathematics, the search for perfect, elegant logical consistency can be abandoned in favor of memorizing an approximate rule.
-<br>
-<br>
-Inhibits Whole-Brain Synchronization: It potentially creates a disconnect between the brain's visual/spatial centers (which recognize the geometric imperfection) and its analytical centers (which are forced to accept the numerical approximation), leading to poor integration of geometric understanding.
-<br>
-<br>
-The final conclusion is that adopting a consistent, rational constant like 3.2 offers a path to a more coherent and structurally sound foundation for geometric thought, thereby avoiding the introduction of this fundamental logical flaw into developing minds.
-</p>
-</section>
-</section>
-</details>
-</section>
 </section>
 <br>
 <br>
@@ -3212,7 +3205,7 @@ The final conclusion is that adopting a consistent, rational constant like 3.2 o
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
     </figure>
 <br>
@@ -3448,7 +3441,7 @@ const ratio = 2 * height / length;
 </div>
 </div>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphereAndCubeMarkup.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
     </figure>
 <br>
@@ -3681,7 +3674,7 @@ if ( height === radius) {
 <meta itemprop="typicalAgeRange" content="12-18">
 <div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
 	<meta itemprop="mathExpression" content="cone radius=1 height=2 volume=?">
-<meta itemprop="eduQuestionType" content="Sphere Volume Calculation">
+<meta itemprop="eduQuestionType" content="Cone Volume Calculation">
 	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
 	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
 </div>
@@ -3690,7 +3683,7 @@ if ( height === radius) {
 </div>
 </div>
 <br>
-<figure itemprop="image" itemprop="abstract" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="coneAndSphereMarkup.jpeg" alt="Cone volume from sphere = base × height / √8">
 </figure>
 <br>
@@ -3698,7 +3691,7 @@ if ( height === radius) {
 </strong>
 </p>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.">
 </figure>
 <br>
@@ -3770,11 +3763,11 @@ if ( height === radius) {
 <p itemprop="abstract" style="margin:12px">The base of the two shapes is a quadrant circle.
 </p>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="coneAndSphereComparison.png" alt="The base of the two shapes is a quadrant circle.">
 </figure>
 <br>
-<figure itemprop="image" class="imgbox" itemprop="abstract" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphereAndConeMarkup.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder. Volume = base × height / √8">
 </figure>
 <br>
@@ -4058,7 +4051,7 @@ No. Because it's not true in case of most other shapes.
 <section id="cube-dissection">
 <h3 style="margin:12px">The other idea is the cube dissection.</h3>
 <br>
-<figure class="imgbox" itemprop="image" itemprop="disambiguatingDescription" itemscope itemtype="http://schema.org/ImageObject">
+<figure class="imgbox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="cubeDissection.jpeg" alt="Cube dissection">
 </figure>
 <br>
@@ -4191,8 +4184,23 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="cone" id="frustum-cone">
-<h3 itemprop="name" style="margin:7px">Volume of a Frustum Cone</h3>
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="frustum_cone" itemref="cone">
+<h3 itemprop="name" style="margin:12px">Volume of a Frustum Cone</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="frustum cone volume">
+<meta itemprop="educationalLevel" content="advanced">
+<meta itemprop="typicalAgeRange" content="12-18">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="cone radius top=1 bottom=2 height=3 volume=?">
+<meta itemprop="eduQuestionType" content="Frustum Cone Volume Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="23.7588">
+</div>
+</div>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="frustumOfConeMarkup.png" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
@@ -4361,9 +4369,23 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="cone polygon" id="pyramid">
-<h3 itemprop="name" style="margin:7px">Volume of a Pyramid</h3>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="cone" itemref="sphere">
+<h3 itemprop="name" style="margin:12px">Volume of a Pyramid</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="cone volume">
+<meta itemprop="educationalLevel" content="advanced">
+<meta itemprop="typicalAgeRange" content="12-18">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="pyramid bottom edge number=5 length=3 height=2 volume=?">
+<meta itemprop="eduQuestionType" content="Sphere Volume Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="10.94216">
+</div>
+</div><figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="conePyramidVolumeMarkup.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone. Volume = base × height / √8">
   </figure>
 <br>
