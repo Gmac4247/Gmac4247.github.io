@@ -544,7 +544,7 @@ Example #2:
 <br>
 <section>
 <details>
-<summary><h3 itemprop="name" style="margin:7px">3. Fractions</h3></summary>
+<summary><h3 style="margin:7px">3. Fractions</h3></summary>
 <br>
 <br>
 <p style="margin:12px">Fractions are the results of division, some are non-whole numbers.</p>
@@ -844,7 +844,7 @@ The result of raising to a fraction is a root.
 <br>
 The area of a rectangle is the product of its width and length.</p>
 <br>
-<div itemprop="abstract">
+<div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
  <mi>A</mi>
@@ -903,7 +903,7 @@ If those are equal, that is a cube.</p>
 That is a direct extrapolation from the area of the square, establishing the basis for volumetric relationships."
 </p>
 <br>
-<div itemprop="abstract">
+<div itemprop="mathExpression">
 <math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>V</mi>
@@ -962,7 +962,7 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 <br>
 <p itemprop="description" style="margin:12px">The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
 <br>
-<div itemprop="abstract">
+<div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>A</mi>
@@ -1022,7 +1022,7 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 </div>
 <br>
 <br>
-<div itemprop="abstract">
+<div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>A</mi>
@@ -1771,7 +1771,7 @@ function Atan(x) {
     <img class="center-fit" src="pentagon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
 </figure>
 <br>
-<p itemprop="abstract" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
+<p itemprop="abstract" itemprop="usageInfo" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
 <p itemprop="description" style="margin:12px">The base of each triangle equals the side length of the polygon. 
 <br>
 <br>
@@ -1938,7 +1938,7 @@ function updatePolygonArea() {
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
 <meta itemprop="keywords" content="circle area">
-<meta itemprop="educationalLevel" content="basic">
+<meta itemprop="educationalLevel" content="medium">
 <meta itemprop="typicalAgeRange" content="6-12">
 <div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
 	<meta itemprop="mathExpression" content="circle radius=1 area=?">
@@ -2084,7 +2084,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
   <summary><h4 style="margin:12px">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.
 </h4></summary>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="equityFigure.jpg" alt="Circle area = 3.2r²">
     </figure>
 <br>
@@ -2510,7 +2510,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
 </p>
 <br>
-<div itemprop="abstract">
+<div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>A</mi>
@@ -2564,10 +2564,25 @@ The area of both the square and the sum of the quadrants equals 16 right triangl
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="circle" id="circumference">
-<h3 itemprop="name" style="margin:7px">Circumference of a Circle</h3>
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="circumference" itemref="circle">
+<h3 itemprop="name" style="margin:12px">Circumference of a Circle</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="circumference">
+<meta itemprop="educationalLevel" content="medium">
+<meta itemprop="typicalAgeRange" content="6-12">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="circle radius=1 area=?">
+<meta itemprop="eduQuestionType" content="Circumference Length Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="6.4">
+</div>
+</div>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circumference.jpg" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii. Circumference = 6.4r">
     </figure>
 <br>
@@ -2586,7 +2601,7 @@ The length of the two shorter sides of the quadrilateral is x.
 The length of the two longer sides is the area of the resulting ring divided by x.
 </p>
 <br>
-<div itemprop="description">
+<div itemprop="abstract">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>C</mi>
@@ -2623,7 +2638,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br>
 <br>
 <details>
-  <summary><h4 style="margin:12px">Expand</h4></summary>
+  <summary><h4 itemprop="description" style="margin:12px">Expand</h4></summary>
 <p style="margin:12px">the term (r - x)²:
 </p>
 <br>
@@ -2813,6 +2828,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <div itemprop="description">
 <p style="margin:12px">In calculus terms:</p>
 <br>
+<div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
         <mi>C</mi>
@@ -2857,6 +2873,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 	</mrow>
 	   </mrow>
 </math>
+</div>
 </div>
 <br>
 <br>
@@ -3101,7 +3118,7 @@ The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these pr
 </section>
 <br>
 <br>
-<section id="solution">
+<section itemprop="usageInfo" id="solution">
 <h4 style="margin:12px">A Rational Alternative: 3.2</h4>
 <br>
 <br>
@@ -3178,16 +3195,31 @@ The final conclusion is that adopting a consistent, rational constant like 3.2 o
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="circle trigonometry" id="circle-segment">
-    <h3 itemprop="name" style="margin:7px">Area of a Circle Segment</h3>
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="circle-segment" itemref="circle triangle trigonometry">
+<h3 itemprop="name" style="margin:12px">Area of a Circle Segment</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="circle segment area">
+<meta itemprop="educationalLevel" content="advanced">
+<meta itemprop="typicalAgeRange" content="12-18">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="segment height=1 length=3 area=?">
+<meta itemprop="eduQuestionType" content="Circle Segment Area Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="2.21">
+</div>
+</div>
 <br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
     </figure>
 <br>
     <p itemprop="abstract" style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.</p>
 <br>
-<p itemprop="description" style="margin:12px">The triangle is given by the ratio between the chord and the height or the parent radius via trigonometric functions.</p>
+<p itemprop="description" itemprop="usageInfo" style="margin:12px">The triangle is given by the ratio between the chord and the height or the parent radius via trigonometric functions.</p>
 <br>
 <div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3302,10 +3334,24 @@ const ratio = 2 * height / length;
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="circle" id="cone-surface">
-<h3 itemprop="name" style="margin:7px">Surface Area of a Cone</h3>
-<br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="cone_surface" itemref="circle">
+<h3 itemprop="name" style="margin:12px">Surface Area of a Cone</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="cone surface area">
+<meta itemprop="educationalLevel" content="basic">
+<meta itemprop="typicalAgeRange" content="12-18">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="cone radius=1 height=2 area=?">
+<meta itemprop="eduQuestionType" content="Cone Surface Area Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="10.3554">
+</div>
+</div><br>
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="coneMarkup.jpeg" alt="The surface area of a cone is calculated as a circle slice with a radius equal to the slant height. Area = 3.2r × ( r + √( r² + H² )">
   </figure>
 <br>
@@ -3384,16 +3430,44 @@ const ratio = 2 * height / length;
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/MathSolver" itemref="circle cube" id="sphere">
-<h3 itemprop="name" style="margin:7px">Volume of a Sphere</h3>
-<br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="sphere" itemref="circle cube">
+<h3 itemprop="name" style="margin:12px">Volume of a Sphere</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="sphere volume">
+<meta itemprop="educationalLevel" content="medium">
+<meta itemprop="typicalAgeRange" content="6-12">
+<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="sphere radius=1 volume=?">
+<meta itemprop="eduQuestionType" content="Sphere Volume Calculation">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="5.724">
+</div>
+</div><br>
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphereAndCubeMarkup.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
     </figure>
 <br>
 <p itemprop="description" style="margin:12px"><strong>The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation.</strong>
-<p itemprop="abstract" style="margin:12px">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
+<section>
+<details>
+  <summary><h4 itemprop="usageInfo" style="margin:7px">The direct comparison to a cube ensures exactness.</h4></summary>
+<p itemprop="disambiguatingDescription" style="margin:12px">The " V = 4 / 3 × pi × radius³ " formula is widely used for the volume of a sphere. 
 <br>
+<br>
+<strong>It was approximated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder.
+<br>
+<br>
+That is a very exaggerated, distortion-based comparison that discards the difference between the straight slant height of a cone and the curvature of a sphere, resulting in a very rough underestimate.</strong>
+<br>
+<br>
+</p>
+</details>
+</section>
+<p itemprop="abstract" style="margin:12px">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
 <div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
@@ -3464,33 +3538,6 @@ const ratio = 2 * height / length;
 <p itemprop="description" style="margin:12px">The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section.</p>
 <br>
 <br>
-<section itemprop="disambiguatingDescription">
-<details>
-  <summary><h4 style="margin:7px">The " V = 4 / 3 × pi × radius³ " formula is widely used for the volume of a sphere.</h4></summary>
-<p style="margin:12px">It is a cornerstone of theoretical geometry. 
-<br>
-<br>
-<strong>It was estimated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder.</strong>
-<br>
-<br>
-However, my work focuses on the actual volume of physical spheres as determined through direct measurement. 
-<br>
-<br>
-My calculations and experiments have consistently indicated a different relationship, expressed by the V = (√(3.2)radius)³ formula, which provides a more accurate result when dealing with real, physical entities. 
-<br>
-This formula isn't based on abstract geometric ideals alone but on tangible experiments where I've measured the volume of real spheres. 
-<br>
-<br>
-These measurements have shown a systematic difference compared to the theoretical predictions based on the conventional "  V = 4/3×pi×radius³ " formula, suggesting that the way we mathematically describe the volume of a sphere might need to be reconsidered when applied to physical objects. 
-<br>
-<br>
-<strong>The traditional " 4/3×pi×radius³ " formula is a very rough underestimate based on an exaggerated, distortion-based comparison method that discards the difference between the straight slant height of a cone and the curvature of a sphere.</strong>
-<br>
-<br>
-If you're trying to calculate the volume of a physical ball or sphere for a practical purpose – whether it's for a science experiment, engineering, or any other real-world application – my empirically derived V = (√(3.2)×radius)³ formula offers a result that aligns more closely with what you would measure in the lab.
-</p>
-</details>
-</section>
 </section>
 <br>
 <br>
