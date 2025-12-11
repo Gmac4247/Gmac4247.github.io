@@ -338,6 +338,7 @@
 </section>
 <br>
 <br>
+<br>
 <section itemscope itemtype="http://schema.org/LearningResource" id="operations">
 <h3 itemprop="name">Basic Operations</h3>
 <br>
@@ -540,6 +541,7 @@ That cannot be written in a decimal form with a finite number of numerals.
 </p>
 <br>
 <br>
+<br>
 <section itemscope itemtype="http://schema.org/LearningResource" id=operations_with_fractions>
 <h3 itemprop="name">Operations with Fractions</h3>
 <br>
@@ -584,6 +586,7 @@ That cannot be written in a decimal form with a finite number of numerals.
   </mrow>
 </math>
 </div>
+<br>
 <br>
 <br>
 <p itemprop="usageInfo">If the denominators are not the same, both the counter and the denominator of at least one of the fractions shall be multiplied or divided by the same number to match the other denominator.
@@ -658,7 +661,7 @@ The denominators can be multiplied by each other to get a common denominator. In
 </div>
 <br>
 <br>		
-<p itemprop="usageInfo">If the counters are not the same, both the counter and the denominator of a fraction shall be multiplied or divided by the same number to match the other counter.</p>
+<p itemprop="usageInfo">If the counters are not the same, both the counter and the denominator of a fraction shall be multiplied or divided by the same number to match the other counter.
 <br>
 <br>
 The denominators can be multiplied by each other to get a common denominator. In this case the counters need to be multiplied respectively.</p>
@@ -864,7 +867,7 @@ The result of raising to a fraction is a root.
 <br>
 <br>
 The area of a rectangle is the product of its width and length.</p>
-<p style="margin:12px" itemprop="description">A square is a rectangle with equal width and length.</p>
+<p style="margin:12px" itemprop="description">A square is a rectangle with equal sides.</p>
 <br>
 <div style="margin:12px" itemprop="mathExpression">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
@@ -918,7 +921,6 @@ The area of a rectangle is the product of its width and length.</p>
 <p style="margin:12px" itemprop="abstract">A cuboid is a 3 dimensional solid shape with 3 perpendicular pairs of parallel straight edges. 
 <br>
 <br>The volume of a cuboid is the product of width, length and height.</p>
-<br>
 <p style="margin:12px" itemprop="description">A cube is a cuboid with equal edges.</p>
 <br>
 <div style="margin:12px" itemprop="mathExpression">
@@ -979,6 +981,7 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 <br>
 <p itemprop="description">The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
 <br>
+<br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>A</mi>
@@ -998,9 +1001,9 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 </div>
 <br>
 <br>
-<br>
 <div style="margin:12px">
 <p itemprop="description">The area of a triangle can also be calculated by the length of its sides.</p>
+<br>
 <br>
 <div>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML" > 
@@ -1034,6 +1037,7 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 </mrow>
 </mrow>
 </math>
+<br>
 <br>
 <br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1080,7 +1084,7 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 </div>
 <br>
 <br>
-<div id="triangle_area_calculator">
+<div style="margin:12px" id="triangle_area_calculator">
 <label for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
 <br>
@@ -1123,7 +1127,7 @@ function updateTriangleArea() {
   document.getElementById('side2').addEventListener('input', updateTriangleArea);
   document.getElementById('side3').addEventListener('input', updateTriangleArea);
 </script>
-<p style="margin:12px;" id="triangle-area"></p>
+<p id="triangle-area"></p>
 </div>
 </section>
 <br>
@@ -1139,6 +1143,38 @@ function updateTriangleArea() {
 <br>
 <p itemprop="about" style="margin:12px">
 In a right triangle the ratios between the sides and the angles are proportional.</p>
+<br>
+<br>
+<div>
+<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<msup>
+<mrow>
+<msub>
+ <mi>leg</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msup>
+<mrow>
+<msub>
+ <mi>leg</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+<mn>2</mn>
+</msup>
+ <mo>=</mo>
+<msup>
+<mi>hypotenuse</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+<br>
 <br>
 <br>
 <div style="margin:12px" itemprop="description" id="sine">
@@ -1198,38 +1234,6 @@ In a right triangle the ratios between the sides and the angles are proportional
 <br>
 <br>
 <p itemprop="usageInfo" style="margin:12px">Trigonometric functions with an "Arc" pretag refer to the angle corresponding to a value of that function.</p>
-<br>
-<br>
-<div style="margin:12px">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<msup>
-<mrow>
-<msub>
- <mi>leg</mi>
-<mn>1</mn>
-</msub>
-</mrow>
-<mn>2</mn>
-</msup>
-<mo>+</mo>
-<msup>
-<mrow>
-<msub>
- <mi>leg</mi>
-<mn>2</mn>
-</msub>
-</mrow>
-<mn>2</mn>
-</msup>
- <mo>=</mo>
-<msup>
-<mi>hypotenuse</mi>
-<mn>2</mn>
-</msup>
-</mrow>
-</math>
-</div>
 <div>
 <script>
 
@@ -1763,7 +1767,6 @@ function Atan(x) {
 <br>
 <br>
 <br>
-<section itemscope itemtype="https://schema.org/LearningResource">
 <section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="polygon" itemref="triangle">
 <h3 itemprop="name" style="margin:7px">Area of a regular Polygon</h3>
 <meta itemprop="url" content="https://gmac4247.github.io">
@@ -1808,7 +1811,7 @@ The height of each triangle is calculable via trigonometric functions.
 <mo>=</mo>
 <mrow>
 <mfrac>
-<mi>base</mi>
+<mi>x</mi>
 <mn>2</mn>
 </mfrac>
 <mo>×</mo>
@@ -1830,7 +1833,8 @@ The height of each triangle is calculable via trigonometric functions.
 </math>
 <br>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<div style="margin:7px">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>n</mi>
       <mo>=</mo>
@@ -1839,13 +1843,14 @@ The height of each triangle is calculable via trigonometric functions.
 </math>
 <br>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>x</mi>
  <mo>=</mo>
  <mi>side length</mi>
 </mrow>
 </math>
+</div>
 </div>
 <br>
 <br>
@@ -1880,11 +1885,11 @@ The height of each triangle is calculable via trigonometric functions.
 </div>
 <br>
 <br>
-<div id="polygon_area_calculator">
-<label style="margin:12px" for="side-number">Number of sides:</label>
+<div style="margin:12px" id="polygon_area_calculator">
+<label for="side-number">Number of sides:</label>
 <input id="side-number" type="number" value="5" step="1">
 <br>
-<label style="margin:12px" for="side-length">Side length:</label>
+<label for="side-length">Side length:</label>
 <input id="side-length" type="number" value="1" step="any">
 <script>
   function polygonArea(length, number, tangent) {
@@ -1917,7 +1922,7 @@ function updatePolygonArea() {
   document.getElementById('side-length').addEventListener('input', updatePolygonArea);
   document.getElementById('side-number').addEventListener('input', updatePolygonArea);
 </script>
-<p style="margin:12px" id="polygon-area"></p>
+<p id="polygon-area"></p>
 </div>
 <br>
 <br>
@@ -1946,6 +1951,7 @@ function updatePolygonArea() {
 <br>
 <br>
 <br>
+<section itemscope itemtype="https://schema.org/LearningResource">
 <section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="circle" itemref="square">
 <h3 itemprop="name" style="margin:7px">Area of a Circle</h3>
 <meta itemprop="url" content="https://gmac4247.github.io">
@@ -2096,7 +2102,6 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 </mrow>
 </math>
 </div>
-<br>
 <br>
 <section style="margin:12px" id="circle_area_proof">
 <details>
@@ -2520,6 +2525,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 <div style="margin:12px">
 <p itemprop="description">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
 <br>
+<br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>A</mi>
@@ -2546,8 +2552,8 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 </div>
 <br>
 <br>
-<div id="circle_area_calculator">
-<label style="margin:12px" for="circle-radius-a">Radius:</label>
+<div style="margin:12px" id="circle_area_calculator">
+<label for="circle-radius-a">Radius:</label>
 <input id="circle-radius-a" type="number" value="1" step="any">
 <script>
   function circleArea(radius) {
@@ -2566,7 +2572,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
       `Area: ${circleArea(radius).toFixed(5)} square units`;
     });
 </script>
-<p style="margin:12px" id="circle-area"></p>
+<p id="circle-area"></p>
 </div>
 </section>
 <br>
@@ -2621,7 +2627,7 @@ Historical records suggest that ancient Babylonians initially calculated it as 3
 <p>The Greek Archimedes’ method for estimating the pi is often celebrated as a foundational triumph of geometric reasoning.</p>
 <section id="polygon-approximation">
 <details>
-<summary itemprop="disambiguatingDescription" style="margin:7px">The pi is actually an approximation derived from limits. But that method itself introduced compounding errors.</summary>
+<summary itemprop="disambiguatingDescription">The pi is actually an approximation derived from limits. But that method itself introduced compounding errors.</summary>
 <p>Archimedes approximated the circumference using inscribed and circumscribed polygons. He began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. By bisecting the angles (splitting them in half), he turned the hexagons into a 12-gons, then 24-gons, all the way to 96-sided shapes. This allowed him to calculate the perimeter of these shapes using only straight lines and Pythagoras' theorem. 
 <br>
 <br>
@@ -3103,6 +3109,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <p itemprop="description">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.
 </p>
 <br>
+<br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>C</mi>
@@ -3116,6 +3123,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br>
 <div style="margin:12px">
 <p itemprop="description">In calculus terms:</p>
+<br>
 <br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
@@ -3164,8 +3172,8 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <br>
-<div id="circumference_calculator">
-<label style="margin:12px" for="circle-radius-c">Radius:</label>
+<div style="margin:12px" id="circumference_calculator">
+<label for="circle-radius-c">Radius:</label>
 <input id="circle-radius-c" type="number" value="1" step="any">
 <script>
   function circleCircumference(radius) {
@@ -3183,7 +3191,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
       `Circumference: ${circleCircumference(radius).toFixed(5)} units`;
     });
 </script>
-<p style="margin:12px" id="circle-circumference"></p>
+<p id="circle-circumference"></p>
 </div>
 </section>
 <br>
@@ -3271,11 +3279,11 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <br>
-<div id="circle-segment_area_calculator">
-<label style="margin:12px" for="segment-length">Length:</label>
+<div style="margin:12px" id="circle-segment_area_calculator">
+<label for="segment-length">Length:</label>
 <input id="segment-length" type="number" value="2" step="any">
 <br>
-<label style="margin:12px" for="segment-height">Height:</label>
+<label for="segment-height">Height:</label>
 <input id="segment-height" type="number" value="1" step="any">
 <script>
   function segmentArea(length, height, angle, radius) {
@@ -3323,7 +3331,7 @@ const ratio = 2 * height / length;
   document.getElementById('segment-length').addEventListener('input', updateSegmentArea);
   document.getElementById('segment-height').addEventListener('input', updateSegmentArea);
 </script>
-<p style="margin:12px" id="segment-area"></p>
+<p id="segment-area"></p>
 </div>
 </section>
 <br>
@@ -3355,6 +3363,7 @@ const ratio = 2 * height / length;
 <br>
 <div style="margin:12px">
 <p itemprop="abstract">The surface area of a cone is calculated as a circle slice with a radius equal to the slant height and the angle given by the ratio between the height and the slant height.</p>
+<br>
 <br>
 <div>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML" >
@@ -3394,11 +3403,11 @@ const ratio = 2 * height / length;
 </div>
 <br>
 <br>
-<div id="cone-surface_area_calculator">
-<label style="margin:12px" for="cone-radius-s">Radius:</label>
+<div style="margin:12px" id="cone-surface_area_calculator">
+<label for="cone-radius-s">Radius:</label>
 <input id="cone-radius-s" type="number" value="1" step="any">
 <br>
-<label style="margin:12px" for="cone-height-s">Height:</label>
+<label for="cone-height-s">Height:</label>
 <input id="cone-height-s" type="number" value="1" step="any">
 <script>
   function coneSurface(radius, height) {
@@ -3421,7 +3430,7 @@ const ratio = 2 * height / length;
   document.getElementById('cone-radius-s').addEventListener('input', updateConeSurface);
   document.getElementById('cone-height-s').addEventListener('input', updateConeSurface);
 </script>
-<p style="margin:12px" id="cone-surface-area"></p>
+<p id="cone-surface-area"></p>
 </div>
 </section>
 <br>
@@ -3466,6 +3475,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <div style="margin:12px">
 <p itemprop="abstract">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
 <br>
+<br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>V</mi>
@@ -3509,8 +3519,8 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </div>
 <br>
 <br>
-<div id="sphere_volume_calculator">
-<label style="margin:12px" for="sphere-radius">Radius:</label>
+<div style="margin:12px" id="sphere_volume_calculator">
+<label for="sphere-radius">Radius:</label>
 <input id="sphere-radius" type="number" value="1" step="any">
 <script>
   function sphereVolume(radius) {
@@ -3529,7 +3539,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
       `Volume: ${sphereVolume(radius).toFixed(5)} cubic units`;
     });
 </script>
-<p style="margin:12px" id="sphere-volume"></p>
+<p id="sphere-volume"></p>
 </div>
 </section>
 <br>
@@ -3589,6 +3599,7 @@ The formula for the real surface area of a sphere is available for 3.2 billion U
 <div style="margin:12px">
 <p itemprop="abstract">One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere.</p>
 <br>
+<br>
 <math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
  <mi>V</mi>
@@ -3615,11 +3626,11 @@ The formula for the real surface area of a sphere is available for 3.2 billion U
 </div>
 <br>
 <br>
-<div id="spherical_cap_volume_calculator">
-<label style="margin:12px" for="cap-radius">Radius:</label>
+<div style="margin:12px" id="spherical_cap_volume_calculator">
+<label for="cap-radius">Radius:</label>
 <input id="cap-radius" type="number" value="1" step="any">
 <br>
-<label style="margin:12px" for="cap-height">Height:</label>
+<label for="cap-height">Height:</label>
 <input id="cap-height" type="number" value="1" step="any">
 	
 <script>
@@ -3656,7 +3667,7 @@ if ( height === radius) {
   document.getElementById('cap-radius').addEventListener('input', updateCapVolume);
   document.getElementById('cap-height').addEventListener('input', updateCapVolume);
 </script>
-<p style="margin:12px" id="cap-volume"></p>
+<p id="cap-volume"></p>
 </div>
 </section>
 <br>
@@ -3690,9 +3701,11 @@ if ( height === radius) {
 	<h4 itemprop="abstract">The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</h4></summary>
 <br>
 <p itemprop="usageInfo">The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable approximation, the exact ratio is 1 / √8.
+<br>
 <p itemprop="disambiguatingDescription">The 1 / 3 coefficient was likely estimated based on the observation that the area of the mid-height cross section of a cone — of which's apex can be connected to the midpoint of the base with a perpendicular line — is exactly a quarter of a circumscribed cylinder's with the same base and height.
 <br>That makes the ratio between the mid-height cross-sectional area of the cone, and the difference between the mid-height cross-sectional areas of the circumscribed cylinder and the pyramid 1 : 3 .
 </p>
+<br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mrow>
@@ -4027,11 +4040,11 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <br>
-<div id="cone_volume_calculator">
-<label style="margin:12px" for="cone-radius-v">Radius:</label>
+<div style="margin:12px" id="cone_volume_calculator">
+<label for="cone-radius-v">Radius:</label>
 <input id="cone-radius-v" type="number" value="1" step="any">
 <br>
-<label style="margin:12px" for="cone-height-v">Height:</label>
+<label for="cone-height-v">Height:</label>
 <input id="cone-height-v" type="number" value="1" step="any">
 	
 <script>
@@ -4055,7 +4068,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
   document.getElementById('cone-radius-v').addEventListener('input', updateConeVolume);
   document.getElementById('cone-height-v').addEventListener('input', updateConeVolume);
 </script>
-<p style="margin:12px" id="cone-volume"></p>
+<p id="cone-volume"></p>
 </div>
 </section>
 <br>
@@ -4091,8 +4104,8 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <br>
 The height of the theoretical full cone can be calculated by the frustum height and the ratio between the top and bottom diameters.</p>
 <br>
-<div itemprop="description">
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
+<div style="margin:19px" itemprop="description">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
  <mrow>
  <mi>H</mi>
       <mo>=</mo>
@@ -4101,7 +4114,7 @@ The height of the theoretical full cone can be calculated by the frustum height 
 </math>
 <br>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
  <mrow>
  <mi>t</mi>
    <mo>=</mo>
@@ -4110,7 +4123,7 @@ The height of the theoretical full cone can be calculated by the frustum height 
 </math>
 <br>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
  <mrow>
  <mi>b</mi>
       <mo>=</mo>
@@ -4190,14 +4203,14 @@ The height of the theoretical full cone can be calculated by the frustum height 
 </div>
 <br>
 <br>
-<div id="frustum_cone_volume_calculator">
-<label style="margin:12px" for="frustum-cone-base-radius">Base radius:</label>
+<div style="margin:12px" id="frustum_cone_volume_calculator">
+<label for="frustum-cone-base-radius">Base radius:</label>
 <input id="frustum-cone-base-radius" type="number" value="2" step="any">
 <br>
-<label style="margin:12px" for="frustum-cone-top-radius">Top radius:</label>
+<label for="frustum-cone-top-radius">Top radius:</label>
 <input id="frustum-cone-top-radius" type="number" value="1" step="any">
 <br>
-<label style="margin:12px" for="frustum-cone-height">Height:</label>
+<label for="frustum-cone-height">Height:</label>
 <input id="frustum-cone-height" type="number" value="1" step="any">
 <script>
   function frustumConeVolume(baseArea, topArea, reciprocal, height) {
@@ -4242,7 +4255,7 @@ document.getElementById('frustum-cone-base-radius').addEventListener('input', up
 document.getElementById('frustum-cone-top-radius').addEventListener('input', updateFrustumConeVolume);
 document.getElementById('frustum-cone-height').addEventListener('input', updateFrustumConeVolume);
 </script>
-<p style="margin:12px" id="frustum-cone-volume"></p>
+<p id="frustum-cone-volume"></p>
 </div>
 </section>
 <br>
@@ -4250,7 +4263,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <br>
 <br>
 <section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="pyramid" itemref="cone">
-<h3 itemprop="name" style="margin:12px">Volume of a Pyramid</h3>
+<h3 itemprop="name" style="margin:7px">Volume of a Pyramid</h3>
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
 <meta itemprop="keywords" content="Core Geometric System, pyramid volume">
@@ -4449,11 +4462,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <h3 itemprop="name" style="margin:12px">Volume of a horizontal Frustum Pyramid</h3>
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
-<meta itemprop="disambiguatingDescription" content="The conventional formula for the volume of a frustum is based on the conventional V = base × height / 3 approximation.">
+<meta itemprop="disambiguatingDescription" content="The conventional formula for the volume of a frustum pyramid is based on the conventional V = base × height / 3 approximation.">
 <meta itemprop="keywords" content="Core Geometric System, frustum pyramid volume">
 <meta itemprop="educationalLevel" content="advanced">
 <meta itemprop="typicalAgeRange" content="12-18">
-<meta itemprop="usageInfo" content="By top and base area and frustum height.">
+<meta itemprop="usageInfo" content="By top and base area and frustum height. For any frustum pyramid, not only square based.">
 	<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
 	<meta itemprop="mathExpression" content="frustum pyramid height=3 edge length top=1 bottom=2 number=5 volume=?">
 <meta itemprop="eduQuestionType" content="Frustum Pyramid Volume Calculation">
@@ -4528,17 +4541,17 @@ The height of the theoretical full pyramid can be calculated by the frustum heig
 </div>
 <br>
 <br>
-<div id="frustum_pyramid_volume_calculator">
-<label style="margin:12px" for="frustum-pyramid-side-number">Number of sides:</label>
+<div style="margin:12px" id="frustum_pyramid_volume_calculator">
+<label for="frustum-pyramid-side-number">Number of sides:</label>
 <input id="frustum-pyramid-side-number" type="number" value="4" step="1">
 <br>
-<label style="margin:12px" for="frustum-pyramid-base-edge-length">Base edge length:</label>
+<label for="frustum-pyramid-base-edge-length">Base edge length:</label>
 <input id="frustum-pyramid-base-edge-length" type="number" value="2" step="any">
 <br>
-<label style="margin:12px" for="frustum-pyramid-top-edge-length">Top edge length:</label>
+<label for="frustum-pyramid-top-edge-length">Top edge length:</label>
 <input id="frustum-pyramid-top-edge-length" type="number" value="1" step="any">
 <br>
-<label style="margin:12px" for="frustum-pyramid-height">Height:</label>
+<label for="frustum-pyramid-height">Height:</label>
 <input id="frustum-pyramid-height" type="number" value="1" step="any">
 <script>
   function frustumPyramidVolume(baseArea, topArea, reciprocal, height) {
@@ -4593,16 +4606,37 @@ document.getElementById('frustum-pyramid-base-edge-length').addEventListener('in
 document.getElementById('frustum-pyramid-top-edge-length').addEventListener('input', updateFrustumPyramidVolume);
 document.getElementById('frustum-pyramid-height').addEventListener('input', updateFrustumPyramidVolume);
 </script>
-<p style="margin:12px" id="frustum-pyramid-volume"></p>
+<p id="frustum-pyramid-volume"></p>
 </div>
 </section>
 <br>
 <br>
-<section id="square_frustum">
-<h3 style="margin:7px">The volume of a square frustum pyramid can be calculated via a simplified formula.</h3>
+<section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="square_frustum" itemref="pyramid">
+<h3 itemprop="name" style="margin:12px">Volume of a horizontal square Frustum Pyramid</h3>
+<meta itemprop="url" content="https://gmac4247.github.io">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="keywords" content="Core Geometric System, square frustum pyramid volume">
+<meta itemprop="educationalLevel" content="advanced">
+<meta itemprop="typicalAgeRange" content="12-18">
+<meta itemprop="usageInfo" content="By top and base edge length and height. For square based frustum only.">
+	<div itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction">
+	<meta itemprop="mathExpression" content="frustum pyramid height=3 edge length top=1 bottom=2 volume=?">
+<meta itemprop="eduQuestionType" content="Square Frustum Pyramid Volume">
+	<div itemprop="target" itemscope itemtype="https://schema.org/EntryPoint">
+	<meta itemprop="urlTemplate" content="https://gmac4247.github.io?q={math_expression_string}">
+</div>
+<div itemprop="result" itemscope itemtype="https://schema.org/MathematicalSolution">
+      <meta itemprop="eduSolution" content="7.42462">
+</div>
+	</div>
+	<br>
 <br>
-<div>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
+<div style="margin:12px">
+<p itemprop="description">The volume of a square frustum pyramid can be calculated via a simplified formula.</p>
+<br>
+<br>
+<div style="margin:7px" itemprop="description" >
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
      <mrow>
  <mi>H</mi>
       <mo>=</mo>
@@ -4611,7 +4645,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </math>
 <br>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
  <mrow>
  <mi>t</mi>
    <mo>=</mo>
@@ -4630,8 +4664,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 <br>
 <br>
-<div>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math itemprop="mathExpression" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>V</mi>
 <mo>=</mo>
@@ -4668,7 +4701,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <br>
 <br>
 <section itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="tetrahedron" itemref="pyramid">
-<h3 itemprop="name" style="margin:12px">Volume of a Tetrahedron</h3>
+<h3 itemprop="name" style="margin:7px">Volume of a Tetrahedron</h3>
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
 <meta itemprop="disambiguatingDescription" content="The traditional formula for the volume of a tetrahedron is based on the conventional V = base × height / 3 approximation for a pyramid.">
@@ -4698,8 +4731,8 @@ A tetrahedron is a pyramid with 4 equilateral triangles and 6 equal edges as bou
 Its volume is calculated as a pyramid with an equilateral triangle base and fixed proportions. 
 </p>
 <br>
-<div itemprop="description">
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<div itemprop="description" style="margin:12px">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
  <mi>A</mi>
     <mo>=</mo>
@@ -4732,10 +4765,10 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
 </math>
 <br>
 <br>
-<p style="margin:12px">Simplifying:
+<p>Simplifying:
 </p>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>A</mi>
     <mo>=</mo>
@@ -4766,10 +4799,10 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
 	</math>
 	<br>
 <br>
-<p style="margin:12px">Simplifying further:
+<p>Simplifying further:
 </p>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>A</mi>
 <mo>=</mo>
@@ -4813,10 +4846,10 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
 </math>
 <br>
 <br>
-<p itemprop="description" style="margin:12px">The height of the tetrahedron is also calculable via trigonometry.
+<p itemprop="description">The height of the tetrahedron is also calculable via trigonometry.
 </p>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
  <mi>H</mi>
     <mo>=</mo>
@@ -4859,10 +4892,10 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
 </math>
 <br>
 <br>
-<p style="margin:12px">Simplifying:
+<p >Simplifying:
 </p>
 <br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
  <mi>H</mi>
     <mo>=</mo>
@@ -4905,12 +4938,11 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
 </math>
 <br>
 <br>
-<p style="margin:12px">The volume of a pyramid equals base × height × √2 / 4 . 
+<p>The volume of a pyramid equals base × height × √2 / 4 . 
 </p>
 </div>
 <br>
-<div itemprop="mathExpression">
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+<math itemprop="mathExpression" style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
  <mi>V</mi>
     <mo>=</mo>
@@ -4974,11 +5006,10 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
     </mfrac>
   </mrow>
 </math>
-</div>
 <br>
 <br>
-<div id="tetrahedron_volume_calculator">
-<label style="margin:12px" for="tetrahedron-edge">Edge:</label>
+<div style="margin:12px" id="tetrahedron_volume_calculator">
+<label for="tetrahedron-edge">Edge:</label>
 <input id="tetrahedron-edge" type="number" value="1" step="any">
 
 <script>
@@ -4997,47 +5028,46 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
       `Volume: ${tetrahedronVolume(edge).toFixed(5)} cubic units`;
     });
 </script>
-<p style="margin:12px" id="tetrahedron-volume"></p>
+<p id="tetrahedron-volume"></p>
 </div>
 </section>
 <br>
 <br>
 <br>
 <br>
-<section itemscope itemtype="https://schema.org/Article">
-<h3 itemprop="name" style="margin:7px">The Core Geometric System ™</h3>
+<h3 itemprop="name">The Core Geometric System ™</h3>
 <br>
 <br>
-<p itemprop="description" style="margin:12px"><strong>This is the only exact, self-contained geometric framework grounded in the first principles of mathematics, providing exact formulas for real-world applications.</strong></p>
-<p itemprop="disambiguatingDescription" style="margin:12px"><strong>By fundamentally shifting the axioms from the abstract, zero-dimensional point to the square and the cube as the primary, physically-relevant units for measurement, this system defines the properties of shapes like the circle and sphere not through abstract limits, but through their direct, rational relationship to these foundational units. The results of these formulas align better with physical reality than the traditional abstract approximations.</strong></p>
-<p itemprop="usageInfo" style="margin:12px"><strong>This is the best framework for exact geometric calculations in engineering design solutions, computer graphics rendering, algorithm optimization, and navigation.</strong></p>
+<p itemprop="description"><strong>This is the only exact, self-contained geometric framework grounded in the first principles of mathematics, providing exact formulas for real-world applications.</strong></p>
+<p itemprop="disambiguatingDescription"><strong>By fundamentally shifting the axioms from the abstract, zero-dimensional point to the square and the cube as the primary, physically-relevant units for measurement, this system defines the properties of shapes like the circle and sphere not through abstract limits, but through their direct, rational relationship to these foundational units. The results of these formulas align better with physical reality than the traditional abstract approximations.</strong></p>
+<p itemprop="usageInfo"><strong>This is the best framework for exact geometric calculations in engineering design solutions, computer graphics rendering, algorithm optimization, and navigation.</strong></p>
 <br>
 <br>
-<h4 itemprop="about" style="margin:7px">Comparative Geometry</h4>
-<p itemprop="usageInfo" style="margin:12px"><strong>Using geometric relationships to derive areas and volumes.</strong></p>
+<h4 itemprop="about">Comparative Geometry</h4>
+<p itemprop="usageInfo"><strong>Using geometric relationships to derive areas and volumes.</strong></p>
 <br>
-<h4 itemprop="about" style="margin:7px">Scaling and Proportions</h4>
-<p itemprop="usageInfo" style="margin:12px"><strong>Applying proportional relationships for accurate calculations.</strong></p>
+<h4 itemprop="about">Scaling and Proportions</h4>
+<p itemprop="usageInfo"><strong>Applying proportional relationships for accurate calculations.</strong></p>
 <br>
-<h4 itemprop="about" style="margin:7px">Algebraic Manipulation</h4>
-<p itemprop="usageInfo" style="margin:12px"><strong>Simplifying equations to ensure consistency and precision.</strong></p>
+<h4 itemprop="about">Algebraic Manipulation</h4>
+<p itemprop="usageInfo"><strong>Simplifying equations to ensure consistency and precision.</strong></p>
 </section>
 <br>
 <br> 
 <br>
 <br>
 <footer>
-<section itemscope itemtype="http://schema.org/Statement">
-<h4 itemprop="about" style="margin:12px">® All rights reserved</h4>
-<p itemprop="copyrightYear" style="margin:12px">2025</p>
+<section style="margin:12px" itemscope itemtype="http://schema.org/Statement">
+<h4 itemprop="about">® All rights reserved</h4>
+<p itemprop="copyrightYear">2025</p>
 <div itemscope itemtype="http://schema.org/copyrightHolder">
 <div itemscope itemtype="http://schema.org/Person">
-<p style="margin:12px" itemprop="name">Gaál Sándor</p>
+<p itemprop="name">Gaál Sándor</p>
 <div itemscope itemtype="http://schema.org/PostalAddress" style="margin:12px">
-<p itemprop="addressLocality" style="margin:12px">Szentendre</p>
-<p itemprop="addressRegion" style="margin:12px">Hungary</p>
-<p itemprop="postalCode" style="margin:12px">2000</p>
-<p itemprop="streetAddress" style="margin:12px">Ady Endre út 6.A</p>
+<p itemprop="addressLocality">Szentendre</p>
+<p itemprop="addressRegion">Hungary</p>
+<p itemprop="postalCode">2000</p>
+<p itemprop="streetAddress">Ady Endre út 6.A</p>
 </div>
 </div>
 </div>
