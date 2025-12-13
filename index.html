@@ -3208,13 +3208,15 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
+    <img class="center-fit" src="circleSegmentMarkup.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
     </figure>
 <br>
     <p itemprop="abstract" style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.</p>
 <br>
 <div style="margin:12px" itemprop="description">
-<p>The angle of the slice is given by the ratio between the segment height and the radius of the parent circle. The base of the triangle is the chord, its height is the segment height subtracted from the radius of the parent circle. If the radius of the parent circle is unknown it can be calculated from the the length of the segment ( chord ).</p>
+<p>The angle of the slice is given by the ratio between the segment height and the radius of the parent circle. The base of the triangle is the chord, its height is the segment height subtracted from the radius of the parent circle.
+<br>
+If the radius of the parent circle is unknown it can be calculated from the chord ( the length of the segment ).</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mi>r</mi>
@@ -3248,7 +3250,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
       <mrow>
         <mi>r</mi>
         <mo>-</mo>
-        <mi>n</mi>
+        <mi>h</mi>
       </mrow>
       <mi>r</mi>
     </mfrac>
@@ -3269,7 +3271,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
       <mrow>
         <mi>r</mi>
         <mo>-</mo>
-        <mi>n</mi>
+        <mi>h</mi>
       </mrow>
       <mi>r</mi>
     </mfrac>
@@ -3280,7 +3282,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
     <mrow>
       <mi>r</mi>
       <mo>-</mo>
-      <mi>n</mi>
+      <mi>h</mi>
     </mrow>
     <mo>)</mo>
 <mo>×</mo>
