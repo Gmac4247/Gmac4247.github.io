@@ -793,17 +793,16 @@ A cube is a cuboid with equal edges.</p>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="triangle" itemref="square">
 <h3 style="margin:7px" itemprop="eduQuestionType">Area of a Triangle</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={triangle_side1=3_side2=4_side3=5_area=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Triangle area formula">
+<meta itemprop="usageInfo" content="Multiply the length of the base by the half of the height">
 <br>
-<p itemprop="description" style="margin:12px">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.
+<p itemprop="abstract" style="margin:12px">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.
 <br>
 The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
 <br>
 The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
 <br>
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Triangle area formula">
-<meta itemprop="description" content="By the length of the base and the height">
-<meta itemprop="usageInfo" content="Universally applicable">
 <div itemprop="text">
 <math display="block">
  <mrow>
@@ -827,8 +826,7 @@ The square root of half of the area of the rectangle is the side length of the t
 <br>
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Triangle area formula aka Heron's formula">
-<meta itemprop="usageInfo" content="Universally applicable">
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<meta itemprop="usageInfo" content="Based on the length of the sides and half their sum">
 <p itemprop="description" style="margin:12px">The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
 <div itemprop="text">
@@ -1770,28 +1768,27 @@ function Atan(x) {
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="polygon" itemref="triangle">
 <h3 itemprop="eduQuestionType" style="margin:7px">Area of a regular Polygon</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={polygon_side_number=5_length=2_area=?}">
+<div itemprop="result" itemprop="mathExpression" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Regular polygon area formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="pentagon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
 </figure>
 <br>
-<p itemprop="description" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
-<p itemprop="description" style="margin:12px">The base of each triangle equals the side length of the polygon. 
+<p itemprop="abstract" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
+<div itemprop="description" style="margin:12px">
+<p>The base of each triangle equals the side length of the polygon. 
 <br>
 <br>
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle. 
 <br>
 <br>
-The area of each triangle equals base × height / 2 . 
+The area of each triangle equals base × height / 2 .</p>
 <br>
 <br>
 The height of each triangle is calculable via trigonometric functions. 
 </p>
 <br>
-<div itemprop="result" itemprop="mathExpression" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Regular polygon area formula">
-<meta itemprop="usageInfo" content="For regular polygons only">
-<div itemprop="description" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 <mi>height</mi>
@@ -1821,7 +1818,7 @@ The height of each triangle is calculable via trigonometric functions.
 </div>
 <br>
 <br>
-<div itemprop="description" style="margin:12px">
+<div itemprop="usageInfo" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>n</mi>
@@ -1944,6 +1941,8 @@ function updatePolygonArea() {
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circle" itemref="square">
 <h3 itemprop="eduQuestionType" style="margin:7px">Area of a Circle</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={circle_radius=1_area=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Circle area formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleArea.png" alt="The circle is cut into four quadrants, each placed with their origin on the vertices of a square. The arcs of the quadrants of the circle that equals in area to the square intersect at the quarters on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. r = side × √5 / 4 Area = 3.2r²">
@@ -1955,7 +1954,7 @@ function updatePolygonArea() {
 <p itemprop="disambiguatingDescription" style="margin:12px"><strong>The widely used formula " A = pi × r² " is not a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
 </details>
 </section>
-<p itemprop="description" style="margin:12px">The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
+<p itemprop="abstract" style="margin:12px">The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
 <br>
 <br>
 In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square, leaving some of the square uncovered. 
@@ -2492,9 +2491,6 @@ The ratio between the radius of the circle and the side of the square is calcula
 </section>
 <p style="margin:12px" itemprop="description">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
 <br>
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Circle area formula">
-<meta itemprop="description" content="Exact value via direct comparison to a square">
 <meta itemprop="disambiguatingDescription" content="Not based on the abstract approximate circumference to diameter ratio">
 <meta itemprop="usageInfo" content="Universally applicable">
 <div itemprop="text">
