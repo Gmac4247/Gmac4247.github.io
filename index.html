@@ -787,7 +787,7 @@ A cube is a cuboid with equal edges.</p>
 <br>
 <br>
 <br>
-<div itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver">
+<div itemscope itemtype="https://schema.org/mainEntity https://schema.org/LearningResource https://schema.org/MathSolver">
 <meta itemprop="name" content="Core Geometric System ™">
 <meta itemprop="url" content="https://gmac4247.github.io">
 <meta itemprop="inLanguage" content="en">
@@ -805,7 +805,11 @@ The base of a triangle multiplied by its height equals a rectangle with twice th
 <br>
 The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
 <br>
-<div itemprop="result">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Triangle area formula">
+<meta itemprop="description" content="By base length and height">
+<meta itemprop="usageInfo" content="Universally applicable">
+<div itemprop="mathExpression">
 <math display="block">
  <mrow>
  <mi>A</mi>
@@ -822,6 +826,7 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
  </mrow>
 </math>
+</div>
 </div>
 <br>
 <br>
@@ -861,7 +866,11 @@ The square root of half of the area of the rectangle is the side length of the t
 <br>
 <br>
 <br>
-<div itemprop="result">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Triangle area formula aka Heron's formula">
+<meta itemprop="description" content="By the length of the three sides">
+<meta itemprop="usageInfo" content="Universally applicable">
+<div itemprop="mathExpression">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <mi>A</mi>
@@ -903,11 +912,12 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="triangle_area_calculator">
 <meta itemprop="name" content="Triangle Area Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
 <label for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
@@ -1831,7 +1841,11 @@ The height of each triangle is calculable via trigonometric functions.
 </math>
 </div>
 <br>
-<div itemprop="result">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Triangle area formula">
+<meta itemprop="description" content="By side length and number of sides">
+<meta itemprop="usageInfo" content="For regular polygons only">
+<div itemprop="mathExpression">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 <mi>A</mi>
@@ -1860,11 +1874,12 @@ The height of each triangle is calculable via trigonometric functions.
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="polygon_area_calculator">
 <meta itemprop="name" content="Regular Polygon Area Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
 <label for="side-number">Number of sides:</label>
 <input id="side-number" type="number" value="5" step="1">
@@ -1931,7 +1946,7 @@ function updatePolygonArea() {
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="circle" itemref="square">
+<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction https://schema.org/mainEntity" id="circle" itemref="square">
 <h3 itemprop="eduQuestionType" style="margin:7px">Area of a Circle</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={circle_radius=1_area=?}">
 <br>
@@ -2482,7 +2497,12 @@ The ratio between the radius of the circle and the side of the square is calcula
 </section>
 <p style="margin:12px" itemprop="description">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
 <br>
-<div itemprop="result">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource https://schema.org/mainEntity">
+<meta itemprop="name" content="Circle area formula">
+<meta itemprop="description" content="Exact value via direct comparison to a square">
+<meta itemprop="disambiguatingDescription" content="Not based on the abstract approximate circumference to diameter ratio">
+<meta itemprop="usageInfo" content="Universally applicable">
+<div itemprop="mathExpression">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>A</mi>
@@ -2507,11 +2527,12 @@ The ratio between the radius of the circle and the side of the square is calcula
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_area_calculator">
 <meta itemprop="name" content="Circle Area Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
 <label for="circle-radius-a">Radius:</label>
 <input id="circle-radius-a" type="number" value="1" step="any">
