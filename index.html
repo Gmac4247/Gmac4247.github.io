@@ -913,6 +913,7 @@ The square root of half of the area of the rectangle is the side length of the t
 <meta itemprop="name" content="Triangle Area Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
 <br>
@@ -1875,6 +1876,7 @@ The height of each triangle is calculable via trigonometric functions.
 <meta itemprop="name" content="Regular Polygon Area Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="side-number">Number of sides:</label>
 <input id="side-number" type="number" value="5" step="1">
 <br>
@@ -2526,6 +2528,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 <meta itemprop="name" content="Circle Area Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="circle-radius-a">Radius:</label>
 <input id="circle-radius-a" type="number" value="1" step="any">
 <script>
@@ -2552,16 +2555,18 @@ The ratio between the radius of the circle and the side of the square is calcula
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="circumference">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circumference">
 <h3 itemprop="eduQuestionType" style="margin:7px">Circumference of a Circle</h3>
-	<meta itemprop="target" content="https://gmac4247.github.io?q={circle_radius=1_circumference=?}">
+<meta itemprop="target" content="https://gmac4247.github.io?q={circle_radius=1_circumference=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Circumference formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circumference.jpg" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii. Circumference = 6.4r">
     </figure>
 <section style="margin:12px" id="pi">
 <details>
-  <summary><h4 itemprop="description">The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</h4></summary>
+  <summary><h4 itemprop="abstract">The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</h4></summary>
 <br>
 <p>For centuries, the circle has been a symbol of mathematical elegance—and the pi its most iconic constant. While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood. Some think 'Standard Geometry' means accepting the pi. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
 <br>
@@ -2805,7 +2810,7 @@ The final conclusion is that using the consistent, exact constant 3.2 offers a p
 </section>	
 <br>
 <br>
-<section itemprop="description" id="solution">
+<section itemprop="usageInfo" id="solution">
 <h4>The true Ratio: 3.2</h4>
 <br>
 <br>
@@ -2839,7 +2844,7 @@ These are two aspects of that.
 </section>
 </details>
 </section>	
-<p itemprop="description" style="margin:12px">The x represents the theoretical width of the circumference, which is a very small number.
+<p itemprop="abstract" style="margin:12px">The x represents the theoretical width of the circumference, which is a very small number.
 <br>
 <br>
 The difference between the shape of the straightened circumference and a quadrilateral is negligible.
@@ -3059,10 +3064,10 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </details>
 </div>
 <br>	
+<div itemprop="text">
 <p style="margin:12px" itemprop="description">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.
 </p>
 <br>
-<div itemprop="result">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>C</mi>
@@ -3074,9 +3079,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <br>
-<p style="margin:12px" itemprop="description">In calculus terms:</p>
+<div itemprop="text">
+<p style="margin:12px">In calculus terms:</p>
 <br>
-<div itemprop="result">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
         <mi>C</mi>
@@ -3122,12 +3127,14 @@ The length of the two longer sides is the area of the resulting ring divided by 
 	   </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circumference_calculator">
 <meta itemprop="name" content="Circumference Calculator">
 <meta itemprop="applicationCategory" content="EducationalApplication">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="circle-radius-c">Radius:</label>
 <input id="circle-radius-c" type="number" value="1" step="any">
 <script>
@@ -3153,15 +3160,17 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="circle-segment">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circle-segment">
 <h3 itemprop="eduQuestionType" style="margin:7px">Area of a Circle Segment</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={circle_segment_height=1_length=3_radius=4_area=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Circle segment area formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
     </figure>
 <br>
-    <p itemprop="description" style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.
+    <p itemprop="abstract" style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.
 <br>
 <br>
 The angle of the slice is given by the ratio between the segment height and the radius of the parent circle. The base of the triangle is the length of the segment. That is called a chord. The height of the triangle is the segment height subtracted from the radius of the parent circle. If the radius of the parent circle is unknown it can be calculated from the chord.</p>
@@ -3185,7 +3194,7 @@ The angle of the slice is given by the ratio between the segment height and the 
 </math>
 <br>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mi>A</mi>
@@ -3237,13 +3246,15 @@ The angle of the slice is given by the ratio between the segment height and the 
   </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_segment_area_calculator">
 <meta itemprop="name" content="Circle Segment Area Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
-  <label for="segment-height">Segment Height:</label>
+<meta itemprop="isAccessibleForFree" content="true">
+<label for="segment-height">Segment Height:</label>
   <input id="segment-height" type="number" value="0" step="any">
   <br>
   <label for="chord-length">Chord Length:</label>
@@ -3324,17 +3335,19 @@ The angle of the slice is given by the ratio between the segment height and the 
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="cone_surface" itemref="circle">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cone_surface">
 <h3 itemprop="eduQuestionType" style="margin:7px">Surface Area of a Cone</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={cone_radius=1_height=2_area=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Cone surface area formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="cone.jpeg" alt="The surface area of a cone is calculated as a circle slice with a radius equal to the slant height. Area = 3.2r × ( r + √( r² + H² )">
   </figure>
 <br>
-<p style="margin:12px" itemprop="description">The surface area of a cone is calculated as a circle slice with a radius equal to the slant height and the angle given by the ratio between the height and the slant height.</p>
+<p style="margin:12px" itemprop="abstract">The surface area of a cone is calculated as a circle slice with a radius equal to the slant height and the angle given by the ratio between the height and the slant height.</p>
 <br>
-<div style="margin:12px" itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msub>
@@ -3370,12 +3383,14 @@ The angle of the slice is given by the ratio between the segment height and the 
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="cone-surface_area_calculator">
 <meta itemprop="name" content="Cone Surface Area Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="cone-radius-s">Radius:</label>
 <input id="cone-radius-s" type="number" value="1" step="any">
 <br>
@@ -3409,9 +3424,11 @@ The angle of the slice is given by the ratio between the segment height and the 
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="sphere" itemref="circle cube">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="sphere">
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Sphere</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={sphere_radius=1_volume=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Sphere volume formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphere.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
@@ -3430,9 +3447,9 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </p>
 </details>
 </section>
-<p style="margin:12px" itemprop="description">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
+<p style="margin:12px" itemprop="abstract">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>V</mi>
@@ -3474,12 +3491,14 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="sphere_volume_calculator">
 <meta itemprop="name" content="Sphere Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="sphere-radius">Radius:</label>
 <input id="sphere-radius" type="number" value="1" step="any">
 <script>
@@ -3506,7 +3525,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <br>
 <br>
 <br>
-<section itemprop="offers" itemscope itemtype="http://schema.org/Offer" itemref="sphere" style="border: 2px solid red; 
+<section itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="border: 2px solid red; 
             padding: 10px" id="sphere-surface">
 <p style="margin:6px">Advertisement</p>
 <br>
@@ -3538,14 +3557,16 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="spherical_cap" itemref="sphere">
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Spherical Cap</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={spherical_cap_radius=2_height=1_volume=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Spherical cap volume formula">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphericalCap.jpg" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
     </figure>
     <br>
-<p style="margin:12px" itemprop="description">One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere.</p>
+<p style="margin:12px" itemprop="abstract">One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere.</p>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
  <mi>V</mi>
@@ -3570,12 +3591,14 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
   </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="spherical_cap_volume_calculator">
 <meta itemprop="name" content="Spherical Cap Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="cap-radius">Radius:</label>
 <input id="cap-radius" type="number" value="1" step="any">
 <br>
@@ -3623,17 +3646,19 @@ if ( height === radius) {
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="cone" itemref="sphere">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cone">
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Cone</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={cone_radius=1_height=2_volume=?}">
-<br>
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Cone volume formula">
+	<br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="coneAndSphere.jpeg" alt="Cone volume from sphere = base × height / √8">
 </figure>
 <section style="margin:12px">
 <details>
   <summary>
-	<h4 itemprop="description">The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</h4></summary>
+	<h4 itemprop="abstract">The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</h4></summary>
 <br>
 <p itemprop="disambiguatingDescription">The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable approximation, the exact ratio is 1 / √8.
 <br>
@@ -3940,7 +3965,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </math>
 </div>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msub>
@@ -3965,13 +3990,15 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="cone_volume_calculator">
 <meta itemprop="name" content="Cone Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
-<label for="cone-radius-v">Radius:</label>
+<meta itemprop="isAccessibleForFree" content="true">
+	<label for="cone-radius-v">Radius:</label>
 <input id="cone-radius-v" type="number" value="1" step="any">
 <br>
 <label for="cone-height-v">Height:</label>
@@ -4005,9 +4032,11 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_cone" itemref="cone">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_cone">
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a horizontal Frustum Cone</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={frustum_cone_radius_top=1_bottom=2_height=3_volume=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Horizontal frustum cone volume formula">
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="frustumCone.jpeg" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
@@ -4018,7 +4047,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <br>
 The height of the theoretical full cone can be calculated by the frustum height and the ratio between the top and bottom diameters.</p>
 <br>
-<div style="margin:12px">
+<div itemprop="usageInfo" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
  <mrow>
  <mi>H</mi>
@@ -4046,7 +4075,7 @@ The height of the theoretical full cone can be calculated by the frustum height 
 </math>
 </div>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
      <mrow>
  <mi>V</mi>
@@ -4114,13 +4143,15 @@ The height of the theoretical full cone can be calculated by the frustum height 
 </mrow>
   </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="frustum_cone_volume_calculator">
 <meta itemprop="name" content="Frustum Cone Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
-<label for="frustum-cone-base-radius">Base radius:</label>
+<meta itemprop="isAccessibleForFree" content="true">
+	<label for="frustum-cone-base-radius">Base radius:</label>
 <input id="frustum-cone-base-radius" type="number" value="2" step="any">
 <br>
 <label for="frustum-cone-top-radius">Top radius:</label>
@@ -4178,9 +4209,11 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="pyramid" itemref="cone">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="pyramid">
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Pyramid</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Pyramid volume formula">
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="conePyramidVolume.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone. Volume = base × height / √8">
@@ -4293,7 +4326,7 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.
   </figure>
 <br>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>V</mi>
@@ -4316,13 +4349,15 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.
 </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="pyramid_volume_calculator">
 <meta itemprop="name" content="Pyramid Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
-<label style="margin:12px" for="pyramid-side-number">Number of sides:</label>
+<meta itemprop="isAccessibleForFree" content="true">
+	<label style="margin:12px" for="pyramid-side-number">Number of sides:</label>
 <input id="pyramid-side-number" type="number" value="4" step="1">
 <br>
 <label style="margin:12px" for="pyramid-base-edge-length">Base edge length:</label>
@@ -4366,20 +4401,22 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_pyramid" itemref="pyramid">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_pyramid">
 <h3 itemprop="eduQuestionType" style="margin:12px">Volume of a horizontal Frustum Pyramid</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={frustum_pyramid_height=3_edge_length_top=1_bottom=2_number=5_volume=?}">
-	<br>
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Horizontal frustum pyramid volume formula">
+<br>
 <figure class="imgbox">
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
 </figure>
 <br>
-<p itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. 
+<p itemprop="abstract" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. 
 <br>
 <br>
 The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom edges or areas.</p>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
      <mrow>
  <mi>V</mi>
@@ -4431,12 +4468,14 @@ The height of the theoretical full pyramid can be calculated by the frustum heig
 </mrow>
   </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="frustum_pyramid_volume_calculator">
 <meta itemprop="name" content="Frustum Pyramid Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="frustum-pyramid-side-number">Number of sides:</label>
 <input id="frustum-pyramid-side-number" type="number" value="4" step="1">
 <br>
@@ -4506,17 +4545,19 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </section>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="square_frustum" itemref="pyramid">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="square_frustum">
 <h3 itemprop="eduQuestionType" style="margin:12px">Volume of a horizontal square Frustum Pyramid</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={square_frustum_pyramid_height=3_edge_length_top=1_bottom=2_volume=?}">
-<br>
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Horizontal square frustum pyramid volume formula">
+	<br>
 <figure class="imgbox">
     <img class="center-fit" src="squareFrustum.jpeg" alt="Square frustum pyramid">
 </figure>
 <br>
 <p itemprop="description" style="margin:12px">The volume of a square frustum pyramid can be calculated via a simplified formula.</p>
 <br>
-<div style="margin:12px">
+<div itemprop="usageInfo" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
      <mrow>
  <mi>H</mi>
@@ -4544,7 +4585,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </math>
 </div>
 <br>
-<div itemprop="result">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>V</mi>
@@ -4576,14 +4617,17 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </mrow>
   </math>
 </div>
+</div>
 </section>
 <br>
 <br>
 <br>
 <br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="tetrahedron" itemref="pyramid">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="tetrahedron">
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Tetrahedron</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={tetrahedron_edge=2_volume=?}">
+<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="name" content="Tetrahedron volume formula">
 	<br>
 <figure class="imgbox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="tetrahedron.jpeg" alt="The volume of a tetrahedron is calculated as a pyramid with an equilateral triangle base and fixed proportions. Volume = edge³ / 8">
@@ -4883,12 +4927,14 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
   </mrow>
 </math>
 </div>
+</div>
 <br>
 <br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="tetrahedron_volume_calculator">
 <meta itemprop="name" content="Tetrahedron Volume Calculator">
-<meta itemprop="applicationCategory" content="EducationalApplication">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
 <label for="tetrahedron-edge">Edge:</label>
 <input id="tetrahedron-edge" type="number" value="1" step="any">
 
