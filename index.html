@@ -790,7 +790,7 @@ A cube is a cuboid with equal edges.</p>
 <meta itemprop="keywords" content="area of a triangle; area of a polygon; exact area of a circle; exact volume of a sphere; exact volume of a cone; exact volume of a pyramid">
 <meta itemprop="educationalLevel" content="from basic to advanced">
 <meta itemprop="typicalAgeRange" content="6-18">
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="triangle" itemref="square">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="triangle">
 <h3 style="margin:7px" itemprop="eduQuestionType">Area of a Triangle</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={triangle_side1=3_side2=4_side3=5_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
@@ -864,6 +864,7 @@ The square root of half of the area of the rectangle is the side length of the t
 <br>
 <br>
 <br>
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> 
 <mrow>
  <mi>A</mi>
@@ -1766,7 +1767,7 @@ function Atan(x) {
 <br>
 <br>
 <br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="polygon" itemref="triangle">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="polygon">
 <h3 itemprop="eduQuestionType" style="margin:7px">Area of a regular Polygon</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={polygon_side_number=5_length=2_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
@@ -1784,7 +1785,7 @@ function Atan(x) {
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle. 
 <br>
 <br>
-The area of each triangle equals base × height / 2 .</p>
+The area of each triangle equals base × height / 2 .
 <br>
 <br>
 The height of each triangle is calculable via trigonometric functions. 
@@ -1861,8 +1862,8 @@ The height of each triangle is calculable via trigonometric functions.
     <mo>)</mo>
 <mo>×</mo>
 <msup>
-        <mi>x</mi>
-        <mn>2</mn>
+    <mi>x</mi>
+    <mn>2</mn>
 </msup>
 </mrow>
 </math>
@@ -1952,7 +1953,7 @@ function updatePolygonArea() {
 <br>
 <section>
 <details>
-  <summary><h4 itemprop="description" itemref="square" style="margin:12px">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h4></summary>
+  <summary><h4 itemprop="description" style="margin:12px">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h4></summary>
 <p itemprop="disambiguatingDescription" style="margin:12px"><strong>The widely used formula " A = pi × r² " is not a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
 </details>
 </section>
@@ -2560,7 +2561,7 @@ The ratio between the radius of the circle and the side of the square is calcula
     </figure>
 <section style="margin:12px" id="pi">
 <details>
-  <summary><h4 itemprop="description" itemref="circle">The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</h4></summary>
+  <summary><h4 itemprop="description">The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</h4></summary>
 <br>
 <p>For centuries, the circle has been a symbol of mathematical elegance—and the pi its most iconic constant. While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood. Some think 'Standard Geometry' means accepting the pi. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
 <br>
@@ -3160,7 +3161,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
     <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
     </figure>
 <br>
-    <p itemprop="description" style="margin:12px" itemref="circle triangle trigonometry">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.
+    <p itemprop="description" style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.
 <br>
 <br>
 The angle of the slice is given by the ratio between the segment height and the radius of the parent circle. The base of the triangle is the length of the segment. That is called a chord. The height of the triangle is the segment height subtracted from the radius of the parent circle. If the radius of the parent circle is unknown it can be calculated from the chord.</p>
