@@ -1614,7 +1614,7 @@ The square root of half of the area of the rectangle is the side length of the t
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a square through a rectangle">
+<meta itemprop="measurementTechnique" content="Comparing the triangle to a square through a rectangle">
 <label itemprop="measuredProperty" for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
 <br>
@@ -1625,7 +1625,7 @@ The square root of half of the area of the rectangle is the side length of the t
 <input id="side3" type="number" value="1" step="any">
 <br>
 <br>
-<p itemprop="measuredProperty" id="triangle-area">Triangle area</p>
+<p itemprop="measuredProperty" id="triangle-area">Area</p>
 </div></div>
 <script type="module" async>
   function triangleArea(product) {
@@ -1773,14 +1773,14 @@ The height of each triangle is calculable via trigonometric functions.</p>
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a square through a rectangle through triangles">
+<meta itemprop="measurementTechnique" content="Comparing the polygon to a square through a rectangle through triangles">
 <label itemprop="measuredProperty" for="side-number">Number of sides:</label>
 <input id="side-number" type="number" value="5" step="1">
 <br>
 <label itemprop="measuredProperty" for="side-length">Side length:</label>
 <input id="side-length" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="polygon-area">Regular polygon area</p>
+<p itemprop="measuredProperty" id="polygon-area">Area</p>
 </div>
 </div>
 <script type="module" async>
@@ -2407,11 +2407,11 @@ The ratio between the radius of the circle and the side of the square is calcula
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a square through triangles.">
+<meta itemprop="measurementTechnique" content="Comparing the circle to a square through triangles.">
 <label itemprop="measuredProperty" for="circle-radius-a">Radius:</label>
 <input id="circle-radius-a" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="circle-area">Circle area</p>
+<p itemprop="measuredProperty" id="circle-area">Area</p>
 </div>
 </div>
 <script type="module" async>
@@ -2947,7 +2947,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to the length of a rectangle by subtracting a smaller circle from the measured circle.">
+<meta itemprop="measurementTechnique" content="Comparing the circumference to the length of a rectangle by subtracting a smaller circle from the measured circle.">
 <label itemprop="measuredProperty" for="circle-radius-c">Radius:</label>
 <input id="circle-radius-c" type="number" value="1" step="any">
 <br><br>
@@ -3074,7 +3074,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a square by subtracting a triangle from a circle slice.">
+<meta itemprop="measurementTechnique" content="Comparing the circle segment to a square by subtracting a triangle from a circle slice.">
 <label itemprop="measuredProperty" for="segment-height">Segment Height:</label>
 <input id="segment-height" type="number" step="any">
 <br>
@@ -3084,7 +3084,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <label itemprop="measuredProperty" for="parent-radius">Circle Radius:</label>
 <input id="parent-radius" type="number" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="segment-area">Segment area</p>
+<p itemprop="measuredProperty" id="segment-area">Area</p>
 </div>
 </div>
 <script type="module" async>
@@ -3238,14 +3238,14 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a square through a circle slice">
+<meta itemprop="measurementTechnique" content="Comparing the surface of the cone to a square through a circle slice">
 <label itemprop="measuredProperty" for="cone-radius-s">Radius:</label>
 <input id="cone-radius-s" type="number" value="1" step="any">
 <br>
 <label itemprop="measuredProperty" for="cone-height-s">Height:</label>
 <input id="cone-height-s" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="cone-surface-area">Cone surface</p>
+<p itemprop="measuredProperty" id="cone-surface-area">Surface area</p>
 </div>
 </div>
 <script type="module" async>
@@ -3350,11 +3350,11 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube by raising the square root of the cross-sectional area to the 3rd power.">
+<meta itemprop="measurementTechnique" content="Comparing the sphere to a cube by raising the square root of the cross-sectional area to the 3rd power.">
 <label itemprop="measuredProperty" for="sphere-radius">Radius:</label>
 <input id="sphere-radius" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="sphere-volume">Sphere volume</p>
+<p itemprop="measuredProperty" id="sphere-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
@@ -3453,14 +3453,14 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube through a sphere">
+<meta itemprop="measurementTechnique" content="Comparing the spherical cap to a cube through a sphere">
 <label itemprop="measuredProperty" for="cap-radius">Radius:</label>
 <input id="cap-radius" type="number" value="1" step="any">
 <br>
 <label itemprop="measuredProperty" for="cap-height">Height:</label>
 <input id="cap-height" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="cap-volume">Cap volume</p>
+<p itemprop="measuredProperty" id="cap-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
@@ -3850,14 +3850,14 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube through a sphere">
+<meta itemprop="measurementTechnique" content="Comparing the cone to a cube through a sphere">
 <label itemprop="measuredProperty" for="cone-radius-v">Radius:</label>
 <input id="cone-radius-v" type="number" value="1" step="any">
 <br>
 <label itemprop="measuredProperty" for="cone-height-v">Height:</label>
 <input id="cone-height-v" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="cone-volume">Cone volume</p>
+<p itemprop="measuredProperty" id="cone-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
@@ -4012,7 +4012,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube through a cone by subtracting the missing tip.">
+<meta itemprop="measurementTechnique" content="Comparing the frustum cone to a cube through a cone by subtracting the missing tip.">
 <label itemprop="measuredProperty" for="frustum-cone-base-radius">Base radius:</label>
 <input id="frustum-cone-base-radius" type="number" value="2" step="any">
 <br>
@@ -4022,7 +4022,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <label itemprop="measuredProperty" for="frustum-cone-height">Height:</label>
 <input id="frustum-cone-height" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="frustum-cone-volume">Frustum cone volume</p>
+<p itemprop="measuredProperty" id="frustum-cone-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
@@ -4195,18 +4195,18 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
 <label for="pyramid-side-number">Number of sides:</label>
 <input id="pyramid-side-number" type="number" value="4" step="1">
 <br>
-<label for="pyramid-base-edge-length">Base edge length:</label>
+<label itemprop="measuredProperty" for="pyramid-base-edge-length">Base edge length:</label>
 <input id="pyramid-base-edge-length" type="number" value="1" step="any">
 <br>
-<label for="pyramid-height">Height:</label>
+<label itemprop="measuredProperty" for="pyramid-height">Height:</label>
 <input id="pyramid-height" type="number" value="1" step="any">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube via the coefficient of a cone with a polygonal base.">
+<meta itemprop="measurementTechnique" content="Comparing the pyramid to a cube via the coefficient of a cone with a polygonal base.">
 <br><br>
-<p itemprop="measuredProperty" id="pyramid-volume">Pyramid volume</p>
+<p itemprop="measuredProperty" id="pyramid-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
@@ -4321,7 +4321,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube via the coefficient of a cone with a polygonal base by subtracting the missing tip.">
+<meta itemprop="measurementTechnique" content="Comparing the frustum pyramid to a cube via the coefficient of a cone with a polygonal base by subtracting the missing tip.">
 <label itemprop="measuredProperty" for="frustum-pyramid-side-number">Number of sides:</label>
 <input id="frustum-pyramid-side-number" type="number" value="4" step="1">
 <br>
@@ -4334,7 +4334,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <label itemprop="measuredProperty" for="frustum-pyramid-height">Height:</label>
 <input id="frustum-pyramid-height" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="frustum-pyramid-volume">Frustum pyramid volume</p>
+<p itemprop="measuredProperty" id="frustum-pyramid-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
@@ -4773,11 +4773,11 @@ The base is an equilateral triangle.</p>
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing to a cube via the coefficient of the cone with fix proportions.">
+<meta itemprop="measurementTechnique" content="Comparing the tetrahedron to a cube via the coefficient of the cone with fix proportions.">
 <label itemprop="measuredProperty" for="tetrahedron-edge">Edge:</label>
 <input id="tetrahedron-edge" type="number" value="1" step="any">
 <br><br>
-<p itemprop="measuredProperty" id="tetrahedron-volume">Tetrahedron volume</p>
+<p itemprop="measuredProperty" id="tetrahedron-volume">Volume</p>
 </div>
 </div>
 <script type="module" async>
