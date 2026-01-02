@@ -1496,7 +1496,8 @@ function Atan(x) {
 <meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
 <meta itemprop="educationalLevel" content="from basic to advanced">
 <meta itemprop="typicalAgeRange" content="6-18">
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="triangle">
+<section>
+<div itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="triangle">
 <h3 style="margin:7px" itemprop="eduQuestionType">Area of a Triangle</h3>
 <meta itemprop="target" content="https://gmac4247.github.io?q={triangle_side1=3_side2=4_side3=5_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
@@ -1609,17 +1610,8 @@ The square root of half of the area of the rectangle is the side length of the t
 </math>
 </div>
 </div>
+</div>
 <br><br>
-<div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="triangle_area_calculator">
-<meta itemprop="name" content="Triangle Area Calculator">
-<meta itemprop="description" content="Calculate the area of a triangle from the lengths of its sides.">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="usageInfo" content="Enter the lengths of the sides of the triangles one by one.">
-<meta itemprop="interactivityType" content="Active">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<div itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
 <meta itemprop="measurementTechnique" content="Comparing the triangle to a square through a rectangle">
 <label itemprop="measuredProperty" for="side1">Side 1:</label>
@@ -1633,7 +1625,16 @@ The square root of half of the area of the rectangle is the side length of the t
 <br>
 <br>
 <p itemprop="measuredProperty" id="triangle-area">Area</p>
-</div></div>
+</div>
+<div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="triangle_area_calculator">
+<meta itemprop="name" content="Triangle Area Calculator">
+<meta itemprop="description" content="Calculate the area of a triangle from the lengths of its sides.">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="usageInfo" content="Enter the lengths of the sides of the triangles one by one.">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <script type="module" async>
   function triangleArea(product) {
   return Math.sqrt(product);
