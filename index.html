@@ -1659,7 +1659,8 @@ const area = triangleArea(product);
 </figure>
 <br>
 <p itemprop="description" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
-<p itemprop="abstract" style="margin:12px">The base of each triangular section equals the side length of the polygon. 
+<div itemprop="abstract" style="margin:12px">
+<p>The base of each triangular section equals the side length of the polygon. 
 <br><br>
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle. 
 <br><br>
@@ -1693,6 +1694,7 @@ The height of each triangle is calculable via trigonometric functions.</p>
   </mrow>
   </mrow>
 </math>
+</div>
 <br>
 <div>
 <div itemprop="usageInfo" style="margin:12px">
@@ -1830,11 +1832,9 @@ function updatePolygonArea() {
 <meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
 <meta itemprop="educationalLevel" content="from basic to advanced">
 <meta itemprop="typicalAgeRange" content="6-18">
-<section id="circle">
-<div itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction">
-<h3 itemprop="eduQuestionType" style="margin:7px">Area of a Circle</h3>
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Circle area formula">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circle">
+<h3 itemprop="name" style="margin:7px">Area of a Circle</h3>
+<meta itemprop="eduQuestionType" content="Calculation">
 <meta itemprop="usageInfo" content="Universally applicable">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
@@ -1857,7 +1857,9 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 <br><br>
 The ratio between the radius of the circle and the side of the square is calculable.</p>
 <br>
-<div itemprop="description">
+<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="1"/>
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msup>
@@ -1890,7 +1892,10 @@ The ratio between the radius of the circle and the side of the square is calcula
 </msup>
 </mrow>
 </math>
+</div>
 <br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="2"/>
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mi>r</mi>
@@ -2361,7 +2366,8 @@ The ratio between the radius of the circle and the side of the square is calcula
 </section>
 <p style="margin:12px" itemprop="abstract">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
 <br>
-<div itemprop="text">
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="3"/>
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>A</mi>
@@ -2385,7 +2391,6 @@ The ratio between the radius of the circle and the side of the square is calcula
 </msup>
 </mrow>
 </math>
-</div>
 </div>
 </div>
 <br><br>
