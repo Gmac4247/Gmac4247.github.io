@@ -1591,20 +1591,6 @@ The square root of half of the area of the rectangle is the side length of the t
 </div>
 </section>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing the triangle to a square through a rectangle">
-<label itemprop="measuredProperty" for="side1">Side 1:</label>
-<input id="side1" type="number" value="1" step="any">
-<br>
-<label itemprop="measuredProperty" for="side2">Side 2:</label>
-<input id="side2" type="number" value="1" step="any">
-<br>
-<label itemprop="measuredProperty" for="side3">Side 3:</label>
-<input id="side3" type="number" value="1" step="any">
-<br>
-<br>
-<p itemprop="measuredProperty" id="triangle-area">Area</p>
-</div>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="triangle_area_calculator">
 <meta itemprop="name" content="Triangle Area Calculator">
 <meta itemprop="description" content="Calculate the area of a triangle from the lengths of its sides.">
@@ -1614,6 +1600,17 @@ The square root of half of the area of the rectangle is the side length of the t
 <meta itemprop="usageInfo" content="Enter the lengths of the sides of the triangles one by one.">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<label for="side1">Side 1:</label>
+<input id="side1" type="number" value="1" step="any">
+<br>
+<label for="side2">Side 2:</label>
+<input id="side2" type="number" value="1" step="any">
+<br>
+<label for="side3">Side 3:</label>
+<input id="side3" type="number" value="1" step="any">
+<br>
+<br>
+<p id="triangle-area"></p>
 <script type="module" async>
   function triangleArea(product) {
   return Math.sqrt(product);
@@ -1743,26 +1740,23 @@ The height of each triangle is calculable via trigonometric functions.</p>
 </math>
 </div>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing the polygon to a square through a rectangle through triangles">
-<label itemprop="measuredProperty" for="side-number">Number of sides:</label>
-<input id="side-number" type="number" value="5" step="1">
-<br>
-<label itemprop="measuredProperty" for="side-length">Side length:</label>
-<input id="side-length" type="number" value="1" step="any">
-<br><br>
-<p itemprop="measuredProperty" id="polygon-area">Area</p>
-</div>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="polygon_area_calculator">
 <meta itemprop="name" content="Regular Polygon Area Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="description" content="Calculte the area of a regular polygon from the number and length of its sides.">
-<meta itemprop="disambiguatingDescription" content="With trigonometric functions aligned to circumference=3.2*diameter, instead of the pi=3.14... approximate.">
+<meta itemprop="disambiguatingDescription" content="With trigonometric functions aligned to circumference = 3.2 × diameter, instead of the pi=3.14... approximate.">
 <meta itemprop="usageInfo" content="Enter the number and the length of the sides of a regular polygon.">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<label for="side-number">Number of sides:</label>
+<input id="side-number" type="number" value="5" step="1">
+<br>
+<label for="side-length">Side length:</label>
+<input id="side-length" type="number" value="1" step="any">
+<br><br>
+<p id="polygon-area"></p>
 <script type="module" async>
   function polygonArea(length, number, tangent) {
     return number / 4  * length ** 2 / tangent;
@@ -2001,7 +1995,7 @@ The ratio between the radius and the side length is calculable.</p>
 </div>
 </div>
 <br>
-<section itemprop="description" style="margin:12px" id="circle_area_proof">
+<section itemprop="description" display="block" id="circle_area_proof">
 <details>
   <summary><h4>When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</h4></summary>
 <br>
@@ -2010,11 +2004,11 @@ The ratio between the radius and the side length is calculable.</p>
     </figure>
 <br>
 <div>
-<div id="uncovered">
-<p>Quarter of the uncovered area in the middle:</p>
-<br>
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep" id="uncovered">
+<meta itemprop="position" content="6">
+<span itemprop="name">Quarter of the uncovered area in the middle</span>=
+<div itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mfrac>
 <mrow>
@@ -2085,17 +2079,16 @@ The ratio between the radius and the side length is calculable.</p>
 </mfrac>
 <mo>)</mo>
 </mrow>
-<mo>=</mo>
-</mrow>
 </math>
 </div>
+</div>
 <br><br><br>
-<div id="overlap">
-<p>The area of an overlapping section:</p>
-<br>
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
-<mo>=</mo>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep" id="overlap">
+<meta itemprop="position" content="7">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">The area of an overlapping section</span>=
+<div itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mn>2</mn>
 <mo>×</mo>
@@ -2148,7 +2141,6 @@ The ratio between the radius and the side length is calculable.</p>
 <mn>2</mn>
 </mfrac>
 <mo>)</mo>
-</mrow>
 </mrow>
 </mrow>
 </math>
@@ -2421,9 +2413,9 @@ The ratio between the radius and the side length is calculable.</p>
 </div>
 </div>
 <br><br>
-<div itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<div display="block" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
   <span itemprop="name">Area</span>=
-<meta itemprop="value" content="3.2 × radius²">
+<div itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>3.2</mn>
