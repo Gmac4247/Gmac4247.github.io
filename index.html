@@ -1847,6 +1847,7 @@ function updatePolygonArea() {
 <p itemprop="disambiguatingDescription" style="margin:12px"><strong>The widely used formula " A = pi × r² " is not a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
 </details>
 </section>
+<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <p itemprop="abstract" style="margin:12px">The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
 <br><br>
 In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square, leaving some of the square uncovered. 
@@ -1857,9 +1858,11 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 <br><br>
 The ratio between the radius of the circle and the side of the square is calculable.</p>
 <br>
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1"/>
+ <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+    <meta itemprop="position" content="1"/>
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msup>
@@ -1893,9 +1896,14 @@ The ratio between the radius of the circle and the side of the square is calcula
 </mrow>
 </math>
 </div>
+</div>
+</div>
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2"/>
+ <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+<meta itemprop="position" content="1"/>
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mi>r</mi>
@@ -1968,6 +1976,8 @@ The ratio between the radius of the circle and the side of the square is calcula
 </mrow>
 </mrow>
 </math>
+</div>
+ </div>
 </div>
 <br>
 <section itemprop="description" style="margin:12px" id="circle_area_proof">
@@ -2368,6 +2378,9 @@ The ratio between the radius of the circle and the side of the square is calcula
 <br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3"/>
+ <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+<meta itemprop="position" content="1"/>
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>A</mi>
@@ -2393,6 +2406,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 </math>
 </div>
 </div>
+</div>
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
 <meta itemprop="measurementTechnique" content="Comparing the circle to a square through triangles.">
@@ -2401,7 +2415,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 <br><br>
 <p itemprop="measuredProperty" id="circle-area">Area</p>
 </div>
-<div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_area_calculator">
+<div itemprop="tool" itemscope itemtype="https://schema.org/SoftwareApplication" itemtype="https://schema.org/HowToTool" id="circle_area_calculator">
 <meta itemprop="name" content="Circle Area Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="operatingSystem" content="Web">
@@ -2428,6 +2442,7 @@ The ratio between the radius of the circle and the side of the square is calcula
       `Area = ${circleArea(radius).toFixed(5)} square units`;
     });
 </script>
+</div>
 </div>
 </section>
 <br><br><br><br>
