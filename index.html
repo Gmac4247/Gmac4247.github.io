@@ -3862,7 +3862,11 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
     <img class="center-fit" src="sphericalCap.png" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
     </figure>
     <br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="1">
 <p style="margin:12px" itemprop="description">One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere.</p>
+</div>
+</div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Volume</span>=
@@ -3892,7 +3896,6 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </math>
 </span>
 </div>
-</div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="spherical_cap_volume_calculator">
 <meta itemprop="name" content="Spherical Cap Volume Calculator">
@@ -3900,7 +3903,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="description" content="Calculte the volume of a spherical cap from its radius and height.">
-<meta itemprop="disambiguatingDescription" content="Based on the exact volume of (4*radius/sqrt(5))^3, instead of the (radius*4*pi/3)^3 approximation">
+<meta itemprop="disambiguatingDescription" content="Based on the exact volume of a sphere - (4radius / √5)³ -, instead of the (radius*4*pi/3)^3 approximation">
 <meta itemprop="usageInfo" content="Enter the radius">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
@@ -4345,7 +4348,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="description" content="Calculte the volume of a cone from its radius and height.">
-<meta itemprop="disambiguatingDescription" content="Exact volume of 3.2*radius^2*height/sqrt(8), instead of the pi*radius^2*height/3 approximation">
+<meta itemprop="disambiguatingDescription" content="Exact volume of 3.2 × radius² × height / √8, instead of the pi*radius^2*height/3 approximation">
 <meta itemprop="usageInfo" content="Enter the radius and the height">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
@@ -4439,7 +4442,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Volume</span>=
 <span itemprop="value">
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mrow>
@@ -4671,7 +4674,7 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Volume</span>=
 <span itemprop="value">
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mrow>
@@ -4763,21 +4766,24 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <p itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="abstract" style="margin:12px">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom edges or areas.</p>
+<p itemprop="abstract">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom edges or areas.</p>
 </div>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">V</span>=
 <span itemprop="value">
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mrow>
       <mi>H</mi>
 	<mo>×</mo>
       <mo>(</mo>
-       <mi>bottom area</mi>
+       <msub>
+		<mi>Area</mi>
+		   <mi>bottom</mi>
+	   </msub>
 <mo>×</mo>
       <mo>(</mo>
       <mfrac>
@@ -4786,14 +4792,23 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           <mn>1</mn>
           <mo>-</mo>
           <mfrac>
-            <mi>top area</mi>
-            <mi>bottom area</mi>
+            <msub>
+				<mi>Area</mi>
+				<mi>top</mi>
+			</msub>
+			  <msub>
+            <mi>Area</mi>
+				<mi>bottom</mi>
+			  </msub>
           </mfrac>
         </mrow>
       </mfrac>
       <mo>)</mo>
       <mo>-</mo>
-        <mi>top area</mi>
+        <msub>
+				<mi>Area</mi>
+				<mi>top</mi>
+		</msub>
 <mo>×</mo>
       <mo>(</mo>
       <mfrac>
@@ -4802,8 +4817,14 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           <mn>1</mn>
           <mo>-</mo>
           <mfrac>
-            <mi>top area</mi>
-            <mi>bottom area</mi>
+            <msub>
+				<mi>Area</mi>
+				<mi>top</mi>
+			</msub>
+            <msub>
+            <mi>Area</mi>
+				<mi>bottom</mi>
+			</msub>
           </mfrac>
         </mrow>
       </mfrac>
@@ -4997,7 +5018,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <meta itemprop="position" content="1">
 <p itemprop="abstract" style="margin:12px">The base is an equilateral triangle.</p>
 <br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Base area</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5033,9 +5054,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 </div>
 <br><br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
-<p itemprop="abstract" style="margin:12px">Simplifying:</p>
+<p itemprop="abstract">Simplifying:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5071,9 +5092,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 	</math>
 </div>
 <br><br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3">
-<p itemprop="abstract" style="margin:12px">Simplifying further:</p>
+<p itemprop="abstract">Simplifying further:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5122,9 +5143,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </math>
 </div>
 <br><br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="4">
-<p itemprop="abstract" style="margin:12px">The height of the tetrahedron is also calculable via trigonometry.</p>
+<p itemprop="abstract">The height of the tetrahedron is also calculable via trigonometry.</p>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Height</span>=
 <span itemprop="value">
@@ -5171,9 +5192,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 </div>
 <br><br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
-<p itemprop="abstract" style="margin:12px">Simplifying:</p>
+<p itemprop="abstract">Simplifying:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -5218,9 +5239,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </math>
 </div>
 <br><br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="6">
-<p itemprop="abstract" style="margin:12px">The volume of a pyramid equals base × height × √2 / 4 .</p>
+<p itemprop="abstract">The volume of a pyramid equals base × height × √2 / 4 .</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
