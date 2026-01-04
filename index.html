@@ -2452,7 +2452,7 @@ Circle area = square area</p>
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="description" content="Calculte the area of a circle from its radius.">
-<meta itemprop="disambiguatingDescription" content="Exact area of 3.2*radius^2, instead of the pi=3.14... approximate">
+<meta itemprop="disambiguatingDescription" content="Exact area of 3.2 × radius², instead of the pi=3.14... approximate">
 <meta itemprop="usageInfo" content="Enter the radius">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
@@ -3178,8 +3178,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 </div>
 <br><br>
-<p itemprop="abstract" style="margin:12px">The height of the triangle is the segment height subtracted from the radius of the parent circle.</p>
+<p itemprop="abstract">The height of the triangle is the segment height subtracted from the radius of the parent circle.</p>
 </details>
+</div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Area</span>=
@@ -3359,11 +3360,12 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
   </figure>
 <br>
 <details style="margin:12px">
-  <summary><h4 itemprop="description" style="margin:12px">The bottom of the cone is a circle. The rest of its surface area is calculated as a circle slice.</h4></summary>
+  <summary><h4 itemprop="description">The bottom of the cone is a circle. The are of its lateral surface is calculated as a circle slice.</h4></summary>
 <br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <p itemprop="abstract">The slant height of the cone is the radius of the slice.</p>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Slant height</span>=
 <span itemprop="value">
@@ -3391,6 +3393,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <p itemprop="abstract">The ratio between the bottom radius and the slant height gives the angle of the circle slice.</p>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Angle</span>=
 <span itemprop="value">
@@ -3422,17 +3425,28 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3">
+<p itemprop="abstract">The area of the circle slice equals 3.2 times the slant height squared multiplied by the angle.</p>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Circle slice area</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mn>3.2</mn>
-<mo>&#x2062;</mo> <!-- invisible times -->
+<mo>×</mo>
+<mrow>
+<mo>(</mo>
 <msup>
 <mi>r</mi>
 <mn>2</mn>
 </msup>
+<mo>+</mo>
+<msup>
+<mi>H</mi>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
 <mo>×</mo>
 <mrow>
 <mo>(</mo>
@@ -3462,6 +3476,154 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 </div>
 <br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="4">
+<br><br>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Bottom area</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mn>3.2</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+</span>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="5">
+<br><br>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Bottom area + lateral surface</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mn>3.2</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>+</mo> 
+<mrow>
+<mn>3.2</mn>
+<mo>×</mo>
+<mrow>
+<mo>(</mo>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>H</mi>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+<mo>×</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mi>r</mi>
+<mrow>
+<msqrt>
+<mrow>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>H</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+</mrow>
+</math>
+</span>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+  <meta itemprop="position" content="6">
+  <p itemprop="abstract">
+    Simplify the lateral surface term by canceling the common factor under the square root.
+  </p>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+    <span itemprop="name">Bottom area + lateral surface</span>=
+    <span itemprop="value">
+      <!-- S = 3.2 r² + 3.2 r √(r² + H²) -->
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mn>3.2</mn>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mi>r</mi><mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mn>3.2</mn>
+          <mo>&#x2062;</mo>
+          <mi>r</mi>
+          <mo>&#x2062;</mo>
+          <msqrt>
+            <mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+              <mo>+</mo>
+              <msup><mi>H</mi><mn>2</mn></msup>
+            </mrow>
+          </msqrt>
+        </mrow>
+      </math>
+    </span>
+  </div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+  <meta itemprop="position" content="7">
+  <p itemprop="abstract">
+    Factor out the common factor to obtain the final compact surface area formula.
+  </p>
+  <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+    <span itemprop="name">Surface area</span>=
+    <span itemprop="value">
+      <!-- S = 3.2 r (r + √(r² + H²)) -->
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mn>3.2</mn>
+          <mo>&#x2062;</mo>
+          <mi>r</mi>
+          <mo>&#x2062;</mo>
+          <mo>(</mo>
+          <mi>r</mi>
+          <mo>+</mo>
+          <msqrt>
+            <mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+              <mo>+</mo>
+              <msup><mi>H</mi><mn>2</mn></msup>
+            </mrow>
+          </msqrt>
+          <mo>)</mo>
+        </mrow>
+      </math>
+    </span>
+  </div>
+</div>
 </details>
 </div>
 <br>
