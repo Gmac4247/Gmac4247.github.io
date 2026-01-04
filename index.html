@@ -3428,7 +3428,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <p itemprop="abstract">The area of the circle slice equals 3.2 times the slant height squared multiplied by the angle.</p>
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Circle slice area</span>=
+<span itemprop="name">Lateral surface</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
@@ -3477,7 +3477,35 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
+  <meta itemprop="position" content="4">
+  <p itemprop="abstract">
+    Simplify the lateral surface term by canceling the common factor under the square root.
+  </p>
+	<br>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+    <span itemprop="name">Lateral surface</span>=
+    <span itemprop="value">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mn>3.2</mn>
+          <mo>&#x2062;</mo>
+          <mi>r</mi>
+          <mo>&#x2062;</mo>
+          <msqrt>
+            <mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+              <mo>+</mo>
+              <msup><mi>H</mi><mn>2</mn></msup>
+            </mrow>
+          </msqrt>
+        </mrow>
+      </math>
+    </span>
+  </div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="5">
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Bottom area</span>=
@@ -3497,7 +3525,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="5">
+<meta itemprop="position" content="6">
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Bottom area + lateral surface</span>=
@@ -3560,69 +3588,10 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-  <meta itemprop="position" content="6">
-  <p itemprop="abstract">
-    Simplify the lateral surface term by canceling the common factor under the square root.
-  </p>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-    <span itemprop="name">Bottom area + lateral surface</span>=
-    <span itemprop="value">
-      <!-- S = 3.2 r² + 3.2 r √(r² + H²) -->
-      <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mrow>
-          <mn>3.2</mn>
-          <mo>&#x2062;</mo>
-          <msup>
-            <mi>r</mi><mn>2</mn>
-          </msup>
-          <mo>+</mo>
-          <mn>3.2</mn>
-          <mo>&#x2062;</mo>
-          <mi>r</mi>
-          <mo>&#x2062;</mo>
-          <msqrt>
-            <mrow>
-              <msup><mi>r</mi><mn>2</mn></msup>
-              <mo>+</mo>
-              <msup><mi>H</mi><mn>2</mn></msup>
-            </mrow>
-          </msqrt>
-        </mrow>
-      </math>
-    </span>
-  </div>
-</div>
-<br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
   <meta itemprop="position" content="7">
   <p itemprop="abstract">
     Factor out the common factor to obtain the final compact surface area formula.
   </p>
-  <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-    <span itemprop="name">Surface area</span>=
-    <span itemprop="value">
-      <!-- S = 3.2 r (r + √(r² + H²)) -->
-      <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mrow>
-          <mn>3.2</mn>
-          <mo>&#x2062;</mo>
-          <mi>r</mi>
-          <mo>&#x2062;</mo>
-          <mo>(</mo>
-          <mi>r</mi>
-          <mo>+</mo>
-          <msqrt>
-            <mrow>
-              <msup><mi>r</mi><mn>2</mn></msup>
-              <mo>+</mo>
-              <msup><mi>H</mi><mn>2</mn></msup>
-            </mrow>
-          </msqrt>
-          <mo>)</mo>
-        </mrow>
-      </math>
-    </span>
-  </div>
 </div>
 </details>
 </div>
