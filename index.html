@@ -1484,7 +1484,7 @@ function Atan(x) {
 <section itemscope itemtype="https://schema.org/LearningResource" id="triangle">
 <h3 style="margin:7px" itemprop="name">Calculate the Area of a Triangle</h3>
 <br>
-<section style="margin:12px">
+<div style="margin:12px">
 <p itemprop="description">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</p>
 <p itemprop="abstract">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
 <br>
@@ -1508,9 +1508,9 @@ The square root of half of the area of the rectangle is the side length of the t
  </mrow>
 </math>
 </div>
-</section>
+</div>
 <br><br>
-<section style="margin:12px">
+<div style="margin:12px">
 <p itemprop="description">The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
 <div itemprop="usageInfo">
@@ -1589,7 +1589,7 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
 </math>
 </div>
-</section>
+</div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="triangle_area_calculator">
 <meta itemprop="name" content="Triangle Area Calculator">
@@ -1895,13 +1895,12 @@ The ratio between the radius and the side length is calculable.</p>
 </math>
 </span>
 </div>
-</summary>
 </div>
 <br><br>
 <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">radius</span>=</center>
+<span itemprop="name">radius</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
@@ -2444,7 +2443,6 @@ Circle area = square area</p>
 </math>
 </span>
 </div>
-</div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_area_calculator">
 <meta itemprop="name" content="Circle Area Calculator">
@@ -2961,9 +2959,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </math>		  
 </div>
 </div>
+</details>
 </div>
 <br>
-</details>
 <p itemprop="description" style="margin:12px">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.
 </p>
 <br>
@@ -3235,7 +3233,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </math>
 </span>
 </div>
-</div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_segment_area_calculator">
 <meta itemprop="name" content="Circle Segment Area Calculator">
@@ -3360,7 +3357,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
   </figure>
 <br>
 <details style="margin:12px">
-  <summary><h4 itemprop="description">The bottom of the cone is a circle. The are of its lateral surface is calculated as a circle slice.</h4></summary>
+  <summary><p itemprop="description">The bottom of the cone is a circle. The are of its lateral surface is calculated as a circle slice.</p></summary>
 <br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
@@ -3503,7 +3500,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
     </span>
   </div>
 </div>
-<br><br><br>
+<br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
@@ -3522,7 +3519,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </span>
 </div>
 </div>
-<br><br><br>
+<br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="6">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
@@ -3597,7 +3594,6 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </math>
 </span>
 </div>
-</div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="cone-surface_area_calculator">
 <meta itemprop="name" content="Cone Surface Area Calculator">
@@ -3640,15 +3636,15 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="sphere">
+<meta itemprop="eduQuestionType" content="Sphere volume formula">
+<meta itemprop="target" content="https://basic-geometry.pages.dev?q={sphere_radius=1_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
 <meta itemprop="currency" content="USD">
 <meta itemprop="value" content="0">
 </div>
 <meta itemprop="totalTime" content="PT05S">
-<h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Sphere</h3>
-<meta itemprop="target" content="https://basic-geometry.pages.dev?q={sphere_radius=1_volume=?}">
-<meta itemprop="name" content="Sphere volume formula">
+<h3 itemprop="name" style="margin:7px">Calculate the Volume of a Sphere</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphere.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
@@ -3664,7 +3660,105 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 That is a very exaggerated, distortion-based comparison that discards the difference between the straight slant height of a cone and the curvature of a sphere, resulting in a very rough underestimate.</strong></p>
 </details>
 </section>
-<p style="margin:12px" itemprop="abstract">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
+<details>
+  <summary><p style="margin:12px" itemprop="abstract">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p></summary>
+<br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="1">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Cross-sectional area</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mn>3.2</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+</span>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="2">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Square root of the cross-sectional area</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msqrt>
+<mrow>
+<mn>3.2</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mrow>
+</math>
+</span>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="3">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Square root of the cross-sectional area</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msqrt>
+<mrow>
+	<mfrac>
+		<mrow>
+		<mn>16</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>5</mn>
+//mfrac>
+</mrow>
+</msqrt>
+</mrow>
+</math>
+</span>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="3">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Square root of the cross-sectional area</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+	<mfrac>
+		<mrow>
+		<mn>4</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<mi>r</mi>
+</mrow>
+<mrow>
+<msqrt>
+<mn>5</mn>
+</msqrt>
+</mrow>
+</mfrac>
+</mrow>
+</math>
+</span>
+</div>
+</div>
+</details>
+</div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Volume</span>=
@@ -3677,14 +3771,18 @@ That is a very exaggerated, distortion-based comparison that discards the differ
       <msqrt>
         <mn>3.2</mn>
       </msqrt>
-      <mo>×</mo>
+      <mo>&#x2062;</mo>
       <mi>r</mi>
       <mo>)</mo>
     </mrow>
     <mn>3</mn>
   </msup>
 </mrow>
-<mo>=</mo>
+</math>
+</span>
+<br><br>
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
   <msup>
     <mrow>
@@ -3692,7 +3790,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 		<mfrac>
 		<mrow>
       <mn>4</mn>
-	<mo>×</mo>
+	<mo>&#x2062;</mo>
       <mi>r</mi>
 		</mrow>
 			<msqrt>
@@ -3707,7 +3805,6 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </math>
 </span>
 </div>
-</div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="sphere_volume_calculator">
 <meta itemprop="name" content="Sphere Volume Calculator">
@@ -3715,14 +3812,14 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="description" content="Calculte the volume of a sphere from its radius.">
-<meta itemprop="disambiguatingDescription" content="Exact volume of (4*radius/sqrt(5))^3, instead of the (radius*4*pi/3)^3 approximation">
+<meta itemprop="disambiguatingDescription" content="Exact volume of (4 × radius / √5)³, instead of the (radius*4*pi/3)³ approximation">
 <meta itemprop="usageInfo" content="Enter the radius">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <label for="sphere-radius">Radius:</label>
 <input id="sphere-radius" type="number" value="1" step="any">
 <br><br>
-<p id="sphere-volume">Volume</p>
+<p id="sphere-volume"></p>
 <script type="module" async>
   function sphereVolume(radius) {
     return Math.pow(Math.sqrt(3.2) * radius, 3);
@@ -3777,7 +3874,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <meta itemprop="value" content="0">
 </div>
 <meta itemprop="totalTime" content="PT05S">
-<h3 itemprop="name" style="margin:7px">Volume of a Spherical Cap</h3>
+<h3 itemprop="name" style="margin:7px">Calculate the Volume of a Spherical Cap</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphericalCap.png" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
@@ -3825,7 +3922,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <meta itemprop="usageInfo" content="Enter the radius">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<label ifor="cap-radius">Radius:</label>
+<label for="cap-radius">Radius:</label>
 <input id="cap-radius" type="number" value="1" step="any">
 <br>
 <label for="cap-height">Height:</label>
@@ -3987,14 +4084,13 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
     <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.">
 </figure>
 <br>
-<div itemprop="abstract">
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="1">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Volume of an octant sphere</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
-<msub>
-<mi>V</mi>
-<mi>octant sphere</mi>
-</msub>
-<mo>=</mo>
 <msup>
 <mrow>
 <mo>(</mo>
@@ -4050,15 +4146,17 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </mrow>
 </math>
 </div>
+</div>
 <br><br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphereAndCone.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder. Volume = base × height / √8">
 </figure>
 <br>
-<div itemprop="abstract">
-<p style="margin:12px">The base of the two shapes is a quadrant circle.</p>
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="2">
+<p itemprop="abstract">The base of the two shapes is a quadrant circle.</p>
 <br>
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msub>
 <mi>A</mi>
@@ -4109,12 +4207,13 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </math>
 </div>
 <br><br>
-<div itemprop="abstract">
-<p style="margin:12px">The slant height of the quadrant cone is √2 × radius.
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="3">
+<p itemprop="abstract">The slant height of the quadrant cone is √2 × radius.
 <br><br>
 The volume of a quadrant cylinder with the same base, and height equal to the slant height of the cone is a simple multiplication.</p>
 <br>
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msup>
 <mrow>
@@ -4141,20 +4240,19 @@ The volume of a quadrant cylinder with the same base, and height equal to the sl
 </math>
 </div>
 <br><br>
-<div itemprop="abstract">
-<p style="margin:12px">The slant form has a triangular vertical cross-section. 
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="4">
+<p itemprop="abstract" style="margin:12px">The slant form has a triangular vertical cross-section. 
 <br>
 The area of a cone's vertical middle cross-section is the half of a cylinder's with equal base and height. 
 <br><br>
 The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder’s.</p>
 <br>
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Volume of a quadrant cone</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
-<msub>
-<mi>V</mi>
-<mi>quarter cone</mi>
-</msub>
-<mo>=</mo>
 <msup>
 <mrow>
 <mo>(</mo>
@@ -4184,17 +4282,15 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </mfrac>
 </mrow>
 </math>
+</span>
+</div>
+</div>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Volume</span>=
 <span itemprop="value"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
-<msub>
-<mi>V</mi>
-<mi>cone</mi>
-</msub>
-<mo>=</mo>
 <mfrac>
 <mrow>
 <mn>3.2</mn>
@@ -4212,7 +4308,6 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </mrow>
 </math>
 </span>
-</div>
 </div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="cone_volume_calculator">
