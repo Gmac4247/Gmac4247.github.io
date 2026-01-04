@@ -3072,7 +3072,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <meta itemprop="totalTime" content="PT05S">
 <h3 itemprop="name" style="margin:7px">Calculate the Area of a Circle Segment</h3>
-<meta itemprop="disambiguatingDescription" content="Area based on the A(circle)=3.2*radius^2 formula, instead of the pi=3.14... approximate.">
+<meta itemprop="disambiguatingDescription" content="Area based on the true area of a circle - 3.2 × radius² -, instead of the pi=3.14... approximate.">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.png" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
@@ -3341,7 +3341,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cone_surface">
-<meta itemprop="eduQuestionType" content="Cone surface area formula">
+<meta itemprop="eduQuestionType" content="Cone surface area calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={cone_radius=1_height=2_area=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -3357,7 +3357,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
   </figure>
 <br>
 <details style="margin:12px">
-  <summary><h4 itemprop="description">The bottom of the cone is a circle. The are of its lateral surface is calculated as a circle slice.</h4></summary>
+  <summary><h4 itemprop="description">The bottom of the cone is a circle. The area of its lateral surface is calculated as a circle slice.</h4></summary>
 <br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
@@ -3636,7 +3636,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="sphere">
-<meta itemprop="eduQuestionType" content="Sphere volume formula">
+<meta itemprop="eduQuestionType" content="Sphere volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={sphere_radius=1_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -3848,7 +3848,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cap">
-<meta itemprop="eduQuestionType" content="Spherical cap volume formula">
+<meta itemprop="eduQuestionType" content="Spherical cap volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={spherical_cap_radius=2_height=1_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -3952,7 +3952,7 @@ if ( height === radius) {
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cone">
-<meta itemprop="eduQuestionType" content="Cone volume formula">
+<meta itemprop="eduQuestionType" content="Cone volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={cone_radius=1_height=2_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -4385,7 +4385,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_cone">
-<meta itemprop="eduQuestionType" content="Horizontal frustum cone volume formula">
+<meta itemprop="eduQuestionType" content="Horizontal frustum cone volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={frustum_cone_radius_top=1_bottom=2_height=3_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -4393,7 +4393,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <meta itemprop="value" content="0">
 </div>
 <meta itemprop="totalTime" content="PT05S">
-<h3 itemprop="name" style="margin:7px">Calculate the Volume of a horizontal Frustum Cone</h3>
+<h3 itemprop="name" style="margin:7px">Calculate the Volume of a Frustum Cone</h3>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="frustumCone.jpeg" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
@@ -4407,13 +4407,43 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <p itemprop="disambiguatingDescription">The widely used raw transcript of the square frustum pyramid volume formula is inaccurate for a frustum cone.</p>
 </details>
 </section>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<details style="margin:12px">
+  <summary>
+	<h4 itemprop="abstract">The height of the theoretical full cone can be calculated by the frustum height and the ratio between the top and bottom areas.</h4></summary>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="abstract">The height of the theoretical full cone can be calculated by the frustum height and the ratio between the top and bottom diameters.</p>
+<br>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Extended height</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+	<mfrac>
+        <mn>Height</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+				<mi>Area</mi>
+				<mi>top</mi>
+			</msub>
+            <msub>
+		<mi>Area</mi>
+		   <mi>bottom</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+	</mfrac>
+   </mrow>
+</math>
+</span>
 </div>
+</div>
+</details>
 </div>
 <br>
-<div itemprop="usageInfo" style="margin:12px">
+<div itemprop="description" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
  <mrow>
  <mi>H</mi>
@@ -4445,8 +4475,11 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
-<mrow>
       <mi>H</mi>
+	<msqrt>
+        <mn>8</mn>
+      </msqrt>
+</mfrac>
 	<mo>×</mo>
       <mo>(</mo>
       <msup>
@@ -4499,11 +4532,6 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
       <mn>1</mn>
       <mo>)</mo>
       <mo>)</mo>
-</mrow>
-      <msqrt>
-        <mn>8</mn>
-      </msqrt>
-      </mfrac>
 </mrow>
   </math>
 </span>
@@ -4576,7 +4604,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="pyramid">
-<meta itemprop="eduQuestionType" content="Pyramid volume formula">
+<meta itemprop="eduQuestionType" content="Pyramid volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -4745,7 +4773,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </section>
 <br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_pyramid">
-<meta itemprop="eduQuestionType" content="Horizontal frustum pyramid volume formula">
+<meta itemprop="eduQuestionType" content="Horizontal frustum pyramid volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={frustum_pyramid_height=3_edge_length_top=1_bottom=2_number=5_volume=?}">
 <div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
 <div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
@@ -4753,7 +4781,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <meta itemprop="value" content="0">
 </div>
 <meta itemprop="totalTime" content="PT05S">
-<h3 itemprop="name" style="margin:12px">Calculate the Volume of a horizontal Frustum Pyramid</h3>
+<h3 itemprop="name" style="margin:12px">Calculate the Volume of a Frustum Pyramid</h3>
 <meta itemprop="disambiguatingDescription" content="Based on the exact volume of a pyramid, V=base*height/sqrt(8), instead of the V=base*height/3 approximate. For any number of sides, not only for square frustum pyramids.">
 <meta itemprop="usageInfo" content="Universally applicable.">
 <br>
@@ -4761,11 +4789,40 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
 </figure>
 <br>
-<p itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid.</p>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<details style="margin:12px">
+  <summary>
+	<h4 itemprop="abstract">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom areas.</h4></summary>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="abstract">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom edges or areas.</p>
+<br>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Extended height</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+	<mfrac>
+        <mn>Height</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+				<mi>Area</mi>
+				<mi>top</mi>
+			</msub>
+            <msub>
+		<mi>Area</mi>
+		   <mi>bottom</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+	</mfrac>
+   </mrow>
+</math>
+</span>
 </div>
+</div>
+</details>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
@@ -4773,10 +4830,13 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
-<mfrac>
-<mrow>
+	<mfrac>
       <mi>H</mi>
-	<mo>×</mo>
+	<msqrt>
+        <mn>8</mn>
+      </msqrt>
+	</mfrac>
+		<mo>×</mo>
       <mo>(</mo>
        <msub>
 		<mi>Area</mi>
@@ -4830,11 +4890,6 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
       <mn>1</mn>
       <mo>)</mo>
       <mo>)</mo>
-</mrow>
-      <msqrt>
-        <mn>8</mn>
-      </msqrt>
-      </mfrac>
 </mrow>
   </math>
 </span>
@@ -4920,11 +4975,10 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </section>
 <br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="square_frustum">
-<h3 itemprop="eduQuestionType" style="margin:12px">Volume of a horizontal square Frustum Pyramid</h3>
+<h3 itemprop="eduQuestionType" style="margin:12px">Calculate the Volume of a square Frustum</h3>
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={square_frustum_pyramid_height=3_edge_length_top=1_bottom=2_volume=?}">
-<meta itemprop="name" content="Horizontal square frustum pyramid volume formula">
+<meta itemprop="name" content="Horizontal square frustum pyramid volume calculation">
 <meta itemprop="disambiguatingDescription" content="Based on the exact volume of a pyramid - base × height / √8 -, instead of the base × height / 3 approximate.">
-<meta itemprop="usageInfo" content="Only for square frustum pyramids">
 <br>
 <figure class="imgbox">
     <img class="center-fit" src="squareFrustum.jpeg" alt="Square frustum pyramid">
@@ -4932,7 +4986,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <br>
 <p itemprop="description" style="margin:12px">The volume of a square frustum pyramid can be calculated via a simplified formula.</p>
 <br>
-<div itemprop="usageInfo" style="margin:12px">
+<div itemprop="description" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
      <mrow>
  <mi>H</mi>
@@ -5009,7 +5063,8 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
   <img class="center-fit" src="tetrahedron.jpeg" alt="The volume of a tetrahedron is calculated as a pyramid with an equilateral triangle base and fixed proportions. Volume = edge³ / 8">
   </figure>
 <br>
-<p itemprop="description" style="margin:12px">A tetrahedron is a pyramid with fix proportions.</p>
+<details>
+<summary><h4 itemprop="description" style="margin:12px">A tetrahedron is a pyramid with fix proportions.</h4></summary>
 <p itemprop="abstract" style="margin:12px">It is bound by 4 equilateral triangles forming 6 equal edges.</p>
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
@@ -5148,7 +5203,6 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Height</span>=
 <span itemprop="value">
-<br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 <msqrt>
@@ -5298,6 +5352,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
    </mrow>
 </math>
 </div>
+</details>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
