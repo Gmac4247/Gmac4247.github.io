@@ -765,7 +765,7 @@ A cube is a cuboid with equal edges.</p>
 </math>
 </div>
 <br><br>
-<p itemprop="usageInfo" style="margin:12px">Trigonometric functions with an "Arc" prefix refer to the angle corresponding to a value of that function.</p>
+<p itemprop="usageInfo" style="margin:12px">Trigonometric functions with an "Arc" prefix - or simply A - refer to the angle corresponding to a value of that function.</p>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="trigonometry_engine">
 <meta itemprop="name" content="Trigonometry">
 <meta itemprop="description" content="Lookup-based trigonometry value finder for the calculator apps. Values aligned to circumference=6.4radius with ~ ± rad / 100 accuracy.">
@@ -1493,8 +1493,10 @@ The square root of half of the area of the rectangle is the side length of the t
 <math xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
  <msub>
-<mi>Area</mi>
+<mi>A</mi>
+	 <mo>(</mo>
 	 <mi>triangle</mi>
+ <mo>)</mo>
  </msub>
 <mo>=</mo>
 <mrow>
@@ -1553,8 +1555,10 @@ The square root of half of the area of the rectangle is the side length of the t
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
 <mrow>
   <msub>
-<mi>Area</mi>
-	 <mi>triangle</mi>
+<mi>A</mi>
+	<mo>(</mo>
+	  <mi>triangle</mi>
+	  <mo>)</mo>
   </msub>
 <mo>=</mo>
 <mrow>
@@ -1721,8 +1725,10 @@ The height of each triangle is calculable via trigonometric functions.</p>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
  <msub>
-<mi>Area</mi>
+<mi>A</mi>
+	 <mo>(</mo>
 	 <mi>polygon</mi>
+	 <mo>)</mo>
  </msub>
 <mo>=</mo>
 <mfrac>
@@ -2416,7 +2422,7 @@ Circle area = square area</p>
 <br>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Area<sub>circle</sub></span>=
+<span itemprop="name">A<sub>(circle)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -2437,7 +2443,7 @@ Circle area = square area</p>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Area<sub>circle</sub></span>=
+<span itemprop="name">A<sub>(circle)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3189,7 +3195,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Area<sub>segment</sub></span>=
+<span itemprop="name">A<sub>(segment)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
@@ -3433,7 +3439,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <p itemprop="abstract">The area of the circle slice equals 3.2 times the slant height squared multiplied by the angle.</p>
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Lateral surface</span>=
+<span itemprop="name">A<sub>(lateral)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3512,7 +3518,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Bottom area</span>=
+<span itemprop="name">A<sub>bottom</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3531,7 +3537,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="6">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Bottom area + lateral surface</span>=
+<span itemprop="name">A<sub>(bottom)</sub> + A<sub>(lateral)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3573,7 +3579,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Surface Area<sub>cone</sub></span>=
+<span itemprop="name">Surface<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3674,7 +3680,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Cross-sectional area</span>=
+<span itemprop="name">A<sub>(cross-section)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3693,7 +3699,9 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Square root of the cross-sectional area</span>=
+<p itemprop="abstract">Take the square root of the cross-sectional area.</p>
+<br>
+<span itemprop="name">√(A<sub>(cross-section)</sub>)</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3770,7 +3778,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume<sub>sphere</sub></span>=
+<span itemprop="name">V<sub>(sphere)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3877,7 +3885,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume<sub>cap</sub></span>=
+<span itemprop="name">V<sub>(cap)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3887,7 +3895,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <mrow>
 <msub>
 <mi>r</mi>
-<mi>cap</mi>
+<mi>(cap)</mi>
 </msub>
 </mrow>
 <mn>2</mn>
@@ -4078,7 +4086,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume of an octant sphere</span>=
+<span itemprop="name">V<sub>(octant sphere)</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4131,7 +4139,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume of an octant sphere</span>=
+<span itemprop="name">V<sub>(octant sphere)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4190,8 +4198,8 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msub>
-<mi>Area</mi>
-<mi>base</mi>
+<mi>A</mi>
+<mi>(base)</mi>
 </msub>
 <mo>=</mo>
 <mrow>
@@ -4251,8 +4259,8 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <msub>
-<mi>Volume</mi>
-<mi>quadrant cylinder</mi>
+<mi>V</mi>
+<mi>(quadrant cylinder)</mi>
 </msub>
 <mo>=</mo>
 <mfrac>
@@ -4325,7 +4333,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume<sub>cone</sub></span>=
+<span itemprop="name">V<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4419,23 +4427,23 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <meta itemprop="position" content="1">
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Extended height</span>=
+<span itemprop="name">H<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<mfrac>
-        <mi>Height</mi>
+        <mi>H</mi>
         <mrow>
           <mn>1</mn>
           <mo>-</mo>
           <mfrac>
             <msub>
-				<mi>Area</mi>
-				<mi>top</mi>
+				<mi>A</mi>
+				<mi>(top)</mi>
 			</msub>
             <msub>
-		<mi>Area</mi>
-		   <mi>bottom</mi>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
 			</msub>
           </mfrac>
         </mrow>
@@ -4454,8 +4462,8 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<msub>
-		<mi>Area</mi>
-		   <mi>bottom</mi>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
 	</msub>
 	   <mo>×</mo>
 	   <mfrac>
@@ -4472,12 +4480,12 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
           <mo>-</mo>
           <mfrac>
             <msub>
-				<mi>Area</mi>
-				<mi>top</mi>
+				<mi>A</mi>
+				<mi>(top)</mi>
 			</msub>
             <msub>
-		<mi>Area</mi>
-		   <mi>bottom</mi>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
 			</msub>
           </mfrac>
         </mrow>
@@ -4501,8 +4509,8 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<msub>
-		<mi>Area</mi>
-		   <mi>top</mi>
+		<mi>A</mi>
+		   <mi>(top)</mi>
 	</msub>
 	   <mo>×</mo>
 	   <mfrac>
@@ -4520,12 +4528,12 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
           <mo>-</mo>
           <mfrac>
             <msub>
-				<mi>Area</mi>
-				<mi>top</mi>
+				<mi>A</mi>
+				<mi>(top)</mi>
 			</msub>
             <msub>
-		<mi>Area</mi>
-		   <mi>bottom</mi>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
 			</msub>
           </mfrac>
         </mrow>
@@ -4572,7 +4580,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">V<sub>(frustum)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4801,18 +4809,18 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
   </figure>
 <br><br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">V<sub>(pyramid)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mrow>
 <msub>
-<mi>Area</mi>
-<mi>base</mi>
+<mi>A</mi>
+<mi>(base)</mi>
 </msub>
 <mo>×</mo>
- <mi>Height</mi>
+ <mi>H</mi>
  </mrow>
 <msqrt>
  <mn>8</mn>
@@ -4897,7 +4905,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">V<sub>(frustum)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4911,7 +4919,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
       <mo>(</mo>
        <msub>
 		<mi>A</mi>
-		   <mi>b</mi>
+		   <mi>(b)</mi>
 	   </msub>
 <mo>×</mo>
       <mo>(</mo>
@@ -4923,11 +4931,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           <mfrac>
             <msub>
 				<mi>A</mi>
-				<mi>t</mi>
+				<mi>(t)</mi>
 			</msub>
 			  <msub>
             <mi>A</mi>
-				<mi>b</mi>
+				<mi>(b)</mi>
 			  </msub>
           </mfrac>
         </mrow>
@@ -4936,7 +4944,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
       <mo>-</mo>
         <msub>
 				<mi>A</mi>
-				<mi>t</mi>
+				<mi>(t)</mi>
 		</msub>
 <mo>×</mo>
       <mo>(</mo>
@@ -4948,11 +4956,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           <mfrac>
             <msub>
 				<mi>A</mi>
-				<mi>t</mi>
+				<mi>(t)</mi>
 			</msub>
             <msub>
             <mi>A</mi>
-				<mi>b</mi>
+				<mi>(b)</mi>
 			</msub>
           </mfrac>
         </mrow>
@@ -5085,7 +5093,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">V<sub>(square frustum)</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5143,7 +5151,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <p itemprop="abstract" style="margin:12px">The base is an equilateral triangle.</p>
 <br>
 <div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Base area</span>=
+<span itemprop="name">A<sub>(base)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -5185,8 +5193,8 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msub>
- <mi>Area</mi>
-	 <mi>base</mi>
+ <mi>A</mi>
+	 <mi>(base)</mi>
 </msub>
 	<mo>=</mo>
 <mfrac>
@@ -5223,8 +5231,8 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msub>
- <mi>Area</mi>
-	 <mi>base</mi>
+ <mi>A</mi>
+	 <mi>(base)</mi>
 </msub>
 <mo>=</mo>
 <mrow>
@@ -5272,7 +5280,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <p itemprop="abstract">The height of the tetrahedron is also calculable via trigonometry.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Height</span>=
+<span itemprop="name">H</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -5323,7 +5331,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
- <mi>Height</mi>
+ <mi>H</mi>
     <mo>=</mo>
 <mrow>
 <msqrt>
@@ -5370,8 +5378,11 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
- <mi>Volume</mi>
-    <mo>=</mo>
+ <msub>
+	<mi>V</mi>
+    <mi>(tetrahedron)</mi>
+ </msub>
+	 <mo>=</mo>
 <mfrac>
 <mrow>
     <mo>(</mo>
@@ -5427,7 +5438,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">V<sub>(tetrahedron)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
