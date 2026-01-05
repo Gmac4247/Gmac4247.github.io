@@ -4092,7 +4092,6 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </mrow>
 <mn>8</mn>	
 </mfrac>
-<mo>)</mo>
 <msup>
 </mrow>
 <mo>=</mo>
@@ -4101,6 +4100,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <mrow>
 <mfrac>
 <mrow>
+<mo>(</mo>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
@@ -4119,7 +4119,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </span>
 </div>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
@@ -4233,9 +4233,12 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <br><br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="4">
-<p itemprop="abstract">The slant height of the quadrant cone is √2 × radius.
-<br><br>
-The volume of a quadrant cylinder with the same base, and height equal to the slant height of the cone is a simple multiplication.</p>
+<p itemprop="abstract">The slant height of the quadrant cone is √2 × radius.</p>
+</div>
+<br>
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="5">
+<p itemprop="abstract">The volume of a cylinder equals base area × height. 
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
@@ -4266,7 +4269,7 @@ The volume of a quadrant cylinder with the same base, and height equal to the sl
 </div>
 <br><br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="5">
+<meta itemprop="position" content="6">
 <p itemprop="abstract">The slant form has a triangular vertical cross-section. 
 <br>
 The area of a cone's vertical middle cross-section is the half of a cylinder's with equal base and height. 
@@ -4298,7 +4301,13 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <mo>&#x2062;</mo> <!-- invisible times -->
 <mi>H</mi>
 </mrow>
-<mn>4</mn>
+<mrow>
+<mo>(</mo>
+<mn>2</mn>
+<mo>+</mo>
+<mn>2</mn>
+<mo>)</mo>
+</mrow>
 </mfrac>
 </mrow>
 </math>
@@ -4474,6 +4483,11 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3">
 <div itemprop="abstract">
+<p>Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
+</div>
+<br>
+<meta itemprop="position" content="4">
+<div itemprop="abstract">
 <p>The volume of the missing tip:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4484,18 +4498,13 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 	</msub>
 	   <mo>×</mo>
 	   <mfrac>
-      <mrow>
-	<mo>(</mo>
-	<mi>Extended height</mi>
-	<mo>-</mo>
-		   <mi>Frustum height</mi>
-		<mo>)</mo>
-	  </mrow>
-		<msqrt>
+      <mi>H</mi>
+	<msqrt>
         <mn>8</mn>
       </msqrt>
 </mfrac>
 	<mo>×</mo>
+	   <mo>(</mo>
 	   <mfrac>
         <mn>1</mn>
         <mrow>
@@ -4513,13 +4522,14 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
           </mfrac>
         </mrow>
 	</mfrac>
+	   <mo>-</mo>
+      <mn>1</mn>
    </mrow>
 </math>
 </span>
 </div>
-</div>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
+<meta itemprop="position" content="5">
 <p itemprop="abstract">Subtracting the volume of the missing tip from the theoretical full cone gives the volume of the frustum.</p>
 </div>
 </details>
