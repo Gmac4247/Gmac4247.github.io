@@ -1492,7 +1492,10 @@ The square root of half of the area of the rectangle is the side length of the t
 <div itemprop="text">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
- <mi>Area</mi>
+ <msub>
+<mi>Area</mi>
+	 <mi>triangle</mi>
+ </msub>
 <mo>=</mo>
 <mrow>
 <mfrac>
@@ -1549,7 +1552,10 @@ The square root of half of the area of the rectangle is the side length of the t
 <div itemprop="text">
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
 <mrow>
- <mi>Area</mi>
+  <msub>
+<mi>Area</mi>
+	 <mi>triangle</mi>
+  </msub>
 <mo>=</mo>
 <mrow>
 <msqrt>
@@ -1714,7 +1720,10 @@ The height of each triangle is calculable via trigonometric functions.</p>
 <div itemprop="text" style="margin:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
+ <msub>
 <mi>Area</mi>
+	 <mi>polygon</mi>
+ </msub>
 <mo>=</mo>
 <mfrac>
 <mi>n</mi>
@@ -2407,7 +2416,7 @@ Circle area = square area</p>
 <br>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Area</span>=
+<span itemprop="name">Area<sub>circle</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -2428,7 +2437,7 @@ Circle area = square area</p>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Area</span>=
+<span itemprop="name">Area<sub>circle</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3180,7 +3189,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Area</span>=
+<span itemprop="name">Area<sub>segment</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
@@ -3564,7 +3573,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Surface Area</span>=
+<span itemprop="name">Surface Area<sub>cone</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3761,7 +3770,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">Volume<sub>sphere</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3868,12 +3877,10 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">Volume<sub>cap</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
- <mi>V</mi>
-      <mo>=</mo>
   <mn>1.6</mn>
 <mo>×</mo>
  <msup>
@@ -4084,6 +4091,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
 <mi>r</mi>
 <mo>)</mo>
 </mrow>
@@ -4104,7 +4112,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
-<mo>&#x2062;</mo>
+<mo>&#x2062;</mo> <!-- invisible times -->
 <mi>r</mi>
 </mrow>
 <mn>2</mn>
@@ -4317,7 +4325,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Volume</span>=
+<span itemprop="name">Volume<sub>cone</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4409,7 +4417,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 	<h4 itemprop="abstract">The height of the theoretical full cone can be calculated by the frustum height and the ratio between the top and bottom areas.</h4></summary>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<br>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Extended height</span>=
 <span itemprop="value">
@@ -4485,7 +4493,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <div itemprop="abstract">
 <p>Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
 </div>
-<br>
+<br><br>
 <meta itemprop="position" content="4">
 <div itemprop="abstract">
 <p>The volume of the missing tip:</p>
@@ -4524,10 +4532,12 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 	</mfrac>
 	   <mo>-</mo>
       <mn>1</mn>
-   </mrow>
+   <mo>)</mo>
+</mrow>
 </math>
 </span>
 </div>
+<br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <p itemprop="abstract">Subtracting the volume of the missing tip from the theoretical full cone gives the volume of the frustum.</p>
