@@ -3771,7 +3771,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 		<mfrac>
 		<mrow>
       <mn>4</mn>
-	<mo>&#x2062;</mo>
+	<mo>&#x2062;</mo> <!-- invisible times -->
       <mi>r</mi>
 		</mrow>
 			<msqrt>
@@ -4112,6 +4112,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
+<mo>&#x2062;</mo>
 <mi>r</mi>
 </mrow>
 <mn>2</mn>
@@ -4139,6 +4140,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
 <mi>r</mi>
 </mrow>
 <mn>2</mn>
@@ -4151,6 +4153,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
 <mi>r</mi>
 </mrow>
 <mn>2</mn>
@@ -4163,6 +4166,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <msqrt>
 <mn>3.2</mn>
 </msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
 <mi>r</mi>
 </mrow>
 <mn>2</mn>
@@ -4189,46 +4193,17 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <mi>base</mi>
 </msub>
 <mo>=</mo>
-<msup>
-<mrow>
-<mo>(</mo>
 <mfrac>
 <mrow>
-<msqrt>
 <mn>3.2</mn>
-</msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
 <mi>r</mi>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
 <mn>2</mn>
 </msup>
-<mo>=</mo>
-<mo>(</mo>
-<mfrac>
-<mrow>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mi>r</mi>
-</mrow>
-<mn>2</mn>
+</mrow
+<mn>4</mn>
 </mfrac>
-<mo>)</mo>
-<mo>×</mo>
-<mo>(</mo>
-<mfrac>
-<mrow>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mi>r</mi>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
 </mrow>
 </math>
 </div>
@@ -4246,26 +4221,22 @@ The volume of a quadrant cylinder with the same base, and height equal to the sl
 <mi>quadrant cylinder</mi>
 </msub>
 <mo>=</mo>
-<msup>
-<mrow>
-<mo>(</mo>
 <mfrac>
 <mrow>
-<msqrt>
 <mn>3.2</mn>
-</msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
 <mi>r</mi>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
 <mn>2</mn>
 </msup>
+</mrow
+<mn>4</mn>
+</mfrac>
 <mo>×</mo>
 <msqrt>
 <mn>2</mn>
 </msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
 <mi>r</mi>
 </mrow>
 </math>
@@ -4284,30 +4255,30 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
-<msup>
-<mrow>
-<mo>(</mo>
+<msub>
+<mi>Volume</mi>
+<mi>quadrant cylinder</mi>
+</msub>
+<mo>=</mo>
 <mfrac>
 <mrow>
-<msqrt>
+<mfrac>
+<mrow>
 <mn>3.2</mn>
-</msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
 <mi>r</mi>
-</mrow>
-<mn>2</mn>
-</mfrac>
-<mo>)</mo>
-</mrow>
 <mn>2</mn>
 </msup>
+</mrow
+<mn>4</mn>
+</mfrac>
 <mo>×</mo>
-<mi>Height</mi>
-<mo>×</mo>
-<mfrac>
-<mrow>
 <msqrt>
 <mn>2</mn>
 </msqrt>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<mi>H</mi>
 </mrow>
 <mn>4</mn>
 </mfrac>
@@ -4418,7 +4389,49 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<mfrac>
-        <mn>Height</mn>
+        <mi>Height</mi>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+				<mi>Area</mi>
+				<mi>top</mi>
+			</msub>
+            <msub>
+		<mi>Area</mi>
+		   <mi>bottom</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+	</mfrac>
+   </mrow>
+</math>
+</span>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="1">
+<div itemprop="abstract">
+<p>The volume of the theoretical full cone:</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+	<msub>
+		<mi>Area</mi>
+		   <mi>bottom</mi>
+	</msub>
+	   <mo>×</mo>
+	   <mfrac>
+      <mi>H</mi>
+	<msqrt>
+        <mn>8</mn>
+      </msqrt>
+</mfrac>
+	<mo>×</mo>
+	   <mfrac>
+        <mn>1</mn>
         <mrow>
           <mn>1</mn>
           <mo>-</mo>
@@ -4622,7 +4635,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <meta itemprop="position" content="1">
 <details>
   <summary>
-	<h4 itemprop="description" style="margin:12px">The volume of a pyramid can be calculated with the same coefficient as the volume of a cone.</h4></summary>
+	<h4 itemprop="description" style="margin:12px">The volume of a pyramid can be calculated with the same coefficient as the <a href="#cone">volume of a cone</a>.</h4></summary>
 <p itemprop="disambiguatingDescription" style="margin:12px">The volume of a pyramid is conventionally approximated as base × height / 3. While that is a reasonable approximation, the exact ratio is 1 / √8.
 <br><br>
 A common method aiming to prove the pyramid volume formula ( V = base × height / 3 ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:</p>
@@ -4788,42 +4801,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
 </figure>
 <br>
-<details style="margin:12px">
-  <summary>
-	<h4 itemprop="abstract">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom areas.</h4></summary>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Extended height</span>=
-<span itemprop="value">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-   <mrow>
-	<mfrac>
-        <mn>Height</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>Area</mi>
-				<mi>top</mi>
-			</msub>
-            <msub>
-		<mi>Area</mi>
-		   <mi>bottom</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-	</mfrac>
-   </mrow>
-</math>
-</span>
+<p itemprop="description">The volume of a frustum pyramid can be calculated with the same method as the <a href="#frustum-cone">volume of a frustum cone</a></p>
 </div>
-</div>
-</details>
-</div>
-<br>
+<br><br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">Volume</span>=
 <span itemprop="value">
