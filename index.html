@@ -3863,7 +3863,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
     <br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p style="margin:12px" itemprop="description">One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere.</p>
+<p style="margin:12px" itemprop="description">One dimension of the volume of sphere formula can be adjusted to approximate the volume of a spherical cap as a distorted hemisphere.</p>
 </div>
 </div>
 <br>
@@ -3940,7 +3940,7 @@ if ( height === radius) {
 }
 	  
     document.getElementById('cap-volume').innerText =
-      `Volume = ${capVolume(radius, height).toFixed(5)} cubic units`;
+      `Volume ~ ${capVolume(radius, height).toFixed(5)} cubic units`;
 }
 
   document.getElementById('cap-radius').addEventListener('input', updateCapVolume);
@@ -4371,351 +4371,6 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_cone">
-<meta itemprop="eduQuestionType" content="Horizontal frustum cone volume calculation">
-<meta itemprop="target" content="https://basic-geometry.pages.dev?q={frustum_cone_radius_top=1_bottom=2_height=3_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<meta itemprop="totalTime" content="PT05S">
-<h3 itemprop="name" style="margin:7px">Calculate the Volume of a Frustum Cone</h3>
-<br>
-<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="frustumCone.jpeg" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
-    </figure>
-<br>
-<section style="margin:12px">
-<details>
-  <summary>
-	<h4 itemprop="description">Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone.</h4></summary>
-<br>
-<p itemprop="disambiguatingDescription">The widely used raw transcript of the square frustum pyramid volume formula is inaccurate for a frustum cone.</p>
-</details>
-</section>
-<details style="margin:12px">
-  <summary>
-	<h4 itemprop="abstract">The height of the theoretical full cone can be calculated by the frustum height and the ratio between the top and bottom areas.</h4></summary>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="1">
-<br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">H<sub>(cone)</sub></span>=
-<span itemprop="value">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-   <mrow>
-	<mfrac>
-        <mi>H</mi>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-	</mfrac>
-   </mrow>
-</math>
-</span>
-</div>
-</div>
-<br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
-<div itemprop="abstract">
-<p>The volume of the theoretical full cone:</p>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-   <mrow>
-	<msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-	</msub>
-	   <mo>×</mo>
-	   <mfrac>
-      <mi>H</mi>
-	<msqrt>
-        <mn>8</mn>
-      </msqrt>
-</mfrac>
-	<mo>×</mo>
-	   <mfrac>
-        <mn>1</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-	</mfrac>
-   </mrow>
-</math>
-</div>
-</div>
-<br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="3">
-<p itemprop="abstract">Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
-</div>
-<br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
-<p itemprop="abstract">The volume of the missing tip:</p>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-   <mrow>
-	<msub>
-		<mi>A</mi>
-		   <mi>(top)</mi>
-	</msub>
-	   <mo>×</mo>
-	   <mfrac>
-      <mi>H</mi>
-	<msqrt>
-        <mn>8</mn>
-      </msqrt>
-</mfrac>
-	<mo>×</mo>
-	   <mo>(</mo>
-	   <mfrac>
-        <mn>1</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-	</mfrac>
-	   <mo>-</mo>
-      <mn>1</mn>
-   <mo>)</mo>
-</mrow>
-</math>
-</div>
-<br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="5">
-<p itemprop="abstract">Subtracting the volume of the missing tip from the theoretical full cone gives the volume of the frustum.</p>
-</div>
-</details>
-</div>
-<br>
-<br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum cone volume formula">
-<span itemprop="name">V<sub>(frustum)</sub></span>=
-<span itemprop="value">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mfrac>
-      <mi>H</mi>
-	<msqrt>
-        <mn>8</mn>
-      </msqrt>
-</mfrac>
-	<mo>×</mo>
-      <mo>(</mo>
-<mn>3.2</mn>
-<mo>×</mo>
-      <msup>
-			<msub>  
-        <mi>r</mi>
-			<mi>(bottom)</mi>
-			</msub>
-        <mn>2</mn>
-	  </msup>
-<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mn>1</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-            <msub>  
-        <mi>r</mi>
-			<mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-      </mfrac>
-      <mo>)</mo>
-      <mo>-</mo>
-      <mn>3.2</mn>
-<mo>×</mo>
-      <msup>
-			<msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-        <mn>2</mn>
-	  </msup>
-<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mn>1</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-            <msub>  
-        <mi>r</mi>
-			<mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-      </mfrac>
-      <mo>-</mo>
-      <mn>1</mn>
-      <mo>)</mo>
-      <mo>)</mo>
-</mrow>
-  </math>
-</span>
-</div>
-<br><br>
-<div style="margin:12px">
-<p itemprop="description">The volume can be calculated via a simplified formula.</p>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mfrac>
-<mi>H</mi>
-<msqrt>
- <mn>8</mn>
- </msqrt>
-</mfrac>
-<mo>×</mo>
-<mn>3.2</mn>
-<mo>×</mo>
-<mo>(</mo>
-<msup>
-<msub>  
-<mi>r</mi>
-<mi>(bottom)</mi>
-</msub>
-<mn>2</mn>
-</msup>
-<mo>+</mo>
-<msub> 
-<mi>r</mi>
-<mi>(bottom)</mi>
-</msub>
-<mo>×</mo>
-<msub>  
-<mi>r</mi>
-<mi>(top)</mi>
-</msub>
-<mo>+</mo>
-<msup>
-<msub>  
-<mi>r</mi>
-<mi>(top)</mi>
-</msub>
-<mn>2</mn>
-</msup>
-<mo>)</mo>
-</mrow>
-</math>
-</div>
-<div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="frustum_cone_volume_calculator">
-<meta itemprop="name" content="Frustum Cone Volume Calculator">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="description" content="Calculte the volume of a horizontal frustum cone from its height and top and bottom radii.">
-<meta itemprop="disambiguatingDescription" content="Exact volume via subtraction based on the exact volume of a cone - 3.2 × radius² × height / √8 formula, instead of the raw transcript of the square frustum pyramid formula based on the V=base*height/3 approximate.">
-<meta itemprop="usageInfo" content="Enter the frustum height and the top and bottom radii">
-<meta itemprop="interactivityType" content="Active">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<label for="frustum-cone-base-radius">Base radius:</label>
-<input id="frustum-cone-base-radius" type="number" value="2" step="any">
-<br>
-<label for="frustum-cone-top-radius">Top radius:</label>
-<input id="frustum-cone-top-radius" type="number" value="1" step="any">
-<br>
-<label for="frustum-cone-height">Height:</label>
-<input id="frustum-cone-height" type="number" value="1" step="any">
-<br><br>
-<p id="frustum-cone-volume"></p>
-<script type="module" async>
-  function frustumConeVolume(baseArea, topArea, reciprocal, height) {
-  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
-}
-
-function updateFrustumConeVolume() {
-
-	const baseRadius = parseFloat(document.getElementById('frustum-cone-base-radius').value);
-	const topRadius = parseFloat(document.getElementById('frustum-cone-top-radius').value);
-	const height = parseFloat(document.getElementById('frustum-cone-height').value);
-
-  if (isNaN(baseRadius) || isNaN(topRadius) || isNaN(height) || baseRadius === 0 || topRadius === 0) {
-    document.getElementById('frustum-cone-volume').innerText = '';
-    return;
-  }
-
-if ( topRadius > baseRadius) {
-    document.getElementById('frustum-cone-volume').innerText = 'Let the larger end be the base.';
-    return;
-}
-	
-	const baseArea = 3.2 * (baseRadius ** 2);
-	const topArea = 3.2 * (topRadius ** 2);
-	const cylinderVolume = baseArea * height;
-	const shape = topRadius / baseRadius;
-	const inverse = 1 - shape;
-	const reciprocal = 1 / inverse;
-	const volume = frustumConeVolume(baseArea, topArea, reciprocal, height);
-
-if ( topRadius === baseRadius) {
-    document.getElementById('frustum-cone-volume').innerText = 
-	`Volume of cylinder: ${cylinderVolume.toFixed(5)} cubic units`;
-    return;
-}
-	
-  document.getElementById('frustum-cone-volume').innerText =
-    `Volume = ${volume.toFixed(5)} cubic units`;
-	  }
-
-document.getElementById('frustum-cone-base-radius').addEventListener('input', updateFrustumConeVolume);
-document.getElementById('frustum-cone-top-radius').addEventListener('input', updateFrustumConeVolume);
-document.getElementById('frustum-cone-height').addEventListener('input', updateFrustumConeVolume);
-</script>
-</div>
-</section>
-<br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="pyramid">
 <meta itemprop="eduQuestionType" content="Pyramid volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}">
@@ -4736,7 +4391,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <meta itemprop="position" content="1">
 <details>
   <summary>
-	<h4 itemprop="description" style="margin:12px">The volume of a pyramid can be calculated with the same coefficient as the <a href="#cone">volume of a cone</a>.</h4></summary>
+	<h4 itemprop="description" style="margin:12px">The volume of a pyramid can be calculated as a cone with a polygonal base.</h4></summary>
 <p itemprop="disambiguatingDescription" style="margin:12px">The volume of a pyramid is conventionally approximated as base × height / 3. While that is a reasonable approximation, the exact ratio is 1 / √8.
 <br><br>
 A common method aiming to prove the pyramid volume formula ( V = base × height / 3 ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:</p>
@@ -4902,13 +4557,140 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <figure class="imgbox">
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
 </figure>
+<br><br>
+<h4 itemprop="description">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum.</h4>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="description">The volume of a frustum pyramid can be calculated with the same method as the <a href="#frustum_cone">volume of a frustum cone</a></p>
-</div>
-</div>
+<p itemprop="abstract">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom areas.</p>
 <br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+        <msub>
+		<mi>H</mi>
+		<mi>(pyramid)</mi>
+		</msub>
+	   <mo>=</mo>
+        <mfrac>
+		<mrow>
+          <msub>
+		<mi>H</mi>
+		<mi>(frustum)</mi>
+	</msub>
+		</mrow>
+			<mrow>
+			<mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+				<mi>A</mi>
+				<mi>(top)</mi>
+			</msub>
+            <msub>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+	</mfrac>
+   </mrow>
+</math>
+</span>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="2">
+<p itemprop="abstract">The volume of the theoretical full pyramid:</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+	<msub>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
+	</msub>
+	   <mo>×</mo>
+	   <mfrac>
+      <mi>H</mi>
+	<msqrt>
+        <mn>8</mn>
+      </msqrt>
+</mfrac>
+	<mo>×</mo>
+	   <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+				<mi>A</mi>
+				<mi>(top)</mi>
+			</msub>
+            <msub>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+	</mfrac>
+   </mrow>
+</math>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="3">
+<p itemprop="abstract">Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="4">
+<p itemprop="abstract">The volume of the missing tip:</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+	<msub>
+		<mi>A</mi>
+		   <mi>(top)</mi>
+	</msub>
+	   <mo>×</mo>
+	   <mfrac>
+      <mi>H</mi>
+	<msqrt>
+        <mn>8</mn>
+      </msqrt>
+</mfrac>
+	<mo>×</mo>
+	   <mo>(</mo>
+	   <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>
+				<mi>A</mi>
+				<mi>(top)</mi>
+			</msub>
+            <msub>
+		<mi>A</mi>
+		   <mi>(bottom)</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+	</mfrac>
+	   <mo>-</mo>
+      <mn>1</mn>
+   <mo>)</mo>
+</mrow>
+</math>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="5">
+<p itemprop="abstract">Subtracting the volume of the missing tip from the theoretical full pyramid gives the volume of the frustum.</p>
+</div>
+</div>
+<br><br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact frustum pyramid volume formula">
 <span itemprop="name">V<sub>(frustum)</sub></span>=
@@ -4927,7 +4709,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 		<mi>A</mi>
 		   <mi>(bottom)</mi>
 	   </msub>
-<mo>×</mo>
+	<mo>×</mo>
       <mo>(</mo>
       <mfrac>
         <mn>1</mn>
@@ -5012,13 +4794,10 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </mrow>
 </msqrt>
 <mo>+</mo>
-<msup>
 <msub>  
-<mi>r</mi>
+<mi>A</mi>
 <mi>(top)</mi>
 </msub>
-<mn>2</mn>
-</msup>
 <mo>)</mo>
 </mrow>
 </math>
@@ -5030,7 +4809,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="description" content="Calculte the volume of a horizontal frustum pyramid from its height and number and length of top and bottom edges.">
-<meta itemprop="disambiguatingDescription" content="Exact volume via subtraction based on the exact volume of a pyramid - base × height / √8 -, instead of the base × height / 3 approximate. Universally applicable, not only for square frustum pyramids.">
+<meta itemprop="disambiguatingDescription" content="Exact volume via subtraction based on the exact volume of a pyramid - base × height / √8 -, instead of the base × height / 3 approximate.">
 <meta itemprop="usageInfo" content="Enter the frustum height and the number and length of top and bottom edges">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
@@ -5099,6 +4878,212 @@ document.getElementById('frustum-pyramid-side-number').addEventListener('input',
 document.getElementById('frustum-pyramid-base-edge-length').addEventListener('input', updateFrustumPyramidVolume);
 document.getElementById('frustum-pyramid-top-edge-length').addEventListener('input', updateFrustumPyramidVolume);
 document.getElementById('frustum-pyramid-height').addEventListener('input', updateFrustumPyramidVolume);
+</script>
+</div>
+</section>
+<br><br><br>
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_cone">
+<meta itemprop="eduQuestionType" content="Horizontal frustum cone volume calculation">
+<meta itemprop="target" content="https://basic-geometry.pages.dev?q={frustum_cone_radius_top=1_bottom=2_height=3_volume=?}">
+<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
+<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
+<meta itemprop="currency" content="USD">
+<meta itemprop="value" content="0">
+</div>
+<meta itemprop="totalTime" content="PT05S">
+<h3 itemprop="name" style="margin:7px">Calculate the Volume of a Frustum Cone</h3>
+<br>
+<figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+    <img class="center-fit" src="frustumCone.jpeg" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
+    </figure>
+<br><br>
+<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact frustum cone volume formula">
+<span itemprop="name">V</span>=
+<span itemprop="value">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mfrac>
+      <mi>H</mi>
+	<msqrt>
+        <mn>8</mn>
+      </msqrt>
+</mfrac>
+	<mo>×</mo>
+      <mo>(</mo>
+<mn>3.2</mn>
+<mo>×</mo>
+      <msup>
+			<msub>  
+        <mi>r</mi>
+			<mi>(bottom)</mi>
+			</msub>
+        <mn>2</mn>
+	  </msup>
+<mo>×</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <msub>  
+        <mi>r</mi>
+			<mi>(top)</mi>
+			</msub>
+            <msub>  
+        <mi>r</mi>
+			<mi>(bottom)</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>)</mo>
+      <mo>-</mo>
+      <mn>3.2</mn>
+<mo>×</mo>
+      <msup>
+			<msub>  
+        <mi>r</mi>
+			<mi>(top)</mi>
+			</msub>
+        <mn>2</mn>
+	  </msup>
+<mo>×</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+<mfrac>
+            <msub>  
+        <mi>r</mi>
+			<mi>(top)</mi>
+			</msub>
+            <msub>  
+        <mi>r</mi>
+			<mi>(bottom)</mi>
+			</msub>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>-</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+      <mo>)</mo>
+</mrow>
+  </math>
+</span>
+</div>
+<br><br>
+<div style="margin:12px">
+<p itemprop="description">The volume of a frustum cone can also be calculated via a simplified formula.</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mfrac>
+<mi>H</mi>
+<msqrt>
+ <mn>8</mn>
+ </msqrt>
+</mfrac>
+<mo>×</mo>
+<mn>3.2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<msup>
+<msub>  
+<mi>r</mi>
+<mi>(b)</mi>
+</msub>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msub> 
+<mi>r</mi>
+<mi>(b)</mi>
+</msub>
+<mo>×</mo>
+<msub>  
+<mi>r</mi>
+<mi>(top)</mi>
+</msub>
+<mo>+</mo>
+<msup>
+<msub>  
+<mi>r</mi>
+<mi>(top)</mi>
+</msub>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+</math>
+</div>
+<div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="frustum_cone_volume_calculator">
+<meta itemprop="name" content="Frustum Cone Volume Calculator">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="description" content="Calculte the volume of a horizontal frustum cone from its height and top and bottom radii.">
+<meta itemprop="disambiguatingDescription" content="Exact volume via subtraction based on the exact volume of a cone - 3.2 × radius² × height / √8 formula, instead of the V=base*height/3 approximate.">
+<meta itemprop="usageInfo" content="Enter the frustum height and the top and bottom radii">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<label for="frustum-cone-base-radius">Base radius:</label>
+<input id="frustum-cone-base-radius" type="number" value="2" step="any">
+<br>
+<label for="frustum-cone-top-radius">Top radius:</label>
+<input id="frustum-cone-top-radius" type="number" value="1" step="any">
+<br>
+<label for="frustum-cone-height">Height:</label>
+<input id="frustum-cone-height" type="number" value="1" step="any">
+<br><br>
+<p id="frustum-cone-volume"></p>
+<script type="module" async>
+  function frustumConeVolume(baseArea, topArea, reciprocal, height) {
+  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
+}
+
+function updateFrustumConeVolume() {
+
+	const baseRadius = parseFloat(document.getElementById('frustum-cone-base-radius').value);
+	const topRadius = parseFloat(document.getElementById('frustum-cone-top-radius').value);
+	const height = parseFloat(document.getElementById('frustum-cone-height').value);
+
+  if (isNaN(baseRadius) || isNaN(topRadius) || isNaN(height) || baseRadius === 0 || topRadius === 0) {
+    document.getElementById('frustum-cone-volume').innerText = '';
+    return;
+  }
+
+if ( topRadius > baseRadius) {
+    document.getElementById('frustum-cone-volume').innerText = 'Let the larger end be the base.';
+    return;
+}
+	
+	const baseArea = 3.2 * (baseRadius ** 2);
+	const topArea = 3.2 * (topRadius ** 2);
+	const cylinderVolume = baseArea * height;
+	const shape = topRadius / baseRadius;
+	const inverse = 1 - shape;
+	const reciprocal = 1 / inverse;
+	const volume = frustumConeVolume(baseArea, topArea, reciprocal, height);
+
+if ( topRadius === baseRadius) {
+    document.getElementById('frustum-cone-volume').innerText = 
+	`Volume of cylinder: ${cylinderVolume.toFixed(5)} cubic units`;
+    return;
+}
+	
+  document.getElementById('frustum-cone-volume').innerText =
+    `Volume = ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('frustum-cone-base-radius').addEventListener('input', updateFrustumConeVolume);
+document.getElementById('frustum-cone-top-radius').addEventListener('input', updateFrustumConeVolume);
+document.getElementById('frustum-cone-height').addEventListener('input', updateFrustumConeVolume);
 </script>
 </div>
 </section>
