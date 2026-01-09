@@ -4362,9 +4362,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="pyramid">
 <meta itemprop="eduQuestionType" content="Pyramid volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}">
-<meta itemprop="totalTime" content="PT05S">
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Pyramid</h3>
-<meta itemprop="usageInfo" content="Universally applicable">
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="conePyramidVolume.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone. Volume = base × height / √8">
@@ -4869,7 +4867,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="frustumCone.jpeg" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
     </figure>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact frustum cone volume formula">
 <span itemprop="name">V</span>=
@@ -4916,8 +4914,6 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
       </mfrac>
       <mo>)</mo>
       <mo>-</mo>
-      <mn>3.2</mn>
-<mo>×</mo>
       <msup>
 			<msub>  
         <mi>r</mi>
@@ -4961,13 +4957,15 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <mi>V</mi>
 <mo>=</mo>
 <mfrac>
-<mi>H</mi>
+	<mrow>
+		<mn>3.2</mn>
+<mo>×</mo>
+      <mi>H</mi>
+	</mrow>
 <msqrt>
  <mn>8</mn>
  </msqrt>
 </mfrac>
-<mo>×</mo>
-<mn>3.2</mn>
 <mo>×</mo>
 <mo>(</mo>
 <msup>
@@ -5080,9 +5078,8 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <figure class="imgbox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="tetrahedron.jpeg" alt="The volume of a tetrahedron is calculated as a pyramid with an equilateral triangle base and fixed proportions. Volume = edge³ / 8">
   </figure>
-<br>
 <details>
-<summary><h4 itemprop="description" style="margin:12px">A tetrahedron is a pyramid with fix proportions.</h4></summary>
+<summary><h4 itemprop="description" style="margin:12px">A tetrahedron is a pyramid with fixed proportions.</h4></summary>
 <p itemprop="abstract" style="margin:12px">It is bound by 4 equilateral triangles forming 6 equal edges.</p>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
