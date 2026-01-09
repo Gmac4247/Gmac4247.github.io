@@ -4524,31 +4524,6 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </details>
 </div>
 <br>
-<div itemprop="description" style="margin:12px">
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
- <mrow>
- <mi>H</mi>
-      <mo>=</mo>
-        <mi>frustum height</mi>
-</mrow>
-</math>
-<br><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
- <mrow>
- <mi>t</mi>
-   <mo>=</mo>
-   <mi>top diameter</mi>
-</mrow>
-</math>
-<br><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
- <mrow>
- <mi>b</mi>
-      <mo>=</mo>
-        <mi>bottom diameter</mi>
-</mrow>
-</math>
-</div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact frustum cone volume formula">
@@ -4564,15 +4539,15 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </mfrac>
 	<mo>×</mo>
       <mo>(</mo>
-      <msup>
-        <mi>b</mi>
-        <mn>2</mn>
-      </msup>
+<mn>3.2</mn>
 <mo>×</mo>
-<mfrac>
-<mn>4</mn>
-<mn>5</mn>
-</mfrac>
+      <msup>
+			<msub>  
+        <mi>r</mi>
+			<mi>(bottom)</mi>
+			</msub>
+        <mn>2</mn>
+	  </msup>
 <mo>×</mo>
       <mo>(</mo>
       <mfrac>
@@ -4581,22 +4556,28 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
           <mn>1</mn>
           <mo>-</mo>
           <mfrac>
-            <mi>t</mi>
-            <mi>b</mi>
+            <msub>  
+        <mi>r</mi>
+			<mi>(top)</mi>
+			</msub>
+            <msub>  
+        <mi>r</mi>
+			<mi>(bottom)</mi>
+			</msub>
           </mfrac>
         </mrow>
       </mfrac>
       <mo>)</mo>
       <mo>-</mo>
-      <msup>
-        <mi>t</mi>
-        <mn>2</mn>
-      </msup>
+      <mn>3.2</mn>
 <mo>×</mo>
-<mfrac>
-<mn>4</mn>
-<mn>5</mn>
-</mfrac>
+      <msup>
+			<msub>  
+        <mi>r</mi>
+			<mi>(top)</mi>
+			</msub>
+        <mn>2</mn>
+	  </msup>
 <mo>×</mo>
       <mo>(</mo>
       <mfrac>
@@ -4605,8 +4586,14 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
           <mn>1</mn>
           <mo>-</mo>
           <mfrac>
-            <mi>t</mi>
-            <mi>b</mi>
+            <msub>  
+        <mi>r</mi>
+			<mi>(top)</mi>
+			</msub>
+            <msub>  
+        <mi>r</mi>
+			<mi>(bottom)</mi>
+			</msub>
           </mfrac>
         </mrow>
       </mfrac>
@@ -4619,6 +4606,50 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </span>
 </div>
 <br><br>
+<div style="margin:12px">
+<p itemprop="description">The volume can be calculated via a simplified formula.</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mfrac>
+<mi>H</mi>
+<msqrt>
+ <mn>8</mn>
+ </msqrt>
+</mfrac>
+<mo>×</mo>
+<mn>3.2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<msup>
+<msub>  
+<mi>r</mi>
+<mi>(bottom)</mi>
+</msub>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msub> 
+<mi>r</mi>
+<mi>(bottom)</mi>
+</msub>
+<mo>×</mo>
+<msub>  
+<mi>r</mi>
+<mi>(top)</mi>
+</msub>
+<mo>+</mo>
+<msup>
+<msub>  
+<mi>r</mi>
+<mi>(top)</mi>
+</msub>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+</math>
+</div>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="frustum_cone_volume_calculator">
 <meta itemprop="name" content="Frustum Cone Volume Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
@@ -4894,7 +4925,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
       <mo>(</mo>
        <msub>
 		<mi>A</mi>
-		   <mi>(b)</mi>
+		   <mi>(bottom)</mi>
 	   </msub>
 <mo>×</mo>
       <mo>(</mo>
@@ -4906,11 +4937,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           <mfrac>
             <msub>
 				<mi>A</mi>
-				<mi>(t)</mi>
+				<mi>(top)</mi>
 			</msub>
 			  <msub>
             <mi>A</mi>
-				<mi>(b)</mi>
+				<mi>(bottom)</mi>
 			  </msub>
           </mfrac>
         </mrow>
@@ -4918,8 +4949,8 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
       <mo>)</mo>
       <mo>-</mo>
         <msub>
-				<mi>A</mi>
-				<mi>(t)</mi>
+		<mi>A</mi>
+		<mi>(top)</mi>
 		</msub>
 <mo>×</mo>
       <mo>(</mo>
@@ -4931,11 +4962,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           <mfrac>
             <msub>
 				<mi>A</mi>
-				<mi>(t)</mi>
+				<mi>(top)</mi>
 			</msub>
             <msub>
             <mi>A</mi>
-				<mi>(b)</mi>
+				<mi>(bottom)</mi>
 			</msub>
           </mfrac>
         </mrow>
@@ -4947,6 +4978,50 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </mrow>
   </math>
 </span>
+</div>
+<br><br>
+<div style="margin:12px">
+<p itemprop="description">The volume of a frustum can also be calculated via a simplified formula.</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mfrac>
+<mi>H</mi>
+<msqrt>
+ <mn>8</mn>
+ </msqrt>
+</mfrac>
+<mo>×</mo>
+<mo>(</mo>
+<msub>  
+<mi>A</mi>
+<mi>(bottom)</mi>
+</msub>
+<mo>+</mo>
+<msqrt>
+<mrow>
+<msub> 
+<mi>A</mi>
+<mi>(bottom)</mi>
+</msub>
+<mo>×</mo>
+<msub>  
+<mi>A</mi>
+<mi>(top)</mi>
+</msub>
+</mrow>
+</msqrt>
+<mo>+</mo>
+<msup>
+<msub>  
+<mi>r</mi>
+<mi>(top)</mi>
+</msub>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+</math>
 </div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="frustum_pyramid_volume_calculator">
@@ -5028,81 +5103,6 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="square_frustum">
-<h3 itemprop="eduQuestionType" style="margin:12px">Calculate the Volume of a square Frustum</h3>
-<meta itemprop="target" content="https://basic-geometry.pages.dev?q={square_frustum_pyramid_height=3_edge_length_top=1_bottom=2_volume=?}">
-<meta itemprop="name" content="Horizontal square frustum pyramid volume calculation">
-<meta itemprop="disambiguatingDescription" content="Only for square frustum pyramids. Based on the exact volume of a pyramid - base × height / √8 -, instead of the base × height / 3 approximate.">
-<br>
-<figure class="imgbox">
-    <img class="center-fit" src="squareFrustum.jpeg" alt="Square frustum pyramid">
-</figure>
-<br>
-<p itemprop="description" style="margin:12px">The volume of a square frustum pyramid can be calculated via a simplified formula.</p>
-<br>
-<div itemprop="description" style="margin:12px">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-     <mrow>
- <mi>H</mi>
-      <mo>=</mo>
-        <mi>frustum height</mi>
-</mrow>
-</math>
-<br><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
- <mrow>
- <mi>t</mi>
-   <mo>=</mo>
-   <mi>top edge</mi>
-</mrow>
-</math>
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-     <mrow>
- <mi>b</mi>
-      <mo>=</mo>
-        <mi>bottom edge</mi>
-</mrow>
-</math>
-</div>
-<br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact square frustum pyramid volume formula">
-<span itemprop="name">V<sub>(square frustum)</sub></span>=
-<span itemprop="value">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mfrac>
-<mrow>
-<mi>H</mi>
-<mo>×</mo>
-<mo>(</mo>
-<msup>
-<mi>b</mi>
-<mn>2</mn>
-</msup>
-<mo>+</mo>
-<mi>b</mi>
-<mo>×</mo>
-<mi>t</mi>
-<mo>+</mo>
-<msup>
-<mi>t</mi>
-<mn>2</mn>
-</msup>
-<mo>)</mo>
-</mrow>
-<msqrt>
- <mn>8</mn>
- </msqrt>
- </mfrac>
-</mrow>
-  </math>
-</span>
-</div>
-</section>
-<br><br><br><br>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="tetrahedron">
 <meta itemprop="eduQuestionType" content="Tetrahedron volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={tetrahedron_edge=2_volume=?}">
