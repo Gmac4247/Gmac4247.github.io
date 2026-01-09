@@ -3848,26 +3848,15 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cap">
 <meta itemprop="eduQuestionType" content="Spherical cap volume calculation">
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={spherical_cap_radius=2_height=1_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<meta itemprop="totalTime" content="PT05S">
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Spherical Cap</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphericalCap.png" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
     </figure>
     <br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="1">
-<p style="margin:12px" itemprop="description">One dimension of the volume of sphere formula can be adjusted to approximate the volume of a spherical cap as a distorted hemisphere.</p>
-</div>
-</div>
-<br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Spherical cap volume formula">
+<p itemprop="description">One dimension of the volume of sphere formula can be adjusted to approximate the volume of a spherical cap as a distorted hemisphere.></p>
+<br>
 <span itemprop="name">V<sub>(cap)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4164,7 +4153,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </figure>
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="3">
+<meta itemprop="position" content="2">
 <p itemprop="abstract">The base of the two shapes is a quadrant circle.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
@@ -4218,9 +4207,9 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </mrow>
 </math>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
+<meta itemprop="position" content="3">
 <p itemprop="abstract">The slant height of the quadrant cone is √2 × radius.</p>
 </div>
 <br>
@@ -4255,9 +4244,9 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </mrow>
 </math>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="6">
+<meta itemprop="position" content="4">
 <p itemprop="abstract">The slant form has a triangular vertical cross-section. 
 <br>
 The area of a cone's vertical middle cross-section is the half of a cylinder with equal base and height. 
@@ -4548,9 +4537,8 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <figure class="imgbox">
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
 </figure>
-<br><br>
-<h4 itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum.</h4>
 <br>
+<p itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <p itemprop="abstract">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom areas.</p>
@@ -4587,7 +4575,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
    </mrow>
 </math>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <p itemprop="abstract">The volume of the theoretical full pyramid:</p>
@@ -4626,12 +4614,12 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
    </mrow>
 </math>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3">
 <p itemprop="abstract">Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="4">
 <p itemprop="abstract">The volume of the missing tip:</p>
@@ -4674,13 +4662,13 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </mrow>
 </math>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <p itemprop="abstract">Subtracting the volume of the missing tip from the theoretical full pyramid gives the volume of the frustum.</p>
 </div>
 </div>
-<br><br>
+<br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact frustum pyramid volume formula">
 <span itemprop="name">V<sub>(frustum)</sub></span>=
@@ -4754,7 +4742,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br><br>
 <div style="margin:12px">
 <p itemprop="description">The volume of a frustum can also be calculated via a simplified formula.</p>
-<br>
+<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>V</mi>
