@@ -1746,6 +1746,7 @@ const area = triangleArea(product);
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle. 
 <br><br>
 The area of each triangle equals</p>
+<br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 <mfrac>
@@ -2656,7 +2657,7 @@ An inscribed regular polygon has a perimeter smaller than the circle’s circumf
 As the number of sides increases, the perimeters of the inscribed and circumscribed polygons both approach the true circumference from below and above.
 <br><br>
 From this, the story goes: squeeze the circle between two polygons, refine indefinitely, and the true circumference is trapped in the limit.
-<br><br>
+<br><br><br>
 <b>The Overlooked Detail</b>
 <br><br>
 If we take this approach seriously, then a hypothetical polygon that truly matches the circle’s perimeter and area in the limit would have to do something radical:</p>
@@ -2664,23 +2665,21 @@ If we take this approach seriously, then a hypothetical polygon that truly match
 <ul style="margin:6px">
       <li>Its sides could not remain strictly outside the circle.</li>
       <li>To match the circle’s boundary and area, the limiting polygon would have to cross the arc, not merely touch it from outside.</li>
-	<li>We are describing a construction that has already slipped inside or cut across the circle.
-</li>
 </ul>  
-<br><br>
+<br>
 <p>In other words:
 <br><br>
-A genuine limit shape cannot be a forever‑circumscribed polygon.  
+<strong>A genuine limit shape cannot be a forever‑circumscribed polygon.</strong>
+<br>
 At the true limit, the sides must coincide with—or locally cut across—the circle’s boundary.
+<br>
 A circle has constant curvature. A straight line has zero curvature. Treating the two as interchangeable is a category error disguised as approximation.
 <br><br>
 This is the point where the Archimedean assumption snaps.
-<br><br>
+<br><br><br>
 <b>Where the Method Breaks</b>
 <br><br>
-If we insist that the circumscribed polygon always stays outside the circle,  
-and we keep increasing the number of sides while still treating its perimeter as an upper bound,  
-then we are forcing the circle’s circumference to be no larger than the limiting value of those “forever‑outside” polygons.
+<strong>If we insist that the circumscribed polygon always stays outside the circle, and we keep increasing the number of sides while still treating its perimeter as an upper bound, then we are forcing the circle’s circumference to be no larger than the limiting value of those “forever‑outside” polygons.</strong>
 <br><br>
 But beyond a certain threshold, the tangent construction itself becomes impossible:</p>
 <br>
@@ -2699,7 +2698,7 @@ The method then traps the circle below its actual value, not around it.
 Archimedes’ three‑pillar method assumes that circumscribed polygons can be refined indefinitely while always remaining outside the circle and still providing a valid tangent upper bound.  
 <br>
 This assumption fails beyond a finite threshold: a truly circumscribed polygon cannot both remain outside and continue to approximate the circle’s perimeter in the way the method requires.
-<br><br>
+<br><br><br>
 <b>A Physical Demonstration of the Flaw</b>
 <br><br>
 A simple physical experiment reveals the issue:</p>
@@ -2714,9 +2713,8 @@ A simple physical experiment reveals the issue:</p>
     <img class="center-fit" src="polygonApproximation.png" alt="A slice of a circle with angle=2x and the corresponding isosceles triangle split in half">
 </figure>
 <br>
-<p>This shows that for sufficiently small angles, a straight tangent must be longer than the corresponding arc.  
-<br>If the arc becomes longer than the tangent, the side must sit lower—and is no longer tangent.
-<br><br>
+<p>This shows that for sufficiently small angles, the arc can lie far below the side— even with a greater length.
+<br><br><br>
 <b>Pinpointing the Threshold</b>
 <br><br>
 The true circumference of the circle is 6.4r, derived from its exact area—3.2r².  
@@ -2808,7 +2806,7 @@ These structural issues in the polygon‑limit method set the stage for a second
 <p>Since the numeric result of Archimedes’ approximation was an infinite fraction — 3.14… — whose digits cannot all be written, he needed a symbolic notation for it in his formulas.
 <br><br>
 Technically, the circumference is a perimeter. So the perimeter‑to‑diameter ratio — P / d — became pi over delta in Greek. With the diameter chosen as the reference — d = 1 —, this simplifies to pi / 1 = pi.  
-<br>
+<br><br>
 <strong>But this is not necessarily the ratio itself — it is the notation of that ratio. That distinction matters.</strong>
 <br><br>
 The circumference‑to‑diameter ratio is a universal geometric proportion.  
@@ -2825,10 +2823,10 @@ It was not until the 18th century that the symbol, popularized by the mathematic
 <br><br>
 <p>Over the centuries, many mathematicians introduced increasingly sophisticated formulas to estimate the circle’s circumference. These formulas all rely on the same conceptual model: a theoretical polygon with an infinite number of sides.
 <br><br>
-Despite their variety, all such approximation methods share one essential feature:
+<strong>Despite their variety, all such approximation methods share one essential feature:
 <br>
-They estimate the perimeters of polygons with their number of sides approaching infinity.
-<br>
+They estimate the perimeters of polygons with their number of sides approaching infinity.</strong>
+<br><br>
 Modern calculus compresses these ideas into elegant notation, such as:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
