@@ -1851,7 +1851,7 @@ The area of each triangle equals</p>
 <p id="polygon-area"></p>
 <script type="module" async>
   function polygonArea(sideLength, sideCount, tangent) {
-    return number / 4  * length ** 2 / tangent;
+    return sideCount / 4  * length ** 2 / tangent;
   }
 
 function updatePolygonArea() {
@@ -4391,8 +4391,12 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </math>
 </div>
 <br>
-<div style="margin:12px">
-<p itemprop="abstract">The volume of a cylinder equals base area × height.</p>
+<p style="margin:12px" itemprop="abstract">The volume of a cylinder equals base area × height.
+<br><br>
+The slant height of the quadrant cone is √2 × radius.</p>
+<br>
+<div style="margin:12px" itemprop="abstract">
+<p>Take a quarter cylinder with its radius equal to the cone and its height equal to the slant height of the unit cone.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4422,12 +4426,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </math>
 </div>
 <br>
-<p style="margin:12px" itemprop="abstract">The slant height of the quadrant cone is √2 × radius.</p>
-<br>
-<div style="margin:12px">
-<p itemprop="abstract">Take a quarter cylinder with its radius equal to the cone and its height equal to the slant height of the unit cone.
-<br><br>
-The slant form of the cone has a triangular vertical cross-section. 
+<p style="margin:12px" itemprop="abstract">The slant form of the cone has a triangular vertical cross-section. 
 <br>
 The vertical middle cross-sectional area of the cone is the half of a cylinder with equal radius and height. 
 <br><br>
@@ -4475,10 +4474,10 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <br>
 <div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="abstract">The volume of the unit cone equals the quarter of the volume of cylinder with an equal radius, and its height equal to the slant height of the unit cone.
-<br>
+<br><br>
 In general:
 <br><br>
-The volume of a cone equals the quarter of a cylinder with an equal radius and height equal to the height of the cone multiplied by √2.</p>
+The volume of a cone equals the quarter of a cylinder with an equal radius and its height equal to the height of the cone multiplied by √2.</p>
 <br><br>
 <meta itemprop="description" content="Exact cone volume formula: Volume = 3.2 × radius^2 / sqrt(8)">
 <span itemprop="name">V<sub>(cone)</sub></span>=
@@ -4685,7 +4684,7 @@ function updatePyramidVolume() {
 
   const ratio = 3.2 / sideCount;
   const tangent = tan(ratio);
-  const baseArea = (number / 4) * (baseEdgeLength ** 2) / tangent;
+  const baseArea = (sideCount / 4) * (baseEdgeLength ** 2) / tangent;
   const volume = pyramidVolume(baseArea, height);
 
   document.getElementById('pyramid-volume').innerText =
@@ -5002,8 +5001,8 @@ if ( topEdgeLength > baseEdgeLength) {
 	
   const ratio = 3.2 / sideCount;
   const tangent = tan(ratio);
-	const baseArea = (number / 4) * (baseEdgeLength ** 2) / tangent;
-	const topArea = (number / 4) * (topEdgeLength ** 2) / tangent;
+	const baseArea = (sideCount / 4) * (baseEdgeLength ** 2) / tangent;
+	const topArea = (sideCount / 4) * (topEdgeLength ** 2) / tangent;
 	const solidVolume = baseArea * height;
 	const shape = topEdgeLength / baseEdgeLength;
 	const inverse = 1 - shape;
