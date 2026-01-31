@@ -4425,9 +4425,11 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <p style="margin:12px" itemprop="abstract">The slant height of the quadrant cone is √2 × radius.</p>
 <br>
 <div style="margin:12px">
-<p itemprop="abstract">The slant form has a triangular vertical cross-section. 
+<p itemprop="abstract">Take a quarter cylinder with its radius equal to the cone and its height equal to the slant height of the unit cone.
+<br><br>
+The slant form of the cone has a triangular vertical cross-section. 
 <br>
-The area of a cone's vertical middle cross-section is the half of a cylinder with equal radius and height. 
+The vertical middle cross-sectional area of the cone is the half of a cylinder with equal radius and height. 
 <br><br>
 The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder with equal radius and height.</p>
 <br>
@@ -4472,6 +4474,12 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<p itemprop="abstract">The volume of the unit cone equals the quarter of the volume of cylinder with an equal radius, and its height equal to the slant height of the unit cone.
+<br>
+In general:
+<br><br>
+The volume of a cone equals the quarter of a cylinder with an equal radius and height equal to the height of the cone multiplied by √2.</p>
+<br><br>
 <meta itemprop="description" content="Exact cone volume formula: Volume = 3.2 × radius^2 / sqrt(8)">
 <span itemprop="name">V<sub>(cone)</sub></span>=
 <span itemprop="value">
@@ -4953,7 +4961,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br><br>
 <div style="margin:12px" id="frustum_pyramid_volume_calculator">
 <label for="frustum-pyramid-side-number">Number of sides:</label>
-<input id="frustum-pyramid-side-number" type="number" value="4" step="1">
+<input id="frustum-pyramid-side-count" type="number" value="4" step="1">
 <br>
 <label for="frustum-pyramid-base-edge-length">Base edge length:</label>
 <input id="frustum-pyramid-base-edge-length" type="number" value="2" step="any">
@@ -4972,38 +4980,38 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 
 function updateFrustumPyramidVolume() {
 
-	const number = parseFloat(document.getElementById('frustum-pyramid-side-number').value);
-	const baseLength = parseFloat(document.getElementById('frustum-pyramid-base-edge-length').value);
-	const topLength = parseFloat(document.getElementById('frustum-pyramid-top-edge-length').value);
+	const sideCount = parseFloat(document.getElementById('frustum-pyramid-side-count').value);
+	const baseEdgeLength = parseFloat(document.getElementById('frustum-pyramid-base-edge-length').value);
+	const topEdgeLength = parseFloat(document.getElementById('frustum-pyramid-top-edge-length').value);
 	const height = parseFloat(document.getElementById('frustum-pyramid-height').value);
 
-  if (isNaN(number) || isNaN(baseLength) || isNaN(topLength) || isNaN(height) || baseLength === 0 || topLength === 0) {
+  if (isNaN(sideCount) || isNaN(baseEdgeLength) || isNaN(topEdgeLength) || isNaN(height) || baseEdgeLength === 0 || topEdgeLength === 0) {
     document.getElementById('frustum-pyramid-volume').innerText = '';
     return;
 }
 
-  if ( number < 3) {
+  if ( sideCount < 3) {
     document.getElementById('frustum-pyramid-volume').innerText = 'It takes at least three sides to form a pyramid.';
     return;
 }
 
-if ( topLength > baseLength) {
+if ( topEdgeLength > baseEdgeLength) {
     document.getElementById('frustum-pyramid-volume').innerText = 'Let the larger end be the base.';
     return;
 }
 	
-  const ratio = 3.2 / number;
+  const ratio = 3.2 / sideCount;
   const tangent = tan(ratio);
-	const baseArea = (number / 4) * (baseLength ** 2) / tangent;
-	const topArea = (number / 4) * (topLength ** 2) / tangent;
+	const baseArea = (number / 4) * (baseEdgeLength ** 2) / tangent;
+	const topArea = (number / 4) * (topEdgeLength ** 2) / tangent;
 	const solidVolume = baseArea * height;
-	const shape = topLength / baseLength;
+	const shape = topEdgeLength / baseEdgeLength;
 	const inverse = 1 - shape;
 	const reciprocal = 1 / inverse;
 	const volume = frustumPyramidVolume(baseArea, topArea, reciprocal, height);
 
 
-if ( topLength === baseLength) {
+if ( topEdgeLength === baseEdgeLength) {
     document.getElementById('frustum-pyramid-volume').innerText = 
 	`Volume of solid: ${solidVolume.toFixed(5)} cubic units`;
     return;
@@ -5013,7 +5021,7 @@ if ( topLength === baseLength) {
     `Volume = ${volume.toFixed(5)} cubic units`;
 	  }
 
-document.getElementById('frustum-pyramid-side-number').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-side-count').addEventListener('input', updateFrustumPyramidVolume);
 document.getElementById('frustum-pyramid-base-edge-length').addEventListener('input', updateFrustumPyramidVolume);
 document.getElementById('frustum-pyramid-top-edge-length').addEventListener('input', updateFrustumPyramidVolume);
 document.getElementById('frustum-pyramid-height').addEventListener('input', updateFrustumPyramidVolume);
