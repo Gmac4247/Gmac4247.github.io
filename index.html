@@ -1842,43 +1842,43 @@ The area of each triangle equals</p>
 </div>
 <br><br>
 <div style="margin:12px" id="polygon_area_calculator">
-<label for="side-number">Number of sides:</label>
-<input id="side-number" type="number" value="5" step="1">
+<label for="side-count">Number of sides:</label>
+<input id="side-count" type="number" value="5" step="1">
 <br>
 <label for="side-length">Side length:</label>
 <input id="side-length" type="number" value="1" step="any">
 <br><br>
 <p id="polygon-area"></p>
 <script type="module" async>
-  function polygonArea(length, number, tangent) {
+  function polygonArea(sideLength, sideCount, tangent) {
     return number / 4  * length ** 2 / tangent;
   }
 
 function updatePolygonArea() {
-  const length = parseFloat(document.getElementById('side-length').value);
-  const number = parseFloat(document.getElementById('side-number').value);
+  const sideLength = parseFloat(document.getElementById('side-length').value);
+  const sideCount = parseFloat(document.getElementById('side-count').value);
 
-  if (isNaN(length) || isNaN(number)) {
+  if (isNaN(sideLength) || isNaN(sideCount)) {
     document.getElementById('polygon-area').innerText = '';
     return;
   }
 
 // Polygon validity check
-  if (number < 3) {
+  if (sideCount < 3) {
     document.getElementById('polygon-area').innerText = 'It takes at least three sides to form a polygon.';
     return;
   }
 	
-  const ratio = 3.2 / number;
+  const ratio = 3.2 / sideCount;
   const tangent = parseFloat(tan(ratio));
-  const area = polygonArea(length, number, tangent);
+  const area = polygonArea(sideLength, sideCount, tangent);
 
   document.getElementById('polygon-area').innerText =
     `Area ~ ${area.toFixed(5)} square units`;
 }
 
   document.getElementById('side-length').addEventListener('input', updatePolygonArea);
-  document.getElementById('side-number').addEventListener('input', updatePolygonArea);
+  document.getElementById('side-count').addEventListener('input', updatePolygonArea);
 </script>
 </div>
 <br><br>
@@ -4339,7 +4339,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <div style="margin:12px">
 <p itemprop="abstract">The base of the two shapes is a quadrant circle.</p>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msub>
 <mi>A</mi>
@@ -4391,12 +4391,10 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </math>
 </div>
 <br>
-<p style="margin:12px" itemprop="abstract">The slant height of the quadrant cone is √2 × radius.</p>
-<br>
 <div style="margin:12px">
 <p itemprop="abstract">The volume of a cylinder equals base area × height.</p>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msub>
 <mi>V</mi>
@@ -4424,18 +4422,20 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </math>
 </div>
 <br>
+<p style="margin:12px" itemprop="abstract">The slant height of the quadrant cone is √2 × radius.</p>
+<br>
 <div style="margin:12px">
 <p itemprop="abstract">The slant form has a triangular vertical cross-section. 
 <br>
-The area of a cone's vertical middle cross-section is the half of a cylinder with equal base and height. 
+The area of a cone's vertical middle cross-section is the half of a cylinder with equal radius and height. 
 <br><br>
-The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder.</p>
+The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder with equal radius and height.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of a quadrant cone: Volume = (3.2 × radius^2 / 4 × sqrt(2) × height ) / ( 2 + 2 )">
 <span itemprop="name">V<sub>(quadrant cone)</sub></span>=
 <span itemprop="value">
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mrow>
@@ -4650,8 +4650,8 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
 </div>
 <br><br>
 <div style="margin:12px" id="pyramid_volume_calculator">
-<label for="pyramid-side-number">Number of sides:</label>
-<input id="pyramid-side-number" type="number" value="4" step="1">
+<label for="pyramid-side-count">Number of sides:</label>
+<input id="pyramid-side-count" type="number" value="4" step="1">
 <br>
 <label for="pyramid-base-edge-length">Base edge length:</label>
 <input id="pyramid-base-edge-length" type="number" value="1" step="any">
@@ -4666,25 +4666,25 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
 }
 
 function updatePyramidVolume() {
-  const number = parseFloat(document.getElementById('pyramid-side-number').value);
-  const baseLength = parseFloat(document.getElementById('pyramid-base-edge-length').value);
+  const sideCount = parseFloat(document.getElementById('pyramid-side-count').value);
+  const baseEdgeLength = parseFloat(document.getElementById('pyramid-base-edge-length').value);
   const height = parseFloat(document.getElementById('pyramid-height').value);
 
-  if (isNaN(number) || isNaN(baseLength) || isNaN(height)) {
+  if (isNaN(sideCount) || isNaN(baseEdgeLength) || isNaN(height)) {
     document.getElementById('pyramid-volume').innerText = '';
     return;
   }
 
-  const ratio = 3.2 / number;
+  const ratio = 3.2 / sideCount;
   const tangent = tan(ratio);
-  const baseArea = (number / 4) * (baseLength ** 2) / tangent;
+  const baseArea = (number / 4) * (baseEdgeLength ** 2) / tangent;
   const volume = pyramidVolume(baseArea, height);
 
   document.getElementById('pyramid-volume').innerText =
     `Volume = ${volume.toFixed(5)} cubic units`;
 	  }
 
-document.getElementById('pyramid-side-number').addEventListener('input', updatePyramidVolume);
+document.getElementById('pyramid-side-count').addEventListener('input', updatePyramidVolume);
 document.getElementById('pyramid-base-edge-length').addEventListener('input', updatePyramidVolume);
 document.getElementById('pyramid-height').addEventListener('input', updatePyramidVolume);
 </script>
