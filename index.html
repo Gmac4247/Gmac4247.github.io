@@ -817,8 +817,8 @@ A cube is a cuboid with equal edges.</p>
 </math>
 </div>
 <div id="trigonometry_engine">
-<script>
-import * as CGS from './cgs.mjs';
+<script type="module" async>
+import {sin, cos, tan, Asin, Acos, Atan} from './cgs.mjs';
 </script>
 </div>
 </section>
@@ -958,7 +958,6 @@ The square root of half of the area of the rectangle is the side length of the t
   import triangleArea from './cgs.mjs';
 
   const area = triangleArea(5);
-  console.log(area);
 
   document.getElementById('triangle-area').innerText =
     `Area = ${area.toFixed(5)} square units`;
