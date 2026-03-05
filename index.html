@@ -744,7 +744,7 @@ A cube is a cuboid with equal edges.</p>
 <br>
 <p itemprop="description" style="margin:12px">In a right triangle the ratios between the sides and the angles are proportional.</p>
 <br>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="sine">
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="sine">
 <meta itemprop="description" content="Definition of sine">
 <span itemprop="name">sine </span>=
 <meta itemprop="value" content="opposite / hypotenuse">
@@ -758,7 +758,7 @@ A cube is a cuboid with equal edges.</p>
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="cosine">
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="cosine">
 <meta itemprop="description" content="Definition of cosine">
 <span itemprop="name">cosine </span>=
 <meta itemprop="value" content="adjacent / hypotenuse">
@@ -772,7 +772,7 @@ A cube is a cuboid with equal edges.</p>
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="tangent">
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="tangent">
 <meta itemprop="description" content="Definition of tangent">
 <span itemprop="name">tangent </span>=
 <meta itemprop="value" content="opposite / adjacent">
@@ -786,7 +786,7 @@ A cube is a cuboid with equal edges.</p>
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="cotangent">
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="cotangent">
 <meta itemprop="description" content="Definition of cotangent">
 <span itemprop="name">cotangent </span>=
 <meta itemprop="value" content="adjacent / opposite">
@@ -802,7 +802,7 @@ A cube is a cuboid with equal edges.</p>
 <br><br>
 <p itemprop="usageInfo" style="margin:12px">Trigonometric functions with an "Arc" - or simply A - prefix refer to the angle corresponding to a value of that function.</p>
 <br><br>
-<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue">
+<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Pythagorean theorem">
 <span itemprop="name">hypotenuse² </span>=
 <meta itemprop="value" content="( leg1 )^2 + ( leg2 )^2">
@@ -1618,7 +1618,7 @@ function Atan(x) {
 <br>
 <div style="margin:12px">
 <p itemprop="abstract">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</p>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<div itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
 <br>
 The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
@@ -1644,7 +1644,6 @@ The square root of half of the area of the rectangle is the side length of the t
 <div style="margin:12px">
 <p itemprop="description">The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
-<div itemprop="usageInfo">
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
 <mrow>
 <mi>S</mi>
@@ -1676,9 +1675,8 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
 </mrow>
 </math>
-</div>
 <br><br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<div itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact triangle area formula a.k.a. Heron's formula">
 <span itemprop="name">A<sub>(triangle)</sub> </span>=
 <meta itemprop="value" content="sqrt( S × ( S - side1 ) × ( S - side2 ) × ( S - side3 ) )">
@@ -1799,13 +1797,13 @@ const area = triangleArea(product);
     <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has.">
 </figure>
 <br>
-<p style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
-<div style="margin:12px">
-<p>The base of each triangular section equals the side length of the polygon. 
+<p itemprop="description" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.
+<br>
+The base of each triangular section equals the side length of the polygon. 
 <br><br>
-360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle. 
-<br><br>
-The area of each triangle equals</p>
+360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle.</p>
+<br>
+<p style="margin:12px">The area of each triangle equals</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
@@ -1848,10 +1846,8 @@ The area of each triangle equals</p>
   </mrow>
   </mrow>
 </math>
-</div>
 <br>
-<div style="margin:12px">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
  <mi>n</mi>
       <mo>=</mo>
@@ -1866,10 +1862,11 @@ The area of each triangle equals</p>
  <mi>side length</mi>
 </mrow>
 </math>
-</div>
 <br>
-<div style="margin:12px">
-<span>A<sub>(polygon)</sub> </span>=
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact area of a regular polygon">
+<span itemprop="name">A<sub>(polygon)</sub> </span>=
+<meta itemprop="value" content="sideCount/4×ctg(180deg./sideCount)×sideLength/2">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 <mfrac>
@@ -1987,8 +1984,9 @@ function updatePolygonArea() {
 <meta itemprop="typicalAgeRange" content="12-102">
 <meta itemprop="usageInfo" content="Learn to calculate exact area and volume of shapes">
 <meta itemprop="url" content="https://gmac4247.github.io#cgs">
-<section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="circle"">
+<section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="circle">
 <h3 itemprop="name" style="margin:7px">Area of a Circle</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#circle">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circle.png" alt="The circle is cut into four quadrants, each placed with their origin on the vertices of a square. The arcs of the quadrants of the circle that equals in area to the square intersect at the quarters on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. r = side × √5 / 4 Area = 3.2r²">
@@ -2614,6 +2612,7 @@ Circle area = square area</p>
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="circumference">
 <h3 itemprop="name" style="margin:7px">Circumference of a Circle</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#circumference">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circumference.png" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle">
@@ -2897,10 +2896,10 @@ When calculus is treated as a magical shortcut rather than a summary of underlyi
 The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these properties.</p>
 </section>
 <br><br><br>
-<section id="warning" itemprop="about" itemscope itemtype="https://schema.org/CreativeWork">
-<h4 itemprop="name">The Cognitive Risk of flawed geometric Axioms.</h4>
+<section id="warning">
+<h4>The Cognitive Risk of flawed geometric Axioms.</h4>
 <br><br>
-<p itemprop="text">The central concern arises from the potential cognitive harm caused by teaching the approximate, irrational constant pi as an absolute truth in foundational geometry.
+<p itemprop="disambiguatingDescription">The central concern arises from the potential cognitive harm caused by teaching the approximate, irrational constant pi as an absolute truth in foundational geometry.
 <br><br><br>
 <b>1. The Flawed Foundation</b>
 <br><br>
@@ -2919,10 +2918,10 @@ Inhibits Whole-Brain Synchronization: It potentially creates a disconnect betwee
 The final conclusion is that using the consistent, exact constant 3.2 offers a path to a more coherent and structurally sound foundation for geometric thought, thereby avoiding the introduction of a fundamental logical flaw into developing minds.</p>
 </section>	
 <br><br><br>
-<section id="solution" itemprop="about" itemscope itemtype="https://schema.org/CreativeWork">
-<h4 itemprop="name">The true Ratio: 3.2</h4>
+<section id="solution">
+<h4>The true Ratio: 3.2</h4>
 <br><br>
-<p itemprop="text">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<p itemprop="disambiguatingDescription">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
 <br><br>
 Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
 <br><br>
@@ -3283,6 +3282,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="circle-segment">
 <h3 itemprop="name" style="margin:7px">Area of a Circle Segment</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#circle-segment">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.png" alt="Circle segment">
@@ -3551,6 +3551,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="cone_surface">
 <h3 itemprop="name" style="margin:7px">Surface Area of a Cone</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#cone_surface">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="cone.jpeg" alt="The surface area of a cone">
@@ -3818,6 +3819,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="sphere">
 <h3 itemprop="name" style="margin:7px">Volume of a Sphere</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#sphere">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphere.jpeg" alt="Sphere and isovolumetric cube comparison">
@@ -4004,6 +4006,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <br><br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="cap">
 <h3 itemprop="name" style="margin:7px">Volume of a Spherical Cap</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#cap">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphericalCap.png" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
@@ -4103,6 +4106,7 @@ if ( height === radius) {
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="cone">
 <h3 itemprop="name" style="margin:7px">Volume of a Cone</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#cone">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="coneAndSphere.jpeg" alt="Sphere and cone">
@@ -4520,6 +4524,7 @@ The volume of a cone equals the quarter of a cylinder with an equal radius and i
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="pyramid">
 <h3 itemprop="name" style="margin:7px">Volume of a Pyramid</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#pyramid">
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="conePyramidVolume.jpeg" alt="Pyramid">
@@ -4686,6 +4691,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="frustum_pyramid">
 <h3 itemprop="name" style="margin:12px">Volume of a Frustum Pyramid</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#frustum_pyramid">
 <br>
 <figure class="imgbox">
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Frustum pyramid">
@@ -5016,6 +5022,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="frustum_cone">
 <h3 itemprop="name" style="margin:7px">Volume of a Frustum Cone</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#frustum_cone">
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="frustumCone.jpeg" alt="Frustum cone">
@@ -5230,6 +5237,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <br><br><br>
 <section itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="tetrahedron">
 <h3 itemprop="name" style="margin:7px">Volume of a Tetrahedron</h3>
+<meta itemprop="url" content="https://gmac4247.github.io#tetrahedron">
 <br>
 <figure class="imgbox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="tetrahedron.jpeg" alt="Tetrahedron">
@@ -5619,7 +5627,6 @@ This restores geometry to its constructive roots and eliminates the analytic ass
 <p itemprop="copyrightNotice">® All rights reserved</p>
 <p itemprop="copyrightYear">2026</p>
 </div>
-</section>
 </main>
 </div>
 <br>
