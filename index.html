@@ -105,9 +105,9 @@
 <meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Read text and view videos">
+<meta itemprop="accessibilitySummary" content="Read text and equations, calculate.">
 <meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Expositive">
+<meta itemprop="interactivityType" content="Mixed">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="isFamilyFriendly" content="true">
 <meta itemprop="typicalAgeRange" content="5-105">
@@ -127,7 +127,7 @@
     <img class="center-fit" src="geometry.jpeg" alt="Geometry">
 </div>
 <br>
-<section itemprop="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<section itemprop="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList" id="guide">
 <h2 itemprop="name" style="margin:7px">Key Points:</h2>
   <br><br>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -175,15 +175,27 @@
   </div>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="math">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="math">
+<meta itemprop="accessMode" content="mathOnVisual">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Read text and equations.">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="interactivityType" content="Expositive">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="typicalAgeRange" content="3-18">
+<meta itemprop="url" content="#math">
 <details>
 <summary><h2 itemprop="name" style="margin:7px">Mathematics</h2></summary>
 <br>
-<section style="margin:12px" itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="numbers">
+<section style="margin:12px" itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="numbers">
+<meta itemprop="url" content="#numbers">
 <details>
 <summary><h3 itemprop="name">1. Numbers</h3></summary>
 <br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="numerals">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="numerals">
+<meta itemprop="url" content="#numerals">
 <h3 itemprop="name">Numerals</h3>
 <br>
 <p itemprop="description">Notations of numeric Values</p>
@@ -224,7 +236,8 @@
 </table>
 </section>
 <br><br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="systems">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="systems">
+<meta itemprop="url" content="#systems">
 <h3 itemprop="name">Numeric Systems</h3>
 <br>
 <p itemprop="description">The Values of Numbers.</p>
@@ -333,11 +346,13 @@
 </details>
 </section>
 <br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" style="margin:12px" id="equation">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" style="margin:12px" id="equation">
+<meta itemprop="url" content="#equation">
 <details>
 <summary><h3 itemprop="name">2. Equations</h3></summary>
 <br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource">
+<meta itemprop="url" content="#equation">
 <h4 itemprop="name">= Equation</h4>
 <br>
 <p itemprop="description">The numbers or expressions of one side equal in value to the other side.
@@ -347,10 +362,12 @@
 1 + 2 = 3</p>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="operations">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="operations">
 <h3 itemprop="name">Basic Operations</h3>
+<meta itemprop="url" content="#operations">
 <br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="addition">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="addition">
+<meta itemprop="url" content="#addition">
 <h3 itemprop="name">+ Addition</h3>
 <br>
 <p>Example #1:
@@ -364,7 +381,8 @@
 15 + 21 = 36</p>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="subtraction" itemref="addition">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="subtraction" itemref="addition">
+<meta itemprop="url" content="#subtraction">
 <h3 itemprop="name">- Subtraction</h3>
 <br>
 <p itemprop="description">The opposite of addition</p>
@@ -380,7 +398,8 @@
 36 - 21 = 15</p>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="multiplication" itemref="addition">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="multiplication" itemref="addition">
+<meta itemprop="url" content="#multiplication">
 <h3 itemprop="name">× Multiplication *</h3>
 <br>
 <p itemprop="description">An advanced form of addition</p>
@@ -400,7 +419,8 @@ but (2 flowers) × (3 flowers) = 6 square flowers.</p>
 5 × 21 = 105</p>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="division" itemref="multiplication">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="division" itemref="multiplication">
+<meta itemprop="url" content="#division">
 <h3 itemprop="name">÷ Division /</h3>
 <br>
 <p itemprop="description">The opposite of multiplication</p>
@@ -418,7 +438,8 @@ but (2 flowers) × (3 flowers) = 6 square flowers.</p>
 </details>
 </section>
 <br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" style="margin:12px" id="fractions">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" style="margin:12px" id="fractions">
+<meta itemprop="url" content="#fractions">
 <details>
 <summary><h3 itemprop="name">3. Fractions</h3></summary>
 <br>
@@ -441,10 +462,11 @@ Breaking the branch into 3 equal pieces gives 1 / 3.
 <br>
 That cannot be written in a decimal form with a finite number of numerals.</p>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id=operations_with_fractions>
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id=operations_with_fractions>
 <h3 itemprop="name">Operations with Fractions</h3>
 <br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="adding_fractions" itemref="addition">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="adding_fractions" itemref="addition">
+<meta itemprop="url" content="#adding_fractions">
 <h3 itemprop="name">Adding Fractions</h3>
 <br>
 <p itemprop="description">Adding the nominators if the denominators are the same.</p>
@@ -494,7 +516,8 @@ The denominators can be multiplied by each other to get a common denominator. In
 </math>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="subtracting_fractions" itemref="adding_fractions">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="subtracting_fractions" itemref="adding_fractions">
+<meta itemprop="url" content="#subtracting_fractions">
 <h3 itemprop="name">Subtracting Fractions</h3>
 <br>
 <p itemprop="description">Subtracting the nominators if the denominators are the same.</p>
@@ -544,7 +567,8 @@ The denominators can be multiplied by each other to get a common denominator. In
 	</math>
 </section>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="multiplying_fractions" itemref="multiplication">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="multiplying_fractions" itemref="multiplication">
+<meta itemprop="url" content="#multiplying_fractions">
 <h3 itemprop="name">Multiplying Fractions</h3>
 <br>
 <p itemprop="description">A fraction can be multiplied by multiplying its nominator, or dividing its denominator.
@@ -569,8 +593,10 @@ Multiplying by a fraction means multiplying nominator by nominator and denominat
 </math>
 </section>
 <br><br><br>
-<section itemprop="about" id="dividing_fractions" itemscope itemtype="http://schema.org/LearningResource" itemref="division">
-<h3 itemprop="name">Dividing Fractions</h3><br>
+<section itemprop="subjectOf" id="dividing_fractions" itemscope itemtype="http://schema.org/LearningResource" itemref="division">
+<meta itemprop="url" content="#dividing_fractions">
+<h3 itemprop="name">Dividing Fractions</h3>
+<br>
 <p itemprop="description">A fraction can be divided by dividing its nominator, or multiplying its denominator.
 <br><br>
 Dividing by a fraction means multiplying by the reciprocal of that fraction.</p>
@@ -605,7 +631,8 @@ Dividing by a fraction means multiplying by the reciprocal of that fraction.</p>
 </details>
 </section>
 <br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" itemref="multiplication" id="powers">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" itemref="multiplication" id="powers">
+<meta itemprop="url" content="#powers">
 <details>
 <summary><h3 style="margin:12px" itemprop="name">4. Powers</h3></summary>
 <br>
@@ -633,10 +660,11 @@ Dividing by a fraction means multiplying by the reciprocal of that fraction.</p>
 <br><br>
 (2 / 3)^2 = 2² / 3² = 4 / 9</p>
 <br><br><br>
-<section itemprop="about" itemscope itemtype="http://schema.org/LearningResource" id="geometry">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="geometry">
+<meta itemprop="url" content="#geometry">
 <h3 style="margin:7px" itemprop="name">The 2nd and the 3rd Powers manifesting in Geometry</h3>
 <br>
-<section itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="square">
+<section itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="square">
 <h3 itemprop="name" style="margin:7px">Area of a Square</h3>
 <meta itemprop="value" content="side^2">
 <br>
@@ -671,7 +699,7 @@ A square is a rectangle with equal sides.</p>
 </div>
 </section>
 <br><br><br><br>
-<section itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="cube">
+<section itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="cube">
 <h3 itemprop="name" style="margin:7px">Volume of a Cube</h3>
 <meta itemprop="value" content="edge^3">
 <br>
@@ -716,18 +744,17 @@ A cube is a cuboid with equal edges.</p>
 </details>
 </section>	 
 <br><br><br><br>
-<section itemprop="about" itemscope itemtype="https://schema.org/SoftwareApplication" id="trigonometry_engine">
+<section itemprop="subjectOf" itemscope itemtype="http://schema.org/LearningResource" id="trigonometry">
+<meta itemprop="accessMode" content="mathOnVisual">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Output used for calculator applications">
-<meta itemprop="applicationCategory" content="Trigonometry engine">
-<meta itemprop="disambiguatingDescription" content="The arc values are more accurate than the results of other tools that are aligned to circumference = 6.28...">
-<meta itemprop="featureList" content="Defines independent trigonometric functions, and returns values.">
+<meta itemprop="accessibilitySummary" content="Read text and equations.">
+<meta itemprop="inLanguage" content="en">
 <meta itemprop="interactivityType" content="Expositive">
 <meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="typicalAgeRange" content="12-102">
-<meta itemprop="usageInfo" content="For internal use only. The steps are limited by the number of entries.">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="typicalAgeRange" content="12-18">
+<meta itemprop="url" content="#trigonometry">
 <h3 itemprop="name" style="margin:7px">Trigonometry</h3>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
@@ -823,7 +850,20 @@ A cube is a cuboid with equal edges.</p>
 </math>
 </div>
 <div>
-<script>
+<script itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="trigonometry_engine">
+<meta itemprop="name" content="#Trigonometry engine">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Output used for calculator applications">
+<meta itemprop="applicationCategory" content="Trigonometry engine">
+<meta itemprop="description" content="The arc values are aligned to circumference = 6.4radius">
+<meta itemprop="disambiguatingDescription" content="More accurate than the results of other tools that are aligned to circumference = radius×6.28...">
+<meta itemprop="featureList" content="Defines independent trigonometric functions, and returns values.">
+<meta itemprop="interactivityType" content="Expositive">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
+<meta itemprop="usageInfo" content="For internal use only. The steps are limited by the number of entries.">
 
 // ---- Trigonometry ----
 	
@@ -1583,18 +1623,19 @@ function Atan(x) {
 </div>
 </section>
 <br><br><br><br>
-<section itemprop="about" itemscope itemtype="https://schema.org/SoftwareApplication" id="triangle">
+<section itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="triangle">
 <meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <meta itemprop="accessibilityHazard" content="none">
 <meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
 <meta itemprop="featureList" content="Calculates the area of a triangle.">
-<meta itemprop="interactivityType" content="Active">
+<meta itemprop="interactivityType" content="Mixed">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="typicalAgeRange" content="5-105">
+<meta itemprop="url" content="#triangle">
 <h3 style="margin:7px" itemprop="name">Area of a Triangle</h3>
 <br>
 <div style="margin:12px">
@@ -1702,7 +1743,20 @@ The square root of half of the area of the rectangle is the side length of the t
 </div>
 </div>
 <br><br>
-<div style="margin:12px" id="triangle_area_calculator">
+<div style="margin:12px" id="triangle_area_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="triangle">
+<meta itemprop="name" content="Triangle area calculator">
+<meta itemprop="accessMode" content="mathOnVisual">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="featureList" content="Calculates the area of a triangle.">
+<meta itemprop="interactivityType" content="Mixed">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="5-105">
+<meta itemprop="url" content="#triangle_area_calculator">
 <label for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
 <br>
