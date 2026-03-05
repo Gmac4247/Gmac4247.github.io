@@ -111,6 +111,7 @@
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="isFamilyFriendly" content="true">
 <meta itemprop="typicalAgeRange" content="5-105">
+<meta itemprop="url" content="https://gmac4247.github.io">
 <div itemprop="usageInfo" itemscope itemtype="https://schema.org/Statement" id="cookie-notice">
                 <div id="cookie-notice-text">
                         This website uses cookies to ensure you get the best experience on it.<br>
@@ -1927,9 +1928,8 @@ function updatePolygonArea() {
 </div>
 </section>
 <br><br><br><br>
-<main>
-<section itemprop="mainEntity" itemscope itemtype="https://schema.org/DefinedTermSet" id="cgs">
-<meta itemprop="name" content="Core Geometric System">
+<main itemprop="mainEntity" itemscope itemtype="https://schema.org/DefinedTermSet" id="cgs">
+<meta itemprop="name" content="Core Geometric System ™">
 <meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <meta itemprop="accessibilityHazard" content="none">
@@ -1950,7 +1950,7 @@ function updatePolygonArea() {
 <br>
 <section>
 <details>
-  <summary><h4 itemprop="abstract" style="margin:12px">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h4></summary>
+  <summary><h4 itemprop="description" style="margin:12px">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h4></summary>
 <p itemprop="disambiguatingDescription" style="margin:12px"><strong>The widely used formula " A = pi × r² " is not a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
 </details>
 </section>
@@ -2492,7 +2492,7 @@ Circle area = square area</p>
 <br>
 </details>
 </section>
-<p style="margin:12px" itemprop="abstract">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
+<p style="margin:12px" itemprop="description">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
 <br>
 <div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact circle area formula">
@@ -2522,13 +2522,15 @@ Circle area = square area</p>
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="circle_area_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="circle">
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="circle_area_calculator">
 <meta itemprop="name" content="circle area calculator">
 <meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
 <meta itemprop="accessibilityHazard" content="none">
 <meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="description" content="Calculates the area of a circle as 3.2×radius^2.">
+<meta itemprop="disambiguatingDescription" content="Does not calculate the area as radius^2×3.14...">
 <meta itemprop="featureList" content="Calculates the area of a circle from its radius with an exact formula.">
 <meta itemprop="inLanguage" content="en">
 <meta itemprop="interactivityType" content="Active">
@@ -2569,6 +2571,8 @@ Circle area = square area</p>
 <meta itemprop="accessibilityHazard" content="none">
 <meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="description" content="Calculates the circumference as 3.2×radius^2.">
+<meta itemprop="disambiguatingDescription" content="Does not calculate the circumference as 2×radius×3.14...">
 <meta itemprop="featureList" content="Calculates circumference from the radius with an exact formula.">
 <meta itemprop="inLanguage" content="en">
 <meta itemprop="interactivityType" content="Active">
@@ -3203,7 +3207,24 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 </div>
 <br><br>
-<div style="margin:12px" id="circumference_calculator">
+<div style="margin:12px" id="circumference_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
+<meta itemprop="name" content="Circumference calculator">
+<meta itemprop="accessMode" content="mathOnVisual">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Enter and read numbers">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="description" content="Calculates the circumference as 3.2×radius^2.">
+<meta itemprop="disambiguatingDescription" content="Does not calculate the circumference as 2×radius×3.14...">
+<meta itemprop="featureList" content="Calculates circumference from the radius with an exact formula.">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
+<meta itemprop="usageInfo" content="Input radius, get numeric value of circumference">
 <label for="circle-radius-c">Radius:</label>
 <input id="circle-radius-c" type="number" value="1" step="any">
 <br><br>
