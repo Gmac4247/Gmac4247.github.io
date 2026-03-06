@@ -1627,13 +1627,10 @@ function Atan(x) {
 <meta itemprop="totalTime" content="PT05S">
 <h3 style="margin:7px" itemprop="name">Area of a Triangle</h3>
 <br>
+<p style="margin:12px" itemprop="description">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="abstract">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</p>
-</div>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
-<p itemprop="description">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
+<p itemprop="abstract">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
 <br>
 The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
 </div>
@@ -1657,7 +1654,8 @@ The square root of half of the area of the rectangle is the side length of the t
 </math>
 </div>
 <br><br>
-<div style="margin:12px">
+<div style="margin:12px" itemprop="about" itemscope itemtype="http://schema.org/LearningResource">
+<meta itemprop="name" content="Heron's formula">
 <p itemprop="description">The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
@@ -1693,7 +1691,7 @@ The square root of half of the area of the rectangle is the side length of the t
 </math>
 <br><br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact triangle area formula a.k.a. Heron's formula">
+<meta itemprop="description" content="Exact triangle area formula">
 <span itemprop="name">A<sub>(triangle)</sub> </span>=
 <meta itemprop="value" content="sqrt( S × ( S - side1 ) × ( S - side2 ) × ( S - side3 ) )">
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
@@ -1812,13 +1810,10 @@ const area = triangleArea(product);
     <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has.">
 </figure>
 <br>
+<p style="margin:12px" itemprop="description">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="abstract">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
-</div>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
-<p itemprop="description">The base of each triangular section equals the side length of the polygon. 
+<p itemprop="abstract">The base of each triangular section equals the side length of the polygon. 
 <br><br>
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle.</p>
 <br><br>
@@ -1839,7 +1834,7 @@ The area of each triangle equals
 </div>
 <br><br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="3">
+<meta itemprop="position" content="2">
 <p itemprop="description">The height of each triangle is calculable via trigonometric functions.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2009,15 +2004,14 @@ function updatePolygonArea() {
     <img class="center-fit" src="circle.png" alt="Circle area">
 </figure>
 <br>
-<section style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="1">
+<section style="margin:12px">
 <details>
   <summary><h4 itemprop="description">The area of a circle is defined by comparing it to a square since that is the base of area calculation.</h4></summary>
 <p itemprop="disambiguatingDescription"><strong>The widely used formula " A = pi × r² " is not a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</strong></p>
 </details>
 </section>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
+<meta itemprop="position" content="1">
 <p itemprop="abstract">The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
 <br><br>
 In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square, leaving some of the square uncovered. 
@@ -2027,7 +2021,7 @@ The arcs of the quadrants of a circumscribed circle would overlap, and intersect
 <strong>The arcs of the quadrants of the circle that equals in area to the square intersect right in between those limits, at the quarters on its centerlines.</strong></p>
 </div>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="3">
+<meta itemprop="position" content="2">
 <p itemprop="description">The length of the centerline equals the side length of the square.
 <br>
 The quarter of the centerline and the half of the side of the square form two legs of a right triangle with its hypotenuse equal to the radius.
@@ -2069,7 +2063,7 @@ The ratio between the radius and the side length is calculable.</p>
 </div>
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
+<meta itemprop="position" content="3">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="The ratio between the radius of the circle and an equiareal square">
 <span itemprop="name">radius </span>=
@@ -2146,7 +2140,7 @@ The ratio between the radius and the side length is calculable.</p>
 </div>
 <br>
 <section style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToSection">
-    <meta itemprop="position" content="5" id="circle_area_proof">
+    <meta itemprop="position" content="4" id="circle_area_proof">
 <details>
   <summary><h4 itemprop="description">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</h4></summary>
 <br>
