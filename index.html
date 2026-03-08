@@ -1240,7 +1240,7 @@ The volume of a cone equals the quarter of a cylinder with an equal radius and i
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="DefinedTerm" itemscope itemtype="https://schema.org/hasDefinedTerm" id="tangent">
+<div style="margin:12px" itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="tangent">
 <span itemprop="name">tangent </span>=
 <meta itemprop="description" content="opposite / adjacent">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2105,7 +2105,7 @@ The square root of half of the area of the rectangle is the side length of the t
 </math>
 </div>
 <br><br>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/LearningResource">
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Heron's formula">
 <p itemprop="description">The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
@@ -2141,7 +2141,7 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
 </math>
 <br><br><br>
-<div itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Exact triangle area formula">
 <span itemprop="name">A<sub>(triangle)</sub> </span>=
 <meta itemprop="value" content="sqrt( S × ( S - side1 ) × ( S - side2 ) × ( S - side3 ) )">
@@ -3435,14 +3435,13 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
   </math>
 </div>
 <br><br>
-<div style="margin:12px" itemprop="about">
-<meta itemprop="name" content="Simple frustum pyramid volume formula">
-<p itemprop="description">The volume of a frustum can also be calculated via a simplified formula.</p>
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="http://schema.org/PropertyValue">
+<span itemprop="description">The volume of a frustum can also be calculated via a simplified formula.</span>
 <br><br>
+<span itemprop="name">V </span>=
+<meta itemprop="value" content="frustumHeight × ( bottomArea + topArea + bottomArea × topArea ) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
-<mi>V</mi>
-<mo>=</mo>
 <mfrac>
 <mi>H</mi>
 <msqrt>
@@ -3657,14 +3656,13 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
   </math>
 </div>
 <br><br>
-<div style="margin:12px" itemprop="about">
-<meta itemprop="name" content="Simple frustum cone volume formula">
-<p itemprop="description">The volume of a frustum cone can also be calculated via a simplified formula.</p>
+<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="http://schema.org/PropertyValue">
+<span itemprop="description">The volume of a frustum cone can also be calculated via a simplified formula.</span>
 <br><br>
+<span itemprop="name">V </span>=
+<meta itemprop="value" content="3.2 × frustumHeight × ( bottomRadius^2 + topRadius^2 + bottomRadius × topRadius ) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
-<mi>V</mi>
-<mo>=</mo>
 <mfrac>
 	<mrow>
 		<mn>3.2</mn>
