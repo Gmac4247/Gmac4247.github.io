@@ -397,8 +397,101 @@
     "url": "https://basic-geometry.pages.dev#sphere_volume_calculator",
     "usageInfo": "Enter the radius."
   }
-}
+},
 
+{
+  "@type": "SolveMathAction",
+  "@id": "https://basic-geometry.pages.dev#cone-volume",
+  "name": "Volume of a Cone",
+  "eduQuestionType": "Cone volume calculation",
+  "mathExpression": "V = 3.2 × radius^2 × height / 8^(1/2)",
+  "target": "https://basic-geometry.pages.dev?q={cone_radius=1_height=2_volume=?}",
+  "actionProcess": {
+    "@type": "HowTo",
+    "name": "Derive the volume of a cone",
+    "totalTime": "PT30M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": "0"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "coneAndSphere.jpeg",
+      "description": "Sphere and cone comparison"
+    },
+    "description": "The cone’s volume is derived by comparing a vertical quadrant cone to an octant sphere through a shared quadrant cylinder.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "about": {
+          "@type": "PropertyValue",
+          "name": "V(octant sphere)",
+          "description": "Volume of an octant sphere",
+          "value": "((3.2)^(1/2) × radius / 2)^3"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "octantSphereQuarterCone.jpeg",
+          "description": "Octant sphere and quarter cone comparison"
+        }
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "description": "Both shapes share a quadrant circle as their base."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "description": "A cylinder with radius equal to the cone and height equal to the cone’s slant height (√2 × radius) provides a comparison volume.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "sphereAndCone.jpeg",
+          "description": "Sphere and cone geometry"
+        }
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "description": "The cone’s vertical cross‑section is triangular. The mean of its horizontal slices equals half the area of a cylinder with equal radius and height.",
+        "about": {
+          "@type": "PropertyValue",
+          "name": "V(quadrant cone)",
+          "description": "Volume of a quadrant cone",
+          "value": "(3.2 × radius^2 / 4 × 2^(1/2) × height) / 4"
+        }
+      }
+    ]
+	},
+    "result": {
+      "@type": "PropertyValue",
+      "name": "V(cone)",
+      "description": "Exact cone volume formula",
+      "value": "3.2 × radius^2 × height / 8^(1/2)"
+  },
+  "subjectOf": {
+    "@type": "SoftwareApplication",
+    "name": "Cone volume calculator",
+    "description": "Calculates the volume of a cone as 3.2×radius²×height/8^(1/2).",
+    "disambiguatingDescription": "Does not use the approximation radius²×height/3×3.14…",
+    "applicationCategory": "Geometric Calculator",
+    "featureList": "Exact cone volume calculation",
+    "inLanguage": "en",
+    "interactivityType": "Interactive",
+    "isAccessibleForFree": true,
+    "isFamilyFriendly": true,
+    "accessMode": "mathOnVisual",
+    "accessibilityControl": "fullKeyboardControl",
+    "accessibilityHazard": "none",
+    "accessibilitySummary": "Enter numbers and read results",
+    "operatingSystem": "Web",
+    "url": "https://basic-geometry.pages.dev#cone_volume_calculator",
+    "usageInfo": "Enter the bottom radius and the height."
+  }
+}
+	]
 	}
 	}
 </script>
@@ -868,28 +961,16 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 </section>
 <br><br><br>
-<section itemprop="potentialAction" itemscope itemtype="https://schema.org/SolveMathAction" id="sphere">
-<meta itemprop="eduQuestionType" content="Sphere volume calculation">
-<meta itemprop="target" content="https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev?q={sphere_radius=1_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<meta itemprop="totalTime" content="PT30M">
-<h3 itemprop="name" style="margin:7px">Volume of a Sphere</h3>
+<section id="sphere">
+<h3 style="margin:7px">Volume of a Sphere</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
     <img class="center-fit" src="sphere.jpeg" alt="Sphere and isovolumetric cube comparison">
     </figure>
 <br>
-  <p style="margin:12px" itemprop="description"><strong>The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation.</strong></p>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="1">
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Cross-sectional area of the sphere">
-<span itemprop="name">A<sub>(cross-section)</sub> </span>=
-<meta itemprop="value" content="3.2 × radius^2">
+<p style="margin:12px"><strong>The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation.</strong></p>
+<div style="margin:12px">
+<span>A<sub>(cross-section)</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>3.2</mn>
@@ -900,7 +981,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </msup>
 </mrow>
 </math>
-</div>
 </div>
 <br><br>
 <div style="margin:12px">
@@ -1008,59 +1088,44 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 </section>
 <br><br><br>
-<section itemprop="offers" itemscope itemtype="https://schema.org/Offer" style="border: 2px solid red; 
+<section style="border: 2px solid red; 
             padding: 10px" id="sphere-surface">
 <p style="margin:6px">Advertisement</p>
 <br><br>
-<h3 itemprop="name" style="margin:7px">Surface Area of a Sphere</h3>
-<meta itemprop="url" content="https://basic-geometry.pages.dev#sphere-surface">
+<h3 style="margin:7px">Surface Area of a Sphere</h3>
 <br>
-<div class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<div class="imgbox">
     <img class="center-fit" src="sphereSurface.jpeg" alt="sphere surface illustration">
 <br>
 <p style="margin:6px">The image is an illustration.</p>
 </div>
 <br>
-<p itemprop="disambiguatingDescription" style="margin:6px">The conventional formula for the surface area of a sphere was allegedly developed from the conventional volume formula.</p>
+<p style="margin:6px">The conventional formula for the surface area of a sphere was allegedly developed from the conventional volume formula.</p>
 <br>
-<p itemprop="description" style="margin:6px"><strong>
+<p style="margin:6px"><strong>
 Unlock the true formula to calculate the surface area of a sphere.</strong></p>
-<meta itemprop="isFamilyFriendly" content="true">
-<span style="margin:6px" itemprop="priceCurrency" content="USD">$</span>
-<span itemprop="price" content="3,200,000,000.00">3,200,000,000.00</span>
-<link itemprop="availability" href="https://schema.org/InStock">
+<span style="margin:6px">$</span>
+<span>3,200,000,000.00</span>
 <p style="margin:6px">( + tax, if applicable )</p>
 <br>
 <a style="margin:12px" class="rounded-button" href="privacy-policy">Contact</a>
 </section>
 <br><br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="cone">
-<meta itemprop="eduQuestionType" content="Cone volume calculation">
-<meta itemprop="target" content="https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev?q={cone_radius=1_height=2_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<meta itemprop="totalTime" content="PT30M">
-<h3 itemprop="name" style="margin:7px">Volume of a Cone</h3>
+<section id="cone">
+<h3 style="margin:7px">Volume of a Cone</h3>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox">
     <img class="center-fit" src="coneAndSphere.jpeg" alt="Sphere and cone">
 </figure>
 <br>
-<p style="margin:12px" itemprop="abstract"><strong>The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</strong></p>
+<p style="margin:12px"><strong>The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</strong></p>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox">
     <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="Comparison">
 </figure>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="1">
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of an octant sphere">
-<span itemprop="name">V<sub>(octant sphere)</sub> </span>=
-<meta itemprop="value" content="( (3.2)^(1/2) × radius / 2 )^3">
+<div style="margin:12px">
+<span>V<sub>(octant sphere)</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mrow>
@@ -1146,14 +1211,13 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </mrow>
 </math>
 </div>
-</div>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure itemprop="image" class="imgbox">
     <img class="center-fit" src="sphereAndCone.jpeg" alt="Sphere and cone">
 </figure>
-<br><div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
-<p itemprop="description">The base of the two shapes is a quadrant circle.</p>
+<br>
+<div style="margin:12px">
+<p>The base of the two shapes is a quadrant circle.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
@@ -1207,9 +1271,8 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="3">
-<p itemprop="abstract">The volume of a cylinder equals base area × height.
+<div style="margin:12px">
+<p>The volume of a cylinder equals base area × height.
 <br><br>
 The slant height of the quadrant cone is √2 × radius.
 <br><br>
@@ -1243,18 +1306,14 @@ Take a vertical quadrant cylinder with its radius equal to the cone and its heig
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
-<p itemprop="abstract">The slant form of the cone has a triangular vertical cross-section. 
+<div style="margin:12px">
+<p>The slant form of the cone has a triangular vertical cross-section. 
 <br>
 The vertical middle cross-sectional area of the cone is the half of a cylinder with equal radius and height. 
 <br><br>
 The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder with equal radius and height.</p>
 <br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of a quadrant cone">
-<span itemprop="name">V<sub>(quadrant cone)</sub> </span>=
-<meta itemprop="value" content="(3.2 × radius^2 / 4 × 2^(1/2) × height ) / ( 2 + 2 )">
+<span>V<sub>(quadrant cone)</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mfrac>
@@ -1288,19 +1347,15 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </mrow>
 </math>
 </div>
-</div>
-</div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<p itemprop="description">The volume of the unit cone equals the quarter of the volume of cylinder with an equal radius, and its height equal to the slant height of the unit cone.
+<div style="margin:12px">
+<p>The volume of the unit cone equals the quarter of the volume of cylinder with an equal radius, and its height equal to the slant height of the unit cone.
 <br><br>
 In general:
 <br><br>
 The volume of a cone equals the quarter of a cylinder with an equal radius and its height equal to the height of the cone multiplied by √2.</p>
 <br><br>
-<meta itemprop="description" content="Exact cone volume formula">
-<span itemprop="name">V<sub>(cone)</sub> </span>=
-<meta itemprop="value" content="3.2 × radius^2 / 8^(1/2)">
+<span>V<sub>(cone)</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -1321,23 +1376,7 @@ The volume of a cone equals the quarter of a cylinder with an equal radius and i
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="cone_volume_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Cone volume calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read results">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="description" content="Calculates the volume of a cone as 3.2×radius^2×height/8^(1/2).">
-<meta itemprop="disambiguatingDescription" content="Does not calculate the volume of a cone as radius^2×height/3×3.14...">
-<meta itemprop="featureList" content="Calculates the volume of a cone from its bottom radius and height with an exact formula.">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="isFamilyFriendly" content="true">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev#cone_volume_calculator">
-<meta itemprop="usageInfo" content="Enter the bottom radius and the height.">
+<div style="margin:12px" id="cone_volume_calculator">
 <label for="cone-radius-v">Radius:</label>
 <input id="cone-radius-v" type="number" value="1" step="any">
 <br>
