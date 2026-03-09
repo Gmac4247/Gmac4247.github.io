@@ -1276,7 +1276,7 @@
 <section id="circle">
 <h2 style="margin:7px">Area of a Circle</h2>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="circle.png" alt="Circle area">
 </figure>
 <br>
@@ -1456,7 +1456,7 @@ The ratio between the radius and the side length is calculable.</p>
 <section id="circumference">
 <h3 style="margin:7px">Circumference of a Circle</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="circumference.png" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle">
 		</figure>
 <br>
@@ -1725,7 +1725,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <section id="sphere">
 <h3 style="margin:7px">Volume of a Sphere</h3>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="sphere.jpeg" alt="Sphere and isovolumetric cube comparison">
     </figure>
 <br>
@@ -1875,13 +1875,13 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <section id="cone">
 <h3 style="margin:7px">Volume of a Cone</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="coneAndSphere.jpeg" alt="Sphere and cone">
 </figure>
 <br>
 <p style="margin:12px"><strong>The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</strong></p>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="Comparison">
 </figure>
 <br>
@@ -1973,7 +1973,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </math>
 </div>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="sphereAndCone.jpeg" alt="Sphere and cone">
 </figure>
 <br>
@@ -2202,7 +2202,7 @@ The volume of a cone equals the quarter of a cylinder with an equal radius and i
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm" id="tangent">
+<div style="margin:12px" id="tangent">
 <span>tangent </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
  <mrow>
@@ -3166,13 +3166,13 @@ const area = triangleArea(product);
 <section id="polygon">
 <h3 style="margin:7px">Area of a regular Polygon</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has.">
 </figure>
 <br>
 <p style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
 <div style="margin:12px">
-<p itemprop="description">The base of each triangular section equals the side length of the polygon. 
+<p>The base of each triangular section equals the side length of the polygon. 
 <br><br>
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle.</p>
 <br><br>
@@ -3333,7 +3333,7 @@ function updatePolygonArea() {
 <section id="circle-segment">
 <h3 style="margin:7px">Area of a Circle Segment</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="circleSegment.png" alt="Circle segment">
     </figure>
 <br>
@@ -3576,7 +3576,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <section id="cone_surface">
 <h3 style="margin:7px">Surface Area of a Cone</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
   <img class="center-fit" src="cone.jpeg" alt="The surface area of a cone">
   </figure>
 <br>
@@ -3811,7 +3811,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <section id="cap">
 <h3 style="margin:7px">Volume of a Spherical Cap</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="sphericalCap.png" alt="One dimension of the volume of sphere formula can be adjusted to calculate the volume of a spherical cap as a distorted hemisphere. V = 1.6 × (cap radius) × h × 4 / √5²">
     </figure>
     <br>
@@ -4043,7 +4043,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </div>
 <br>
 <div style="margin:12px">
-<p itemprop="description">Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
+<p>Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
 <p>The volume of the missing tip:</p>
 <br>
 <span>V<sub>(tip)</sub> </span>=
@@ -4274,7 +4274,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
     </figure>
 <br>
 <div style="margin:12px">
-<span itemprop="name">V </span>=
+<span>V </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4463,7 +4463,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <section id="tetrahedron">
 <h3 style="margin:7px">Volume of a Tetrahedron</h3>
 <br>
-<figure class="imgbox" itemprop="image">
+<figure class="imgbox">
   <img class="center-fit" src="tetrahedron.jpeg" alt="Tetrahedron">
   </figure>
 <br>
@@ -4504,7 +4504,6 @@ The base is an equilateral triangle.</p>
       </msqrt>
   </mrow>
 </math>
-</div>
 </div>
 <br>
 <div style="margin:12px">
@@ -4749,7 +4748,7 @@ The base is an equilateral triangle.</p>
 </div>
 <br>
 <div style="margin:12px">
-<span itemprop="name">V<sub>(tetrahedron)</sub> </span>=
+<span>V<sub>(tetrahedron)</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4928,7 +4927,7 @@ This is never demonstrated. It is simply taken for granted.</p>
     <li>A polygon with its perimeter close enough to the circumference cannot remain outside the circle. It must cross the arc.</li>
 </ul>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
 </figure>
 <br>
@@ -4965,7 +4964,7 @@ The flaw in the classical method becomes even clearer when we try to implement i
 When attempting to draw a circumscribed 24-gon or 48-gon via exact angle bisection (central angle 15° → 7.5°), the tangent lines merge, overlap, or cross the arc — even in high-precision vector software. The individual sides become indistinguishable or intersect the circle before reaching distinct tangent points.
 This is not a precision or rendering error; it is the geometry refusing to produce a valid set of external tangents.</p>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="polygonApproximation.png" alt="When attempting to draw a circumscribed 24-gon via exact angle bisection (central angle 15°), the tangent lines merge, overlap, or cross the arc. The individual sides become indistinguishable or intersect the circle before reaching distinct tangent points.">
 </figure>
 <br>
@@ -5161,7 +5160,7 @@ That makes the arc value of 360° = 6.4radian, and trigonometric functions that 
 <br><br>
 <p>In the quadrant layout when the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</p>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="equityFigure.png" alt="Circle area">
     </figure>
 <br>
@@ -5565,7 +5564,7 @@ This is an identity; not tautology.
 <br><br>
 Circle area = square area</p>
 </div>
-<br><figure itemprop="image" class="imgbox">
+<br><figure class="imgbox">
     <img class="center-fit" src="circleArea.png" alt="Circle area">
 	</figure>
 </section>
@@ -5678,7 +5677,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <br><br>
 <p>A common method aiming to prove the pyramid volume formula "V = base × height / 3" involves dissecting a cube into three pyramids. Here’s how it’s typically presented:</p>
 <br>
-<figure class="imgbox" itemprop="image">
+<figure class="imgbox">
     <img class="center-fit" src="cubeDissection.jpeg" alt="Cube dissection">
 </figure>
 <br>
@@ -6251,7 +6250,7 @@ Dividing by a fraction means multiplying by the reciprocal of that fraction.</p>
 <section id="square">
 <h3 style="margin:7px">Area of a Square</h3>
 <br>
-<figure itemprop="image">
+<figure class="imgbox">
     <img class="center-fit" src="square.png" alt="A square is a 2 dimensional plane shape with 2 perpendicular pairs of parallel straight sides. Area = side × side = side²">
 </figure>
 <br>
@@ -6287,7 +6286,7 @@ A square is a rectangle with equal sides.</p>
 <section id="cube">
 <h3 style="margin:7px">Volume of a Cube</h3>
 <br>
-<figure itemprop="image" class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="cube.jpeg" alt="A cube is a 3 dimensional solid shape with 3 equal perpendicular pairs of parallel straight edges. V = edge × edge × edge = edge³">
     </figure>
 <br>
