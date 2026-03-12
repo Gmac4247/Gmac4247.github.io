@@ -125,49 +125,43 @@
     "@type": ["LearningResource", "MathSolver"],
     "@id": "https://basic-geometry.pages.dev#cgs",
     "name": "Core Geometric System™",
-    "headline": "Featuring The Core Geometric System™",
-    "description": "A self-contained geometric framework based on constructive first principles, offering exact formulas for real-world applications such as analysis, engineering design, graphics, and navigation.",
-    "inLanguage": "en",
-    "educationalLevel": "from basic to advanced",
-    "keywords": "Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation",
-    "isAccessibleForFree": true,
-    "isFamilyFriendly": true,
-    "typicalAgeRange": "5-105",
-    "timeRequired": "PT1D",
-	 "url": "https://basic-geometry.pages.dev",
-    "usageInfo": [
-      "Comparative Geometry: deriving areas and volumes from geometric relationships.",
-      "Scaling and Proportions: applying proportional reasoning for accurate calculations.",
-      "Algebraic Manipulation: simplifying equations to maintain consistency and precision."
-    ],
-    "educationalAlignment": {
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "For teachers and learners"
+    },
+	"educationalAlignment": {
       "@type": "AlignmentObject",
       "alignmentType": "educationalSubject",
       "educationalFramework": "Geometric framework",
       "targetName": "Core Geometric System™",
       "targetUrl": "https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev#cgs"
     },
-    "audience": {
-      "@type": "EducationalAudience",
-      "educationalRole": "For teachers and learners"
-    },
-    "disambiguatingDescription": [
-      "The system restores geometry to its constructive roots, focusing on shapes, areas, volumes, and physical reasoning rather than analytic limits or abstractions.",
-      "It differs from traditional analytic geometry by avoiding assumptions based on infinite processes or polygonal limits.",
-      "Circle and sphere properties are derived through direct geometric comparison rather than approximation-based methods."
-    ],
+	"headline": "Featuring The Core Geometric System™",
+    "description": "Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes. Featuring calculator tools.",
+    "disambiguatingDescription": "Comparing the properties of shapes directly to the square and the cube as the primary, physically relevant units of measurement via first principles instead of limits, approximations, or abstract, zero‑dimensional points.",
+	"inLanguage": "en",
+    "educationalLevel": "from basic to advanced",
+    "keywords": "Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation",
+    "isAccessibleForFree": true,
+    "isFamilyFriendly": true,
+    "typicalAgeRange": "5-105",
+    "timeRequired": "PT1D",
+	"url": "https://basic-geometry.pages.dev",
+    "usageInfo": "Deriving areas and volumes from geometric relationships ensuring accurate calculations via consistency and precision.",
 	"mathExpression": [
 	 {
-  "@type": "SolveMathAction",
-  "@id": "https://basic-geometry.pages.dev#circle",
-  "name": "Area of a Circle",
-  "eduQuestionType": "Circle area calculation",
-  "object":
-  {  
-  "@type": "QuantitativeValue", 
-  "name": "radius",
-  "minValue": 0
-  },
+  
+	"@type": "SolveMathAction",
+	"@id": "https://basic-geometry.pages.dev#circle",
+	"name": "Area of a Circle",
+	"eduQuestionType": "Circle area calculation",
+	"object":
+  
+	{  
+	"@type": "QuantitativeValue", 
+	"name": "radius",
+	"minValue": 0
+	},
 	"target": "https://basic-geometry.pages.dev?q={circle_radius=1_area=?}",
 	"actionProcess": {
     "@type": "HowTo",
@@ -266,7 +260,7 @@
   "minValue": 0
   },
 	"target": "https://basic-geometry.pages.dev?q={circle_radius=1_circumference=?}",
-  "actionProcess": {
+	"actionProcess": {
     "@type": "HowTo",
     "name": "Derive the circumference of a circle",
     "tool": 
@@ -345,7 +339,7 @@
 	  "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
       "value": "6.4×radius"
     },
-  "subjectOf": {
+	"subjectOf": {
     "@type": "SoftwareApplication",
     "name": "Circumference calculator",
     "description": "Calculates the circumference as 6.4×radius.",
@@ -599,7 +593,7 @@
 	{  
   "@type": "QuantitativeValue", 
   "name": "base",
-"name": "the side perpendicular to the height",
+  "description": "the side perpendicular to the height",
   "minValue": 0
   },
 	{  
