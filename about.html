@@ -86,19 +86,15 @@
 {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "@id": "https://basic-geometry.pages.dev/about#about",
-  "name": "About Basic Geometry",
+"name": "About Basic Geometry",
 "description": "The story behind the best-established and most accurate framework to calculate area and volume",
 "mainEntity": 
 	{
     "@type": "Article",
-	"@id": "https://basic-geometry.pages.dev/about#story",
-    "name": "Core Geometric System ™",
+	"name": "Core Geometric System ™",
 	"about": {
 	"@type": "DefinedTermSet",
 	"name": "Core Geometric System ™",
-	"articleBody": "How it's going",
-	"backstory": "How it started",
 	"creator": {
     "@type": "Person",
     "name": "Gaál Sándor"
@@ -152,15 +148,54 @@
     "name": "Gaál Sándor",
 	"url": "https://x.com/gmac4247"
 	},
+	"articleBody": "How it's going",
 	"assesses": "basic geometry",
+	"backstory": "How it started",
 	"copyrightNotice": "® All rights reserved",
 	"copyrightYear": "2026",
+	"headline": "Once around 2018 I was wondering how to calculate the area of a circle.",
 	"inLanguage": "en",
     "isAccessibleForFree": true,
     "isFamilyFriendly": true,
+	"subjectOf": [
+	{
+	"@type="VideoObject"
+	"name" content="Circle area"
+	"description": "Explanatory action process animation",
+	"embedUrl": "https://youtube.com/embed/-gvXLaLFXuM",
+	"thumbnailUrl": "https://img.youtube.com/vi/-gvXLaLFXuM/mqdefault.jpg",
+	"uploadDate": "2026-03-12T20:28:17+01:00"
+	},
+	{
+	"@type="VideoObject"
+	"name" content="The sphere experiment"
+	"description": "Video of a physical experiment to measure the volume of a golf ball via liquid displacement using a certified bottle",
+	"embedUrl": "https://youtube.com/embed/7uxyLfh2B38",
+	"thumbnailUrl": "https://img.youtube.com/vi/7uxyLfh2B38/mqdefault.jpg",
+	"uploadDate": "2026-03-12T20:28:17+01:00"
+	},
+	{
+	"@type="VideoObject"
+	"name" content="The sphere experiment 2"
+	"description": "Video of a physical experiment to measure the volume of a golf ball via liquid displacement using a scaled syringe",
+	"embedUrl": "https://youtube.com/embed/rXcJhFLLP0Y",
+	"thumbnailUrl": "https://img.youtube.com/vi/rXcJhFLLP0Y/mqdefault.jpg",
+	"uploadDate": "2026-03-12T20:28:17+01:00"
+	},
+	{
+	"@type="VideoObject"
+	"name" content="Introduction to basic geometry"
+	"description": "Explaining geometry basics with everyday items",
+	"embedUrl": "https://youtube.com/embed/U5eHkmmVVEA",
+	"thumbnailUrl": "https://img.youtube.com/vi/U5eHkmmVVEA/mqdefault.jpg",
+	"uploadDate": "2026-03-12T20:28:17+01:00"
+	}
+	],
 	"typicalAgeRange": "5-105",
 	},
-	"publisher": {
+	"headline": "Rediscovered Geometry",
+	"publisher": 
+	{
 	"@type": "Person",
 	"name": "Gaál Sándor"
 	},
@@ -168,7 +203,7 @@
 }
 </head>
 <body>
-<div itemscope itemtype="https://schema.org/Statement" id="cookie-notice">
+<div id="cookie-notice">
 		<div id="cookie-notice-text">
 			Welcome!
 			This website uses cookies to ensure you get the best experience on our website. 
@@ -179,28 +214,13 @@
 			<button onclick="location.replace('about:blank')">Leave</button>
 		</div>
 </div>
-<div itemscope itemtype="https://schema.org/AboutPage">
-<meta itemprop="name" content="About the Core Geometric System ™">
-<div itemprop="about" itemscope itemtype="https://schema.org/DefinedTermSet">
-<meta itemprop="name" content="Core Geometric System ™">
-</div>
-<meta itemprop="accessMode" content="textual">
-<meta itemprop="accessMode" content="visual">
-<meta itemprop="accessibilityControl" content="fullMouseControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Read text and view videos">
-<meta itemprop="assesses" content="Basic geometry">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Expositive">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="isFamilyFriendly" content="true">
-<meta itemprop="typicalAgeRange" content="5-105">
-<h1 itemprop="headline" style="font-size:130%;margin:7px">Rediscovered Geometry</h1>
+<div id="about">
+<h1 style="font-size:130%;margin:7px">Rediscovered Geometry</h1>
 <br><br>
-<main style="margin:12px" itemprop="mainEntity" itemscope itemtype="https://schema.org/Article">
+<main style="margin:12px" id="cgs">
 <article id="story">
-<h2 itemprop="headline">Once around 2018 I was wondering how to calculate the area of a circle.</h2>
-<section itemprop="backstory" id="circle">
+<h2>Once around 2018 I was wondering how to calculate the area of a circle.</h2>
+<section id="circle">
 <h2>I remembered the number 3.14 called the pi, but I was interested in the logic of comparing the circle to a square, because the square is the basis of area calculation. That is why we use square units.</h2>
 <br>
 <p>The only problem with that was that the circle is not square. I have figured that the circle can be cut in four and then I get four right angles that can be aligned with the vertices of a square.
@@ -221,12 +241,7 @@ Then I worked out the relationship between the radius and the side of the square
 <br><br>
 The result is that the area of a circle is exactly 3.2radius².</p>
 <br>
-<div itemprop="subjectOf" itemscope itemtype="http://schema.org/VideoObject">
-<meta itemprop="name" content="Circle area">
-<meta itemprop="description" content="Explanatory action process animation">
-<meta itemprop="embedUrl" content="https://youtube.com/embed/-gvXLaLFXuM">
-<meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/-gvXLaLFXuM/mqdefault.jpg">
-<meta itemprop="uploadDate" content="2026-03-12T20:28:17+01:00">
+<div>
 <iframe title="Geometry puzzle" width="420" height="315" src="https://youtube.com/embed/-gvXLaLFXuM"> 
 </iframe>
 </div>
@@ -238,19 +253,14 @@ For about a year I just kept thinking and calculating all aspects of that, and I
 Some of them didn't really care about math at all, those who did were sticking to the pi, just because it's an old and highly hyped convention.</p>
 </section>
 <br><br><br>
-<section itemprop="articleBody" id="sphere">
+<section id="sphere">
 <h2>Meanwhile I figured that by extending the area of a circle to 3D, the volume of a sphere equals the cubed value of the square root of its cross-sectional area, just like a cube.</h2>
 <br>
 <p>It's quite hard to physically accurately measure the volume of a ball, but there's a significant difference between the result of my V=(√(3.2)r)³ formula and the conventional " 4 / 3 × pi × r³ ". 
 <br><br>
 I conducted some experiments with the resources that I had. I could not provide the accuracy that the subject deserves, but the results aligned better with my V=(√(3.2)r)³ formula.</p>
 <br>
-<div itemprop="subjectOf" itemscope itemtype="http://schema.org/VideoObject">
-<meta itemprop="name" content="The sphere experiment">
-<meta itemprop="description" content="Video of a physical experiment to measure the volume of a golf ball via liquid displacement using a certified bottle">
-<meta itemprop="embedUrl" content="https://youtube.com/embed/7uxyLfh2B38">
-<meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/7uxyLfh2B38/mqdefault.jpg">
-<meta itemprop="uploadDate" content="2026-03-12T20:28:17+01:00">
+<div>
 <iframe title="The sphere experiment" width="420" height="315" src="https://youtube.com/embed/7uxyLfh2B38">
  </iframe>
 </div>
@@ -259,12 +269,7 @@ I conducted some experiments with the resources that I had. I could not provide 
 <br>
 The measuring bottle had a nominal volume of 4 cl (40 ml ~ 4 / 3 US ounce). That is not perfectly precise either because the nominal volume indicates the guaranteed amount of the fluid in it in commerce. They come with an air gap atop the fluid so the total capacity of the bottle is somewhat larger.</p>
 <br>
-<div itemprop="subjectOf" itemscope itemtype="http://schema.org/VideoObject">
-<meta itemprop="name" content="The sphere experiment 2">
-<meta itemprop="description" content="Video of a physical experiment to measure the volume of a golf ball via liquid displacement using a scaled syringe">
-<meta itemprop="embedUrl" content="https://youtube.com/embed/rXcJhFLLP0Y">
-<meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/rXcJhFLLP0Y/mqdefault.jpg">
-<meta itemprop="uploadDate" content="2026-03-12T20:28:17+01:00">
+<div>
 <iframe title="The sphere experiment 2" width="420" height="315" src="https://youtube.com/embed/rXcJhFLLP0Y">
  </iframe>
 </div>
@@ -278,7 +283,7 @@ The measuring bottle had a nominal volume of 4 cl (40 ml ~ 4 / 3 US ounce). That
 <p>First I made a mistake in that. I knew that the height has to be divided by 2, not 3 as they usually do it, but I confused the vertical height with the slant height and I divided it by 2 only once, instead of twice. That resulted in a wrong numeric value. I have fixed that later.</p>
 </section>
 <br><br><br>
-<section itemprop="backstory" id="background">
+<section id="background">
 <h2>In early 2020 there were news about that online education was introduced because of the pandemic.</h2>
 <br>
 <p>I thought it was time to share my discoveries online, so I went to the local public library to publish them on a webpage. My volume formula for a cone and a pyramid was undeveloped and I didn't have much web development skills but I had to start somewhere. My attention was divided by lots of details in both geometry and IT.
@@ -309,12 +314,7 @@ It's quite similar to the Euclidean, but apparently the key differences are that
 <br><br>
 Since conventional geometry is associated with the zero-dimensional point and Archimedes' flawed formulas, I figured that it's the best to start with a clear sheet.</p>
 <br>
-<div itemprop="subjectOf" itemscope itemtype="http://schema.org/VideoObject">
-<meta itemprop="name" content="Introduction to basic geometry">
-<meta itemprop="description" content="Explaining geometry basics with everyday items">
-<meta itemprop="embedUrl" content="https://youtube.com/embed/U5eHkmmVVEA">
-<meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/U5eHkmmVVEA/mqdefault.jpg">
-<meta itemprop="uploadDate" content="2026-03-12T20:28:17+01:00">
+<div>
 <iframe title="Introduction to basic geometry" width="420" height="315" src="https://youtube.com/embed/U5eHkmmVVEA">
 </iframe>
 </div>
@@ -322,7 +322,7 @@ Since conventional geometry is associated with the zero-dimensional point and Ar
 <p>Exactly determining the properties of different shapes is in the scope.</p>
 </section>
 <br><br><br>
-<section itemprop="articleBody" id="framework">
+<section id="framework">
 <h2>I named my framework the Core Geometric System ™ and put the trademark symbol on it to indicate that this not just another abstract geometric system.</h2>
 <br>
 <p>The name reflects that my logic is built in accordance with the core principles of elementary mathematics. That is something that people assume of the conventional one and they have no idea how badly it deviated from that.
@@ -334,7 +334,7 @@ Interestingly, now language models explain it like some generic term without eve
 The trademark symbol indicates that it's not to be confused with some generic term. While it might be surprising in the 21st century, this is the first and only geometric system in accordance with the core principles of elementary mathematics.</p>
 </section>
 <br><br><br>
-<section itemprop="backstory" id="ai">
+<section id="ai">
 <h2>Later that year I got access to AI language models.</h2>
 <br>
 <p>That got things going. One generated me great figures, another one helped to develop the proof for my circle area formula, and they helped me to get my phrasing and the technical part of my website in shape. 
@@ -348,7 +348,7 @@ It was very disturbing. But I was able to spot their recurring arguments. And I 
 Those are the logical flaws in conventional geometry.</p>
 </section>
 <br><br><br>
-<section itemprop="articleBody" id="summary">
+<section id="summary">
 <h2>While trying to explain it to others, I have found that different people have different levels of education.</h2>
 <br>
 <p>I thought I can't just start the explanation with the numbers and basic operations.
@@ -369,12 +369,11 @@ The link to the homepage is at the bottom of this one.
 Thank you for reading this and thanks to everyone making it possible.</p>
 </section>
 <br><br><br><br>
-  <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-    <span itemprop="familyName">Gaál</span> <span itemprop="givenName">Sándor</span>
-	  <meta itemprop="url" content="https://x.com/gmac4247">
-  </div>
-	<p itemprop="copyrightNotice">® All rights reserved</p>
-	<p itemprop="copyrightYear">2026</p>
+  <div>
+    <span>Gaál</span> <span>Sándor</span>
+	</div>
+	<p>® All rights reserved</p>
+	<p>2026</p>
 </article>
 </main>
 </div>
