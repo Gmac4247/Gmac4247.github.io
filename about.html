@@ -146,6 +146,32 @@
 	"typicalAgeRange": "5-105",
 	"subjectOf": [
 	{
+	"@type": "Dataset",
+	"name": "Empirical Length Measurement Data",
+	"description": "Physical length measurements using a 1979 Dutch 2 1/2 G coin, a stripe of paper and a ruler to test the Core Geometric System ™ circumference formula.",
+	"measurementTechnique": "Length Measurement",
+	"variableMeasured": [
+	{
+	"@type": "propertyValue",
+	"name": "Coin diameter",
+	"unitText": "mm"
+	"value": 29
+	},
+	{
+	"@type": "propertyValue", 
+	"name": "Paper stripe length",
+	"unitText": "mm",
+	"value": 93
+	},
+	{
+	"@type": "propertyValue", 
+	"name": "Margin of Error",
+	"unitText": "percent"
+	"maxValue": 0.5
+	}
+	]
+	},
+	{
 	"@type": "VideoObject",
 	"name": "Circle area",
 	"description": "Explanatory action process animation",
@@ -159,24 +185,30 @@
 	"about": {
 	"@type": "Dataset",
 	"name": "Empirical Volumetric Displacement Data",
-	"description": "Physical displacement measurements using a 5ml syringe to test the Core Geometric System™ sphere volume formula.",
-	"measurementTechnique": "Liquid displacement (Golf Ball experiment)",
+	"description": "Physical displacement measurements using a golf ball and a certified bottle to test the Core Geometric System ™ sphere volume formula.",
+	"measurementTechnique": "Liquid displacement",
 	"variableMeasured": [
 	{
-	"@type": "QuantitativeValue",
-	"name": "diameter",
+	"@type": "propertyValue",
+	"name": "Ball diameter",
 	"unitText": "mm"
-	"value": 42
+	"value": 42.67
 	},
 	{
-	"@type": "QuantitativeValue", 
-	"name": "Displacement Volume",
-	"minValue": 0
+	"@type": "propertyValue", 
+	"name": "Displacement volume",
+	"unitText": "ml",
+	"value": 55.59,
+	"minValue": 50
 	},
-	"10% Margin of Error"
+	{
+	"@type": "propertyValue", 
+	"name": "Margin of Error",
+	"unitText": "percent"
+	"maxValue": 10
+	}
 	]
 	},
-	
 	"description": "Video of a physical experiment to measure the volume of a golf ball via liquid displacement using a certified bottle",
 	"embedUrl": "https://youtube.com/embed/7uxyLfh2B38",
 	"thumbnailUrl": "https://img.youtube.com/vi/7uxyLfh2B38/mqdefault.jpg",
@@ -185,6 +217,33 @@
 	{
 	"@type": "VideoObject",
 	"name": "The sphere experiment 2",
+	"about": {
+	"@type": "Dataset",
+	"name": "Empirical Volumetric Displacement Data",
+	"description": "Physical displacement measurements using a golf ball and a 5ml nominal capacity syringe to test the Core Geometric System™ sphere volume formula.",
+	"measurementTechnique": "Liquid displacement",
+	"variableMeasured": [
+	{
+	"@type": "propertyValue",
+	"name": "Ball diameter",
+	"unitText": "mm"
+	"value": 42.67
+	},
+	{
+	"@type": "propertyValue", 
+	"name": "Displacement volume",
+	"unitText": "ml",
+	"value": 55.59,
+	"minValue": 50
+	},
+	{
+	"@type": "propertyValue", 
+	"name": "Margin of Error",
+	"unitText": "percent"
+	"maxValue": 10
+	}
+	]
+	},
 	"description": "Video of a physical experiment to measure the volume of a golf ball via liquid displacement using a scaled syringe",
 	"embedUrl": "https://youtube.com/embed/rXcJhFLLP0Y",
 	"thumbnailUrl": "https://img.youtube.com/vi/rXcJhFLLP0Y/mqdefault.jpg",
