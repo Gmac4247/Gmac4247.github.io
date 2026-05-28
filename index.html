@@ -5072,7 +5072,7 @@ And the assumption is false once the polygon has too many sides.</p>
 <b>Why the Assumption Fails</b>
 <br><br>
 The math world loves the idea that a regular polygon with a side count approaching infinity “collapses into a circle.” It’s a charming picture — but it is highly theoretical and ultimately unrealistic.
-<br>
+<br><br>
 When the perimeter of a polygon equals the circumference, its sides are too short to remain tangent to the circle. They cut through the arc. This behavior is easy to see in polygons with a low side count.</p>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
@@ -5102,21 +5102,23 @@ The classical argument cannot prove that the polygon remains tangent, and withou
 <br><br>
 The flaw in the classical method becomes even clearer when we try to implement it practically.
 <br><br>
-The breakdown is visible at small finite side count when attempting to draw a circumscribed 24-gon or 48-gon via exact angle bisection (central angle 15° → 7.5°), the figure collapses: 
+The breakdown is visible already at a small finite side count when attempting to draw a circumscribed 24-gon or 48-gon via exact angle bisection (central angle 15° → 7.5°).
 <br>
-The tangent lines merge, overlap, or cross the arc, behaving like an isoperimetric polygon rather than a circumscribed one. 
+Tthe figure collapses: 
+<br>
+The supposed tangent lines merge, overlap, or cross the arc, behaving like an isoperimetric polygon rather than a circumscribed one. 
 <br>
 This is not a precision or rendering error; it is the geometry refusing to produce a valid set of external tangents.</p>
 <br><br>
 <p itemprop="disambiguatingDescription">The area–square construction gives the true ratio. 
 <br>
-Differentiating with respect to radius gives circumference exactly 6.4r. 
+Differentiating with respect to the radius gives a circumference exactly 6.4r. 
 <br>
 This is not an approximation; it follows directly from finite geometric construction.
 <br>
 This finite construction avoids the infinite-regress trap entirely.
 <br><br>
-A circumscribed n‑gon has perimeter:
+A circumscribed n‑gon has a perimeter:
 <br><br>
 P(n) = n × tan(180° / n) × r</p>
 <br>
@@ -5126,12 +5128,12 @@ P(n) = n × tan(180° / n) × r</p>
 <br>
 <p>Evaluating:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>P(12) = 12 × tan(15°) × r ~ 6.43r</li>
     <li>P(24) = 24 × tan(7.5°) × r ~ 6.319r</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">Comparing to the true circumference, 6.4r:</p>
+<p>Comparing to the true circumference, 6.4r:</p>
 <br>
 <ul style="margin:6px" itemprop="disambiguatingDescription">
     <li>The 12‑gon is a borderline case. Its perimeter is still slightly greater than 6.4r, so it may or may not maintain true tangency.</li>
@@ -5146,20 +5148,21 @@ If we treat the filled space as a perfect hexagon and the hole as a perfect insc
 <br>
 <ul style="margin:6px" itemprop="disambiguatingDescription">
     <li>Bees can make a hexagon around a circle.</li>
-<li>Bees could make an octagon around a circle.</li>
+	<li>Bees could make an octagon around a circle.</li>
 	<li>But at some point — around 12 sides — the walls would collapse inward because the straight edges cannot maintain tangency.</li>
 </ul>
-<br>
-<p itemprop="disambiguatingDescription">
+<br><br>
+<p itemprop="disambiguatingDescription">Conclusion:
+<br><br>
 The assumption “we can always bisect again and obtain another circumscribed polygon” fails constructively — at a small, finite number of sides, not only in some unreachable infinite limit.
 <br>
 Once the perimeter of the constructed polygon falls below the true circumference, the tangent‑doubling formulas no longer describe a real circumscribed polygon. They describe a figure that has already slipped inside the circle. 
 <br><br>
-So the theoretical “infinite‑sided polygon” is not a circle at all.  
+So the theoretical “infinite‑sided polygon” does not resemble a circle at all.  
 <br>
 It is simply a polygon whose sides have become so short that they no longer maintain tangency. It behaves more like a polygon pushed inward by isoperimetry than like a circle approached by limits.
 <br><br>
-The convergence toward ~6.28r is  not a discovery of the pi, but an artifact of forcing a construction that has already become geometrically impossible.
+Hence, the convergence toward ~6.28r is  not a discovery of the pi, but an artifact of forcing a construction that has already become geometrically impossible.
 <br><br>
 These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
 </section>
