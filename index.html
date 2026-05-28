@@ -5063,12 +5063,12 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
   </mrow>
 </math>
 <br><br><br>
-p itemprop="disambiguatingDescription">But the entire method relies on the unproven assumption that every polygon produced by repeated angle bisection of a circumscribed polygon remains circumscribed.
+<p itemprop="disambiguatingDescription">But the entire method relies on the unproven assumption that every polygon produced by repeated angle bisection of a circumscribed polygon remains circumscribed.
 <br>
 This is never demonstrated. It is simply taken for granted.
 <br>
 And the assumption is false once the polygon has too many sides.</p>
-<br><br><br>
+<br><br>
 <b>Why the Assumption Fails</b>
 <br><br>
 The math world loves the idea that a regular polygon with a side count approaching infinity “collapses into a circle.” It’s a charming picture — but it is highly theoretical and ultimately unrealistic.
@@ -5089,14 +5089,12 @@ When the perimeter of a polygon equals the circumference, its sides are too shor
 </ul>
 <br>
 <p itemprop="disambiguatingDescription">Whether a polygon can be circumscribed about a circle depends on whether its perimeter is sufficiently greater than the circumference. 
-<br>
+<br><br>
 But the bisection procedure guarantees that each new perimeter created by repeatedly bisecting a circumscribed hexagon is smaller than the previous one. 
-<br>
+<br><br>
 To know if the polygons are still circumscribed at every finite step, you must already know if the perimeter is large enough that no crossing occurs.
 <br>
-Yet finding the circumference is the purpose of the method. The method therefore relies on the very assumption it seeks to prove. 
-<br><br>
-That is circular reasoning.
+Yet finding the circumference is the purpose of the method. The method therefore relies on the very assumption it seeks to prove. That is circular reasoning.
 <br><br>
 You cannot use the method to justify the assumption that makes the method valid.
 <br><br>
@@ -5104,11 +5102,12 @@ The classical argument cannot prove that the polygon remains tangent, and withou
 <br><br>
 The flaw in the classical method becomes even clearer when we try to implement it practically.
 <br><br>
-The breakdown is visible at small finite side count when attempting to draw a circumscribed 24-gon or 48-gon via exact angle bisection (central angle 15° → 7.5°), the tangent lines merge, overlap, or cross the arc. The individual sides become indistinguishable or intersect the circle before reaching distinct tangent points. This is not a precision or rendering error; it is the geometry refusing to produce a valid set of external tangents.
+The breakdown is visible at small finite side count when attempting to draw a circumscribed 24-gon or 48-gon via exact angle bisection (central angle 15° → 7.5°), the figure collapses: 
 <br>
-The figure collapses: instead of clear external tangents, the tangent lines for a 24‑gon or 48‑gon merge, overlap, or cut through the circle, behaving like an isoperimetric polygon rather than a circumscribed one.</p>
+The tangent lines merge, overlap, or cross the arc, behaving like an isoperimetric polygon rather than a circumscribed one. 
+<br>
+This is not a precision or rendering error; it is the geometry refusing to produce a valid set of external tangents.</p>
 <br><br>
-
 <p itemprop="disambiguatingDescription">The area–square construction gives the true ratio. 
 <br>
 Differentiating with respect to radius gives circumference exactly 6.4r. 
@@ -5132,7 +5131,7 @@ P(n) = n × tan(180° / n) × r</p>
     <li>P(24) = 24 × tan(7.5°) × r ~ 6.319r</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">If the true circumference is 6.4r, then:</p>
+<p itemprop="disambiguatingDescription">Comparing to the true circumference, 6.4r:</p>
 <br>
 <ul style="margin:6px" itemprop="disambiguatingDescription">
     <li>The 12‑gon is a borderline case. Its perimeter is still slightly greater than 6.4r, so it may or may not maintain true tangency.</li>
@@ -5152,17 +5151,16 @@ If we treat the filled space as a perfect hexagon and the hole as a perfect insc
 </ul>
 <br>
 <p itemprop="disambiguatingDescription">
-In reality, the perimeter of a circumscribed polygon is closest to the true circumference at around 12 sides. That is the point where the straight sides and the angles between them resemble the curvature of the arc most closely.
-	
 The assumption “we can always bisect again and obtain another circumscribed polygon” fails constructively — at a small, finite number of sides, not only in some unreachable infinite limit.
-<br><br>
+<br>
 Once the perimeter of the constructed polygon falls below the true circumference, the tangent‑doubling formulas no longer describe a real circumscribed polygon. They describe a figure that has already slipped inside the circle. 
-<br>So the theoretical “infinite‑sided polygon” is not a circle at all.  
+<br><br>
+So the theoretical “infinite‑sided polygon” is not a circle at all.  
+<br>
 It is simply a polygon whose sides have become so short that they no longer maintain tangency. It behaves more like a polygon pushed inward by isoperimetry than like a circle approached by limits.
 <br><br>
 The convergence toward ~6.28r is  not a discovery of the pi, but an artifact of forcing a construction that has already become geometrically impossible.
 <br><br>
-
 These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
 </section>
 <br><br><br>
