@@ -1067,25 +1067,23 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <span itemprop="name">V<sub>(sphere)</sub> </span>=
 <meta itemprop="value" content="( 4 × radius / 5^(1/2) )^3">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
   <msup>
-    <mrow>
-      <mo>(</mo>
-		<mfrac>
-		<mrow>
-      <mn>4</mn>
-	<mo>&#x2062;</mo> <!-- invisible times -->
-      <mi>r</mi>
-		</mrow>
-			<msqrt>
-        <mn>5</mn>
-      </msqrt>
-		</mfrac>
-      <mo>)</mo>
-    </mrow>
+    <mfenced open="(" close=")">
+      <mfrac>
+        <mrow>
+          <mn>4</mn>
+          <mo>&#x2062;</mo>
+          <mi>r</mi>
+        </mrow>
+        <mrow>
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+      </mfrac>
+    </mfenced>
     <mn>3</mn>
   </msup>
-</mrow>
 </math>
 </div>
 <br><br>
@@ -1163,7 +1161,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <h3 itemprop="name" style="margin:7px">Surface Area of a Sphere</h3>
 <meta itemprop="url" content="https://basic-geometry.github.io#sphere-surface">
 <br>
-<div class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<div class="imgbox" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
     <img class="center-fit" src="sphereSurface.jpeg" alt="sphere surface illustration">
 <div itemprop="creator" itemscope itemtype="https://schema.org/Person">
 <meta itemprop="familyName" content="Gaál">
@@ -4989,8 +4987,15 @@ By treating Archimedes' calculations as "fundamental truths," mainstream geometr
 This is why the formulas taught elsewhere differ from the ones derived in a purely constructive framework.</p>
 </section>
 <br><br><br>
-<section style="margin:12px" id="pi">
-<h4>For centuries, the circle has been a symbol of mathematical elegance — and the pi its most iconic constant.</h4>
+<section style="margin:12px" itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="pi">
+<meta itemprop="eduQuestionType" content="3.2 replaces pi">
+<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
+<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
+<meta itemprop="currency" content="USD">
+<meta itemprop="value" content="0">
+</div>
+<meta itemprop="totalTime" content="PT30M">
+<h3 itemprop="name" style="margin:7px">For centuries, the circle has been a symbol of mathematical elegance — and the pi its most iconic constant.</h4>
 <br> 
 <p>While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood. Some think 'Standard Geometry' means accepting the pi. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
 <br><br>
@@ -5332,8 +5337,33 @@ By focusing on area relationships and direct comparisons between shapes, these m
 These values are exact, rational, and logically derived. They can be verified numerically, but more importantly, they can be proven algebraically — without relying on infinite fractions, symbolic shortcuts, or flawed assumptions.
 <br><br>
 <strong>Since the true ratio is exactly 3.2, and that is a rational number, then we can — and should — write it as it is. Let the pi remain in the history books. Geometry deserves better.
-<br><br>
-That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.</strong>
+<br>
+<div itemscope itemtype="https://schema.org/DefinedTerm" itemid="#ratio-equivalence">
+  <meta itemprop="name" content="The 3.2 Universal Circle Ratio">
+  
+  <!-- MathML with Schema property binding -->
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" itemprop="mathExpression">
+    <mrow>
+      <mfrac>
+        <mrow><mtext>Area</mtext></mrow>
+        <mrow><msup><mi>radius</mi><mn>2</mn></msup></mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow><mtext>Circumference</mtext></mrow>
+        <mrow><mi>diameter</mi></mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mn>3.2</mn>
+      <mo>&#x2248;</mo>
+      <mn>3.14</mn>
+      <mo>&#x2248;</mo>
+      <mi>&#x03C0;</mi>
+    </mrow>
+  </math>
+</div>
+<br>
+<p itemprop="usageInfo">That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.</strong>
 </p>
 </section>
 </section>
