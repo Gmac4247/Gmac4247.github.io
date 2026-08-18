@@ -3646,35 +3646,44 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <p itemprop="abstract" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
-<p itemprop="description">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom areas.</p>
-<br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Height of the theoretical full pyramid">
-<span itemprop="name">H<sub>(pyramid)</sub> </span>=
-<meta itemprop="value" content="frustumHeight / (1 - topArea / bottomArea)">
+<meta itemprop="description" content="Volume of a frustum pyramid">
+<span itemprop="name">V<sub>(frustum)</sub> </span>=
+<meta itemprop="value" content="(bottomArea × pyramidHeight) / 8^(1/2) - (topArea × tipHeight) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
    <mfrac>
 	<mrow>
-          <msub>
-		<mi>H</mi>
-		<mi>(frustum)</mi>
-	</msub>
-		</mrow>
-			<mrow>
-			<mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
+		<msub>
+			<mi>A</mi>
+			<mi>(bottom)</mi>
+		</msub>
+		<mo>×</mo>
+		<msub>
+			<mi>H</mi>
+			<mi>(pyramid)</mi>
+		</msub>
+	</mrow>
+	<msqrt>
+        <mn>8</mn>
+	</msqrt>
+   </mfrac>
+	   <mo>-</mo>
+	<mfrac>
+	<mrow>
+		<msub>
+			<mi>A</mi>
+			<mi>(top)</mi>
+		</msub>
+		<mo>×</mo>
+		<msub>
+			<mi>H</mi>
+			<mi>(tip)</mi>
+		</msub>
+	</mrow>
+	<msqrt>
+        <mn>8</mn>
+	</msqrt>
 	</mfrac>
    </mrow>
 </math>
@@ -3683,43 +3692,44 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
-<p itemprop="description">The volume of the theoretical full pyramid:</p>
+<p itemprop="description">Factor out the common scalar 1/√8:</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of the theoretical full pyramid">
-<span itemprop="name">V<sub>(pyramid)</sub> </span>=
-<meta itemprop="value" content="bottomArea × frustumHeight / 8^(1/2) × ( 1 / ( 1 - topArea / bottomArea ) )">
+<span itemprop="name">V<sub>(frustum)</sub> </span>=
+<meta itemprop="value" content="1 / 8^(1/2) × ((bottomArea × pyramidHeight) - (topArea × tipHeight))">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-   <mrow>
-	<msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-	</msub>
-	   <mo>×</mo>
-	   <mfrac>
-      <mi>H</mi>
-	<msqrt>
+      <mrow>
+   <mfrac>
+	<mn>1</mn>
+	   <msqrt>
         <mn>8</mn>
-      </msqrt>
-</mfrac>
-	<mo>×</mo>
-	   <mfrac>
-        <mn>1</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-	</mfrac>
+	   </msqrt>
+	   </mfrac
+	 <mo>×</mo>
+		  <mo>(</mo>
+		<msub>
+			<mi>A</mi>
+			<mi>(bottom)</mi>
+		</msub>
+		<mo>×</mo>
+		<msub>
+			<mi>H</mi>
+			<mi>(pyramid)</mi>
+		</msub>
+	<mo>)</mo>
+	   <mo>-</mo>
+<mo>(</mo>
+		<msub>
+			<mi>A</mi>
+			<mi>(top)</mi>
+		</msub>
+		<mo>×</mo>
+		<msub>
+			<mi>H</mi>
+			<mi>(tip)</mi>
+		</msub>
+	<mo>)</mo>
    </mrow>
 </math>
 </div>
