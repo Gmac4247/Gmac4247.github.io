@@ -3737,6 +3737,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <p itemprop="description">Express heights via linear proportionality.
 <br><br>
 In similar 3D shapes, linear dimensions scale with the square root of their cross-sectional areas:</p>
+<br>
 <div>
 <meta itemprop="description" content="tipHeight / pyramidHeight = topArea^(1/2) / bottomArea^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3774,6 +3775,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="4">
 <p itemprop="description">Because H<sub>frustum</sub> = H<sub>pyramid</sub> - H<sub>tip</sub>, we express both heights in terms of the known frustum height H:</p>
+<br>
 <div>
 <meta itemprop="description" content="H = √At / √Ab">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3809,18 +3811,17 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </div>
 <br><br>
 <div>
+<br>
 <meta itemprop="description" content="H = √At / √Ab">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 		<mi>H</mi>
-		<mo>=</mo>
-	<msub>
+	   <mo>=</mo>
+	   <msub>
 			<mi>H</mi>
 			<mi>pyramid</mi>
 	</msub>
 	   <mo>×</mo>
-	   	   <mo>(</mo>
-	   <mn>1</mn>
 	   <mfrac>
         <msqrt>
         <msub>
@@ -3834,8 +3835,113 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 			<mi>bottom</mi>
 		</msub>
 		   </msqrt>
-		   	   <mo>)</mo>
+	   </mfrac>
+</mrow>
+</math>
+</div>
+<br><br>
+<div>
+<meta itemprop="description" content="H = √At / √Ab">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+		<msub>
+			<mi>H</mi>
+			<mi>pyramid</mi>
+		</msub>
+		<mo>=</mo>
+	<mfrac>
+			<mi>H</mi>
+	   	<mrow>
+	   <mn>1</mn>
+	   	   <mo>-</mo>
+	   <mfrac>
+        <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>top</mi>
+		</msub>
+		</msqrt>
+		   <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		</msub>
+		   </msqrt>
+		</mrow>
           </mfrac>
+</mrow>
+</math>
+</div>
+<br><br>
+<div>
+<meta itemprop="description" content="H = √At / √Ab">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+		<msub>
+			<mi>H</mi>
+			<mi>pyramid</mi>
+		</msub>
+		<mo>=</mo>
+	<mfrac>
+			<mi>H</mi>
+	   	<mrow>
+	   <mn>1</mn>
+	   	   <mo>-</mo>
+	   <mfrac>
+        <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>top</mi>
+		</msub>
+		</msqrt>
+		   <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		</msub>
+		   </msqrt>
+		</mrow>
+          </mfrac>
+</mrow>
+</math>
+</div>
+<br><br>
+<div>
+<p itemprop="description">To eliminate the fraction in the denominator, multiply both the numerator and denominator by √A<sub>bottom</sub>:</p>
+<br>
+<meta itemprop="description" content="H = √At / √Ab">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+	<msub>
+		<mi>H</mi>
+		<mi>pyramid</mi>
+	</msub>
+	   <mo>=</mo>
+	   <mfrac>
+		<mrow>
+		<mi>H</mi>
+	   	<mo>×</mo>
+			<msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		</msub>
+		   </msqrt>
+		</mrow>
+	   <mrow>
+		   <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		   </msub>
+	   	   <mo>-</mo>
+        <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>top</mi>
+		</msub>
+		</msqrt>
+	   </mrow>
+	   </mfrac>
 </mrow>
 </math>
 </div>
