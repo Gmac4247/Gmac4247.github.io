@@ -3648,7 +3648,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <meta itemprop="position" content="1">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of a frustum pyramid">
-<span itemprop="name">V<sub>(frustum)</sub> </span>=
+<span itemprop="name">V<sub>frustum</sub> </span>=
 <meta itemprop="value" content="(bottomArea × pyramidHeight) / 8^(1/2) - (topArea × tipHeight) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -3656,12 +3656,12 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 	<mrow>
 		<msub>
 			<mi>A</mi>
-			<mi>(bottom)</mi>
+			<mi>bottom</mi>
 		</msub>
 		<mo>×</mo>
 		<msub>
 			<mi>H</mi>
-			<mi>(pyramid)</mi>
+			<mi>pyramid</mi>
 		</msub>
 	</mrow>
 	<msqrt>
@@ -3673,12 +3673,12 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 	<mrow>
 		<msub>
 			<mi>A</mi>
-			<mi>(top)</mi>
+			<mi>top</mi>
 		</msub>
 		<mo>×</mo>
 		<msub>
 			<mi>H</mi>
-			<mi>(tip)</mi>
+			<mi>tip</mi>
 		</msub>
 	</mrow>
 	<msqrt>
@@ -3692,12 +3692,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
-<p itemprop="description">Factor out the common scalar 1/√8:</p>
-<br>
+<p itemprop="description">Factor out the common scalar 1/√8 :</p>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of the theoretical full pyramid">
-<span itemprop="name">V<sub>(frustum)</sub> </span>=
-<meta itemprop="value" content="1 / 8^(1/2) × ((bottomArea × pyramidHeight) - (topArea × tipHeight))">
+<meta itemprop="description" content="Volume of a frustum pyramid">
+<span itemprop="name">V<sub>frustum</sub> </span>=
+<meta itemprop="value" content="1 / 8^(1/2) × (bottomArea × pyramidHeight - topArea × tipHeight)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
       <mrow>
    <mfrac>
@@ -3710,24 +3709,22 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 		  <mo>(</mo>
 		<msub>
 			<mi>A</mi>
-			<mi>(bottom)</mi>
+			<mi>bottom</mi>
 		</msub>
 		<mo>×</mo>
 		<msub>
 			<mi>H</mi>
-			<mi>(pyramid)</mi>
+			<mi>pyramid</mi>
 		</msub>
-	<mo>)</mo>
 	   <mo>-</mo>
-<mo>(</mo>
 		<msub>
 			<mi>A</mi>
-			<mi>(top)</mi>
+			<mi>top</mi>
 		</msub>
 		<mo>×</mo>
 		<msub>
 			<mi>H</mi>
-			<mi>(tip)</mi>
+			<mi>tip</mi>
 		</msub>
 	<mo>)</mo>
    </mrow>
@@ -3737,51 +3734,108 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3">
-<p itemprop="description">Subtracting the frustum height from the extended height gives the height of the missing tip.</p>
-</div>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
-<p itemprop="description">The volume of the missing tip:</p>
-<br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of the missing tip">
-<span itemprop="name">V<sub>(tip)</sub> </span>=
-<meta itemprop="value" content="topArea × frustumHeight / 8^(1/2) ×  ( 1 / ( 1 - topArea / bottomArea ) - 1 )">
+<p itemprop="description">Express heights via linear proportionality.
+<br><br>
+In similar 3D shapes, linear dimensions scale with the square root of their cross-sectional areas:</p>
+<div>
+<meta itemprop="description" content="tipHeight / pyramidHeight = topArea^(1/2) / bottomArea^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
+	   <mfrac>
+      <msub>
+			<mi>H</mi>
+			<mi>tip</mi>
+	  </msub>
 	<msub>
-		<mi>A</mi>
-		   <mi>(top)</mi>
+			<mi>H</mi>
+			<mi>pyramid</mi>
+	</msub>
+</mfrac>
+	<mo>=</mo>
+	   <mfrac>
+        <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>top</mi>
+		</msub>
+		</msqrt>
+		   <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		</msub>
+		   </msqrt>
+          </mfrac>
+</mrow>
+</math>
+</div>
+</div>
+<br>
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="4">
+<p itemprop="description">Because H<sub>frustum</sub> = H<sub>pyramid</sub> - H<sub>tip</sub>, we express both heights in terms of the known frustum height H:</p>
+<div>
+<meta itemprop="description" content="H = √At / √Ab">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+		<mi>H</mi>
+		<mo>=</mo>
+	<msub>
+			<mi>H</mi>
+			<mi>pyramid</mi>
+	</msub>
+	   <mo>-</mo>
+	<msub>
+			<mi>H</mi>
+			<mi>pyramid</mi>
 	</msub>
 	   <mo>×</mo>
 	   <mfrac>
-      <mi>H</mi>
-	<msqrt>
-        <mn>8</mn>
-      </msqrt>
-</mfrac>
-	<mo>×</mo>
-	   <mo>(</mo>
-	   <mfrac>
-        <mn>1</mn>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-			</msub>
+        <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>top</mi>
+		</msub>
+		</msqrt>
+		   <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		</msub>
+		   </msqrt>
           </mfrac>
-        </mrow>
-	</mfrac>
-	   <mo>-</mo>
-      <mn>1</mn>
-   <mo>)</mo>
+</mrow>
+</math>
+</div>
+<br><br>
+<div>
+<meta itemprop="description" content="H = √At / √Ab">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+		<mi>H</mi>
+		<mo>=</mo>
+	<msub>
+			<mi>H</mi>
+			<mi>pyramid</mi>
+	</msub>
+	   <mo>×</mo>
+	   	   <mo>(</mo>
+	   <mn>1</mn>
+	   <mfrac>
+        <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>top</mi>
+		</msub>
+		</msqrt>
+		   <msqrt>
+        <msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+		</msub>
+		   </msqrt>
+		   	   <mo>)</mo>
+          </mfrac>
 </mrow>
 </math>
 </div>
