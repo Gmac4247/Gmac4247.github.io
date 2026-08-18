@@ -4009,7 +4009,6 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <p itemprop="description">Substitute the heights into the original equation:</p>
-<br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of a frustum pyramid">
 <span itemprop="name">V<sub>frustum</sub> </span>=
@@ -4150,6 +4149,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 			<mi>A</mi>
 			<mi>bottom</mi>
 		   </msub>
+		   </msqrt>
 	   	   <mo>-</mo>
         <msqrt>
         <msub>
@@ -4199,8 +4199,8 @@ The term inside the parentheses is the algebraic quotient:</p>
 </math>
 </div>
 <br><br>
-<p itemprop="description">Using the standard difference of cubes factorization:</p>
 <div>
+<p itemprop="description">Using the standard difference of cubes factorization:</p>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4237,85 +4237,106 @@ The term inside the parentheses is the algebraic quotient:</p>
 </mrow>
 </math>
 </div>
-</div>
 <br><br>
-</div>
-<br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum pyramid volume formula">
-<span itemprop="name">V<sub>(frustum)</sub> </span>=
-<meta itemprop="value" content="frustumHeight × ( bottomArea / (1 - topArea / bottomArea) - ( topArea / (1 - topArea / bottomArea) - topArea ) ) / 8^(1/2)">
+<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="8">
+<p itemprop="description">Convert back to area terms:</p>
+<div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
-	<mfrac>
-      <mi>H</mi>
-	<msqrt>
-        <mn>8</mn>
-      </msqrt>
-	</mfrac>
-		<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mrow>
-		<msub>
-		<mi>A</mi>
-		<mi>(bottom)</mi>
-		</msub>
+	<msup>
+		<mi>a</mi>
+	<mn>2</mn>
+	</msup>
+		<mo>=</mo>
+		<msup>
+		<mrow>
+			<msqrt>
+			<msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+			</msub>
+			</msqrt>
 		</mrow>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-			  <msub>
-            <mi>A</mi>
-				<mi>(bottom)</mi>
-			  </msub>
-          </mfrac>
-        </mrow>
-      </mfrac>
-      <mo>-</mo>
-      <mo>(</mo>
-	<mfrac>
-        <mrow>
-		<msub>
+	<mn>2</mn>
+		</msup>
+	<mo>=</mo>
+	<msub>
 		<mi>A</mi>
-		<mi>(top)</mi>
-		</msub>
-		</mrow>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-			</msub>
-            <msub>
-            <mi>A</mi>
-				<mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-      </mfrac>
-      <mo>-</mo>
-      <msub>
-				<mi>A</mi>
-				<mi>(top)</mi>
-				</msub>
-      <mo>)</mo>
-      <mo>)</mo>
+		<mi>bottom</mi>
+	</msub>
 </mrow>
-  </math>
+</math>
+<br><br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+		<mi>a</mi>
+	<mo>&#x2062;</mo>
+	<mi>b</mi>
+		<mo>=</mo>
+			<msqrt>
+			<msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+			</msub>
+			</msqrt>
+		<mo>&#x2062;</mo>
+		<msqrt>
+			<msub>
+			<mi>A</mi>
+			<mi>top</mi>
+			</msub>
+		</msqrt>
+			<mo>=</mo>
+			<msqrt>
+			<mrow>
+			<msub>
+			<mi>A</mi>
+			<mi>bottom</mi>
+			</msub>
+			<mo>&#x2062;</mo>
+				<msub>
+			<mi>A</mi>
+			<mi>top</mi>
+				</msub>
+			</mrow>
+			</msqrt>
+</mrow>
+</math>
+<br><br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msup>
+		<mi>b</mi>
+	<mn>2</mn>
+	</msup>
+		<mo>=</mo>
+		<msup>
+		<mrow>
+			<msqrt>
+			<msub>
+			<mi>A</mi>
+			<mi>top</mi>
+			</msub>
+			</msqrt>
+		</mrow>
+	<mn>2</mn>
+		</msup>
+	<mo>=</mo>
+	<msub>
+		<mi>A</mi>
+		<mi>top</mi>
+	</msub>
+</mrow>
+</math>
 </div>
-<br><br>
-<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="http://schema.org/PropertyValue">
-<span itemprop="description">The volume of a frustum can also be calculated via a simplified formula.</span>
-<br><br>
-<span itemprop="name">V </span>=
+</div>
+</div>
+<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="description">Replacing the term inside the fraction gives:</span>
+<meta itemprop="description" content="Exact frustum pyramid volume formula">
+<br>
+<span itemprop="name">V<sub>(frustum)</sub> </span>=
 <meta itemprop="value" content="frustumHeight × ( bottomArea + topArea + bottomArea × topArea ) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
