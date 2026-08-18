@@ -3693,7 +3693,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
 <span itemprop="description">Factor out the common scalar 1/√8 :</span>
-<br>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of a frustum pyramid">
 <span itemprop="name">V<sub>frustum</sub> </span>=
@@ -3738,7 +3738,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <span itemprop="description">Express heights via linear proportionality.
 <br>
 In similar 3D shapes, linear dimensions scale with the square root of their cross-sectional areas:</span>
-<br>
+<br><br>
 <div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -3775,7 +3775,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="4">
 <span itemprop="description">Because H<sub>frustum</sub> = H<sub>pyramid</sub> - H<sub>tip</sub> , we express both heights in terms of the known frustum height H:</span>
-<br>
+<br><br>
 <div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -3876,7 +3876,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="description">To eliminate the fraction in the denominator, multiply both the numerator and denominator by √A<sub>bottom</sub>:</span>
-<br>
+<br><br>
 <meta itemprop="description" content="Volume of the theoretical full pyramid">
 <span itemprop="name">H<sub>pyramid</sub> </span>=
 <meta itemprop="value" content="height × √bottomArea / √topArea - √bottomArea">
@@ -3933,10 +3933,12 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   </msqrt>
 		</mrow>
 	   <mrow>
+		   <msqrt>
 		   <msub>
 			<mi>A</mi>
 			<mi>bottom</mi>
 		   </msub>
+		   </msqrt>
 	   	   <mo>-</mo>
         <msqrt>
         <msub>
@@ -3967,7 +3969,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="description">Cancel out the common √A<sub>bottom</sub> term in the numerator and denominator:</span>
-<br>
+<br><br>
 <meta itemprop="description" content="Volume of a frustum pyramid">
 <span itemprop="name">H<sub>tip</sub> </span>=
 <meta itemprop="value" content="height × √topArea / √bottomArea - √topArea">
@@ -4008,7 +4010,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <span itemprop="description">Substitute the heights into the original equation:</span>
-<br>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of a frustum pyramid">
 <span itemprop="name">V<sub>frustum</sub> </span>=
@@ -4100,7 +4102,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="6">
 <span itemprop="description">Factor out H:</span>
-<br>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Volume of a frustum pyramid">
 <span itemprop="name">V<sub>frustum</sub> </span>=
@@ -4172,7 +4174,7 @@ Let a = √A<sub>bottom</sub> and b = √A<sub>top</sub> .
 Notice that a³ = √A<sub>bottom</sub> × A<sub>bottom</sub> and b³ = √A<sub>top</sub> × A<sub>top</sub> .
 <br>
 The term inside the parentheses is the algebraic quotient:</span>
-<br>
+<br><br>
 <div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4200,7 +4202,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 <br><br>
 <div>
 <span itemprop="description">Using the standard difference of cubes factorization:</span>
-<br>
+<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4238,11 +4240,12 @@ The term inside the parentheses is the algebraic quotient:</span>
 </mrow>
 </math>
 </div>
+</div>
 <br><br>
 <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="8">
 <span itemprop="description">Convert back to area terms:</span>
-<br>
+<br><br>
 <div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4338,7 +4341,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="description">Replacing the term inside the fraction gives:</span>
 <meta itemprop="description" content="Exact frustum pyramid volume formula">
-<br><br>
+<br><br><br>
 <span itemprop="name">V<sub>(frustum)</sub> </span>=
 <meta itemprop="value" content="frustumHeight × ( bottomArea + topArea + bottomArea × topArea ) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4498,96 +4501,10 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
 <meta itemprop="contentUrl" content="https://basic-geometry.github.io/frustumCone.jpeg">
 </figure>
-<br>
+<br><br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum cone volume formula">
 <span itemprop="name">V </span>=
-<meta itemprop="value" content="3.2 × frustumHeight × ( bottomRadius^2 / (1 - topRadius / bottomRadius ) - ( topRadius^2 / ( 1 - topRadius / bottomRadius) - topRadius^2 ) ) / 8^(1/2)">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mfrac>
-	<mrow>
-		<mn>3.2</mn>
-<mo>×</mo>
-      <mi>H</mi>
-	</mrow>
-	<msqrt>
-        <mn>8</mn>
-      </msqrt>
-</mfrac>
-	<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mrow>
-      <msup>
-			<msub>  
-        <mi>r</mi>
-			<mi>(bottom)</mi>
-			</msub>
-        <mn>2</mn>
-	  </msup>
-		</mrow>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-          <mfrac>
-            <msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-            <msub>  
-        <mi>r</mi>
-			<mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-      </mfrac>
-      <mo>-</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mrow>
-      <msup>
-			<msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-        <mn>2</mn>
-	  </msup>
-		</mrow>
-        <mrow>
-          <mn>1</mn>
-          <mo>-</mo>
-<mfrac>
-            <msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-            <msub>  
-        <mi>r</mi>
-			<mi>(bottom)</mi>
-			</msub>
-          </mfrac>
-        </mrow>
-      </mfrac>
-      <mo>-</mo>
-      <msup>
-			<msub>  
-        <mi>r</mi>
-			<mi>(top)</mi>
-			</msub>
-        <mn>2</mn>
-	  </msup>
-      <mo>)</mo>
-      <mo>)</mo>
-</mrow>
-  </math>
-</div>
-<br><br>
-<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="http://schema.org/PropertyValue">
-<span itemprop="description">The volume of a frustum cone can also be calculated via a simplified formula.</span>
-<br><br>
-<span itemprop="name">V </span>=
-<meta itemprop="value" content="3.2 × frustumHeight × ( bottomRadius^2 + topRadius^2 + bottomRadius × topRadius ) / 8^(1/2)">
+<meta itemprop="value" content="3.2 × height × ( bottomRadius^2 + topRadius^2 + bottomRadius × topRadius ) / 8^(1/2)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
