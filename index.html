@@ -618,6 +618,141 @@
 
 {
   "@type": "SolveMathAction",
+  "@id": "https://basic-geometry.pages.dev#cylinder",
+  "name": "Volume of a cylinder",
+  "eduQuestionType": "Cylinder volume calculation",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": 0
+  },
+{  
+  "@type": "QuantitativeValue", 
+  "name": "height",
+  "minValue": 0
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={cylinder_radius=1_height=3_volume=?}",
+  "actionProcess": {
+    "@type": "HowTo",
+    "name": "Derive the volume of a cylinder",
+        "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Circle area formula",
+    "description": [
+	  "Exact, physical area of a circle.",
+	  "Direct circle-to-square comparison."
+	  ],
+	"disambiguatingDescription": "Not the traditional, abstract pi≈3.14... approximate.",
+	"item":
+		{
+    "@type": "PropertyValue",
+    "name": "Area of a circle", 
+    "value": "3.2 × radius^2",
+	"description": [
+	  "Universally applicable formula to calculate the exact physical area of a circle in terms of its radius.",
+	  "Derived via cutting the circle into four quadrants, placing them with their origin on the vertices of a square with side = 4radius / 5^(1/2)."
+	  ]
+  }
+    },
+	"totalTime": "PT30M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": 0
+    },
+    "image": {
+      "@type": "ImageObject",
+	"caption": "Volume of a Cylinder",
+      "url": "cylinder.jpg",
+	"creator": {
+    "@type": "Person",
+    "familyName": "Gaál",
+	"givenName": "Sándor",
+	"url": "https://x.com/gmac4247"
+	},
+	"copyrightHolder": {
+    "@type": "Person",
+    "familyName": "Gaál",
+	"givenName": "Sándor",
+	"url": "https://x.com/gmac4247"
+  },
+	"copyrightNotice": "© All rights reserved",
+	"copyrightYear": "2026",
+	"creditText": "Made with the help of Microsoft Copilot",
+	"license": "https://basic-geometry.pages.dev",
+	"acquireLicensePage": "https://basic-geometry.pages.dev/privacy-policy",
+    "description": "Cylinder figure"
+    },
+    "step": 
+      {
+        "@type": "HowToStep",
+        "position": 1,
+		  "description": "The base of the cylinder is a circle.",
+        "about": {
+          "@type": "PropertyValue",
+          "name": "Base area",
+            "value": "3.2×radius^2",
+			"description": "Base area of the cylinder"
+        }
+      }
+	},
+    "result": 
+	{
+    "@type": "DefinedTerm",
+    "name": "Volume of a cylinder",
+	"description": "The volume of a cylinder equals its base area multiplied by its height.",
+	"identifier":
+		{
+    "@type": "PropertyValue",
+    "name": "Volume of a cylinder", 
+	"value": "3.2 × radius^2 × height",
+	"description": "Exact cylinder volume formula"
+  }
+},
+  "subjectOf": {
+    "@type": "SoftwareApplication",
+    "name": "Cylinder volume calculator",
+    "description": "Calculates the volume of a cylinder as 3.2×radius^2×height",
+    "disambiguatingDescription": "Base are not calculated with the abstract pi≈3.14... approximation",
+    "applicationCategory": "Geometric Calculator",
+    "featureList": "Exact cylinder volume calculation",
+    "inLanguage": "en",
+    "interactivityType": "Active",
+    "isAccessibleForFree": true,
+    "isFamilyFriendly": true,
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": 9,
+	"worstRating": 0,
+    "ratingValue": 9,
+    "reviewCount": 1
+	},
+	"offers": {
+    "@type": "Offer",
+	"name": "Personal, non-commercial use",
+	"description": "Non-exclusive, non-transferable", 
+	"price": 0,
+    "priceCurrency": "USD"
+	},
+	"license": "https://basic-geometry.pages.dev",
+	"acquireLicensePage": "https://basic-geometry.pages.dev/privacy-policy",
+	"accessMode": "mathOnVisual",
+    "accessibilityControl": [
+	  "fullKeyboardControl",
+	  "fullTouchControl"
+	  ],
+    "accessibilityHazard": "none",
+    "accessibilitySummary": "Enter numbers and read results",
+    "operatingSystem": "Web",
+    "url": "https://basic-geometry.pages.dev#sphere_volume_calculator"
+  }
+},
+
+{
+  "@type": "SolveMathAction",
   "@id": "https://basic-geometry.pages.dev#cone-volume",
   "name": "Volume of a Cone",
   "eduQuestionType": "Cone volume calculation",
