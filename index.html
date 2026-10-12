@@ -5788,9 +5788,8 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 <br><br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="pi-approximation">
 <span itemprop="name">The approximate circumference to diameter ratio, based on the polygonal limits</span>:
-<br><br>
 <meta itemprop="value" content="sin(180°/n)n<3.14...<sin(180°/n)n/cos(180°/n)">
-<br>
+<br><br>
 <math>
   <mrow>
     <mi>n</mi>
@@ -5840,11 +5839,9 @@ That is never demonstrated; it is simply taken for granted.
 <br><br>
 Traditional geometry defines "circumscribed" by specifying that every polygon side lies on a line tangent to the circle — where a tangent is defined as touching at exactly one single point. 
 <br>
-That is an abstract declaration; not an accurate observation, nor a true axiom.
+That is an abstract declaration; not an accurate observation, nor a true axiom.</strong>
 <br><br>
 Why that is pivotal:
-<br><br>
-The premise of each side touching at only one point is meant to guarantee that the vertices lay strictly outside of the circle, hence the triangle formed by the tangent point, vertex, and midpoint should structurally contain the entire circle slice, forcing the straight side to be strictly longer than the arc.</strong>
 <br><br>
 A circumscribed regular polygon can be divided into as many isosceles triangles, as many sides it has. The base of each one is a side of the polygon.</p>
 <br><br>
@@ -5853,7 +5850,6 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 <br><br>
 <span itemprop="name">A </span>=
 <meta itemprop="value" content="sin(180°/side count) × r^2"> 
-<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mo>sin</mo>
@@ -5865,7 +5861,7 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 <mn>180</mn>
 <mo>&#xB0;</mo>
 </mrow>
-<mi>side count</mi>
+<mi>n</mi>
 </mfrac>
 <mo>)</mo>
 </mrow>
@@ -5883,12 +5879,11 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 <br><br>
 <span itemprop="name">A </span>=
 <meta itemprop="value" content="circle area / side count"> 
-<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mi>circle area</mi>
-<mi>side count</mi>
+<mi>n</mi>
 </mfrac>
 </mrow>
 </math>
@@ -5899,7 +5894,6 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 <br><br>
 <span itemprop="name">C </span>=
 <meta itemprop="value" content="2 × circle area / radius"> 
-<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -5914,8 +5908,81 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 </math>
 </div>
 <br><br>
-	
-According to traditional geometry, 
+<p itemprop="articleBody">The premise of each side touching at only one point is meant to guarantee that the vertices lay strictly outside of the circle, hence the triangle formed by the tangent point, vertex, and midpoint should structurally contain the entire circle slice, forcing the straight side to be strictly longer than the arc:</strong>
+<br>
+<div>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn>
+<mo>&#x2062;</mo> <!-- Invisible times -->
+<mi>circle area</mi>
+</mrow>
+<mi>r</mi>
+<mo>&#x00D7;</mo>
+<mi>n</mi>
+</mfrac>
+<mo>&#x00B0;</mo>
+<mo>sin</mo>
+<mo>&#x2061;</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>180</mn>
+<mo>&#xB0;</mo>
+</mrow>
+<mi>n</mi>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>&#x2062;</mo> <!-- Invisible times -->
+<mi>r</mi>
+</mrow>
+</math>
+</div>
+<br><br>
+<p itemprop="articleBody"><strong>In reality, whether a polygon can be circumscribed about a circle depends on whether its perimeter is sufficiently greater than the circumference. 
+<br><br>
+When the perimeter of a regular polygon equals — or is close enough to — the circumference, the sides are too short to remain tangent to the circle; they cut through the arc.</strong>
+<br><br>
+This behavior is easy to see in polygons with a low side count.</p>
+<br>
+<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+    <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
+<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
+<meta itemprop="familyName" content="Gaál">
+<meta itemprop="givenName" content="Sándor">
+</div>
+<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+<meta itemprop="familyName" content="Gaál">
+<meta itemprop="givenName" content="Sándor">
+</div>
+<meta itemprop="copyrightNotice" content="® All rights reserved">
+<meta itemprop="copyrightYear" content="2026">
+<meta itemprop="creditText" content="Made with the help of Vectorink.io">
+<link itemprop="license" href="https://basic-geometry.pages.dev">
+<meta itemprop="acquireLicensePage" content="https://basic-geometry.pages.dev/privacy-policy">
+<meta itemprop="contentUrl" content="https://basic-geometry.pages.dev/isoperimetry.png">
+<link itemprop="url" href="https://basic-geometry.pages.dev">
+</figure>
+<br>
+<p itemprop="articleBody"><strong>The bisection procedure guarantees that each new perimeter created by repeatedly bisecting a circumscribed hexagon is smaller than the previous one. 
+<br>
+To know if the polygons are still circumscribed at every finite step, you must already know if the perimeter is large enough that no crossing occurs.
+<br>
+Yet finding the circumference is the purpose of the method. 
+<br>
+Archimedes totally discarded that, because he relied entirely on the premise of single-point tangency.
+<br>
+This is the critical flaw at the very foundation of the method.
+<br><br>
+It's easy to overlook the lack of single-point tangency in the case of a circumscribed hexagon, because it doesn't matter at all.
+<br>
+But it becomes critical at higher side counts and smaller angles. When the protruding area shrinks below the area where the side and the arc overlap, the triangle stops fully "containing" the slice, and the comparison becomes invalid.</strong>
+<br><br>
+According to traditional geometry,</p>
 <br>
 <ul style="margin:6px" itemprop="articleBody">
     <li>"a point is dimensionless, meaning it has no width, nor height — or width = 0, height = 0"</li> 
@@ -5928,7 +5995,7 @@ The tangent point T and its two adjacent points T₋₁ and T₊₁ form a 3‑p
 <br>
 Classical geometry insists that these adjacent points must not coincide with the arc, which implicitly requires a non-zero separation between the tangent line and the points adjacent to the tangent point on the circular arc.
 <br>
-In other words, no matter how small the central angle becomes, the distance between the tangent line and the arc is strictly non-zero for any point other than T. 
+In other words, no matter how small the central angle becomes, the separation between the tangent line and the arc is strictly non-zero for any point other than T. 
 <br>
 This separation is never quantified, because classical geometry assumes infinite resolution. The classical framework relies on an idealized continuum where space is arbitrarily divisible. 
 <br><br>
@@ -6006,46 +6073,6 @@ For any macro-scale circle, the central angle subtended by three contiguous spat
 </figure>
 <br>
 <p itemprop="articleBody">The points representing the arc and the points representing the line occupy the same spatial locations, meaning single‑point tangency dissolves into a shared, multi‑point tangent section. The arc and the line segment become indistinguishable across a finite interval — they physically and logically coincide. 
-<br><br>
-
-<br><br>
-Whether a polygon can be circumscribed about a circle depends on whether its perimeter is sufficiently greater than the circumference. 
-<br><br>
-When the perimeter of a regular polygon equals — or is close enough to — the circumference, the sides are too short to remain tangent to the circle; they cut through the arc.
-<br><br>
-This behavior is easy to see in polygons with a low side count.</p>
-<br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
-    <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.pages.dev/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.pages.dev/isoperimetry.png">
-<link itemprop="url" href="https://basic-geometry.pages.dev">
-</figure>
-<br>
-<p itemprop="articleBody">To know if the polygons are still circumscribed at every finite step, you must already know if the perimeter is large enough that no crossing occurs.
-<br>
-Yet finding the circumference is the purpose of the method. 
-<br><br>
-The bisection procedure guarantees that each new perimeter created by repeatedly bisecting a circumscribed hexagon is smaller than the previous one. 
-<br>
-<br>
-This is the critical flaw at the very foundation of the method. 
-<br><br>
-It's easy to overlook the lack of single-point tangency in the case of a circumscribed hexagon, because it doesn't matter at all.
-<br>
-But it becomes critical at higher side counts and smaller angles. When the protruding area shrinks below the area where the side and the arc overlap, the triangle stops fully "containing" the slice, and the comparison becomes invalid.
 <br><br>
 This breakdown becomes structurally evident at surprisingly modest side counts. When attempting to construct or model a circumscribed 24-gon with central angles of 15°, the required vertex clearance approaches spatial insignificance.
 <br><br>
