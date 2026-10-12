@@ -5740,6 +5740,29 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 <br><br><br>
 <p>With sine and cosine calculable,</p>
 <br><br>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="inscribed_polygon_perimeter">
+<meta itemprop="description" content="Perimeter of a polygon inscribed in a circle in terms of the diameter">
+<span itemprop="name">the perimeter of an inscribed n‑gon </span>=
+<meta itemprop="value" content="n × sin(180° / n) × d">
+<br><br>
+<math>
+  <mrow>
+    <mi>n</mi>
+    <mo>&#x00D7;</mo>
+    <mi>sin</mi>
+    <mo>(</mo>
+      <mfrac>
+        <mn>180</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>&#x00B0;</mo>
+    <mo>)</mo>
+    <mo>&#x00D7;</mo>
+    <mi>diameter</mi>
+  </mrow>
+</math>
+</div>
+<br><br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="circumscribed_polygon_perimeter">
 <meta itemprop="description" content="Perimeter of a polygon circumscribed about a circle in terms of the diameter">
 <span itemprop="name">the perimeter of a circumscribed n‑gon </span>=
@@ -5763,31 +5786,9 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 </math>
 </div>
 <br><br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="inscribed_polygon_perimeter">
-<meta itemprop="description" content="Perimeter of a polygon circumscribed about a circle in terms of the diameter">
-<span itemprop="name">the perimeter of an inscribed n‑gon </span>=
-<meta itemprop="value" content="n × sin(180° / n) × d">
-<br><br>
-<math>
-  <mrow>
-    <mi>n</mi>
-    <mo>&#x00D7;</mo>
-    <mi>sin</mi>
-    <mo>(</mo>
-      <mfrac>
-        <mn>180</mn>
-        <mi>n</mi>
-      </mfrac>
-      <mo>&#x00B0;</mo>
-    <mo>)</mo>
-    <mo>&#x00D7;</mo>
-    <mi>diameter</mi>
-  </mrow>
-</math>
-</div>
-<br><br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="pi-approximation">
-<span itemprop="name">The approximate circumference to diameter ratio, based on the polygonal limits</span>:
+<span>Thus, </span>
+<span itemprop="name">the <b>approximate</b> circumference to diameter ratio, <b>based on the polygonal limits</b></span>:
 <meta itemprop="value" content="sin(180°/n)n<3.14...<sin(180°/n)n/cos(180°/n)">
 <br><br>
 <math>
@@ -5839,14 +5840,47 @@ That is never demonstrated; it is simply taken for granted.
 <br><br>
 Traditional geometry defines "circumscribed" by specifying that every polygon side lies on a line tangent to the circle — where a tangent is defined as touching at exactly one single point. 
 <br>
-That is an abstract declaration; not an accurate observation, nor a true axiom.</strong>
+That is an abstract declaration; not an accurate observation, nor a true axiom.
 <br><br>
 Why that is pivotal:
 <br><br>
-A circumscribed regular polygon can be divided into as many isosceles triangles, as many sides it has. The base of each one is a side of the polygon.</p>
-<br><br>
+Whether a polygon can be circumscribed about a circle depends on whether its perimeter is sufficiently greater than the circumference. 
+<br>
+When the perimeter of a regular polygon equals — or is close enough to — the circumference, the sides are too short to remain tangent to the circle; they cut through the arc.</strong>
+<br>
+This behavior is easy to see in polygons with a low side count.</p>
+<br>
+<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+    <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
+<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
+<meta itemprop="familyName" content="Gaál">
+<meta itemprop="givenName" content="Sándor">
+</div>
+<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+<meta itemprop="familyName" content="Gaál">
+<meta itemprop="givenName" content="Sándor">
+</div>
+<meta itemprop="copyrightNotice" content="® All rights reserved">
+<meta itemprop="copyrightYear" content="2026">
+<meta itemprop="creditText" content="Made with the help of Vectorink.io">
+<link itemprop="license" href="https://basic-geometry.pages.dev">
+<meta itemprop="acquireLicensePage" content="https://basic-geometry.pages.dev/privacy-policy">
+<meta itemprop="contentUrl" content="https://basic-geometry.pages.dev/isoperimetry.png">
+<link itemprop="url" href="https://basic-geometry.pages.dev">
+</figure>
+<br>
+<p itemprop="articleBody"><strong>The bisection procedure guarantees that each new perimeter created by repeatedly bisecting a circumscribed hexagon is smaller than the previous one. 
+<br>
+To know if the polygons are still circumscribed at every finite step, you must already know if the perimeter is large enough that no crossing occurs.
+<br>
+Yet finding the circumference is the purpose of the method. 
+<br>
+Archimedes totally discarded that, because he relied entirely on the premise of single-point tangency.
+<br>
+The premise of each side touching at only one point is meant to guarantee that the vertices lay strictly outside of the circle, hence the triangle formed by the tangent point, vertex, and midpoint should structurally contain the entire circle slice, forcing the straight side to be strictly longer than the arc:</strong></p>
+<br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="description">Each triangle has an area </span>:
+<span itemprop="description">A circumscribed regular polygon can be divided into as many isosceles triangles, as many sides it has. The base of each one is a side of the polygon. Each triangle has an area </span>:
 <br><br>
 <span itemprop="name">A </span>=
 <meta itemprop="value" content="sin(180°/side count) × r^2"> 
@@ -5908,8 +5942,6 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 </math>
 </div>
 <br><br>
-<p itemprop="articleBody">The premise of each side touching at only one point is meant to guarantee that the vertices lay strictly outside of the circle, hence the triangle formed by the tangent point, vertex, and midpoint should structurally contain the entire circle slice, forcing the straight side to be strictly longer than the arc:</strong>
-<br>
 <div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5919,11 +5951,13 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 <mo>&#x2062;</mo> <!-- Invisible times -->
 <mi>circle area</mi>
 </mrow>
+<mrow>
 <mi>r</mi>
 <mo>&#x00D7;</mo>
 <mi>n</mi>
+</mrow>
 </mfrac>
-<mo>&#x00B0;</mo>
+<mo>&lt;</mo>
 <mo>sin</mo>
 <mo>&#x2061;</mo>
 <mrow>
@@ -5943,40 +5977,7 @@ A circumscribed regular polygon can be divided into as many isosceles triangles,
 </math>
 </div>
 <br><br>
-<p itemprop="articleBody"><strong>In reality, whether a polygon can be circumscribed about a circle depends on whether its perimeter is sufficiently greater than the circumference. 
-<br><br>
-When the perimeter of a regular polygon equals — or is close enough to — the circumference, the sides are too short to remain tangent to the circle; they cut through the arc.</strong>
-<br><br>
-This behavior is easy to see in polygons with a low side count.</p>
-<br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
-    <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.pages.dev/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.pages.dev/isoperimetry.png">
-<link itemprop="url" href="https://basic-geometry.pages.dev">
-</figure>
-<br>
-<p itemprop="articleBody"><strong>The bisection procedure guarantees that each new perimeter created by repeatedly bisecting a circumscribed hexagon is smaller than the previous one. 
-<br>
-To know if the polygons are still circumscribed at every finite step, you must already know if the perimeter is large enough that no crossing occurs.
-<br>
-Yet finding the circumference is the purpose of the method. 
-<br>
-Archimedes totally discarded that, because he relied entirely on the premise of single-point tangency.
-<br>
-This is the critical flaw at the very foundation of the method.
+<p itemprop="articleBody"><strong>That is the critical flaw at the very foundation of the method.
 <br><br>
 It's easy to overlook the lack of single-point tangency in the case of a circumscribed hexagon, because it doesn't matter at all.
 <br>
