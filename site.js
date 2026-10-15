@@ -18,13 +18,23 @@ self.addEventListener('install', (event) => {
         'frustumPyramid.jpeg',
         'frustumCone.jpeg',
         'tetrahedron.jpeg',
+        'square.png',
+        'cube.jpeg',
+        'cylinder.jpg',
+        'ornament.jpeg',
+        'shapes.jpeg',
+        'sphereConeComparison.jpeg',
+        'crystal.jpeg',
+        'piApproximation.jpg',
+        'traditionalTangency.png',
+        'arcAndLine.png',
+        'arcAndOverlappingLine.png',
         'isoperimetry.png',
         'polygonApproximation.png',
         'equityFigure.png',
+        'equityFigure2.png',
         'circleArea.png',
-        'cubeDissection.jpeg',
-        'square.png',
-        'cube.jpeg'
+        'cubeDissection.jpeg'
       ]);
     })
   );
